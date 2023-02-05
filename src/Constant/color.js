@@ -1,15 +1,15 @@
 const baseColors = {
-    lightColor: "#fffff",     //60% 
+    lightColor: "#fff",     //60% 
     primaryColor: "#36b5ff",  //30%
     sucessColor: "#7Cd957",   //10%
-    secondaryColor:"#1C2728",
+    secondaryColor:"#b2b7b7",
     darkColor:"#1C2728",
 
     
-    lightTextColor: "#fffff",
+    lightTextColor: "#fff",
     primaryTextColor: "#36b5ff",
     sucessTextColor:"#7Cd957",
-    secondaryTextColor: "#1C2728",
+    secondaryTextColor: "#b2b7b7",
     dangerTextColor: "#fe5d5d",
     darkTextColor:"#222",
 }

@@ -1,80 +1,84 @@
-import React from 'react'
-import Button from '../../Components/Buttons'
-import InputField from '../../Components/InputField'
-import {
-    View,
-    Text,
-    StyleSheet,
-    Dimensions,
-    Image
- } from 'react-native'
-import {useNavigation} from "@react-navigation/native"
-import baseColors from '../../Constant/color'
+import React from "react";
+import Button from "../../Components/Buttons";
+import InputField from "../../Components/InputField";
+import { styles } from "./style";
+
+import { View, Text, Image } from "react-native";
+import { useNavigation } from "@react-navigation/native";
+import baseColors from "../../Constant/color";
 
 
-const deviceHeight = Dimensions.get('window').height;
-const deviceWidth = Dimensions.get('window').width;
 
 const SignIn = () => {
- const Navigation = useNavigation ()
+  const Navigation = useNavigation();
   return (
-   <View style={styles.screenContainer}>
+    <View style={styles.screenContainer}>
+      <View style={styles.screenTop}>
+        <Text>
+          <Text style={styles.textColorSuccess}>English</Text> | French
+        </Text>
+      </View>
 
-    <View style={styles.screenTop}>
-      <Text><Text style={styles.textColorChange}>English</Text> | French</Text>
+      <View style={styles.screenMiddle}>
+        <View style={{
+          justifyContent: 'center',
+          alignItems: 'center',}}>
+        <Image
+          source={require("../../Assets/images/Logo.png")}
+          style={{ height: 50 }}
+        />
+        </View>
+        
+        <Text style={styles.formText}>Enter Your Email</Text>
+        <InputField placeholder="Your Email"></InputField>
+        <Text style={styles.formText}>Enter Your Password</Text>
+        <InputField placeholder="Password" secureTextEntry={true}></InputField>
+        <View style={styles.Loginbutton}>
+          <Button
+            styles={{ 
+            elevation: 8,
+            backgroundColor: baseColors.primaryColor,
+            borderRadius: 50,
+            paddingVertical: 10,
+            paddingHorizontal: 12, 
+            width:200,
+            justifyContent: 'center',
+            alignItems: 'center'
+          }}
+            onPress={() => {
+              Navigation.navigate("SignUp");
+            }}
+          >
+            <Text 
+            style={{
+              color: "#fff",
+              fontWeight: "bold",
+              textTransform: "uppercase",
+            }}>Login</Text>
+          </Button>
+        </View>
+        <View style={{
+          justifyContent: 'center',
+          alignItems: 'center',
+          paddingTop:20}} >
+          <Text style={styles.textColorDanger}>Forget Password</Text>
+          <Text>create a new account</Text>
+          <Text
+            style={styles.textColorSuccess}
+            onPress={() => {
+              Navigation.navigate("SignUp");
+            }}
+          >
+            Registered Now
+          </Text>
+        </View>
+        <Image
+          source={require("../../Assets/images/btmImage.png")}
+          style={{ height: 300 }}
+        />
+      </View>
     </View>
+  );
+};
 
-    <View style={styles.screenMiddle}>
-
-    <Image source={require('../../Assets/images/Logo.png')} style={{ height: 100 }}/>
-    <Text style={styles.formText}>Enter Your Email</Text>
-    <InputField placeholder="Your Email" ></InputField>
-    <Text style={styles.formText}>Enter Your Password</Text>
-    <InputField placeholder="Password"  secureTextEntry={true}></InputField>
-
-    <View style={styles.Loginbutton}>
-      <Button title="signup" size="sm" backgroundColor="#007bff"  onPress={() => {Navigation.navigate("SignUp")}}/>   
-    </View>
-    </View>
-  
-   </View>
-  )
-}
-const styles = StyleSheet.create({
-  screenContainer: {
-    height: deviceHeight / 1 ,
-    width: deviceWidth / 1 ,
-    flex: 1,
-    flexDirection: 'column', 
-    padding: 20,
-    backgroundColor: baseColors.lightColor,
-  },
-  screenTop:{
-    flexDirection: 'row', 
-    justifyContent: 'flex-end',
-    paddingVertical:40,
-    
-  },
-  textColorChange:{
-    color: baseColors.sucessTextColor
-  },
-  screenMiddle:{
-    flexDirection: 'column', 
-    justifyContent: 'center',
-    // paddingVertical:200
-  },
-  formText:{
-    paddingLeft:11,
-  },
-  Loginbutton:{
-    flexDirection: 'column', 
-    justifyContent: 'center',
-    width: deviceWidth / 2 ,
-    margin: "auto"
-  }
-  
- 
- 
-});
-
-export default SignIn
+export default SignIn;

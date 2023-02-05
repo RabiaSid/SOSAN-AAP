@@ -1,19 +1,123 @@
 import React from 'react'
-import { 
-    View, 
-    Text,
-    Button 
-} from 'react-native'
+import { View, Text, Dimensions} from 'react-native'
+// import LinearGradient from 'react-native-linear-gradient'
+import InputField from "../../Components/InputField";
+import  Button  from '../../Components/Buttons'
 import {useNavigation} from "@react-navigation/native"
+import { styles } from './style';
+import baseColors from '../../Constant/color'
+import CheckBox from '../../Components/checkButton'
+
+const deviceHeight = Dimensions.get("window").height;
+const deviceWidth = Dimensions.get("window").width;
 
 function SignUp() {
  const Navigation = useNavigation ()
   return (
-    <View>
-        <Text>Signup</Text>
-        <Button onPress={() => {Navigation.navigate("SignIn")}}></Button>
-    </View>
+    
+//       <LinearGradient
+//       colors={['red', 'yellow', 'green' ]}
+//       style={styles.screenContainer}
+//       start={{ x: 0, y: 0.5 }}
+//       end={{ x: 1, y: 0.5 }}
+// >
+<View style={styles.screenContainer}>
+      <View style={styles.screenBackground}>
+        <View style={styles.screenMiddle}>
+        <Text style={styles.Text}>create a new account</Text>
+        <Text style={styles.formText}>Enter  Email</Text>
+        <InputField placeholder="abc@gmail.com"></InputField>
+        <Text style={styles.formText}>Enter Username</Text>
+        <InputField placeholder="Your Username"></InputField>
+        <Text style={styles.formText}>Enter PhoneNumber</Text>
+        <InputField placeholder="0092331524568"></InputField>
+        <Text style={styles.formText}>Enter Password</Text>
+        <InputField placeholder="*************" secureTextEntry={true}></InputField>
+        <Text style={styles.Textleft}> What are You? </Text>
+        <View style={{
+          flexDirection: "row",
+          justifyContent: 'space-evenly',
+          alignItems: 'center'
+        }}>
+          <CheckBox /><Text>Individual</Text>
+          <CheckBox /><Text>Professional</Text>
+          
+        </View>
+        
+        <View style={{
+          flexDirection: "row",
+          justifyContent:'center',
+          alignItems: 'center'
+        }}>
+        <CheckBox /><Text>i agree with the terms and agreements</Text>
+        </View>
+
+
+        <View style={{
+          flexDirection: "row",
+          justifyContent: 'space-evenly',
+          paddingTop:30,
+          
+        }}>
+        
+        <Button
+            styles={{
+            elevation: 8,
+            backgroundColor: baseColors.secondaryColor,
+            borderRadius: 50,
+            paddingVertical: 10,
+            paddingHorizontal: 12, 
+            width:150,
+            justifyContent: 'center',
+            alignItems: 'center'
+            }}
+            onPress={() => {
+              Navigation.navigate("SignIn");
+            }}
+          >
+            <Text 
+            style={{
+              color: "#fff",
+              fontWeight: "bold",
+              textTransform: "uppercase",
+            }}>Signup</Text>
+            
+          </Button>
+          
+        <Button
+            styles={{
+            elevation: 8,
+            backgroundColor: baseColors.primaryColor,
+            borderRadius: 50,
+            paddingVertical: 10,
+            paddingHorizontal: 12, 
+            width:150,
+            justifyContent: 'center',
+            alignItems: 'center'
+            }}
+            onPress={() => {
+              Navigation.navigate("SignIn");
+            }}
+          >
+            <Text 
+            style={{
+              color: "#fff",
+              fontWeight: "bold",
+              textTransform: "uppercase",
+            }}>Signup</Text>
+            
+          </Button>
+          </View>
+
+          </View>
+          </View>
+          </View>
+          // </LinearGradient>
+    
   )
 }
 
+
 export default SignUp
+
+

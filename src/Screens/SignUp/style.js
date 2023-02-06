@@ -47,9 +47,18 @@ export const styles = StyleSheet.create({
       padding:10
     },
     formText: {
-      paddingLeft: 11,
+      paddingLeft: 20,
     },
-   
+    modalView: {
+      flex: 1, 
+      flexDirection:'column',
+      backgroundColor:baseColors.lightColor,
+      borderRadius:10
+    },
+    modalButton:{
+      // flex: 1, 
+      // flexDirection:'row',
+    }
   
   });
   

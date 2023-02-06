@@ -28,11 +28,25 @@ const SignIn = () => {
           style={{ height: 50 }}
         />
         </View>
-        
         <Text style={styles.formText}>Enter Your Email</Text>
-        <InputField placeholder="Your Email"></InputField>
+        <InputField placeholder="Your Email" 
+        styles={{height: 40,
+        margin: 12,
+        borderColor: baseColors.sucessColor,
+      borderWidth: 1,
+      borderRadius: 50,
+      padding: 10,}}
+      ></InputField>
         <Text style={styles.formText}>Enter Your Password</Text>
-        <InputField placeholder="Password" secureTextEntry={true}></InputField>
+        <InputField placeholder="Password" secureTextEntry={true}
+        styles={{height: 40,
+          margin: 12,
+          borderColor: baseColors.sucessColor,
+          borderWidth: 1,
+          borderRadius: 50,
+          padding: 10,
+        }}
+          ></InputField>
         <View style={styles.Loginbutton}>
           <Button
             styles={{ 

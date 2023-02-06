@@ -6,13 +6,22 @@ import  Button  from '../../Components/Buttons'
 import {useNavigation} from "@react-navigation/native"
 import { styles } from './style';
 import baseColors from '../../Constant/color'
-import CheckBox from '../../Components/checkButton'
+import CheckBox from '../../Components/checkButton' 
+import ModalTester from '../../Components/Modal';
 
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
 
 function SignUp() {
+ 
  const Navigation = useNavigation ()
+
+//  const [value, setvalue] = useState('')
+
+//  useEffect(()=>{
+//   setvalue(value)
+//   console.log(value)
+//  },[])
   return (
     
 //       <LinearGradient
@@ -26,27 +35,57 @@ function SignUp() {
         <View style={styles.screenMiddle}>
         <Text style={styles.Text}>create a new account</Text>
         <Text style={styles.formText}>Enter  Email</Text>
-        <InputField placeholder="abc@gmail.com"></InputField>
+        <InputField placeholder="abc@gmail.com"
+        styles={{height: 40,
+          margin: 12,
+          borderColor: baseColors.sucessColor,
+          borderWidth: 1,
+          borderRadius: 50,
+          padding: 10,}}
+        ></InputField>
         <Text style={styles.formText}>Enter Username</Text>
-        <InputField placeholder="Your Username"></InputField>
+        <InputField placeholder="Your Username"
+        styles={{height: 40,
+          margin: 12,
+          borderColor: baseColors.sucessColor,
+          borderWidth: 1,
+          borderRadius: 50,
+          padding: 10,}}
+        ></InputField>
         <Text style={styles.formText}>Enter PhoneNumber</Text>
-        <InputField placeholder="0092331524568"></InputField>
+        <InputField placeholder="0092331524568"
+        styles={{height: 40,
+          margin: 12,
+          borderColor: baseColors.sucessColor,
+          borderWidth: 1,
+          borderRadius: 50,
+          padding: 10,}}
+        ></InputField>
         <Text style={styles.formText}>Enter Password</Text>
-        <InputField placeholder="*************" secureTextEntry={true}></InputField>
+        <InputField placeholder="*************" secureTextEntry={true}
+        styles={{height: 40,
+          margin: 12,
+          borderColor: baseColors.sucessColor,
+          borderWidth: 1,
+          borderRadius: 50,
+          padding: 10,}}
+        ></InputField>
         <Text style={styles.Textleft}> What are You? </Text>
         <View style={{
           flexDirection: "row",
           justifyContent: 'space-evenly',
-          alignItems: 'center'
+          alignItems: 'center',
+          paddingHorizontal: 30
+          
         }}>
           <CheckBox /><Text>Individual</Text>
-          <CheckBox /><Text>Professional</Text>
+          <CheckBox 
+          /><ModalTester />
           
         </View>
         
         <View style={{
           flexDirection: "row",
-          justifyContent:'center',
           alignItems: 'center'
         }}>
         <CheckBox /><Text>i agree with the terms and agreements</Text>
@@ -81,6 +120,7 @@ function SignUp() {
               fontWeight: "bold",
               textTransform: "uppercase",
             }}>Signup</Text>
+            
             
           </Button>
           

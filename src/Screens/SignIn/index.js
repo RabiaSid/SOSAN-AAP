@@ -5,9 +5,6 @@ import { styles } from "./style";
 
 import { View, Text, Image } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import baseColors from "../../Constant/color";
-
-
 
 const SignIn = () => {
   const Navigation = useNavigation();
@@ -20,61 +17,49 @@ const SignIn = () => {
       </View>
 
       <View style={styles.screenMiddle}>
-        <View style={{
-          justifyContent: 'center',
-          alignItems: 'center',}}>
-        <Image
-          source={require("../../Assets/images/Logo.png")}
-          style={{ height: 50 }}
-        />
+        <View
+          style={{
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Image
+            source={require("../../Assets/images/Logo.png")}
+            style={{ height: 50 }}
+          />
         </View>
         <Text style={styles.formText}>Enter Your Email</Text>
-        <InputField placeholder="Your Email" 
-        styles={{height: 40,
-        margin: 12,
-        borderColor: baseColors.sucessColor,
-      borderWidth: 1,
-      borderRadius: 50,
-      padding: 10,}}
-      ></InputField>
+        <InputField
+          placeholder="Your Email"
+          styles={styles.InputField}
+        ></InputField>
         <Text style={styles.formText}>Enter Your Password</Text>
-        <InputField placeholder="Password" secureTextEntry={true}
-        styles={{height: 40,
-          margin: 12,
-          borderColor: baseColors.sucessColor,
-          borderWidth: 1,
-          borderRadius: 50,
-          padding: 10,
-        }}
-          ></InputField>
+        <InputField
+          placeholder="Password"
+          secureTextEntry={true}
+          styles={styles.InputField}
+        ></InputField>
         <View style={styles.Loginbutton}>
           <Button
-            styles={{ 
-            elevation: 8,
-            backgroundColor: baseColors.primaryColor,
-            borderRadius: 50,
-            paddingVertical: 10,
-            paddingHorizontal: 12, 
-            width:200,
-            justifyContent: 'center',
-            alignItems: 'center'
-          }}
+            styles={styles.Button}
             onPress={() => {
               Navigation.navigate("SignUp");
             }}
           >
-            <Text 
-            style={{
-              color: "#fff",
-              fontWeight: "bold",
-              textTransform: "uppercase",
-            }}>Login</Text>
+            <Text
+              style={styles.ButtonText}
+            >
+              Login
+            </Text>
           </Button>
         </View>
-        <View style={{
-          justifyContent: 'center',
-          alignItems: 'center',
-          paddingTop:20}} >
+        <View
+          style={{
+            justifyContent: "center",
+            alignItems: "center",
+            paddingTop: 20,
+          }}
+        >
           <Text style={styles.textColorDanger}>Forget Password</Text>
           <Text>create a new account</Text>
           <Text

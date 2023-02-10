@@ -31,6 +31,7 @@ const defaultStyles = StyleSheet.create({
     borderRadius: 50,
     paddingVertical: 10,
     paddingHorizontal: 12,
+    marginVertical:10,
     width:100,
     justifyContent: 'center',
     alignItems: 'center'

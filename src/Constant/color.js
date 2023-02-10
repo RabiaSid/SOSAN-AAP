@@ -4,6 +4,7 @@ const baseColors = {
     sucessColor: "#7Cd957",   //10%
     secondaryColor:"#b2b7b7",
     darkColor:"#1C2728",
+    
 
     
     lightTextColor: "#fff",

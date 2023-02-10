@@ -78,7 +78,10 @@ function SignUp() {
           paddingHorizontal: 30
           
         }}>
-          <CheckBox /><Text>Individual</Text>
+          <CheckBox /><Text
+          onPress={() => {
+            Navigation.navigate("Verification");
+          }}>Individual</Text>
           <CheckBox 
           /><ModalTester />
           

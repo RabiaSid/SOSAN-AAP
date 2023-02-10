@@ -3,7 +3,8 @@ import {SafeAreaView, StyleSheet, TextInput} from 'react-native';
 import _ from 'lodash'
 import baseColors from '../../Constant/color';
 
-function index({placeholder, keyboardType, secureTextEntry, styles: customStyles}) {
+function index({placeholder, keyboardType, secureTextEntry, styles: customStyles, multiline, numberOfLines
+}) {
   const [number, onChangeNumber] = React.useState('');
 
   let styles = defaultStyles.appButtonContainer;
@@ -18,8 +19,10 @@ function index({placeholder, keyboardType, secureTextEntry, styles: customStyles
         onChangeText={onChangeNumber}
         value={number}
         placeholder={placeholder}
+        multiline={multiline}
         keyboardType={keyboardType}
         secureTextEntry={secureTextEntry}
+        numberOfLines={numberOfLines}
       />
     </SafeAreaView>
   )
@@ -32,6 +35,7 @@ const defaultStyles = StyleSheet.create({
       borderWidth: 1,
       borderRadius: 50,
       padding: 10,
+      textAlignVertical:'top',
     },
   });
 

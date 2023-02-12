@@ -43,14 +43,10 @@ const SignIn = () => {
           <Button
             styles={styles.Button}
             onPress={() => {
-              Navigation.navigate("SignUp");
+              Navigation.navigate("AppHome");
             }}
           >
-            <Text
-              style={styles.ButtonText}
-            >
-              Login
-            </Text>
+            <Text styles={styles.ButtonText}>Login</Text>
           </Button>
         </View>
         <View
@@ -73,7 +69,7 @@ const SignIn = () => {
         </View>
         <Image
           source={require("../../Assets/images/btmImage.png")}
-          style={{ height: 300 }}
+          style={{ height: 270,resizeMode: 'contain'}}
         />
       </View>
     </View>

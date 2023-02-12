@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import TabBottomNavigation from "../../Navigation/TabBottomNavigation";
 
 function AppHome() {
   return (
-    <div>AppHome</div>
-  )
+    <>
+      <TabBottomNavigation />
+    </>
+  );
 }
 
-export default AppHome
+export default AppHome;

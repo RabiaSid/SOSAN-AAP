@@ -21,10 +21,15 @@ export const styles = StyleSheet.create({
     alignItems: "center",
   },
   TextStyle: {
-    fontSize: 12,
     color: "#d3d3d3",
     textAlign: "center",
     marginVertical: 5,
+  },
+  columnImages: {
+    height: 150, 
+    width:300, 
+    borderRadius: 10, 
+    resizeMode: "cover" 
   },
   RowImages: {
     flexDirection: "row",
@@ -32,6 +37,8 @@ export const styles = StyleSheet.create({
     justifyContent:"space-evenly",
     marginVertical: 10
   },
+  
+
   ImgSty: {
     borderRadius: 5,
     height: 80,

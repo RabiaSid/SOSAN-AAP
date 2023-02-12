@@ -13,6 +13,8 @@ const baseColors = {
     secondaryTextColor: "#b2b7b7",
     dangerTextColor: "#fe5d5d",
     darkTextColor:"#222",
+    gradientsucessColor:"#a2f287",
+    gradientprimaryColor: "#72c8f9",
 }
 
 export default baseColors;

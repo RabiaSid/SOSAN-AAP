@@ -1,10 +1,11 @@
 import React from 'react';
-import RoutesView from './src/Routes';
+import StackNavigation from './src/Navigation/StackNavigation';
 const App = () => {
   return (
-    
-    <RoutesView/>
-    
+    <>
+    <StackNavigation/>
+   
+    </>
   );
 };
 

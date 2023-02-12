@@ -16,7 +16,7 @@ const TimePicker = () => {
   }, []);
 
   return (
-    <SafeAreaView style={{ flex: 1, }}>
+    <SafeAreaView style={{ flex: 1 }}>
       <View style={styles.container}>
         <View style={styles.container}>
           <Text style={styles.textStyle}>{currentDate}</Text>
@@ -29,16 +29,14 @@ const TimePicker = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor:baseColors.lightColor,
+    backgroundColor: baseColors.lightColor,
     justifyContent: "center",
-    
   },
   textStyle: {
     textAlign: "center",
     color: baseColors.darkColor,
-    paddingHorizontal:5,
-    marginHorizontal:5
-    
+    paddingHorizontal: 5,
+    marginHorizontal: 5,
   },
 });
 

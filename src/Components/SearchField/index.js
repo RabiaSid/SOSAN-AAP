@@ -1,29 +1,40 @@
-import React from 'react';
-import {SafeAreaView, StyleSheet, TextInput} from 'react-native';
+import * as React from "react";
+import { StyleSheet } from "react-native";
+import { Searchbar } from "react-native-paper";
+import baseColors from "../../Constant/color";
+import _ from "lodash";
 
-function index({placeholder, keyboardType, secureTextEntry}) {
-  const [number, onChangeNumber] = React.useState('');
+const SearchField = ({ placeholder, styles: customStyles, icon }) => {
+  const [searchQuery, setSearchQuery] = React.useState("");
+
+  const onChangeSearch = (query) => setSearchQuery(query);
+
+  let styles = defaultStyles.input;
+  if (!_.isEmpty(customStyles)) {
+    styles = { styles, ...customStyles };
+  }
+
   return (
-    <SafeAreaView>
-      <TextInput
-        style={styles.input}
-        onChangeText={onChangeNumber}
-        value={number}
-        placeholder={placeholder}
-        keyboardType={keyboardType}
-        secureTextEntry={secureTextEntry}
-      />
-    </SafeAreaView>
-  )
-}
-const styles = StyleSheet.create({
-    input: {
-      height: 40,
-      margin: 12,
-      borderWidth: 1,
-      borderRadius: 50,
-      padding: 10,
-    },
-  });
+    <Searchbar
+      placeholder={placeholder}
+      onChangeText={onChangeSearch}
+      value={searchQuery}
+      style={styles}
+      // icon={{direction: 'rtl', color:baseColors.darkColor}}
+    />
+  );
+};
 
-export default index
+const defaultStyles = StyleSheet.create({
+  input: {
+    height: 40,
+    margin: 12,
+    borderColor: baseColors.sucessColor,
+    borderWidth: 1,
+    borderRadius: 50,
+    padding: 10,
+    textAlignVertical: "top",
+  },
+});
+
+export default SearchField;

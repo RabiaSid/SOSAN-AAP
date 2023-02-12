@@ -15,7 +15,7 @@ export const styles = StyleSheet.create({
        
     },
     screenBackground:{
-      backgroundColor: baseColors.primaryColor , 
+      // backgroundColor: baseColors.primaryColor , 
           height: deviceHeight / 1,
           width: deviceWidth / 1,
           flexDirection: "column",

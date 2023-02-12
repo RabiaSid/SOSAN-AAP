@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, TextInput} from "react-native";
+import { View, Text, TextInput } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import TouchableButton from "../../Components/Buttons";
 import Boxes from "../../Components/BoxVerify";
@@ -17,7 +17,8 @@ const Verification = () => {
           <View style={styles.BoxScreen} />
           <Text style={styles.headingMini}>Confirm email id</Text>
           <View
-            style={{ flexDirection: "row", justifyContent: "space-evenly" }}>
+            style={{ flexDirection: "row", justifyContent: "space-evenly" }}
+          >
             {/* <Boxes><TextInput placeholder="4"></TextInput></Boxes> */}
             <Boxes />
             <Boxes />
@@ -37,7 +38,8 @@ const Verification = () => {
                 style={{
                   textDecorationLine: "underline",
                   color: baseColors.sucessTextColor,
-                }}>
+                }}
+              >
                 Resend
               </Text>
             </Text>
@@ -47,7 +49,8 @@ const Verification = () => {
               flexDirection: "row",
               justifyContent: "space-evenly",
               marginTop: 30,
-            }}>
+            }}
+          >
             <TouchableButton
               styles={{
                 elevation: 8,
@@ -61,7 +64,8 @@ const Verification = () => {
               }}
               onPress={() => {
                 navigation.navigate("SignIn");
-              }}>
+              }}
+            >
               <Text
                 style={{
                   fontSize: 15,
@@ -71,7 +75,8 @@ const Verification = () => {
                   textTransform: "uppercase",
                   borderRadius: 50,
                   textAlign: "center",
-                }}>
+                }}
+              >
                 Back
               </Text>
             </TouchableButton>
@@ -88,7 +93,8 @@ const Verification = () => {
               }}
               onPress={() => {
                 navigation.navigate("SignIn");
-              }}>
+              }}
+            >
               <Text
                 style={{
                   fontSize: 15,
@@ -98,7 +104,8 @@ const Verification = () => {
                   textTransform: "uppercase",
                   borderRadius: 50,
                   textAlign: "center",
-                }}>
+                }}
+              >
                 Next
               </Text>
             </TouchableButton>

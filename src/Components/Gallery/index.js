@@ -10,7 +10,7 @@ function Gallary() {
       <View style={styles.TopImage}>
         
         <Image
-          style={{ height: 150, width:300, borderRadius: 10, resizeMode: "cover" }}
+          style={styles.columnImages}
           source={require("../../../src/Assets/images/vector.png")}
         />
       </View>

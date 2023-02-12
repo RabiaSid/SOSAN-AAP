@@ -1,20 +1,18 @@
-import React from 'react';
-import { Checkbox } from 'react-native-paper';
+import React from "react";
+import { Checkbox } from "react-native-paper";
 
-function index(/*{value}*/) {
-const [checked, setChecked] = React.useState(false);
+function CheckButton(/*{value}*/) {
+  const [checked, setChecked] = React.useState(false);
 
   return (
     <Checkbox
-      status={checked ? 'checked' : 'unchecked'}
+      status={checked ? "checked" : "unchecked"}
       // value={value}
       onPress={() => {
         setChecked(!checked);
       }}
-      
     />
-  )
+  );
 }
 
-export default index
-
+export default CheckButton;

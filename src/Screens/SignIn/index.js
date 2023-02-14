@@ -1,8 +1,8 @@
 import React from "react";
 import Button from "../../Components/Buttons";
 import InputField from "../../Components/InputField";
+import { Logo } from "../../Assets/images/index"
 import { styles } from "./style";
-
 import { View, Text, Image } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
@@ -24,7 +24,7 @@ const SignIn = () => {
           }}
         >
           <Image
-            source={require("../../Assets/images/Logo.png")}
+            source={Logo}
             style={{ height: 50 }}
           />
         </View>

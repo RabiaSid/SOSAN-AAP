@@ -8,20 +8,21 @@ import Services from "../../Screens/Services/index";
 import AppHome from "../../Screens/AppHome/index";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-const Stack = createNativeStackNavigator();
+
+const MainStack = createNativeStackNavigator();
 const StackNavigation = () => {
   return (
     <>
       <NavigationContainer independent={true}>
-        <Stack.Navigator screenOptions={{ headerShown: false }}>
-          <Stack.Screen name="SignIn" component={SignIn} />
-          <Stack.Screen name="SignUp" component={SignUp} />
-          <Stack.Screen name="PersonalDetail" component={PersonalDetail} />
-          <Stack.Screen name="CommonDetail" component={CommonDetail} />
-          <Stack.Screen name="Verification" component={Verification} />
-          <Stack.Screen name="Services" component={Services} />
-          <Stack.Screen name="AppHome" component={AppHome} />
-        </Stack.Navigator>
+        <MainStack.Navigator screenOptions={{ headerShown: false }}>
+          <MainStack.Screen name="SignIn" component={SignIn} />
+          <MainStack.Screen name="SignUp" component={SignUp} />
+          <MainStack.Screen name="PersonalDetail" component={PersonalDetail} />
+          <MainStack.Screen name="CommonDetail" component={CommonDetail} />
+          <MainStack.Screen name="Verification" component={Verification} />
+          <MainStack.Screen name="Services" component={Services} />
+          <MainStack.Screen name="AppHome" component={AppHome} /> 
+        </MainStack.Navigator>
       </NavigationContainer>
     </>
   );

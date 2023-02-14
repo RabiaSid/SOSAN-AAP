@@ -5,12 +5,17 @@ const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
 
 export const styles = StyleSheet.create({
+  headerContainer:{
+    backgroundColor: baseColors.lightColor,  
+    marginTop: 35, 
+    width: deviceWidth/1
+},
     screenContainer: {
         height: deviceHeight / 1,
         width: deviceWidth / 1,
         flex: 1,
         flexDirection: "column",
-        padding: 20,
+        paddingHorizontal: 20,
         backgroundColor: baseColors.lightColor,
       },
       Text:{
@@ -32,7 +37,7 @@ export const styles = StyleSheet.create({
       screen: {
         flexDirection: "column",
         justifyContent: "center",
-        paddingVertical: 30,
+        
       },
       formText: {
         paddingLeft: 20,

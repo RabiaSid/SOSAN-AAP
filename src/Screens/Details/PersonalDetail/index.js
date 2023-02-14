@@ -1,22 +1,41 @@
 import React from "react";
-import { Text, View, ScrollView, Image } from "react-native";
+import { Text, View, ScrollView, Image,Dimensions, TouchableOpacity } from "react-native";
 import { styles } from "./style";
 import InputField from "../../../Components/InputField";
 import SelectDropdown from "../../../Components/SelectDropdown";
 import Button from "../../../Components/Buttons";
+import AppHeader from "../../../Components/AppHeader";
+import { Ionicons } from "@expo/vector-icons";
+import { DummyPerson } from "../../../Assets/images";
 import { useNavigation } from "@react-navigation/native";
+
+const deviceHeight = Dimensions.get("window").height;
+const deviceWidth = Dimensions.get("window").width;
 
 function PersonalDetail() {
   const Navigation = useNavigation();
   return (
     <ScrollView style={styles.screenContainer}>
       <View style={styles.screen}>
-        <Text style={styles.Text}>Personal Detail</Text>
-
+      <AppHeader
+        styles={styles.headerContainer}
+      >
+        <View style={{ flexDirection: "row", alignItems:'center', paddingVertical:5 }}>
+          <View style={{ width: deviceWidth / 3,flexDirection:'row', justifyContent:'flex-start' }}>
+            <TouchableOpacity>
+            <Ionicons name="chevron-back-sharp" size={30} color="black" />
+            </TouchableOpacity>
+          </View>
+          <View style={{ width: deviceWidth / 3,flexDirection:'row', justifyContent:'center' }}>
+            <Text style={{fontWeight:'bold'}}>Personal Detail</Text>
+          </View>
+          
+        </View>
+      </AppHeader>
         <View style={styles.imageStyle}>
           <Image
             style={styles.image}
-            source={require("../../../Assets/images/Dummy-Person.png")}
+            source={DummyPerson}
           />
         </View>
 

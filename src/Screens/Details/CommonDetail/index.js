@@ -7,6 +7,7 @@ import InputField from "../../../Components/InputField";
 import baseColors from "../../../Constant/color";
 import Schedule from "../../../Components/Schedule";
 import Gallery from "../../../Components/Gallery";
+import { MapImage } from "../../../Assets/images";
 import { useNavigation } from "@react-navigation/native";
 
 const deviceHeight = Dimensions.get("window").height;
@@ -31,7 +32,7 @@ function CommonDetail() {
         <Text style={styles.MapText}>Enter Your location</Text>
         <View style={styles.Map}>
           <Image
-            source={require("../../../../src/Assets/images/MapImage.jpg")}
+            source={MapImage}
             style={styles.MapImage}
           />
         </View>

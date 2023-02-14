@@ -1,12 +1,19 @@
 import React from "react";
-import { View, Dimensions } from "react-native";
+import { View, Dimensions,StyleSheet } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
+import _ from "lodash";
 import baseColors from "../../Constant/color";
 
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
 
-function GradientBackground({ children }) {
+function GradientBackground({ children, styles: customStyles, }) {
+
+  let styles = defaultStyles.appButtonContainer;
+  if (!_.isEmpty(customStyles)) {
+    styles = { styles, ...customStyles };
+  }
+
   return (
     <View>
       <LinearGradient
@@ -21,17 +28,22 @@ function GradientBackground({ children }) {
         }}
         locations={[0.1, 0.7,0.9]}
         
-        style={{
-          position: "absolute",
-          flex: 1,
-          width: deviceWidth / 1,
-          height: deviceHeight / 1,
-        }}
+        style={styles}
       >
         {children}
       </LinearGradient>
     </View>
   );
 }
+const defaultStyles = StyleSheet.create({
+  LinearGradientContainer: {
+    position: "absolute",
+    flex: 1,
+    width: deviceWidth / 1,
+    height: deviceHeight / 1,
+    borderBottomLeftRadius:30,
+    borderBottomRightRadius:30,
+  },
+});
 
 export default GradientBackground;

@@ -1,5 +1,6 @@
 import React from "react";
 import { View, Image, Text } from "react-native";
+import { Vector } from "../../Assets/images/index";
 import { styles } from "./style";
 
 function Gallary() {
@@ -11,21 +12,21 @@ function Gallary() {
         
         <Image
           style={styles.columnImages}
-          source={require("../../../src/Assets/images/vector.png")}
+          source={Vector}
         />
       </View>
       <View style={styles.RowImages}>
         <Image
           style={styles.ImgSty}
-          source={require("../../../src/Assets/images/vector.png")}
+          source={Vector}
         />
         <Image
           style={styles.ImgSty}
-          source={require("../../../src/Assets/images/vector.png")}
+          source={Vector}
         />
         <Image
           style={styles.ImgSty}
-          source={require("../../../src/Assets/images/vector.png")}
+          source={Vector}
         />
       </View>
     </View>

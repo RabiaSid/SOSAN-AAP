@@ -5,12 +5,14 @@ import TouchableButton from "../../Components/Buttons";
 import Boxes from "../../Components/BoxVerify";
 import baseColors from "../../Constant/color";
 import styles from "./style";
+import GradientBackground from "../../Components/LinearBackground";
 
 const Verification = () => {
   const navigation = useNavigation();
 
   return (
     <View style={styles.screenContainer}>
+      <GradientBackground>
       <View style={styles.screenBackground}>
         <View style={styles.middleScreen}>
           <Text style={styles.heading}>Confirm your Email</Text>
@@ -112,6 +114,7 @@ const Verification = () => {
           </View>
         </View>
       </View>
+      </GradientBackground>
     </View>
   );
 };

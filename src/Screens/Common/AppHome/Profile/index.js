@@ -4,13 +4,13 @@ import {
   Text,
   Dimensions,
   Pressable,
-  ScrollView,
   Image,
+  ScrollView,
 } from "react-native";
 import AppHeader from "../../../../Components/AppHeader";
 import { Ionicons, FontAwesome, MaterialIcons } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
-import {  AvatarPerson3 } from "../../../../Assets/images";
+import { AvatarPerson3 } from "../../../../Assets/images";
 import Button from "../../../../Components/Buttons/index";
 import SwitchButton from "../../../../Components/Schedule/Switch";
 import { styles } from "./style";
@@ -21,8 +21,10 @@ const deviceWidth = Dimensions.get("window").width;
 function Profile() {
   const Navigation = useNavigation();
   return (
-    <ScrollView style={styles.screenContainer}>
-      <View style={styles.screen}>
+    <View style={styles.screenContainer}>
+      {/* <View style={styles.screen}> */}
+
+      <View>
         <AppHeader styles={styles.headerContainer}>
           <View
             style={{
@@ -57,7 +59,8 @@ function Profile() {
             </View>
           </View>
         </AppHeader>
-
+      </View>
+      <ScrollView showsVerticalScrollIndicator={false}>
         <View
           style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
         >
@@ -105,7 +108,7 @@ function Profile() {
             </View>
             <Text style={styles.TextSecondary}>johnSmith1234@gmail.com</Text>
             <View style={{ flexDirection: "row", marginVertical: 10 }}>
-              <View style={{ flexDirection: "column", paddingHorizontal: 10 }}>
+              <View style={{ flexDirection: "column", paddingHorizontal: 15 }}>
                 <Text style={styles.TextSecondary}>Email:</Text>
                 <Text style={styles.TextSecondary}>Phone:</Text>
                 <Text style={styles.TextSecondary}>SOSAN ID:</Text>
@@ -163,6 +166,9 @@ function Profile() {
                   name="navigate-next"
                   size={28}
                   style={styles.TextSecondary}
+                  onPress={() => {
+                    Navigation.navigate("ChangePassword");
+                  }}
                 />
               </View>
             </View>
@@ -174,6 +180,9 @@ function Profile() {
                   name="navigate-next"
                   size={28}
                   style={styles.TextSecondary}
+                  onPress={() => {
+                    Navigation.navigate("HelpCenter");
+                  }}
                 />
               </View>
             </View>
@@ -185,17 +194,23 @@ function Profile() {
                   name="navigate-next"
                   size={28}
                   style={styles.TextSecondary}
+                  onPress={() => {
+                    Navigation.navigate("TermsAndConditions");
+                  }}
                 />
               </View>
             </View>
 
             <View style={styles.ListBottom}>
               <View style={styles.Listitems}>
-                <Text style={styles.TextSecondary}>cancelled appointment</Text>
+                <Text style={styles.TextDanger}>cancelled appointment</Text>
                 <MaterialIcons
                   name="navigate-next"
                   size={28}
                   style={styles.TextSecondary}
+                  onPress={() => {
+                    Navigation.navigate("CancelledAppointment");
+                  }}
                 />
               </View>
             </View>
@@ -207,13 +222,17 @@ function Profile() {
                   name="navigate-next"
                   size={28}
                   style={styles.TextSecondary}
+                  onPress={() => {
+                    Navigation.navigate("SignIn");
+                  }}
                 />
               </View>
             </View>
           </View>
         </View>
-      </View>
-    </ScrollView>
+        {/* </View> */}
+      </ScrollView>
+    </View>
   );
 }
 

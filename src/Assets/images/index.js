@@ -10,7 +10,9 @@ import FlagButtonTwo from './FlagButtonTwo.png'
 import Map from './Map.webp'
 import MapImage from './MapImage.jpg'
 import Vector from './vector.png'
-
+import SuccessImage from './SuccessImage.png'
+import BannerOrange from './BannerOrange.png'
+import BannerBlue from './BannerBlue.png'
 
 
 
@@ -26,5 +28,8 @@ export {
     FlagButtonTwo,
     Map,
     MapImage,
-    Vector
+    Vector,
+    SuccessImage,
+    BannerOrange,
+    BannerBlue
 }

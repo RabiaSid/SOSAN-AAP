@@ -12,7 +12,6 @@ import {
   MaterialIcons,
 } from "@expo/vector-icons";
 import { styles } from "./style";
-import SignIn from "../../SignIn";
 
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
@@ -60,7 +59,8 @@ const navigation = useNavigation();
               alignItems: "center",
             }}
           >
-            <TouchableOpacity>
+            <TouchableOpacity
+            onPress={()=>navigation.navigate('UserAppHome')}>
               <Image
                 source={FlagButtonOne}
                 style={{ height: 20, width: 35 }}
@@ -96,7 +96,8 @@ const navigation = useNavigation();
           <View style={styles.itemsViewReverse}>
             <Entypo name="calendar" size={24} style={styles.itemsIconReverse} />
             <Text
-              // onPress={gotoAppointmentStackScreen}
+             onPress={()=>navigation.navigate('Appointment')}
+              // onPress={Appointments}
               style={styles.itemsViewTextReverse}
             >
               Appointment
@@ -110,7 +111,7 @@ const navigation = useNavigation();
               style={styles.itemsIconReverse}
             />
             <Text
-               // onPress={gotoPublicityStackScreen}
+               onPress={()=>navigation.navigate('CreatePost')}
               style={styles.itemsViewTextReverse}
             >
               Publicity
@@ -120,7 +121,8 @@ const navigation = useNavigation();
           <View style={styles.itemsView}>
             <Entypo name="wallet" size={24} style={styles.itemsIcon} />
             <Text
-              // onPress={gotoEarningStackScreen}
+              
+              onPress={()=>navigation.navigate('Epargne')}
               style={styles.itemsViewText}
             >
               Earning
@@ -129,14 +131,6 @@ const navigation = useNavigation();
         </View>
       </View>
 
-      {/* <Button
-        styles={styles.Button}
-        // onPress={() => {
-        //   Navigation.navigate("Services");
-        // }}
-      >
-        <Text styles={styles.ButtonText}>Login</Text>
-      </Button> */}
       <Image
         source={BottomImage}
         style={{ height: 270, resizeMode: "contain" }}

@@ -2,12 +2,6 @@ import { Dimensions, StyleSheet } from 'react-native';
 import baseColors from '../../../Constant/color';
 const deviceWidth = Dimensions.get("window").width;
 export const styles = StyleSheet.create({
-    Container: {
-        flexDirection: 'column',
-        width: deviceWidth / 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
     CardStyling: {
         backgroundColor: '#fff',
         padding: 10,
@@ -17,7 +11,7 @@ export const styles = StyleSheet.create({
         elevation: 3,
     },
     item: {
-        alignItems: 'center',
+        alignItems: 'flex-start',
         width: 300,
         flexDirection: 'row',
         justifyContent: 'space-evenly',

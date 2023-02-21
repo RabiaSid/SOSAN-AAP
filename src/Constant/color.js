@@ -4,11 +4,16 @@ const baseColors = {
     sucessColor: "#7Cd957",   //10%
     secondaryColor:"#b2b7b7",
     darkColor:"#1C2728",
+    lightGreyColor:"#DCD6D0",
+    primaryLightColor: "#E1F5FE",
+    primaryMiddleColor:"#B3E5FC",
+    LightSecondaryColor:"#F5F5F5",
     
 
     
     lightTextColor: "#fff",
     primaryTextColor: "#36b5ff",
+    primaryLightTextColor: "#E1F5FE",
     sucessTextColor:"#7Cd957",
     secondaryTextColor: "#b2b7b7",
     dangerTextColor: "#fe5d5d",

@@ -6,8 +6,8 @@ import { useNavigation } from "@react-navigation/native";
 import { styles } from "./style";
 import baseColors from "../../../Constant/color";
 import CheckButton from "../../../Components/CheckButton/index";
-import ModalTester from "../../../Components/Modal";
-import GradientBackground from "../../../Components/LinearBackground";
+import ModalTester from "../../../Components/Modal/SectionModal";
+import GradientBackground from "../../../Components/Gradient/LinearBackground";
 
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;

@@ -2,18 +2,18 @@ import React, { useState } from "react";
 import {
   View,
   Text,
-  ScrollView,
-  Image,
   FlatList,
   TouchableOpacity,
   Dimensions,
+  ScrollView
 } from "react-native";
 import AppHeader from "../../../../Components/AppHeader/index";
 import { NotificationData } from "../../../../Config/index";
-import Button from "../../../../Components/Buttons/index";
 import { styles } from "./style";
 import baseColors from "../../../../Constant/color";
 import { Ionicons } from "@expo/vector-icons";
+import NotificationListCard from "../../../../Components/List/NotificationListCard/index"
+
 
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
@@ -28,6 +28,7 @@ function Notification() {
               flexDirection: "row",
               alignItems: "center",
               paddingVertical: 5,
+             
             }}
           >
             <View
@@ -35,6 +36,7 @@ function Notification() {
                 width: deviceWidth / 3,
                 flexDirection: "row",
                 justifyContent: "flex-start",
+               
               }}
             >
               <TouchableOpacity>
@@ -71,88 +73,14 @@ function Notification() {
         }}
       >
         <View style={styles.screenMiddle}>
+          <ScrollView showsVerticalScrollIndicator={false}>
           <FlatList
             data={NotificationData}
             renderItem={({ item }) => (
-              <View
-                style={{
-                  flexDirection: "row",
-                  justifyContent:'flex-start',
-                  alignItems: "center",
-                  padding: 5,
-                }}
-                key={item?.key}
-              >
-                <Image
-                  source={item?.image}
-                  style={{ height: 45, width: 45, borderRadius: 50,  marginHorizontal:20}}
-                ></Image>
-
-                <View style={{ flexDirection: "column" }}>
-                  <Text>
-                    {item?.message}
-                    <Text style={{ color: baseColors.sucessColor, }}>
-                      {item?.ConfirmSucess}
-                    </Text>
-                    <Text style={{ color: baseColors.dangerTextColor, }}>
-                      {item?.ConfirmReject}
-                    </Text>
-                  </Text>
-
-                  <View style={{ flexDirection: "row" }}>
-                    {item?.Sucess ? (
-                      <Button
-                        styles={{
-                          elevation: 0,
-                          backgroundColor: baseColors.sucessColor,
-                          width: 70,
-                          height: 27,
-                          borderRadius: 5,
-                          margin:5,
-                          justifyContent: "center",
-                          alignItems: "center",
-                          color: baseColors.lightColor,
-                          
-                        }}
-                      >
-                        <Text
-                        style={{
-                          color: baseColors.lightColor,
-                          
-                          
-                        }}
-                        >{item?.Sucess}</Text>
-                      </Button>
-                    ) : null}
-
-                    {item?.Reject ? (
-                      <Button
-                        styles={{
-                          elevation: 0,
-                          backgroundColor: baseColors.dangerTextColor,
-                          width: 70,
-                          height: 27,
-                          borderRadius: 5,
-                          margin:5,
-                          justifyContent: "center",
-                          alignItems: "center",
-                          color: baseColors.lightColor,
-                        }}
-                      >
-                        <Text
-                        style={{
-                          color: baseColors.lightColor,
-                          
-                          
-                        }}
-                        >{item?.Reject}</Text>
-                      </Button>
-                    ) : null}
-                  </View>
-                </View>
-              </View>
+              <NotificationListCard data={item}/>
             )}
           />
+          </ScrollView>
         </View>
       </View>
       {/* </ScrollView> */}

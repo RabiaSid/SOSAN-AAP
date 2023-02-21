@@ -5,11 +5,6 @@ const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
 
 export const styles = StyleSheet.create({
-  headerContainer: {
-    backgroundColor: baseColors.lightColor,
-    marginTop: 35,
-    width: deviceWidth / 1,
-  },
   screenContainer: {
     height: deviceHeight / 1,
     width: deviceWidth / 1,
@@ -17,11 +12,17 @@ export const styles = StyleSheet.create({
     flexDirection: "column",
     backgroundColor: baseColors.lightColor,
   },
-
-  screen: {
-    flexDirection: "column",
-    justifyContent: "center",
+  headerContainer: {
+    backgroundColor: baseColors.lightColor,
+    marginTop: 35,
+    width: deviceWidth / 1,
   },
+  
+
+  // screen: {
+  //   flexDirection: "column",
+  //   justifyContent: "center",
+  // },
   imageStyle: {
     paddingVertical: 15,
     justifyContent: "center",
@@ -51,14 +52,18 @@ export const styles = StyleSheet.create({
     color: baseColors.secondaryTextColor,
     fontWeight: "bold",
   },
+  TextDanger:{
+    color: baseColors.dangerTextColor,
+    fontWeight: "bold",
+  },
   Listmain: {
     flexDirection: "column",
     alignItems: "center",
-    width: deviceWidth / 1 - 20,
+    width: deviceWidth / 1 - 30,
     paddingVertical: 10,
   },
   ListBottom: {
-    borderBottomWidth: 0.2,
+    borderBottomWidth: 0.3,
     borderBottomColor: baseColors.secondaryTextColor,
     width: deviceWidth / 1.2,
     justifyContent: "center",
@@ -68,7 +73,7 @@ export const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    width: deviceWidth / 1.4,
+    width: deviceWidth / 1.5,
     marginVertical: 2,
     paddingVertical: 2,
   },

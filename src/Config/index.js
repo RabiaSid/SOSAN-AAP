@@ -186,9 +186,46 @@ export const ChatData = [
       
     },
   ];
+  export const AppointmentCard = [
+    {
+      
+      image: AvatarPerson1,
+      title: "Alfanso Vetros",
+      dateDay: "Wednesday 15-2-23",
+      time: "07:32",
+      Reject: "Delete"
+    },
+    {
+      
+      image: AvatarPerson2,
+      title: "Alfanso Vetros",
+      location: "North Karachi",
+      dateDay: "Wednesday 15-2-23",
+      time: "07:32",
+      Reject: "Delete"
+    },
+  //   {
+      
+  //     image: AvatarPerson3,
+  //     title: "Alfanso Vetros",
+  //     location: "North Karachi",
+  //     dateDay: "Wednesday 15-2-23",
+  //     time: "07:32",
+  //     Reject: "Delete"
+  //   },
+  //   {
+      
+  //     image: AvatarPerson4,
+  //     title: "Alfanso Vetros",
+  //     location: "North Karachi",
+  //     dateDay: "Wednesday 15-2-23",
+  //     time: "07:32",
+  //     Reject: "Delete"
+  //   }
+  ]
   export const RequestCardData = [
     {
-      id: 1,
+      
       image: AvatarPerson1,
       title: "Alfanso Vetros",
       location: "North Karachi",
@@ -198,7 +235,7 @@ export const ChatData = [
       Reject: "Delete"
     },
     {
-      id: 2,
+      
       image: AvatarPerson2,
       title: "Alfanso Vetros",
       location: "North Karachi",
@@ -208,7 +245,7 @@ export const ChatData = [
       Reject: "Delete"
     },
     {
-      id: 3,
+      
       image: AvatarPerson3,
       title: "Alfanso Vetros",
       location: "North Karachi",
@@ -218,7 +255,7 @@ export const ChatData = [
       Reject: "Delete"
     },
     {
-      id: 4,
+      
       image: AvatarPerson4,
       title: "Alfanso Vetros",
       location: "North Karachi",
@@ -228,4 +265,76 @@ export const ChatData = [
       Reject: "Delete"
     }
   ]
-  
+  export const ListOfSchedule = [
+    {
+      location: "North Karachi",
+      dateDay: "Wednesday 15-2-23",
+      time: "07:32",
+    },
+    {
+      location: "North Karachi",
+      dateDay: "Wednesday 15-2-23",
+      time: "07:32",
+    },
+    {
+      location: "North Karachi",
+      dateDay: "Wednesday 15-2-23",
+      time: "07:32",
+    },
+  ]
+  export const EpargneListData = [
+   
+    {
+      message: "Previous appointment",
+      Sucess:"+ $ 52.16"
+    },
+    {
+      message: "Previous appointment",
+      Reject: "- $ 52.16",
+    },
+    {
+      message: "Previous appointment",
+      Sucess:"+ $ 52.16"
+      
+    },
+    {
+      message: "Previous appointment",
+      Reject:"- $ 52.16",
+    },
+    {
+      message: "Previous appointment",
+      Reject:"- $ 52.16"
+      
+    },
+    {
+      message: "Previous appointment",
+      Reject:"- $ 52.16"
+    },
+    {
+      message: "Previous appointment",
+      Reject:"- $ 52.16"
+    },
+    {
+      message: "Previous appointment",
+      Sucess: "+ $ 52.16",
+      
+      
+    },
+    
+  ];
+  export const CreatePostData = [
+    {
+      title:"free camp",
+      description:"Lorem Ipsum is that it has a more-or-lessnormal distribution of letters.",
+      location:"North Karachi",
+      time: "10:00 Am to 5:00 pm",
+      
+    },
+    {
+      title:"free camp",
+      description:"Lorem Ipsum is that it has a more-or-lessnormal distribution of letters.",
+      location:"North Karachi",
+      time: "10:00 Am to 5:00 pm",
+      
+    },
+  ]

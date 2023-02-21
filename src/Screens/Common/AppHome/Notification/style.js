@@ -19,7 +19,8 @@ export const styles = StyleSheet.create({
     width: deviceWidth/1,
     borderBottomLeftRadius:15,
     borderBottomRightRadius:15,
-    paddingVertical:8
+    paddingVertical:8,
+    marginBottom:3,
 },
   LinearGradient: {
     
@@ -37,7 +38,7 @@ export const styles = StyleSheet.create({
     width: deviceWidth / 1-10,
     height: deviceHeight / 1,
     flexDirection:'column',
-    paddingVertical:10,
+    
   
   },
   textColor:{

@@ -4,7 +4,7 @@ import baseColors from "../../../../Constant/color";
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
 
-export const styles = StyleSheet.create({
+export const styles = StyleSheet.create({ 
   screenContainer: {
     height: deviceHeight / 1,
     width: deviceWidth / 1,

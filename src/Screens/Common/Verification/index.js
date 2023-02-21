@@ -5,7 +5,7 @@ import TouchableButton from "../../../Components/Buttons";
 import Boxes from "../../../Components/BoxVerify";
 import baseColors from "../../../Constant/color";
 import styles from "./style";
-import GradientBackground from "../../../Components/LinearBackground";
+import GradientBackground from "../../../Components/Gradient/LinearBackground";
 
 const Verification = () => {
   const navigation = useNavigation();

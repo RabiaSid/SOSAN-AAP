@@ -13,6 +13,7 @@ import { useNavigation } from "@react-navigation/native";
 import {  AvatarPerson3 } from "../../../../Assets/images";
 import Button from "../../../../Components/Buttons/index";
 import SwitchButton from "../../../../Components/Schedule/Switch";
+// import PaymentModal from "../../../../Components/Modal/PaymentModal";
 import baseColors from "../../../../Constant/color";
 import { styles } from "./style";
 import SwitchSelector from "../../../../Components/SwitchSelector";
@@ -170,11 +171,14 @@ function Profile() {
             </Button>
             <Button
               styles={styles.ButtonSuccess}
-              // onPress={() => {
-              //   Navigation.navigate("AppHome");
-              // }}
+              onPress={() => {
+                Navigation.navigate("PaymentSuccessFull");
+              }}
             >
-              <Text style={styles.ButtonSuccessText}>Create A Fund</Text>
+              <Text style={styles.ButtonSuccessText}>
+                Payment
+                {/* <PaymentModal /> */}
+                </Text>
             </Button>
             <Button
               styles={styles.ButtonSuccess}

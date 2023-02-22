@@ -18,7 +18,8 @@ import TermsAndConditions  from "../../Screens/Auth/TermsAndConditions/index";
 import TabBottomNavigation from "../TabBottomNavigation/index";
 import Epargne from "../../Screens/Saving/Epargne";
 import CreatePost from "../../Screens/Auth/Post/CreatePost/index";
-import PostDetail from "../../Screens/Auth/Details/PostDetail";
+import PostDetail from "../../Screens/Auth/Details/PostDetail/index";
+import PaymentSuccessFull from "../../Screens/Auth/Payment/PaymentSuccessFull/index"
 import UserAppHome from "../../Screens/User/AppHome/index"
 import UserSignIn from "../../Screens/User/SignIn";
 import Faq from "../../Screens/Auth/FAQ/index";
@@ -60,6 +61,7 @@ const StackNavigation = () => {
           <MainStack.Screen name="UserSignIn" component={UserSignIn} />
           <MainStack.Screen name="Faq" component={Faq} />
           <MainStack.Screen name="Privacy" component={Privacy} />
+          <MainStack.Screen name="PaymentSuccessFull" component={PaymentSuccessFull} />
           <MainStack.Screen name="Tabs" component={TabBottomNavigation} />
           <MainStack.Screen name="UserTabs" component={UserTabBottomNavigation} />
           

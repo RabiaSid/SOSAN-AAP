@@ -23,7 +23,7 @@ function ModalTester() {
     <View style={{ flex: 1 }}>
       <Text onPress={toggleModal}> professional</Text>
 
-      <Modal isVisible={isModalVisible}>
+      <Modal isVisible={isModalVisible} onBackdropPress={toggleModal}>
         <View
           style={{
             flex: 1,

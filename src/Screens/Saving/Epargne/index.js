@@ -24,6 +24,7 @@ import EpargneList from "../../../Components/List/EpargneList";
 import { EpargneListData } from "../../../Config";
 import GiftModal from "../../../Components/Modal/EpargneGiftModal";
 import { useNavigation } from "@react-navigation/native";
+import SendModal from "../../../Components/Modal/SendModal";
 
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
@@ -115,7 +116,7 @@ function Epargne() {
                 style={styles.textColorPrimary}
               />
             </Button>
-            <Text>Send</Text>
+            <SendModal />
           </View>
           <View styles={styles.ButtonView}>
             <Button styles={styles.ButtonIcons}>
@@ -125,7 +126,7 @@ function Epargne() {
                 style={styles.textColorSuccess}
               />
             </Button>
-            <Text>Deposit</Text>
+            <Text style={styles.TextButton}>Deposit</Text>
           </View>
           <View styles={styles.ButtonView}>
             <Button styles={styles.ButtonIcons}>
@@ -142,6 +143,7 @@ function Epargne() {
             onPress={() => {
               Navigation.navigate("Earning");
             }}
+            style={styles.TextButton}
             >Stat</Text>
           </View>
           <View styles={styles.ButtonView}>
@@ -152,7 +154,7 @@ function Epargne() {
                 style={styles.textColorSuccess}
               />
             </Button>
-            <Text>Manager</Text>
+            <Text style={styles.TextButton}>Manager</Text>
           </View>
         </View>
 

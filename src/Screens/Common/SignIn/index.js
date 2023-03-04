@@ -46,7 +46,7 @@ const SignIn = () => {
               Navigation.navigate("AppHome");
             }}
           >
-            <Text styles={styles.ButtonText}>Login</Text>
+            <Text style={styles.ButtonText}>Login</Text>
           </Button>
         </View>
         <View

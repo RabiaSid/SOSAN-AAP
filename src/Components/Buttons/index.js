@@ -8,6 +8,7 @@ TouchableOpacity.defaultProps = { activeOpacity: 0.8 };
 function index({
   onPress,
   children,
+  value,
   styles: customStyles,
   styles_text: customStyles_text,
 }) {
@@ -21,7 +22,7 @@ function index({
     styles_text = { styles_text, ...customStyles_text };
   }
   return (
-    <TouchableOpacity onPress={onPress} style={styles}>
+    <TouchableOpacity onPress={onPress} style={styles} value={value}>
       <Text style={styles.appButtonText}>{children}</Text>
     </TouchableOpacity>
   );
@@ -37,15 +38,22 @@ const defaultStyles = StyleSheet.create({
     paddingVertical: 10,
     paddingHorizontal: 12,
     marginVertical: 10,
-    margin:10,
+    margin: 10,
     width: 100,
     justifyContent: "center",
+    justifyContent:'space-around',
     alignItems: "center",
+    flexDirection: "column",
+    borderWidth: 2,
+    padding: 10,
+    borderColor:baseColors.dangerTextColor
+    
   },
   appButtonText: {
     color: baseColors.lightTextColor,
     fontWeight: "bold",
     textTransform: "uppercase",
+    paddingLeft: 10,
   },
 });
 

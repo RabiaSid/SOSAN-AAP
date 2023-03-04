@@ -1,32 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   View,
   Text,
   Dimensions,
   Pressable,
   Image,
-  ScrollView
+  ScrollView,
 } from "react-native";
 import AppHeader from "../../../../Components/AppHeader";
 import { Ionicons, FontAwesome, MaterialIcons } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
-import {  AvatarPerson3 } from "../../../../Assets/images";
+import { AvatarPerson3 } from "../../../../Assets/images";
 import Button from "../../../../Components/Buttons/index";
 import SwitchButton from "../../../../Components/Schedule/Switch";
-// import PaymentModal from "../../../../Components/Modal/PaymentModal";
 import baseColors from "../../../../Constant/color";
 import { styles } from "./style";
-import SwitchSelector from "../../../../Components/SwitchSelector";
+import SwitchSelector from "../../.././../Components/SwitchSelector/UserProfile/index";
+import  PaymentPayAs from "../../../../Components/Modal/PaymentModal/PaymentPayAs";
 
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
 
 function Profile() {
   const Navigation = useNavigation();
+
+
   return (
-    
     <View style={styles.screenContainer}>
-      {/* <View style={styles.screen}> */}
+
 
       <View>
         <AppHeader styles={styles.headerContainer}>
@@ -44,7 +45,7 @@ function Profile() {
                 justifyContent: "flex-start",
               }}
             >
-              <Pressable onPress={() => Navigation.goBack("Feed")}>
+              <Pressable onPress={() => Navigation.goBack("")}>
                 <Ionicons
                   name="chevron-back-sharp"
                   size={30}
@@ -62,8 +63,9 @@ function Profile() {
               <Text style={{ fontWeight: "bold" }}>Personal Detail</Text>
             </View>
           </View>
-        </AppHeader></View>
-<ScrollView>
+        </AppHeader>
+      </View>
+      <ScrollView>
         <View
           style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
         >
@@ -107,7 +109,6 @@ function Profile() {
                   size={22}
                   style={styles.TextSecondary}
                   onPress={() => Navigation.navigate("PersonalDetail")}
-
                 />
               </View>
             </View>
@@ -124,33 +125,23 @@ function Profile() {
                 <Text style={styles.TextSecondary}>25ln555</Text>
               </View>
             </View>
-            <View
-              style={styles.ButtonView}
-            >
+            <View style={styles.ButtonView}>
               <Button
                 styles={styles.TopButton}
                 onPress={() => {
                   Navigation.navigate("PersonalDetail");
                 }}
               >
-                <Text
-                  style={styles.TopButtonText}
-                >
-                  My Detail
-                </Text>
+                <Text style={styles.TopButtonText}>My Detail</Text>
               </Button>
 
               <Button
                 styles={styles.TopTwoButton}
                 onPress={() => {
-                  Navigation.navigate("SignIn");
+                  Navigation.navigate("Invite");
                 }}
               >
-                <Text
-                  style={styles.TopTwoButtonText}
-                >
-                  Invite Friend
-                </Text>
+                <Text style={styles.TopTwoButtonText}>Invite Friend</Text>
               </Button>
             </View>
             <Button
@@ -159,7 +150,7 @@ function Profile() {
                 Navigation.navigate("AppHome");
               }}
             >
-              <Text style={styles.ButtonText}>Transaction Detail</Text>
+              <Text style={styles.ButtonText}>Medical History</Text>
             </Button>
             <Button
               styles={styles.Button}
@@ -171,25 +162,20 @@ function Profile() {
             </Button>
             <Button
               styles={styles.ButtonSuccess}
-              onPress={() => {
-                Navigation.navigate("PaymentSuccessFull");
-              }}
             >
-              <Text style={styles.ButtonSuccessText}>
-                Payment
-                {/* <PaymentModal /> */}
-                </Text>
+               <PaymentPayAs  />
             </Button>
+           
+
             <Button
               styles={styles.ButtonSuccess}
-              // onPress={() => {
-              //   Navigation.navigate("AppHome");
-              // }}
+              onPress={() => {
+                Navigation.navigate("ProtecteeDetail");
+              }}
             >
               <Text style={styles.ButtonSuccessText}>Create A Protectee</Text>
             </Button>
             <SwitchSelector />
-            
           </View>
 
           <View style={styles.Listmain}>
@@ -254,7 +240,7 @@ function Profile() {
                   name="navigate-next"
                   size={28}
                   style={styles.TextSecondary}
-                  onPress={()=>{
+                  onPress={() => {
                     Navigation.navigate("ChangePassword");
                   }}
                 />
@@ -268,7 +254,7 @@ function Profile() {
                   name="navigate-next"
                   size={28}
                   style={styles.TextSecondary}
-                  onPress={()=>{
+                  onPress={() => {
                     Navigation.navigate("HelpCenter");
                   }}
                 />
@@ -282,7 +268,7 @@ function Profile() {
                   name="navigate-next"
                   size={28}
                   style={styles.TextSecondary}
-                  onPress={()=>{
+                  onPress={() => {
                     Navigation.navigate("TermsAndConditions");
                   }}
                 />
@@ -296,7 +282,7 @@ function Profile() {
                   name="navigate-next"
                   size={28}
                   style={styles.TextSecondary}
-                  onPress={()=>{
+                  onPress={() => {
                     Navigation.navigate("Faq");
                   }}
                 />
@@ -310,7 +296,7 @@ function Profile() {
                   name="navigate-next"
                   size={28}
                   style={styles.TextSecondary}
-                  onPress={()=>{
+                  onPress={() => {
                     Navigation.navigate("Privacy");
                   }}
                 />
@@ -324,7 +310,7 @@ function Profile() {
                   name="navigate-next"
                   size={28}
                   style={styles.TextSecondary}
-                  onPress={()=>{
+                  onPress={() => {
                     Navigation.navigate("CancelledAppointment");
                   }}
                 />
@@ -338,7 +324,7 @@ function Profile() {
                   name="navigate-next"
                   size={28}
                   style={styles.TextSecondary}
-                  onPress={()=>{
+                  onPress={() => {
                     Navigation.navigate("SignIn");
                   }}
                 />
@@ -346,7 +332,7 @@ function Profile() {
             </View>
           </View>
         </View>
-      {/* </View> */}
+        {/* </View> */}
       </ScrollView>
     </View>
   );

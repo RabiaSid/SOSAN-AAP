@@ -1,13 +1,13 @@
 import { Dimensions, StyleSheet } from 'react-native';
 import baseColors from '../../../Constant/color';
 const deviceWidth = Dimensions.get("window").width;
-
 export const styles = StyleSheet.create({
     Container: {
         flexDirection: 'column',
         width: deviceWidth / 1,
         justifyContent: 'center',
         alignItems: 'center',
+       
     },
     CardStyling: {
         backgroundColor: '#fff',
@@ -16,14 +16,16 @@ export const styles = StyleSheet.create({
         paddingVertical: 10,
         marginVertical: 5,
         elevation: 3,
+        borderWidth: 1,
+        borderColor: baseColors.LightSecondaryColor
     },
     item: {
-        alignItems: 'flex-start',
+        alignItems: 'center',
         width: 300,
         flexDirection: 'row',
         justifyContent: 'space-evenly',
+        borderRadius: 15,
         paddingVertical:4,
-        borderRadius: 15
     },
     TitleHead: {
         flexDirection: "column"
@@ -68,5 +70,9 @@ export const styles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
         color: baseColors.lightColor,
+    },
+    iconsSty:{
+        flexDirection:'column',
+       
     }
 });

@@ -2,7 +2,16 @@ import {
     AvatarPerson1,
     AvatarPerson2,
     AvatarPerson3,
-    AvatarPerson4
+    AvatarPerson4,
+    PharmacieCard1,
+    PharmacieCard2,
+    PharmacieCard3,
+    PharmacieCard4,
+    PharmacieCard5,
+    PharmacieCard6,
+    PharmacieCard7,
+    PharmacieCard8,
+    
 } from "../Assets/images/index"
 
 export const ChatData = [
@@ -265,6 +274,17 @@ export const ChatData = [
       Reject: "Delete"
     }
   ]
+  export const ScheduledCardData = [
+    {
+    id: 1 ,
+    title:"Scheduled",
+    dateDay: 'Wednesday, 1- Aug - 2022 ',
+    time: '12:50 PM',
+    location: 'Islamabad Hospital, Islamabad',
+   
+  },
+  
+  ]
   export const ListOfSchedule = [
     {
       location: "North Karachi",
@@ -338,3 +358,519 @@ export const ChatData = [
       
     },
   ]
+
+  export const PharmacyRequestSelectorData = [
+    {
+      image: AvatarPerson2,
+      title: "Pharmacy 1",
+      Quantity: "Requested Drug : 05",
+      Day: "15-2-23",
+    },
+    {
+      image: AvatarPerson2,
+      title: "Pharmacy 1",
+      Quantity: "Requested Drug : 05",
+      Day: "15-2-23",
+    },
+    {
+      image: AvatarPerson2,
+      title: "Pharmacy 1",
+      Quantity: "Requested Drug : 05",
+      Day: "15-2-23",
+    },
+    {
+      image: AvatarPerson2,
+      title: "Pharmacy 1",
+      Quantity: "Requested Drug : 05",
+      Day: "15-2-23",
+    },
+    {
+      image: AvatarPerson2,
+      title: "Pharmacy 1",
+      Quantity: "Requested Drug : 05",
+      Day: "15-2-23",
+    },
+    {
+      image: AvatarPerson2,
+      title: "Pharmacy 1",
+      Quantity: "Requested Drug : 05",
+      Day: "15-2-23",
+    },
+    
+  ]
+  export const PharmacyReservedSelectorData = [
+    {
+      image: AvatarPerson2,
+      title: "Pharmacy 1",
+      Quantity: "Requested Drug : 05",
+      Bill:"Total Bill:",
+      Day: "15-2-23",
+    },
+    {
+      image: AvatarPerson2,
+      title: "Pharmacy 1",
+      Quantity: "Requested Drug : 05",
+      Bill:"Total Bill:",
+      Day: "15-2-23",
+    },
+    {
+      image: AvatarPerson2,
+      title: "Pharmacy 1",
+      Quantity: "Requested Drug : 05",
+      Bill:"Total Bill:",
+      Day: "15-2-23",
+    },
+    
+  ]
+  export const AddDrugData = [
+    {
+      
+      title: "Uzair Asghar",
+      catergory: "Tablet",
+      formula:'500mg',
+      Quantity: "05",
+    },
+    {
+      
+      title: "Uzair Asghar",
+      catergory: "Tablet",
+      formula:'500mg',
+      Quantity: "05",
+    },
+    {
+      
+      title: "Uzair Asghar",
+      catergory: "Tablet",
+      formula:'500mg',
+      Quantity: "05",
+    },
+    {
+      
+      title: "Uzair Asghar",
+      catergory: "Tablet",
+      formula:'500mg',
+      Quantity: "05",
+    },
+    {
+      
+      title: "Uzair Asghar",
+      catergory: "Tablet",
+      formula:'500mg',
+      Quantity: "05",
+    },
+    {
+      
+      title: "Uzair Asghar",
+      catergory: "Tablet",
+      formula:'500mg',
+      Quantity: "05",
+    },
+    {
+      
+      title: "Uzair Asghar",
+      catergory: "Tablet",
+      formula:'500mg',
+      Quantity: "05",
+    },
+    {
+      
+      title: "Uzair Asghar",
+      catergory: "Tablet",
+      formula:'500mg',
+      Quantity: "05",
+    },
+    
+    
+  ]
+  export const PharmacyNearbyData = [
+    { 
+      key:1,
+      image: PharmacieCard1,
+      title: "Agha Khan",
+      status:'Open',
+      location: "Pechs",
+      rating: "5.00(18 Reviews)",
+      goTo:"AttachmentPharmacy"
+    },
+    {
+      key:2,
+      image: PharmacieCard2,
+      title: "Agha Khan",
+      status:'Open',
+      location: "Pechs",
+      rating: "5.00(18 Reviews)",
+      goTo:"MedicationPharmacy"
+    },
+    {
+      key:3,
+      image: PharmacieCard3,
+      title: "Agha Khan",
+      status:'Open',
+      location: "Pechs",
+      rating: "5.00(18 Reviews)",
+    },
+    {
+      key:4,
+      image: PharmacieCard4,
+      title: "Agha Khan",
+      status:'Open',
+      location: "Pechs",
+      rating: "5.00(18 Reviews)",
+      goTo:"AttachmentPharmacy"
+    },
+    {
+      key:5,
+      image: PharmacieCard5,
+      title: "Agha Khan",
+      status:'Open',
+      location: "Pechs",
+      rating: "5.00(18 Reviews)",
+      goTo:"MedicationPharmacy"
+    },
+    {
+      key:6,
+      image: PharmacieCard6,
+      title: "Agha Khan",
+      status:'Open',
+      location: "Pechs",
+      rating: "5.00(18 Reviews)",
+    },
+    {
+      key:7,
+      image: PharmacieCard7,
+      title: "Agha Khan",
+      status:'Open',
+      location: "Pechs",
+      rating: "5.00(18 Reviews)",
+    },
+    {
+      key:8,
+      image: PharmacieCard8,
+      title: "Agha Khan",
+      status:'Open',
+      location: "Pechs",
+      rating: "5.00(18 Reviews)",
+    },
+    {
+      key:9,
+      image: PharmacieCard2,
+      title: "Agha Khan",
+      status:'Open',
+      location: "Pechs",
+      rating: "5.00(18 Reviews)",
+    },
+    
+    {
+      key:10,
+      image: PharmacieCard1,
+      title: "Agha Khan",
+      status:'Open',
+      location: "Pechs",
+      rating: "5.00(18 Reviews)",
+      goTo:"AttachmentPharmacy"
+    },
+    
+    
+    
+  ]
+
+  export const HospitalNearbyData = [
+    { 
+      key:1,
+      image: PharmacieCard1,
+      title: "Agha Khan",
+      status:'Open',
+      location: "Pechs",
+      rating: "5.00(18 Reviews)",
+      goTo:"HospitalDoctor"
+    },
+    {
+      key:2,
+      image: PharmacieCard2,
+      title: "Agha Khan",
+      status:'Open',
+      location: "Pechs",
+      rating: "5.00(18 Reviews)",
+    },
+    {
+      key:3,
+      image: PharmacieCard3,
+      title: "Agha Khan",
+      status:'Open',
+      location: "Pechs",
+      rating: "5.00(18 Reviews)",
+    },
+    {
+      key:4,
+      image: PharmacieCard4,
+      title: "Agha Khan",
+      status:'Open',
+      location: "Pechs",
+      rating: "5.00(18 Reviews)",
+      goTo:"AttachmentPharmacy",
+      goTo:"HospitalDoctor"
+    },
+    {
+      key:5,
+      image: PharmacieCard5,
+      title: "Agha Khan",
+      status:'Open',
+      location: "Pechs",
+      rating: "5.00(18 Reviews)",
+      goTo:"MedicationPharmacy"
+    },
+    {
+      key:6,
+      image: PharmacieCard6,
+      title: "Agha Khan",
+      status:'Open',
+      location: "Pechs",
+      rating: "5.00(18 Reviews)",
+    },
+    {
+      key:7,
+      image: PharmacieCard7,
+      title: "Agha Khan",
+      status:'Open',
+      location: "Pechs",
+      rating: "5.00(18 Reviews)",
+    },
+    {
+      key:8,
+      image: PharmacieCard8,
+      title: "Agha Khan",
+      status:'Open',
+      location: "Pechs",
+      rating: "5.00(18 Reviews)",
+    },
+    {
+      key:9,
+      image: PharmacieCard2,
+      title: "Agha Khan",
+      status:'Open',
+      location: "Pechs",
+      rating: "5.00(18 Reviews)",
+    },
+    
+    {
+      key:10,
+      image: PharmacieCard1,
+      title: "Agha Khan",
+      status:'Open',
+      location: "Pechs",
+      rating: "5.00(18 Reviews)",
+      goTo:"AttachmentPharmacy"
+    },
+    
+    
+    
+  ]
+
+  export const DoctorData = [
+    { 
+      key:1,
+      image: AvatarPerson1,
+      title: "Khan",
+      designation:'Specialist',
+      quafication: "Degree",
+      goTo:"AppointmentDoctor"
+    },
+    {
+      key:2,
+      image: AvatarPerson3,
+      title: "lizza",
+      designation:'Specialist',
+      quafication: "Degree",
+      goTo:"AppointmentDoctor"
+    },
+    {
+      key:3,
+      image: AvatarPerson2,
+      title: "Khan",
+      designation:'Specialist',
+      quafication: "Degree",
+    },
+    {
+      key:4,
+      image: AvatarPerson4,
+      title: "lizza",
+      designation:'Open',
+      quafication: "Pechs",
+    },
+    {
+      key:5,
+      image: AvatarPerson3,
+      title: "Khan",
+      designation:'Specialist',
+      quafication: "Degree",
+    },
+    {
+      key:6,
+      image: AvatarPerson2,
+      title: "lizza",
+      designation:'Specialist',
+      quafication: "Degree",
+    },
+    
+  ]
+
+  export const MedicineDoctorData = [
+    { 
+      key:1,
+      title: "Kianna Levin ",
+      goTo:"Availability"
+    },
+    { 
+      key:2,
+      title: "Mertime Septimus",
+      goTo:"Availability"
+    },
+    { 
+      key:3,
+      title: "Kianna Levin ",
+    },
+    { 
+      key:4,
+      title: "Khan",
+    },
+    { 
+      key:5,
+      title: "Mertime Septimus",
+    },
+    { 
+      key:6,
+      title: "jack",
+    },
+    { 
+      key:7,
+      title: "Kianna Levin ",
+      goTo:"Availability"
+    },
+    
+  ]
+  export const ForgeinDoctorData = [
+    { 
+      key:1,
+      title: "lizza",
+      goTo:"Availability"
+    },
+    { 
+      key:2,
+      title: "Khan",
+    },
+    { 
+      key:3,
+      title: "lizza",
+    },
+    { 
+      key:4,
+      title: "Khan",
+      goTo:"Availability"
+    },
+    { 
+      key:5,
+      title: "lizza",
+    },
+    { 
+      key:6,
+      title: "Khan",
+    },
+    
+  ]
+  
+  export const DonationNearbyData = [
+    { 
+      key:1,
+      image: PharmacieCard1,
+      title: "Agha Khan",
+      status:'Open',
+      location: "Pechs",
+      rating: "5.00(18 Reviews)",
+      goTo:"AddDonation"
+    },
+    {
+      key:2,
+      image: PharmacieCard2,
+      title: "Agha Khan",
+      status:'Open',
+      location: "Pechs",
+      rating: "5.00(18 Reviews)",
+    },
+    {
+      key:3,
+      image: PharmacieCard3,
+      title: "Agha Khan",
+      status:'Open',
+      location: "Pechs",
+      rating: "5.00(18 Reviews)",
+    },
+    {
+      key:4,
+      image: PharmacieCard4,
+      title: "Agha Khan",
+      status:'Open',
+      location: "Pechs",
+      rating: "5.00(18 Reviews)",
+      goTo:"AttachmentPharmacy",
+      goTo:"HospitalDoctor"
+    },
+    {
+      key:5,
+      image: PharmacieCard5,
+      title: "Agha Khan",
+      status:'Open',
+      location: "Pechs",
+      rating: "5.00(18 Reviews)",
+      goTo:"MedicationPharmacy"
+    },
+    {
+      key:6,
+      image: PharmacieCard6,
+      title: "Agha Khan",
+      status:'Open',
+      location: "Pechs",
+      rating: "5.00(18 Reviews)",
+      goTo:"AddDonation"
+    },
+    
+    
+  ]
+  
+  export const AppointmentCardData = [
+    {
+      id: 1,
+      image: AvatarPerson1,
+      title: "Alfanso Vetros",
+      location: "North Karachi",
+      dateDay: "Wednesday 15-2-23",
+      time: "07:32",
+     
+    },
+    {
+      id: 2,
+      image: AvatarPerson2,
+      title: "Alfanso Vetros",
+      location: "North Karachi",
+      dateDay: "Wednesday 15-2-23",
+      time: "07:32",
+     
+    },
+    {
+      id: 3,
+      image: AvatarPerson3,
+      title: "Alfanso Vetros",
+      location: "North Karachi",
+      dateDay: "Wednesday 15-2-23",
+      time: "07:32",
+    
+    },
+    {
+      id: 4,
+      image: AvatarPerson4,
+      title: "Alfanso Vetros",
+      location: "North Karachi",
+      dateDay: "Wednesday 15-2-23",
+      time: "07:32",
+     
+    }
+  ];

@@ -14,6 +14,8 @@ import {
   Foundation,
 } from "@expo/vector-icons";
 import { styles } from "./style";
+import PaymentPayAs from "../../../../Components/Modal/PaymentModal/PaymentPayAs";
+import PaymentPayAsForm from "../../../../Components/Modal/PaymentModal/PaymentPayAsForm";
 
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
@@ -90,7 +92,7 @@ const navigation = useNavigation();
               style={styles.itemsIcon}
             />
             <Text
-              onPress={()=>navigation.navigate('Agenda')}
+              onPress={()=>navigation.navigate('NearbyHospital')}
               style={styles.itemsViewText}
             >
              HOSPITAL PRIVE / PUBLIC
@@ -102,7 +104,7 @@ const navigation = useNavigation();
           name="capsules" 
           size={23} style={styles.itemsIconReverse} />
             <Text
-             onPress={()=>navigation.navigate('Appointment')}
+             onPress={()=>navigation.navigate('PharmacyOrderList')}
               // onPress={Appointments}
               style={styles.itemsViewTextReverse}
             >
@@ -113,7 +115,7 @@ const navigation = useNavigation();
           <View style={styles.itemsViewReverse}>
           <Fontisto name="doctor" size={24} style={styles.itemsIconReverse} />
             <Text
-               onPress={()=>navigation.navigate('CreatePost')}
+               onPress={()=>navigation.navigate('NearByDoctor')}
               style={styles.itemsViewTextReverse}
             >
               PRISE DE RDV MEDECIN
@@ -124,7 +126,7 @@ const navigation = useNavigation();
           <FontAwesome5 name="hand-holding-heart" size={24} style={styles.itemsIcon} />
             <Text
               
-              onPress={()=>navigation.navigate('Epargne')}
+              onPress={()=>navigation.navigate('NearbyDonation')}
               style={styles.itemsViewText}
             >
               DONS ONG/ ASSOCIATIONS
@@ -134,7 +136,7 @@ const navigation = useNavigation();
           <View style={styles.itemsView}>
           <Foundation name="dollar" size={36} style={styles.itemsIcon} />
             <Text
-              onPress={()=>navigation.navigate('Agenda')}
+              // onPress={()=>navigation.navigate('Agenda')}
               style={styles.itemsViewText}
             >
               ASSURANCES
@@ -144,7 +146,7 @@ const navigation = useNavigation();
           <View style={styles.itemsViewReverse}>
           <FontAwesome name="heartbeat" size={25} style={styles.itemsIconReverse}  />
             <Text
-             onPress={()=>navigation.navigate('Appointment')}
+             onPress={()=>navigation.navigate('Epargne')}
               // onPress={Appointments}
               style={styles.itemsViewTextReverse}
             >
@@ -155,11 +157,19 @@ const navigation = useNavigation();
         </View>
         
             <DarkGradient styles={styles.Button}>
-            <Text style={styles.ButtonText}>Login</Text>
+            <Text>
+            <PaymentPayAs />
+            </Text>
             </DarkGradient>
           
             <ReverseDarkGradient styles={styles.Button}>
-            <Text style={styles.ButtonText}>Login</Text>
+            <Text>
+              <PaymentPayAsForm style={{color:baseColors.lightTextColor}}>
+                <Text style={{color:baseColors.lightTextColor}}>
+                  Pay
+                </Text>
+              </PaymentPayAsForm>
+            </Text>
             </ReverseDarkGradient>
       </View>
 

@@ -6,7 +6,7 @@ function Description({ children}) {
     <View
               style={{
                 flexDirection: "column",
-                paddingHorizontal: 20,
+                paddingHorizontal: 10,
                 justifyContent: "flex-start",
                 alignItems: "flex-start",
               }}

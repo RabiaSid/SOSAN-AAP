@@ -81,6 +81,10 @@ export const styles = StyleSheet.create({
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
+    
+  },
+  TextButton:{
+    textAlign:'center'
   },
   ButtonIcons: {
     height: 50,
@@ -100,13 +104,13 @@ export const styles = StyleSheet.create({
   promoView: {
     flexDirection: "row",
     width: deviceWidth / 1 - 50,
-    height: 30,
+    height: 40,
     alignItems: "center",
-    justifyContent: "space-between",
+    justifyContent: 'space-around',
     borderColor: baseColors.primaryLightColor,
     borderWidth: 1,
     backgroundColor: baseColors.primaryLightColor,
-    borderRadius: 15,
+    borderRadius: 20,
     marginVertical: 15,
   },
   promoItems: {

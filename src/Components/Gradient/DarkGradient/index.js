@@ -43,6 +43,14 @@ const defaultStyles = StyleSheet.create({
     height: deviceHeight / 1,
     borderBottomLeftRadius:30,
     borderBottomRightRadius:30,
+    borderTopLeftRadius:30,
+    borderTopRightRadius:30,
+    borderBottomEndRadius:30,
+    borderBottomStartRadius:30,
+    borderTopEndRadius:30,
+    borderTopStartRadius:30,
+    borderRadius:50,
+    padding:1
   },
 });
 

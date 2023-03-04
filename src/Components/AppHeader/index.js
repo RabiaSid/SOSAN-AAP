@@ -33,10 +33,6 @@ const defaultStyles = StyleSheet.create({
         
         
     },
-    header:{
-        
-    },
-   
 })
 
 export default AppHeader

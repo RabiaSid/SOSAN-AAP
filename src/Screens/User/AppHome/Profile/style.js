@@ -104,12 +104,15 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     height:37,
+    color:baseColors.lightTextColor
   },
   ButtonSuccessText: {
     color: baseColors.lightTextColor,
     fontWeight: "bold",
     textTransform: "uppercase",
+    borderWidth:2
   },
+
   TextSecondary: {
     color: baseColors.secondaryTextColor,
     fontWeight: "bold",

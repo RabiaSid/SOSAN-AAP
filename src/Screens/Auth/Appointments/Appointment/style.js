@@ -41,6 +41,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 50,
     padding: 10,
+    color: baseColors.lightGreyColor
   },
   screenMiddle: {
     flexDirection:'column', 

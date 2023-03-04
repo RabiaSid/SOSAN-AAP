@@ -20,9 +20,7 @@ function Earning() {
           <View
             style={{
               flexDirection: "row",
-              alignItems: "center",
-              
-              
+              alignItems: "center", 
             }}
           >
             <View

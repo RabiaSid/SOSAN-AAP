@@ -22,7 +22,7 @@ function SucessAlert() {
       
       <Text style={styles.ButtonText} onPress={toggleModal}>Save</Text>
 
-      <Modal isVisible={isModalVisible}>
+      <Modal isVisible={isModalVisible} onBackdropPress={toggleModal}>
         <View
          style={{
           flex: 1,

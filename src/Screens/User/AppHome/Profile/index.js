@@ -158,7 +158,10 @@ function Profile() {
                 Navigation.navigate("AppHome");
               }}
             >
-              <Text style={styles.ButtonText}>Transaction Detail</Text>
+              <Text style={styles.ButtonText}
+              onPress={() => {
+                Navigation.navigate("Epargne");
+              }}>Transaction Detail</Text>
             </Button>
             <Button
               styles={styles.ButtonSuccess}

@@ -26,7 +26,6 @@ function Quantity({isVisible, onPress,children}) {
       <Modal 
       isVisible={isVisible}
       backdropOpacity={0.1}
-      onBackdropPress={toggleModal}
       style={{
         flex: 1,
         height: deviceHeight / 1,

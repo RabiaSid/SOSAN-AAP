@@ -104,7 +104,10 @@ function DrugAdd() {
             //   Navigation.navigate("Services");
             // }}
           >
-            <Text style={styles.ButtonText}>
+            <Text style={styles.ButtonText}
+             onPress={() => {
+              Navigation.navigate("AvailabilityPharmacy");
+            }}>
           Search Medicine
           
           </Text>

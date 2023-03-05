@@ -73,7 +73,7 @@ function AuthDetail() {
           <Button
             styles={styles.Button}
             onPress={() => {
-              Navigation.navigate("UserAppHome");
+              Navigation.navigate("WorkingDetail");
             }}
           >
             <Text styles={styles.ButtonText}>Login</Text>

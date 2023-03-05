@@ -136,7 +136,7 @@ const navigation = useNavigation();
           <View style={styles.itemsView}>
           <Foundation name="dollar" size={36} style={styles.itemsIcon} />
             <Text
-              // onPress={()=>navigation.navigate('Agenda')}
+              onPress={()=>navigation.navigate('Assurances')}
               style={styles.itemsViewText}
             >
               ASSURANCES

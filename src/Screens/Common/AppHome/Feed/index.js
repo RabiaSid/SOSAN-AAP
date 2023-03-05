@@ -86,7 +86,7 @@ const navigation = useNavigation();
               style={styles.itemsIcon}
             />
             <Text
-              // onPress={()=>navigation.navigate('Agenda')}
+              onPress={()=>navigation.navigate('Agenda')}
               style={styles.itemsViewText}
             >
               Agenda

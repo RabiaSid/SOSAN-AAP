@@ -6,7 +6,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons';
 import Modal from "react-native-modal";
 import Button from '../../Buttons'
-// import TestNameModal from "../TestNameModal/index.js";
+import TestNameModal from "../TestNameModal/index.js";
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
 
@@ -52,7 +52,13 @@ function SelectServiceModal() {
                                     <View style={styles.ImgViewLittle}>
                                         <Ionicons name="document-text-sharp" size={24} color="brown" />
                                     </View>
-                                   <TestNameModal/>
+                                  <Text>
+                                   <TestNameModal>
+                                   Prescribed Test
+                                   </TestNameModal>
+                                   </Text>
+                                   
+                                   
                                 </View>
                             </View>
                         </View>

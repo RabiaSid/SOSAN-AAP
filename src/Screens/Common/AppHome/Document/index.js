@@ -16,25 +16,20 @@ const Document = () => {
             flexDirection: "row",
             alignItems: "center",
             justifyContent: "center",
-            paddingVertical: 15,
+            height:55,
             backgroundColor: baseColors.sucessColor,
             borderBottomEndRadius: 7,
             borderBottomStartRadius: 7,
+            width: deviceWidth / 1,
           }}
         >
-          <View
-            style={{
-              width: deviceWidth / 3,
-              flexDirection: "row",
-              justifyContent: "center",
-            }}
-          >
+
             <Text
-              style={{ fontWeight: "bold", color: baseColors.lightTextColor }}
+              style={{ fontWeight: "bold", color: baseColors.lightTextColor, fontSize:17 }}
             >
-              Appoinment
+              Appoinment Request
             </Text>
-          </View>
+
         </View>
       </AppHeader>
       <View
@@ -70,7 +65,6 @@ const Document = () => {
 const styles = StyleSheet.create({
   headerContainer: {
     backgroundColor: baseColors.lightColor,
-    height: 50,
     marginTop: 35,
     width: deviceWidth / 1,
   },

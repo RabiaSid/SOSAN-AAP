@@ -8,9 +8,9 @@ import { Ionicons } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons';
 import {styles} from './style.js';
-import baseColors from '../../../Theme/Colors/Colors';
+import baseColors from '../../../Constant/color';
 import Button from '../../Buttons'
-import  {bluebtn} from "../../../Assets/Images/index";
+import  {bluebtn} from "../../../Assets/images/index";
 import { useNavigation } from "@react-navigation/native";
 const ScheduledCard = ({data}) => {
   const navigation = useNavigation();
@@ -21,7 +21,7 @@ const ScheduledCard = ({data}) => {
       <Button
             styles={styles.LoginBtn}
             onPress={() => {
-              navigation.goBack("AppointmentDetail");
+              navigation.navigate("AppointmentDetail");
             }}>
             <Text style={styles.LoginTextSty}>Mark as complete</Text>
           </Button>

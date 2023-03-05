@@ -3,12 +3,12 @@ import { ScrollView } from "react-native";
 import { View, Text, TouchableOpacity, } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { styles } from "./style";
-import InputField from "../../../../Components/InputFiled";
+import InputField from "../../../../Components/InputField";
 import Schedule from "../../../../Components/Schedule";
 import Button from "../../../../Components/Buttons";
 import { Entypo } from '@expo/vector-icons';
-import CheckBtn from '../../../../Components/CheckboxButton'
-import baseColors from "../../../../Theme/Colors/Colors";
+import CheckBtn from '../../../../Components/CheckButton'
+import baseColors from "../../../../Constant/color";
 import Map from '../../../../Components/Map';
 function WorkingDetail() {
   const navigation = useNavigation();
@@ -183,18 +183,6 @@ function WorkingDetail() {
             }}>MFS</Text>
           </View>
         </View>
-        {/* <Text style={styles.TextPrimary}>Owner Detail</Text>
-        <Text style={styles.formText}>Website</Text>
-        <InputField placeholder="Type Here" styles={styles.WebText} />
-        <Text style={styles.formText}>Website</Text>
-        <InputField placeholder="Type Here" styles={styles.WebText} />
-        <Text style={styles.formText}>About</Text>
-        <InputField
-          placeholder="Type Here"
-          multiline={true}
-          numberOfLines={6}
-          styles={styles.AboutSty}
-        /> */}
 
 
         <View style={{ justifyContent: 'center', alignItems: 'center' }}>

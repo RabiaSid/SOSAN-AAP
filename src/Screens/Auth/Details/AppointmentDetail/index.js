@@ -8,18 +8,20 @@ import {
     FlatList,
 } from "react-native";
 import AppHeader from "../../../../Components/AppHeader/index";
-import { ScheduledCardData } from "../../../../Config/Data/index";
+import { ScheduledCardData } from "../../../../Config/index";
 import { styles } from "./style";
 import { Ionicons } from '@expo/vector-icons';
-import baseColors from "../../../../Theme/Colors/Colors";
+import baseColors from "../../../../Constant/color";
 import { useNavigation } from "@react-navigation/native";
-import AppointmentAccount from '../../../../Components/Cards/AppointmentID'
+import AppointmentID from '../../../../Components/Cards/AppointmentID'
 import ScheduledCard from "../../../../Components/Cards/ScheduledCard";
 import AppointmentList from '../../../../Components/List/AppointmentList'
 import TestList from '../../../../Components/List/TestList'
 import SelectServiceModal from "../../../../Components/Modal/SelectServiceModal";
+
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
+
 const AppointmentDetail = () => {
     const navigation = useNavigation();
     return (
@@ -63,12 +65,12 @@ const AppointmentDetail = () => {
             </View>
             
 
-                <ScrollView>
+                <ScrollView showsVerticalScrollIndicator={false}>
                     
                     <View style={styles.screenMiddle}>
                    
                         
-                        <AppointmentAccount />
+                        <AppointmentID />
                             <View style={{
                                 flexDirection: 'column',
                                 width: deviceWidth / 1,

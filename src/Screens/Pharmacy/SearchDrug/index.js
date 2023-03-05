@@ -18,13 +18,10 @@ function SearchDrug() {
 
   const toggleModal = () => {
     setModalVisible(!isModalVisible);
+    
   };
+
   const Navigation = useNavigation();
-
-
-  const showModal = () => {
-    setShow(true);
-}
 
   return (
     <View style={styles.screenContainer}>
@@ -93,7 +90,9 @@ function SearchDrug() {
             
             <GradientBackground styles={styles.GradientView}>
               <SearchField styles={styles.SearchField} />
-              <Quantity onPress={toggleModal} isVisible={isModalVisible}>
+              <Quantity 
+              onPress={toggleModal} 
+              isVisible={isModalVisible}>
               <View style={styles.ListView}>
                 <Image source={AvatarPerson3} style={styles.ListImage} />
                 <Text style={styles.ListText}>Panadol</Text>

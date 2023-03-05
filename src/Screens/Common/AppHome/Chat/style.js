@@ -42,6 +42,11 @@ export const styles = StyleSheet.create({
     borderRadius: 50,
     padding: 10,
   },
+  middle:{
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+  },
   screenMiddle: {
   
     width: deviceWidth / 1-10,

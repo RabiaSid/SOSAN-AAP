@@ -22,9 +22,10 @@ import { AvatarPerson1 } from "../../../Assets/images";
 import Button from "../../../Components/Buttons/index";
 import EpargneList from "../../../Components/List/EpargneList";
 import { EpargneListData } from "../../../Config";
-import GiftModal from "../../../Components/Modal/EpargneGiftModal";
+import GiftModal from "../../../Components/Modal/GiftModal/index";
 import { useNavigation } from "@react-navigation/native";
-import SendModal from "../../../Components/Modal/SendModal";
+import SendModal from "../../../Components/Modal/SendModal/index";
+import PaymentPayAsOption from "../../../Components/Modal/PaymentModal/PaymentPayAsOption"
 
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
@@ -126,7 +127,9 @@ function Epargne() {
                 style={styles.textColorSuccess}
               />
             </Button>
+            <PaymentPayAsOption>
             <Text style={styles.TextButton}>Deposit</Text>
+            </PaymentPayAsOption>
           </View>
           <View styles={styles.ButtonView}>
             <Button styles={styles.ButtonIcons}>

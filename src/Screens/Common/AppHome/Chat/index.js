@@ -1,11 +1,11 @@
 import React from "react";
 import { View, Text, ScrollView ,Image, FlatList} from "react-native";
-import GradientBackground from "../../../../Components/Gradient/LinearBackground";
+import GradientBackground from "../../../../Components/Gradient/DarkGradient/index";
 import AppHeader from "../../../../Components/AppHeader/index";
 import SearchField from "../../../../Components/SearchField/index";
-import { ChatData } from "../../../../Config";
+import { ChatData } from "../../../../Config/index";
 import { styles } from "./style";
-import ListCard from "../../../../Components/List/ListCard";
+import ChatList from "../../../../Components/List/ChatList/index";
 
 function Chat() {
   return (
@@ -24,16 +24,12 @@ function Chat() {
       </View>
       {/* <ScrollView> */}
       <View
-        style={{
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
+        style={styles.middle}
       >
         <View style={styles.screenMiddle}>
         <FlatList
             data={ChatData}
-            renderItem={({ item }) => <ListCard data={item} />}
+            renderItem={({ item }) => <ChatList data={item} />}
           />
         </View>
       </View>

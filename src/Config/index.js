@@ -21,6 +21,7 @@ export const ChatData = [
       title: "Jack",
       message: "hi EveryOne I'm Jack",
       time: "10:00 Am",
+      goTo: "Conversation"
       
     },
     {
@@ -29,6 +30,7 @@ export const ChatData = [
       title: "Lizza",
       message: "hi EveryOne I'm Lizza",
       time: "09:57 Am",
+      goTo: "Conversation"
       
     },
     {
@@ -874,3 +876,38 @@ export const ChatData = [
      
     }
   ];
+  export const AvailabilityPharmacyData = [
+    {
+      image: AvatarPerson1,
+      title: "Pharmacy 1",
+      ConfigMin: "Drug 1,500 mg, Tablet",
+      ConfigMed: "Drug 2,500 mg, Tablet",
+      ConfigHigh: "Drug 3,500 mg, Tablet",
+      Distance: "10-km-far",
+    },
+    {
+      image: AvatarPerson1,
+      title: "Pharmacy 2",
+      ConfigMin: "Drug 1,500 mg, Tablet",
+      ConfigMed: "Drug 2,500 mg, Tablet",
+      ConfigHigh: "Drug 3,500 mg, Tablet",
+      Distance: "10-km-far",
+    },
+    {
+      image: AvatarPerson1,
+      title: "Pharmacy 3",
+      ConfigMin: "Drug 1,500 mg, Tablet",
+      ConfigMed: "Drug 2,500 mg, Tablet",
+      ConfigHigh: "Drug 3,500 mg, Tablet",
+      Distance: "10-km-far",
+    },
+    {
+      image: AvatarPerson1,
+      title: "Pharmacy 4",
+      ConfigMin: "Drug 1,500 mg, Tablet",
+      ConfigMed: "Drug 2,500 mg, Tablet",
+      ConfigHigh: "Drug 3,500 mg, Tablet",
+      Distance: "10-km-far",
+    },
+    
+  ]

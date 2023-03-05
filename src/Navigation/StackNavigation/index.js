@@ -6,12 +6,11 @@ import CommonDetail from "../../Screens/Auth/Details/CommonDetail/index";
 import Verification from "../../Screens/Common/Verification/index";
 import Services from "../../Screens/Common/Services/index";
 import AppHome from "../../Screens/Common/AppHome/index";
-// import Agenda from "../../Screens/Common/FeedSection/Agenda/index";
+import Agenda from "../../Screens/Common/Agenda/index";
 import Appointment from "../../Screens/Auth/Appointments/Appointment";
 import AppointmentRequest from "../../Screens/Auth/Appointments/AppointmentRequest";
 import CancelledAppointment from "../../Screens/Auth/Appointments/CancelledAppointment/index";
 import Earning from "../../Screens/Saving/Earning/index";
-// import Publicity from "../../Screens/Common/FeedSection/Publicity/index";
 import ChangePassword from "../../Screens/Auth/ChangePassword/index";
 import HelpCenter from "../../Screens/Auth/HelpCenter/index";
 import TermsAndConditions  from "../../Screens/Auth/TermsAndConditions/index";
@@ -41,6 +40,18 @@ import NearbyDonation from "../../Screens/Donation/NearByDonation/index"
 import AddDonation from "../../Screens/Donation/AddDonation/index"
 import SelectDateAppointment from "../../Screens/Hospital/SelectDateAppointment/index"
 import ProtecteeDetail from "../../Screens/Auth/Details/ProtecteeDetail"
+import AvailabilityPharmacy from "../../Screens/Pharmacy/AvailabilityPharmacy/index"
+import Conversation from "../../Screens/Common/Conversation";
+import AppointmentDetail from "../../Screens/Auth/Details/AppointmentDetail/index";
+import Assurances from '../../Screens/AssurancesAndInsurance/OrderList/index';
+import AssurancePaymentDone from "../../Screens/AssurancesAndInsurance/AssurancePaymentDone/index"
+import AvaialblePlan from '../../Screens/AssurancesAndInsurance/AvaialblePlan/index';
+import AssurancesAbout from '../../Screens/AssurancesAndInsurance/AssuranceAbout/index'
+import MedicalHistory from "../../Screens/AssurancesAndInsurance/MedicalHistory/index"
+import PaymentDone  from '../../Screens/Auth/Payment/PaymentDone';
+import WorkingDetail from '../../Screens/Auth/Details/WorkingDetail/index'
+import StuffDetailAndCommonDetails from "../../Screens/Auth/Skip/StuffDetailAndCommonDetails/index"
+import SkipAppointments from "../../Screens/Auth/Skip/SkipAppointments";
 
 import TabBottomNavigation from "../TabBottomNavigation/index";
 import UserTabBottomNavigation from "../UserTabBottomNavigation";
@@ -64,12 +75,11 @@ const StackNavigation = () => {
           <MainStack.Screen name="Verification" component={Verification} />
           <MainStack.Screen name="Services" component={Services} />
           <MainStack.Screen name="AppHome" component={AppHome} />
-          {/* <MainStack.Screen name="Agenda" component={Agenda}/> */}
+          <MainStack.Screen name="Agenda" component={Agenda}/>
           <MainStack.Screen name="Earning" component={Earning}/>
           <MainStack.Screen name="Appointment" component={Appointment}/>
           <MainStack.Screen name="AppointmentRequest" component={AppointmentRequest}/>
           <MainStack.Screen name="CancelledAppointment" component={CancelledAppointment}/>
-          {/* <MainStack.Screen name="Publicity" component={Publicity}/> */}
           <MainStack.Screen name="ChangePassword" component={ChangePassword}/>
           <MainStack.Screen name="HelpCenter" component={HelpCenter}/>
           <MainStack.Screen name="TermsAndConditions" component={TermsAndConditions}/>
@@ -99,6 +109,19 @@ const StackNavigation = () => {
           <MainStack.Screen name="AddDonation" component={AddDonation} />
           <MainStack.Screen name="SelectDateAppointment" component={SelectDateAppointment} />
           <MainStack.Screen name="ProtecteeDetail" component={ProtecteeDetail} />
+          <MainStack.Screen name="AvailabilityPharmacy" component={AvailabilityPharmacy} />
+          <MainStack.Screen name="Conversation" component={Conversation} />
+          <MainStack.Screen name="AppointmentDetail" component={AppointmentDetail} />
+          <MainStack.Screen name="Assurances" component={Assurances} />
+          <MainStack.Screen name="AssurancePaymentDone" component={AssurancePaymentDone} />
+          <MainStack.Screen name="AvaialblePlan" component={AvaialblePlan} />
+          <MainStack.Screen name="AssurancesAbout" component={AssurancesAbout} />
+          <MainStack.Screen name="MedicalHistory" component={MedicalHistory} />
+          <MainStack.Screen name="PaymentDone" component={PaymentDone} />
+          <MainStack.Screen name="WorkingDetail" component={WorkingDetail} />
+          <MainStack.Screen name="StuffDetailAndCommonDetails" component={StuffDetailAndCommonDetails} />
+          <MainStack.Screen name="SkipAppointments" component={SkipAppointments} />
+          
 
           <MainStack.Screen name="Tabs" component={TabBottomNavigation} />
           <MainStack.Screen name="UserTabs" component={UserTabBottomNavigation} />

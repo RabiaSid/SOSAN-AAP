@@ -1,5 +1,5 @@
 import { StyleSheet, Dimensions } from 'react-native'
-import baseColors from '../../../Theme/Colors/Colors'
+import baseColors from '../../../Constant/color'
 
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
@@ -38,8 +38,8 @@ export const styles = StyleSheet.create({
         borderColor: baseColors.sucessColor,
         borderRadius: 100,
         height: 130,
-        width: 120,
-     justifyContent: 'space-evenly',
+        width: 130,
+        justifyContent: 'space-evenly',
         alignItems: 'center',
        flexDirection:'column'
     },
@@ -83,9 +83,9 @@ export const styles = StyleSheet.create({
         fontSize: 20
     },
 ImgText:{
-    fontSize: 20 , 
+    fontSize: 18 , 
      textAlign:'center' , 
-     paddingBottom: 20,
-     color:baseColors.primaryColor
+     color:baseColors.primaryColor,
+     width:100,
 }
 });

@@ -19,13 +19,22 @@ function Appointments() {
       <View>
         <AppHeader styles={styles.headerContainer}>
           <GradientBackground styles={styles.LinearGradient}>
-            <View style={{ flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'baseline', marginHorizontal: 10 }}>
-              <Ionicons onPress={() => {
+
+            <View style={{ flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center', marginHorizontal: 10,paddingVertical:15 }}>
+              <View>
+              <Ionicons
+                  name="chevron-back-sharp"
+                  size={30}
+                  style={{ color: baseColors.lightTextColor }}
+                
+              onPress={() => {
                 navigation.goBack("Feed");
-              }} name="chevron-back" size={35} color="#fff" />
+              }}
+              />
+              </View>
               <Text style={styles.HeadingText}>Appointment</Text>
 
-              <View style={{ flexDirection: 'row', justifyContent: 'flex-end', alignItems: 'center' }}>
+              <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
                 <Text style={{
                   fontSize: 12,
                   paddingEnd: 5,

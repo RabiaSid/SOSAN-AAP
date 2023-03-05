@@ -1,5 +1,5 @@
 import { Dimensions, StyleSheet } from 'react-native';
-import baseColors from '../../../Theme/Colors/Colors';
+import baseColors from '../../../Constant/color';
 const deviceWidth = Dimensions.get("window").width;
 export const styles = StyleSheet.create({
     Container: {

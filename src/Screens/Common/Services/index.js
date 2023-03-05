@@ -34,7 +34,11 @@ const Services = () => {
             navigation.navigate("SignIn");
           }}
         >
-          <Text style={styles.LoginBtnTextSty}>Login</Text>
+          <Text style={styles.LoginBtnTextSty}
+           onPress={() => {
+            navigation.navigate("StuffDetailAndCommonDetails");
+          }}
+          >Login</Text>
         </Button>
         {/* <TabBottom>
         <Button

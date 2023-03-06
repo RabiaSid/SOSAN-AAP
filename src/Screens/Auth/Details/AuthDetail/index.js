@@ -13,7 +13,7 @@ import { useNavigation } from "@react-navigation/native";
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
 
-function AuthDetail() {
+function AuthDetail({children}) {
   const Navigation = useNavigation();
   return (
     
@@ -72,10 +72,11 @@ function AuthDetail() {
         
           <Button
             styles={styles.Button}
-            onPress={() => {
-              Navigation.navigate("WorkingDetail");
-            }}
+            // onPress={() => {
+            //   Navigation.navigate("WorkingDetail");
+            // }}
           >
+            {children}
             <Text styles={styles.ButtonText}>Login</Text>
           </Button>
         

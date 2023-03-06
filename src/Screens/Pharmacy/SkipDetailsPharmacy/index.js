@@ -1,17 +1,18 @@
 import React from "react";
 import { View, Text, Dimensions, ScrollView } from "react-native";
-import AppHeader from "../../../../Components/AppHeader/index";
+import AppHeader from "../../../Components/AppHeader/index";
 import { styles } from "./style";
-import baseColors from "../../../../Constant/color";
+import baseColors from "../../../Constant/color";
 import { AntDesign, MaterialIcons } from "@expo/vector-icons";
-import SkipSwitchSelector from "../../../../Components/SwitchSelector/SkipSwitchSelector/index";
-import Button from "../../../../Components/Buttons";
+import SkipSwitchSelector from "../../../Components/SwitchSelector/SkipSwitchSelector/index";
+import Button from "../../../Components/Buttons";
 import { useNavigation } from "@react-navigation/native";
+import AccountReviewModal from "../../../Components/Modal/AccountReviewModal";
 
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
 
-function StuffDetailAndCommonDetails() {
+function SkipDetailsPharmacy() {
   const Navigation = useNavigation();
   return (
     <ScrollView
@@ -56,7 +57,7 @@ function StuffDetailAndCommonDetails() {
               color: baseColors.secondaryTextColor,
             }}
             onPress={() => {
-              Navigation.navigate("AuthDetail");
+              Navigation.navigate("AddANewDoctorPharmacy");
             }}
           >
             Add New Staff
@@ -73,9 +74,9 @@ function StuffDetailAndCommonDetails() {
         >
           <Button
             styles={styles.Button}
-            // onPress={() => {
-            //   Navigation.navigate("Services");
-            // }}
+            onPress={() => {
+              Navigation.navigate("PharmacyAppHome");
+            }}
           >
             <Text style={styles.ButtonText}>Continue</Text>
           </Button>
@@ -85,4 +86,4 @@ function StuffDetailAndCommonDetails() {
   );
 }
 
-export default StuffDetailAndCommonDetails;
+export default SkipDetailsPharmacy;

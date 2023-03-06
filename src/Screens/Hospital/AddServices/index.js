@@ -5,7 +5,7 @@ import CheckButton from '../../../Components/CheckButton';
 import Button from "../../../Components/Buttons";
 import {styles} from "./style"
 
-const Services = () => {
+const AddServicesHospital = () => {
   const navigation = useNavigation();
   return (
     <View style={styles.screenContainer}>
@@ -36,22 +36,14 @@ const Services = () => {
         >
           <Text style={styles.LoginBtnTextSty}
            onPress={() => {
-            navigation.navigate("StuffDetailAndCommonDetails");
+            navigation.navigate("SkipDetailsHospital");
           }}
-          >Login</Text>
+          >Continue</Text>
         </Button>
-        {/* <TabBottom>
-        <Button
-          styles={styles.LoginBtn}
-          onPress={() => {
-            navigation.navigate("SignIn");
-          }}>
-          <Text style={styles.LoginBtnTextSty}>Login</Text>
-        </Button>
-        </TabBottom> */}
+
       </View>
     </View>
   );
 };
 
-export default Services;
+export default AddServicesHospital;

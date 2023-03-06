@@ -7,16 +7,16 @@ import {
   Dimensions,
   FlatList,
 } from "react-native";
-import AppHeader from "../../../Components/AppHeader/index";
-import { ListOfSchedule } from "../../../Config/index";
-import List from "../../../Components/List/ListSchedule/index";
+import AppHeader from "../../../../Components/AppHeader/index";
+import { ListOfSchedule } from "../../../../Config/index";
+import List from "../../../../Components/List/ListSchedule/index";
 import { styles } from "./style";
-import baseColors from "../../../Constant/color";
+import baseColors from "../../../../Constant/color";
 import { Ionicons } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
-import Calender from "../../../Components/Calender";
+import Calender from "../../../../Components/Calender";
 import { MaterialIcons } from '@expo/vector-icons';
-import DarkGradient from '../../../Components/Gradient/DarkGradient'
+import DarkGradient from '../../../../Components/Gradient/DarkGradient'
 
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
@@ -233,7 +233,7 @@ const Agenda = () => {
                   // marginVertical: 20,
                 }}>
                 <MaterialIcons name="add" size={40} color="#fff" onPress={() => {
-                  navigation.navigate("WorkingDetail");
+                  navigation.navigate("WorkingDetailAgenda");
                 }} />
               </DarkGradient>
             </View>

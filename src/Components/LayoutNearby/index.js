@@ -6,7 +6,6 @@ import {
   Dimensions,
   StyleSheet,
   ImageBackground,
-  ScrollView,
 } from "react-native";
 import AppHeader from "../AppHeader/index";
 import baseColors from "../../Constant/color";

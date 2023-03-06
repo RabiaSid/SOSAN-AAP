@@ -10,7 +10,9 @@ import { Entypo } from '@expo/vector-icons';
 import CheckBtn from '../../../../Components/CheckButton'
 import baseColors from "../../../../Constant/color";
 import Map from '../../../../Components/Map';
-function WorkingDetail() {
+
+
+function WorkingDetail({children}) {
   const navigation = useNavigation();
   return (
     <ScrollView style={styles.screenContainer}>
@@ -188,10 +190,12 @@ function WorkingDetail() {
         <View style={{ justifyContent: 'center', alignItems: 'center' }}>
           <Button
             styles={styles.LoginBtn}
-            onPress={() => {
-              navigation.goBack("Agenda");
-            }}>
-            <Text style={styles.LoginTextSty}>Add</Text>
+            // onPress={() => {
+            //   navigation.goBack("Agenda");
+            // }}
+            >
+              {children}
+            {/* <Text style={styles.LoginTextSty}>Add</Text> */}
           </Button>
         </View>
       </View>

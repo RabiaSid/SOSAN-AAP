@@ -50,7 +50,7 @@ function ModalTester() {
                 />
                 <Text
                   onPress={() => {
-                    Navigation.navigate("CommonDetail");
+                    Navigation.navigate("RegisteredDetailHospital");
                     toggleModal();
                   }}
                   style={styles.modalViewText}
@@ -67,7 +67,7 @@ function ModalTester() {
                 />
                 <Text
                   onPress={() => {
-                    Navigation.navigate("CommonDetail");
+                    Navigation.navigate("RegisteredDetailPharmacy");
                     toggleModal();
                   }}
                   style={styles.modalViewTextReverse}
@@ -128,7 +128,6 @@ function ModalTester() {
               </View>
             </View>
 
-            {/* <Button title="Hide modal" onPress={toggleModal} /> */}
           </View>
         </View>
       </Modal>

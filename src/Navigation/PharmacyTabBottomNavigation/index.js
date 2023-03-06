@@ -3,14 +3,14 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Chat from "../../Screens/Common/AppHome/Chat/index";
-import Feed from "../../Screens/Hospital/AppHome/Feed/index";
+import Feed from "../../Screens/Pharmacy/AppHome/Feed/index";
 import Notification from "../../Screens/Common/AppHome/Notification/index";
 import Profile from "../../Screens/Hospital/AppHome/Profile/index";
-import Document from "../../Screens/Hospital/AppHome/Document/index";
+import Document from "../../Screens/Pharmacy/AppHome/Document/index";
 import baseColors from "../../Constant/color";
 
 
-function HospitalityTabBottomNavigation() {
+function PharmacyTabBottomNavigation() {
   const Tab = createBottomTabNavigator();
 
   return (
@@ -97,6 +97,6 @@ function HospitalityTabBottomNavigation() {
 }
 
 
-export default HospitalityTabBottomNavigation;
+export default PharmacyTabBottomNavigation;
 
 

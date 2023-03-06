@@ -14,7 +14,7 @@ import Map from "../../../../Components/Map";
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
 
-function CommonDetail() {
+function CommonDetail({children}) {
   const Navigation = useNavigation();
   return (
     <ScrollView style={styles.screenContainer} showsVerticalScrollIndicator={false}>
@@ -75,11 +75,12 @@ function CommonDetail() {
         <View>
           <Button
             styles={styles.Button}
-            onPress={() => {
-              Navigation.navigate("Services");
-            }}
+            // onPress={() => {
+            //   Navigation.navigate("Services");
+            // }}
           >
-            <Text style={styles.ButtonText}>Login</Text>
+            {children}
+            {/* <Text style={styles.ButtonText}>Login</Text> */}
           </Button>
         </View>
       </View>

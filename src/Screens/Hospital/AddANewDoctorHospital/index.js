@@ -4,7 +4,7 @@ import baseColors from '../../../Constant/color'
 import CommonDetail from '../../Auth/Details/CommonDetail'
 import { useNavigation } from '@react-navigation/native'
 
-function index() {
+function AddANewDoctorHospital() {
   const Navigation = useNavigation();
   return (
     <CommonDetail>
@@ -21,4 +21,4 @@ function index() {
   )
 }
 
-export default index
+export default AddANewDoctorHospital

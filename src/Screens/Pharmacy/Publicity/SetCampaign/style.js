@@ -1,0 +1,89 @@
+import { StyleSheet, Dimensions } from "react-native";
+import baseColors from "../../../../Constant/color";
+
+const deviceHeight = Dimensions.get("window").height;
+const deviceWidth = Dimensions.get("window").width;
+
+export const styles = StyleSheet.create({
+  screenContainer: {
+    height: deviceHeight / 1,
+    width: deviceWidth / 1,
+    flexDirection: "column",
+    alignItems: "center",
+    marginTop: 36,
+    backgroundColor: baseColors.lightColor,
+  },
+  headerContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: baseColors.sucessColor,
+    width: deviceWidth / 1,
+    borderBottomLeftRadius:10,
+    borderBottomRightRadius:10,
+    height: 50,
+  },
+
+  imageStyle: {
+    paddingVertical: 15,
+    flexDirection: "row",
+    justifyContent: 'center',
+    alignItems: "center",
+  },
+  image: {
+    height: 140,
+    width: 140,
+  },
+  ImageButtonView: {
+    flexDirection: "row",
+    alignItems: "flex-end",
+    justifyContent:'center',
+    height: 130,
+  },
+  ImageButtonViewText: {
+    width: 100,
+    height: 35,
+    paddingHorizontal:12,
+    borderRadius:8,
+    backgroundColor:baseColors.primaryColor,
+    elevation:2
+  },
+  screen: {
+    flexDirection: "column",
+  },
+  formText: {
+    paddingLeft: 20,
+  },
+  InputField: {
+    height: 40,
+    margin: 12,
+    borderColor: baseColors.sucessColor,
+    borderWidth: 1,
+    borderRadius: 50,
+    padding: 10,
+  },
+  InputFieldAbout: {
+    margin: 12,
+    borderColor: baseColors.sucessColor,
+    borderWidth: 1,
+    borderRadius: 10,
+    padding: 10,
+    textAlignVertical: "top",
+  },
+  Button: {
+    elevation: 5,
+    backgroundColor: baseColors.primaryColor,
+    borderRadius: 50,
+    paddingVertical: 10,
+    paddingHorizontal: 12,
+    marginTop: 20,
+    marginVertical: 10,
+    width: deviceWidth / 1 - 50,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  ButtonText: {
+    color: baseColors.lightTextColor,
+    fontWeight: "bold",
+    textTransform: "uppercase",
+  },
+});

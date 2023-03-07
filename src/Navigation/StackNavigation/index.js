@@ -50,11 +50,11 @@ import AssurancesAbout from '../../Screens/AssurancesAndInsurance/AssuranceAbout
 import MedicalHistory from "../../Screens/AssurancesAndInsurance/MedicalHistory/index"
 import PaymentDone  from '../../Screens/Auth/Payment/PaymentDone';
 import WorkingDetailAgenda from '../../Screens/Common/Agenda/WorkingDetailAgenda/index'
-import SkipDetailsHospital from "../../Screens/Hospital/SkipDetailsHospital/index"
-import SkipDetailsPharmacy from "../../Screens/Pharmacy/SkipDetailsPharmacy/index"
+import StuffDetailHospital from "../../Screens/Hospital/StuffDetailHospital/index"
+import StuffDetailPharmacy from "../../Screens/Pharmacy/StuffDetailPharmacy/index"
 import SkipAppointments from "../../Screens/Auth/Skip/SkipAppointments";
-import RegisteredDetailHospital from "../../Screens/Hospital/RegisteredDetailHospital/index"
-import RegisteredDetailPharmacy from "../../Screens/Pharmacy/RegisteredDetailPharmacy/index"
+import AssociationDetailHospital from "../../Screens/Hospital/AssociationDetailHospital/index"
+import AssociationDetailPharmacy from "../../Screens/Pharmacy/AssociationDetailPharmacy/index"
 import AddServicesPharmacy from "../../Screens/Pharmacy/AddServices";
 import AddServicesHospital from "../../Screens/Hospital/AddServices";
 import WorkingDetailPharmacy from "../../Screens/Pharmacy/WorkingDetailPharmacy/index"
@@ -64,6 +64,15 @@ import AddANewDoctorHospital from '../../Screens/Hospital/AddANewDoctorHospital/
 import HospitalityAppHome from "../../Screens/Hospital/AppHome";
 import PharmacyAppHome from "../../Screens/Pharmacy/AppHome";
 import AgendaDrugRequest from "../../Screens/Pharmacy/Agenda/DrugRequest/index"
+import DoctorDetailHospital from "../../Screens/Hospital/DoctorDetailHospital";
+import DoctorDetailPharmacy from "../../Screens/Pharmacy/DoctorDetailPharmacy";
+import AgendaSendBill from "../../Screens/Pharmacy/Agenda/SendBill";
+import AvailableDrugsPharmacy from "../../Screens/Pharmacy/Drugs/AvailableDrugs";
+import AvailableDrugsDetail from "../../Screens/Pharmacy/Drugs/AvailableDrugsDetail";
+import AddDrugsDetailPharmacy from "../../Screens/Pharmacy/Drugs/AddDrugsDetail";
+import RequestANewMedicineDetail from "../../Screens/Pharmacy/Drugs/RequestANewMedicineDetail";
+import CurrentCampaignPharmacy from "../../Screens/Pharmacy/Publicity/CurrentCampaign";
+import SetCampaignPharmacy from "../../Screens/Pharmacy/Publicity/SetCampaign";
 
 import PharmacyTabBottomNavigation from "../PharmacyTabBottomNavigation";
 import HospitalityTabBottomNavigation from "../HospitalityTabBottomNavigation";
@@ -133,11 +142,11 @@ const StackNavigation = () => {
           <MainStack.Screen name="MedicalHistory" component={MedicalHistory} />
           <MainStack.Screen name="PaymentDone" component={PaymentDone} />
           <MainStack.Screen name="WorkingDetailAgenda" component={WorkingDetailAgenda} />
-          <MainStack.Screen name="SkipDetailsHospital" component={SkipDetailsHospital} />
-          <MainStack.Screen name="SkipDetailsPharmacy" component={SkipDetailsPharmacy} />
+          <MainStack.Screen name="StuffDetailHospital" component={StuffDetailHospital} />
+          <MainStack.Screen name="StuffDetailPharmacy" component={StuffDetailPharmacy} />
           <MainStack.Screen name="SkipAppointments" component={SkipAppointments} />
-          <MainStack.Screen name="RegisteredDetailHospital" component={RegisteredDetailHospital} />
-          <MainStack.Screen name="RegisteredDetailPharmacy" component={RegisteredDetailPharmacy} />
+          <MainStack.Screen name="AssociationDetailHospital" component={AssociationDetailHospital} />
+          <MainStack.Screen name="AssociationDetailPharmacy" component={AssociationDetailPharmacy} />
           <MainStack.Screen name="AddServicesPharmacy" component={AddServicesPharmacy} />
           <MainStack.Screen name="AddServicesHospital" component={AddServicesHospital} />
           <MainStack.Screen name="WorkingDetailPharmacy" component={WorkingDetailPharmacy} />
@@ -147,6 +156,15 @@ const StackNavigation = () => {
           <MainStack.Screen name="HospitalityAppHome" component={HospitalityAppHome} />
           <MainStack.Screen name="PharmacyAppHome" component={PharmacyAppHome} />
           <MainStack.Screen name="AgendaDrugRequest" component={AgendaDrugRequest} />
+          <MainStack.Screen name="DoctorDetailHospital" component={DoctorDetailHospital} />
+          <MainStack.Screen name="DoctorDetailPharmacy" component={DoctorDetailPharmacy} />
+          <MainStack.Screen name="AgendaSendBill" component={AgendaSendBill} />
+          <MainStack.Screen name="AvailableDrugsPharmacy" component={AvailableDrugsPharmacy} />
+          <MainStack.Screen name="AvailableDrugsDetail" component={AvailableDrugsDetail} />
+          <MainStack.Screen name="AddDrugsDetailPharmacy" component={AddDrugsDetailPharmacy} />
+          <MainStack.Screen name="RequestANewMedicineDetail" component={RequestANewMedicineDetail} />
+          <MainStack.Screen name="CurrentCampaignPharmacy" component={CurrentCampaignPharmacy} />
+          <MainStack.Screen name="SetCampaignPharmacy" component={SetCampaignPharmacy} />
           
           <MainStack.Screen name="PharmacyTabBottomNavigation" component={PharmacyTabBottomNavigation} />
           <MainStack.Screen name="HospitalityTabBottomNavigation" component={HospitalityTabBottomNavigation} />

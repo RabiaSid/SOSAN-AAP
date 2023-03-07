@@ -50,7 +50,7 @@ function ModalTester() {
                 />
                 <Text
                   onPress={() => {
-                    Navigation.navigate("RegisteredDetailHospital");
+                    Navigation.navigate("AssociationDetailHospital");
                     toggleModal();
                   }}
                   style={styles.modalViewText}
@@ -67,7 +67,7 @@ function ModalTester() {
                 />
                 <Text
                   onPress={() => {
-                    Navigation.navigate("RegisteredDetailPharmacy");
+                    Navigation.navigate("AssociationDetailPharmacy");
                     toggleModal();
                   }}
                   style={styles.modalViewTextReverse}

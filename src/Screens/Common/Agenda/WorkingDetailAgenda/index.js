@@ -4,7 +4,7 @@ import baseColors from '../../../../Constant/color'
 import WorkingDetail from '../../../Auth/Details/WorkingDetail'
 import { useNavigation } from '@react-navigation/native'
 
-function index() {
+function WorkingDetailAgenda() {
   const Navigation = useNavigation();
   return (
     <WorkingDetail>
@@ -21,4 +21,4 @@ function index() {
   )
 }
 
-export default index
+export default WorkingDetailAgenda

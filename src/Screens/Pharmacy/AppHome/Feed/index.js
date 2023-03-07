@@ -96,10 +96,10 @@ const navigation = useNavigation();
           <View style={styles.itemsViewReverse}>
             <Entypo name="calendar" size={24} style={styles.itemsIconReverse} />
             <Text
-            //  onPress={()=>navigation.navigate('Appointment')}
+             onPress={()=>navigation.navigate('AvailableDrugsPharmacy')}
               style={styles.itemsViewTextReverse}
             >
-              Appointment
+              Drugs
             </Text>
           </View>
 
@@ -110,7 +110,7 @@ const navigation = useNavigation();
               style={styles.itemsIconReverse}
             />
             <Text
-              //  onPress={()=>navigation.navigate('CreatePost')}
+               onPress={()=>navigation.navigate('CurrentCampaignPharmacy')}
               style={styles.itemsViewTextReverse}
             >
               Publicity

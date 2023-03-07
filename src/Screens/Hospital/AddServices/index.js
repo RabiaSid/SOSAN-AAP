@@ -36,7 +36,7 @@ const AddServicesHospital = () => {
         >
           <Text style={styles.LoginBtnTextSty}
            onPress={() => {
-            navigation.navigate("SkipDetailsHospital");
+            navigation.navigate("StuffDetailHospital");
           }}
           >Continue</Text>
         </Button>

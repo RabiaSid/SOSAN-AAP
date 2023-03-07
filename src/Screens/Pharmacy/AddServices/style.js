@@ -23,8 +23,8 @@ export const styles = StyleSheet.create({
       },
       screenTop: {
         flexDirection: "column",
-        justifyContent: "center",
         paddingVertical: 20,
+        height:deviceHeight/1-50,
         // height: deviceHeight / 1,
       },
       Box:{

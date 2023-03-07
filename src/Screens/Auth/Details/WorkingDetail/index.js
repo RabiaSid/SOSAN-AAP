@@ -10,6 +10,7 @@ import { Entypo } from '@expo/vector-icons';
 import CheckBtn from '../../../../Components/CheckButton'
 import baseColors from "../../../../Constant/color";
 import Map from '../../../../Components/Map';
+import MapMarkHere from "../../../../Components/MapMarkHere";
 
 
 function WorkingDetail({children}) {
@@ -22,65 +23,7 @@ function WorkingDetail({children}) {
         <InputField placeholder="Institution Name" styles={styles.InputStyling} />
         <Text style={styles.formText}>Institution Address </Text>
         <InputField placeholder="Heart International Hospital Islamabad" styles={styles.InputStyling} />
-        <View style={styles.lightTextView}><Text style={styles.lightText}>--MARK HERE--</Text></View>
-        <View style={styles.locationView}>
-          <Text style={{ fontWeight: 'bold' }}>
-            <Entypo name="location-pin" size={20} style={{ color: baseColors.sucessColor }} />
-            2 Rue Charles Vigurie, 31300 Toulous, France
-          </Text>
-        </View>
-        <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
-          <View style={{ flexDirection: 'row', justifyContent: 'flex-start', }}>
-            <TouchableOpacity
-              style={{
-                elevation: 8,
-                backgroundColor: baseColors.primaryColor,
-                borderRadius: 5,
-                width: 100,
-                justifyContent: "center",
-                alignItems: "center",
-                height: 22,
-                marginVertical: 20,
-              }}
-            >
-              <Text
-                style={{
-                  color: baseColors.lightTextColor,
-                  flexDirection: "column",
-                  textAlign: "center",
-                  fontSize: 12,
-                }}
-              >
-                Get Direction
-              </Text>
-            </TouchableOpacity>
-          </View>
-          <View style={{ flexDirection: 'row', justifyContent: 'flex-end' }}>
-            <TouchableOpacity
-              style={{
-                elevation: 8,
-                backgroundColor: baseColors.primaryColor,
-                borderRadius: 5,
-                width: 100,
-                justifyContent: "center",
-                alignItems: "center",
-                height: 22,
-                marginVertical: 20,
-              }}
-            >
-              <Text
-                style={{
-                  color: baseColors.lightTextColor,
-                  flexDirection: "column",
-                  textAlign: "center",
-                  fontSize: 12,
-                }}
-              >
-                Share Location
-              </Text>
-            </TouchableOpacity>
-          </View>
-        </View>
+        <MapMarkHere />
         <Map />
         <Text style={styles.formText}>Institution Phone</Text>
         <InputField placeholder="0215229035" styles={styles.InputStyling} />

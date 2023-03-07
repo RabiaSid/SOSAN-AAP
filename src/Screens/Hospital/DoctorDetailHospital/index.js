@@ -4,15 +4,14 @@ import AppHeader from "../../../Components/AppHeader/index";
 import { styles } from "./style";
 import baseColors from "../../../Constant/color";
 import { AntDesign, MaterialIcons } from "@expo/vector-icons";
-import SkipSwitchSelector from "../../../Components/SwitchSelector/SkipSwitchSelector/index";
+import SkipSwitchReverseButton from "../../../Components/SkipSwitchReverseButton"
 import Button from "../../../Components/Buttons";
 import { useNavigation } from "@react-navigation/native";
-import AccountReviewModal from "../../../Components/Modal/AccountReviewModal";
 
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
 
-function SkipDetailsHospital({children}) {
+function DoctorDetailHospital() {
   const Navigation = useNavigation();
   return (
     <ScrollView
@@ -35,7 +34,7 @@ function SkipDetailsHospital({children}) {
 
       <View style={styles.screenMiddle}>
         <View style={{ paddingVertical: 10 }}>
-          <SkipSwitchSelector />
+          <SkipSwitchReverseButton />
         </View>
         <View
           style={{
@@ -78,7 +77,10 @@ function SkipDetailsHospital({children}) {
               Navigation.navigate("HospitalityAppHome");
             }}
           >
-            <Text style={styles.ButtonText}>Continue</Text>
+            <Text style={styles.ButtonText}
+            onPress={() => {
+              Navigation.navigate("HospitalityAppHome");
+            }}>Continue</Text>
           </Button>
         </View>
       </View>
@@ -86,4 +88,4 @@ function SkipDetailsHospital({children}) {
   );
 }
 
-export default SkipDetailsHospital;
+export default DoctorDetailHospital;

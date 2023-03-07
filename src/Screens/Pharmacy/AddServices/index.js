@@ -36,19 +36,11 @@ const AddServicesPharmacy = () => {
         >
           <Text style={styles.LoginBtnTextSty}
            onPress={() => {
-            navigation.navigate("SkipDetailsPharmacy");
+            navigation.navigate("StuffDetailPharmacy");
           }}
           >Continue</Text>
         </Button>
-        {/* <TabBottom>
-        <Button
-          styles={styles.LoginBtn}
-          onPress={() => {
-            navigation.navigate("SignIn");
-          }}>
-          <Text style={styles.LoginBtnTextSty}>Login</Text>
-        </Button>
-        </TabBottom> */}
+        
       </View>
     </View>
   );

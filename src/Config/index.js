@@ -911,3 +911,42 @@ export const ChatData = [
     },
     
   ]
+
+
+  export const CurrentChampaignDataPharmacy = [
+    {
+      
+      title: "Panadol",
+      
+    },
+    {
+      
+      title: "Panadol",
+      
+    },
+    {
+      
+      title: "Panadol",
+    },
+    {
+      
+      title: "Panadol",
+    },
+    {
+      
+      title: "Panadol",
+    },
+    {
+      title: "Panadol",
+    },
+    {
+      
+      title: "Panadol",
+    },
+    {
+      
+      title: "Panadol",
+    },
+    
+    
+  ]

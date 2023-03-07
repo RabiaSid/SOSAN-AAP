@@ -4,7 +4,8 @@ import AppHeader from "../../../Components/AppHeader/index";
 import { styles } from "./style";
 import baseColors from "../../../Constant/color";
 import { AntDesign, MaterialIcons } from "@expo/vector-icons";
-import SkipSwitchSelector from "../../../Components/SwitchSelector/SkipSwitchSelector/index";
+import SkipSwitchButton from "../../../Components/SkipSwitchButton/index"
+// import SkipSwitchSelector from "../../../Components/SwitchSelector/SkipSwitchSelector/index";
 import Button from "../../../Components/Buttons";
 import { useNavigation } from "@react-navigation/native";
 import AccountReviewModal from "../../../Components/Modal/AccountReviewModal";
@@ -12,7 +13,7 @@ import AccountReviewModal from "../../../Components/Modal/AccountReviewModal";
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
 
-function SkipDetailsPharmacy() {
+function StuffDetailHospital() {
   const Navigation = useNavigation();
   return (
     <ScrollView
@@ -35,7 +36,9 @@ function SkipDetailsPharmacy() {
 
       <View style={styles.screenMiddle}>
         <View style={{ paddingVertical: 10 }}>
-          <SkipSwitchSelector />
+          <SkipSwitchButton 
+          onPress={()=>{Navigation.navigate('AddANewDoctorHospital')}}
+          />
         </View>
         <View
           style={{
@@ -57,7 +60,7 @@ function SkipDetailsPharmacy() {
               color: baseColors.secondaryTextColor,
             }}
             onPress={() => {
-              Navigation.navigate("AddANewDoctorPharmacy");
+              Navigation.navigate("AddANewDoctorHospital");
             }}
           >
             Add New Staff
@@ -75,7 +78,7 @@ function SkipDetailsPharmacy() {
           <Button
             styles={styles.Button}
             onPress={() => {
-              Navigation.navigate("PharmacyAppHome");
+              Navigation.navigate("HospitalityAppHome");
             }}
           >
             <Text style={styles.ButtonText}>Continue</Text>
@@ -86,4 +89,4 @@ function SkipDetailsPharmacy() {
   );
 }
 
-export default SkipDetailsPharmacy;
+export default StuffDetailHospital;

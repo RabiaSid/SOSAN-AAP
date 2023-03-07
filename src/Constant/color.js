@@ -7,8 +7,9 @@ const baseColors = {
     lightGreyColor:"#DCD6D0",
     primaryLightColor: "#E1F5FE",
     primaryMiddleColor:"#B3E5FC",
-    LightSecondaryColor:"#F5F5F5",
     purpleColor: "#5713d6",
+    secondaryMiddleColor:"#aaadb7",
+    LightSecondaryColor:"#F5F5F5",
     
 
     

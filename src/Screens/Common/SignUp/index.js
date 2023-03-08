@@ -15,12 +15,7 @@ const deviceWidth = Dimensions.get("window").width;
 function SignUp() {
   const Navigation = useNavigation();
 
-  //  const [value, setvalue] = useState('')
-
-  //  useEffect(()=>{
-  //   setvalue(value)
-  //   console.log(value)
-  //  },[])
+ 
   return (
     <View style={styles.screenContainer}>
       <GradientBackground>
@@ -80,11 +75,21 @@ function SignUp() {
             <View
               style={{
                 flexDirection: "row",
-                justifyContent: "space-evenly",
+                justifyContent: 'space-between',
+                width:deviceWidth/1.1,
                 alignItems: "center",
-                paddingHorizontal: 30,
               }}
             >
+              <View
+              style={{
+                flexDirection: "row",
+                justifyContent: 'space-between',
+                width:deviceWidth/2.5,
+                alignItems: "center",
+                paddingVertical: 5,
+                paddingHorizontal: 15,
+              }}
+              >
               <CheckButton />
               <Text
                 onPress={() => {
@@ -93,14 +98,29 @@ function SignUp() {
               >
                 Individual
               </Text>
+              </View>
+              <View
+              style={{
+                flexDirection: "row",
+                justifyContent: 'space-between',
+                width:deviceWidth/2.3,
+                alignItems: "center",
+                paddingVertical: 5,
+                paddingHorizontal: 10,
+                
+              }}
+              >
               <CheckButton />
               <ModalTester />
+
+              </View>
             </View>
 
             <View
               style={{
                 flexDirection: "row",
-                alignItems: "center",
+                justifyContent: 'space-evenly',
+                width:deviceWidth/1-50,
               }}
             >
               <CheckButton />

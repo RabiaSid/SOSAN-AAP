@@ -950,3 +950,80 @@ export const ChatData = [
     
     
   ]
+
+  export const SpecialistDataHospital = [
+    {
+      id: "1",
+      title: "Dentistry",
+      goto:'DentistsHospital'
+      
+      
+    },
+    {
+      id: "2",
+      title: "Cardiology",
+      
+    },
+    {
+      id: "3",
+      title: "Dentistry",
+      
+    },
+    {
+      id: "4",
+      title: "Cardiology",
+      
+    },
+    {
+      id: "5",
+      title: "Dentistry",
+      goto:'DentistsHospital'
+      
+    },
+    {
+      id: "6",
+      title: "Cardiology",
+      
+    },
+    {
+      id: "7",
+      title: "Dentistry",
+      
+    },
+    {
+      id: "8",
+      title: "Cardiology",
+      
+    },
+    {
+      id: "9",
+      title: "Dentistry",
+      
+    },
+    {
+      id: "10",
+      title: "Cardiology",
+      
+    },
+  ]
+  export const DiagnosticsDataHospital = [
+    {
+      id: "1",
+      title: "UltraSound",
+      goto:'UltraSoundHospital'
+      
+      
+    },
+    {
+      id: "2",
+      title: "Laboratory",
+      goto:'UltraSoundHospital'
+
+    },
+    {
+      id: "3",
+      title: "X-Ray",
+      goto:'UltraSoundHospital'
+      
+    },
+  ]

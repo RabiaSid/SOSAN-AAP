@@ -97,7 +97,6 @@ const navigation = useNavigation();
             <Entypo name="calendar" size={24} style={styles.itemsIconReverse} />
             <Text
              onPress={()=>navigation.navigate('Appointment')}
-              // onPress={Appointments}
               style={styles.itemsViewTextReverse}
             >
               Appointment

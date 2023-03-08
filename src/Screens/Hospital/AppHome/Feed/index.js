@@ -93,7 +93,7 @@ const navigation = useNavigation();
               style={styles.itemsIcon}
             />
             <Text
-              // onPress={()=>navigation.navigate('NearbyHospital')}
+              onPress={()=>navigation.navigate('AgendaAppointmentHospital')}
               style={styles.itemsViewText}
             >
              Agenda
@@ -105,8 +105,9 @@ const navigation = useNavigation();
           name="capsules" 
           size={23} style={styles.itemsIconReverse} />
             <Text
-            //  onPress={()=>navigation.navigate('PharmacyOrderList')}
-              // onPress={Appointments}
+           onPress={() => {
+            navigation.navigate("OverViewHospitality");
+          }}
               style={styles.itemsViewTextReverse}
             >
               Overview
@@ -116,7 +117,7 @@ const navigation = useNavigation();
           <View style={styles.itemsViewReverse}>
           <Fontisto name="doctor" size={24} style={styles.itemsIconReverse} />
             <Text
-              //  onPress={()=>navigation.navigate('NearByDoctor')}
+               onPress={()=>navigation.navigate('CreatePostHospital')}
               style={styles.itemsViewTextReverse}
             >
               Publicity
@@ -126,7 +127,7 @@ const navigation = useNavigation();
           <View style={styles.itemsView}>
           <FontAwesome name="heartbeat" size={25} style={styles.itemsIcon}  />
             <Text
-            //  onPress={()=>navigation.navigate('Epargne')}
+             onPress={()=>navigation.navigate('Epargne')}
             style={styles.itemsViewText}
             >
               Earning
@@ -137,7 +138,7 @@ const navigation = useNavigation();
           <View style={styles.itemsView}>
           <FontAwesome name="heartbeat" size={25} style={styles.itemsIconReverse}  />
             <Text
-            //  onPress={()=>navigation.navigate('Epargne')}
+             onPress={()=>navigation.navigate('SpecialistAndDiagnosticsHospital')}
               style={styles.itemsViewText}
             >
             Services

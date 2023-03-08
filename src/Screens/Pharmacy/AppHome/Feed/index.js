@@ -121,7 +121,7 @@ const navigation = useNavigation();
             <Entypo name="wallet" size={24} style={styles.itemsIcon} />
             <Text
               
-              // onPress={()=>navigation.navigate('Epargne')}
+              onPress={()=>navigation.navigate('Epargne')}
               style={styles.itemsViewText}
             >
               Earning

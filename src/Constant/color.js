@@ -10,6 +10,8 @@ const baseColors = {
     purpleColor: "#5713d6",
     secondaryMiddleColor:"#aaadb7",
     LightSecondaryColor:"#F5F5F5",
+    limeColor:"#EEDF00",
+    sucessColorTransparent: 'rgba(124, 217, 87, 0.7)',
     
 
     

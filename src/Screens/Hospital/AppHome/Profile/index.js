@@ -14,6 +14,8 @@ import { AvatarPerson3 } from "../../../../Assets/images";
 import Button from "../../../../Components/Buttons/index";
 import SwitchButton from "../../../../Components/Schedule/Switch";
 import { styles } from "./style";
+import baseColors from "../../../../Constant/color";
+import { Title } from "react-native-paper";
 
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
@@ -62,7 +64,7 @@ function Profile() {
       </View>
       <ScrollView showsVerticalScrollIndicator={false}>
         <View
-          style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
+          style={{ flex: 1, justifyContent: "center", alignItems: "center",width: deviceWidth / 1, }}
         >
           <View style={styles.imageStyle}>
             <Image style={styles.image} source={AvatarPerson3} />
@@ -103,6 +105,9 @@ function Profile() {
                   name="pencil-square-o"
                   size={22}
                   style={styles.TextSecondary}
+                  onPress={() => {
+                    Navigation.navigate("ProfileDetailHopital");
+                  }}
                 />
               </View>
             </View>
@@ -119,14 +124,9 @@ function Profile() {
                 <Text style={styles.TextSecondary}>25ln555</Text>
               </View>
             </View>
-            <Button
-              styles={styles.Button}
-              onPress={() => {
-                Navigation.navigate("AppHome");
-              }}
-            >
-              <Text style={styles.ButtonText}>Transaction Detail</Text>
-            </Button>
+            <Text style={{fontSize:13, fontWeight:'400', color:baseColors.primaryTextColor}}>
+              http://www.chu-toulouse.fr
+            </Text>
           </View>
 
           <View style={styles.Listmain}>
@@ -166,9 +166,7 @@ function Profile() {
                   name="navigate-next"
                   size={28}
                   style={styles.TextSecondary}
-                  onPress={() => {
-                    Navigation.navigate("ChangePassword");
-                  }}
+                  
                 />
               </View>
             </View>
@@ -180,9 +178,6 @@ function Profile() {
                   name="navigate-next"
                   size={28}
                   style={styles.TextSecondary}
-                  onPress={() => {
-                    Navigation.navigate("HelpCenter");
-                  }}
                 />
               </View>
             </View>
@@ -194,9 +189,7 @@ function Profile() {
                   name="navigate-next"
                   size={28}
                   style={styles.TextSecondary}
-                  onPress={() => {
-                    Navigation.navigate("TermsAndConditions");
-                  }}
+                  
                 />
               </View>
             </View>
@@ -208,22 +201,24 @@ function Profile() {
                   name="navigate-next"
                   size={28}
                   style={styles.TextSecondary}
-                  onPress={() => {
-                    Navigation.navigate("CancelledAppointment");
-                  }}
+                  
                 />
               </View>
             </View>
 
             <View style={styles.ListBottom}>
               <View style={styles.Listitems}>
-                <Text style={styles.TextSecondary}>Log Out</Text>
+                <Text style={styles.TextSecondary}
+                onPress={() => {
+                  Navigation.goBack("");
+                }}
+                >Log Out</Text>
                 <MaterialIcons
                   name="navigate-next"
                   size={28}
                   style={styles.TextSecondary}
                   onPress={() => {
-                    Navigation.navigate("SignIn");
+                    Navigation.goBack("");
                   }}
                 />
               </View>

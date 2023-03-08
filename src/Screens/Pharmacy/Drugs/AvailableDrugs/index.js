@@ -95,7 +95,6 @@ function AvailableDrugsPharmacy() {
               height:deviceHeight/1.2-20,
               borderTopRightRadius: 30,
               borderTopLeftRadius: 30,
-              borderWidth:2
               
             }}
           >

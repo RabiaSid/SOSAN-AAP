@@ -79,6 +79,9 @@ function CommonDetail({children}) {
             //   Navigation.navigate("Services");
             // }}
           >
+            <Text>
+
+            </Text>
             {children}
             {/* <Text style={styles.ButtonText}>Login</Text> */}
           </Button>

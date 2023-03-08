@@ -38,7 +38,6 @@ export const styles = StyleSheet.create({
     width: deviceWidth / 1-10,
     flexDirection:'column',
     alignItems:'center',
-    height:deviceHeight/1,
     
   
   },

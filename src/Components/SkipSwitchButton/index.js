@@ -108,7 +108,7 @@ function index(props) {
           <Button
             styles={styles.Button}
             onPress={() => {
-              Navigation.navigate("SkipAppointments");
+              Navigation.navigate("AgendaAppointmentHospital");
             }}
           >
             <Text style={styles.ButtonText}>Save</Text>

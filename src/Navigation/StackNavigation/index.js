@@ -6,9 +6,7 @@ import CommonDetail from "../../Screens/Auth/Details/CommonDetail/index";
 import Verification from "../../Screens/Common/Verification/index";
 import AppHome from "../../Screens/Common/AppHome/index";
 import Agenda from "../../Screens/Common/Agenda/Agenda/index";
-import Appointment from "../../Screens/Auth/Appointments/Appointment";
-import AppointmentRequest from "../../Screens/Auth/Appointments/AppointmentRequest";
-import CancelledAppointment from "../../Screens/Auth/Appointments/CancelledAppointment/index";
+import Appointment from "../../Screens/Common/Appointment/index";
 import Earning from "../../Screens/Saving/Earning/index";
 import ChangePassword from "../../Screens/Auth/ChangePassword/index";
 import HelpCenter from "../../Screens/Auth/HelpCenter/index";
@@ -84,7 +82,15 @@ import CreatePostHospital from "../../Screens/Hospital/Publicity/CreatePost";
 import PersonalDetailDoctor from "../../Screens/Doctor/PersonalDetail";
 import AssociationDetailDonation from "../../Screens/Donation/AssociationDetail";
 import AssociationDetailDoctor from "../../Screens/Doctor/AssociationDetail";
+import RegisteredClientsAssurance from "../../Screens/AssurancesAndInsurance/RegisteredClients";
+import AssuranceAgendaReports from "../../Screens/AssurancesAndInsurance/Agenda/Reports";
+import AssuranceCompanyDetail from "../../Screens/AssurancesAndInsurance/CompanyDetail";
+import AssuranceAddANewPlan from "../../Screens/AssurancesAndInsurance/AddANewPlan"
+import AssurancesAndInsuranceAppHome from "../../Screens/AssurancesAndInsurance/AppHome";
+import AssuranceReportDetail from "../../Screens/AssurancesAndInsurance/Agenda/DetailReport";
+import IssuranceEditDetail from "../../Screens/AssurancesAndInsurance/IssuranceEditDetail";
 
+import AssurancesAndInsuranceTabBottomNavigation from "../AssurancesAndInsuranceTabBottomNavigation";
 import PharmacyTabBottomNavigation from "../PharmacyTabBottomNavigation";
 import HospitalityTabBottomNavigation from "../HospitalityTabBottomNavigation";
 import TabBottomNavigation from "../TabBottomNavigation/index";
@@ -107,13 +113,10 @@ const StackNavigation = () => {
           <MainStack.Screen name="PersonalDetail" component={PersonalDetail} />
           <MainStack.Screen name="CommonDetail" component={CommonDetail} />
           <MainStack.Screen name="Verification" component={Verification} />
-          {/* <MainStack.Screen name="Services" component={Services} /> */}
           <MainStack.Screen name="AppHome" component={AppHome} />
           <MainStack.Screen name="Agenda" component={Agenda}/>
           <MainStack.Screen name="Earning" component={Earning}/>
           <MainStack.Screen name="Appointment" component={Appointment}/>
-          <MainStack.Screen name="AppointmentRequest" component={AppointmentRequest}/>
-          <MainStack.Screen name="CancelledAppointment" component={CancelledAppointment}/>
           <MainStack.Screen name="ChangePassword" component={ChangePassword}/>
           <MainStack.Screen name="HelpCenter" component={HelpCenter}/>
           <MainStack.Screen name="TermsAndConditions" component={TermsAndConditions}/>
@@ -188,7 +191,15 @@ const StackNavigation = () => {
           <MainStack.Screen name="PersonalDetailDoctor" component={PersonalDetailDoctor} />
           <MainStack.Screen name="AssociationDetailDonation" component={AssociationDetailDonation} />
           <MainStack.Screen name="AssociationDetailDoctor" component={AssociationDetailDoctor} />
+          <MainStack.Screen name="RegisteredClientsAssurance" component={RegisteredClientsAssurance} />
+          <MainStack.Screen name="AssuranceAgendaReports" component={AssuranceAgendaReports} />
+          <MainStack.Screen name="AssuranceCompanyDetail" component={AssuranceCompanyDetail} />
+          <MainStack.Screen name="AssuranceAddANewPlan" component={AssuranceAddANewPlan} />
+          <MainStack.Screen name="AssurancesAndInsuranceAppHome" component={AssurancesAndInsuranceAppHome} />
+          <MainStack.Screen name="AssuranceReportDetail" component={AssuranceReportDetail} />
+          <MainStack.Screen name="IssuranceEditDetail" component={IssuranceEditDetail} />
 
+          <MainStack.Screen name="AssurancesAndInsuranceTabBottomNavigation" component={AssurancesAndInsuranceTabBottomNavigation} />
           <MainStack.Screen name="PharmacyTabBottomNavigation" component={PharmacyTabBottomNavigation} />
           <MainStack.Screen name="HospitalityTabBottomNavigation" component={HospitalityTabBottomNavigation} />
           <MainStack.Screen name="Tabs" component={TabBottomNavigation} />

@@ -56,7 +56,11 @@ const SignIn = () => {
             paddingTop: 20,
           }}
         >
-          <Text style={styles.textColorDanger}>Forget Password</Text>
+          <Text style={styles.textColorDanger}
+           onPress={() => {
+            Navigation.navigate("AssuranceAgendaReports");
+          }}
+          >Forget Password</Text>
           <Text>create a new account</Text>
           <Text
             style={styles.textColorSuccess}

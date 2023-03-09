@@ -9,47 +9,26 @@ const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
 const Document = () => {
   return (
-    <View style={{ flex: 1, height: deviceHeight / 1, width: deviceWidth / 1 }}>
+    <View style={styles.ScreenContainer}>
       <AppHeader styles={styles.headerContainer}>
         <View
-          style={{
-            flexDirection: "row",
-            alignItems: "center",
-            justifyContent: "center",
-            height:55,
-            backgroundColor: baseColors.sucessColor,
-            borderBottomEndRadius: 7,
-            borderBottomStartRadius: 7,
-            width: deviceWidth / 1,
-          }}
+          style={styles.HeaderRow}
         >
-
-            <Text
-              style={{ fontWeight: "bold", color: baseColors.lightTextColor, fontSize:17 }}
-            >
-              Appoinment Request
-            </Text>
-
+          <Text
+            style={styles.HeaderRowText}
+          >
+            Appoinment Request
+          </Text>
         </View>
       </AppHeader>
       <View
-        style={{
-          flexDirection: "row",
-          justifyContent: "flex-end",
-          alignItems: "center",
-          width: deviceWidth / 1,
-          paddingRight: 20,
-        }}
+        style={styles.ScreenMiddle}
       >
         <Text>Today</Text>
         <Ionicons name="filter-outline" size={24} color="black" />
       </View>
       <View
-        style={{
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
+        style={styles.ScreenMiddleView}
       >
         <View style={styles.Container}>
           <FlatList
@@ -63,6 +42,11 @@ const Document = () => {
 };
 
 const styles = StyleSheet.create({
+  ScreenContainer: {
+    flex: 1,
+    height: deviceHeight / 1,
+    width: deviceWidth / 1,
+  },
   headerContainer: {
     backgroundColor: baseColors.lightColor,
     marginTop: 35,
@@ -74,6 +58,33 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
+  HeaderRow:{
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    height: 55,
+    backgroundColor: baseColors.sucessColor,
+    borderBottomEndRadius: 7,
+    borderBottomStartRadius: 7,
+    width: deviceWidth / 1,
+  },
+  HeaderRowText:{
+    fontWeight: "bold",
+    color: baseColors.lightTextColor,
+    fontSize: 17,
+  },
+  ScreenMiddle:{
+    flexDirection: "row",
+    justifyContent: 'flex-end',
+    alignItems: "center",
+    width: deviceWidth / 1,
+    paddingRight: 20,
+  },
+  ScreenMiddleView:{
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+  }
 });
 
 export default Document;

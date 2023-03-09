@@ -118,7 +118,7 @@ function ModalTester() {
                 />
                 <Text
                   onPress={() => {
-                    Navigation.navigate("CommonDetail");
+                    Navigation.navigate("AssuranceCompanyDetail");
                     toggleModal();
                   }}
                   style={styles.modalViewText}

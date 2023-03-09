@@ -4,42 +4,51 @@ import AppHeader from "../../../../Components/AppHeader";
 import baseColors from "../../../../Constant/color";
 import SearchField from "../../../../Components/SearchField";
 import { useNavigation } from "@react-navigation/native";
-import { Logo, FlagButtonOne, BottomImage } from "../../../../Assets/images";
+import { FlagButtonOne, Logo , BottomImage} from "../../../../Assets/images";
 import {
   FontAwesome5,
-  Fontisto,
   Entypo,
-  MaterialIcons,
 } from "@expo/vector-icons";
 import { styles } from "./style";
 
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
-
 function Feed() {
-const navigation = useNavigation();
-
-
+  const navigation = useNavigation();
   return (
-    <View
-      style={styles.ScreenContainer}
-    >
+    <View style={{ flex: 1, backgroundColor: baseColors.lightColor ,height: deviceHeight/1, }}>
       <AppHeader styles={styles.headerContainer}>
         <View
-          style={styles.headerContainerView}
+          style={{
+            flexDirection: "row",
+            alignItems: "center",
+            paddingVertical: 15,
+            width: deviceWidth / 1,
+          }}
         >
           <View
-            style={styles.HeaderFirstRow}
+            style={{
+              width: deviceWidth / 1.2,
+              paddingLeft: 35,
+              flexDirection: "row",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
           >
             <Image
               source={Logo}
-              style={{ height: 30, width: 125 }}
+              style={{ height: 30, width: 125 ,}}
             />
           </View>
           <View
-            style={styles.HeaderSecondRow}
+            style={{
+              width: deviceWidth / 3.8,
+              flexDirection: "row",
+              justifyContent: "space-between",
+              alignItems: "center",
+            }}
           >
-            <TouchableOpacity
+             <TouchableOpacity
             onPress={()=>navigation.navigate('UserAppHome')}>
               <Image
                 source={FlagButtonOne}
@@ -53,8 +62,12 @@ const navigation = useNavigation();
         </View>
       </AppHeader>
       <View style={styles.items}>
+
         <View
-          style={styles.itemsMainView}
+          style={{
+            flexWrap: "wrap",
+            flexDirection: "row",
+          }}
         >
           <View style={styles.itemsView}>
             <FontAwesome5
@@ -63,53 +76,62 @@ const navigation = useNavigation();
               style={styles.itemsIcon}
             />
             <Text
-              onPress={()=>navigation.navigate('Agenda')}
+              onPress={() => {
+                navigation.navigate("AssuranceAgendaReports");
+              }}
               style={styles.itemsViewText}
             >
-              Agenda
+              AGENDA
             </Text>
           </View>
 
           <View style={styles.itemsViewReverse}>
-            <Entypo name="calendar" size={24} style={styles.itemsIconReverse} />
+          <Entypo name="calendar" size={24}  style={styles.itemsIconReverse}  />
             <Text
-             onPress={()=>navigation.navigate('Appointment')}
+            // onPress={() => {
+            //   navigation.navigate("AssuranceTracking");
+            // }}
               style={styles.itemsViewTextReverse}
             >
-              Appointment
+            Tracking
             </Text>
           </View>
 
           <View style={styles.itemsViewReverse}>
-            <MaterialIcons
-              name="public"
-              size={24}
+          <Entypo name="wallet" size={24}
               style={styles.itemsIconReverse}
             />
             <Text
-               onPress={()=>navigation.navigate('CreatePost')}
+            //  onPress={() => {
+            //   navigation.navigate("Epargne");
+            // }}
               style={styles.itemsViewTextReverse}
             >
-              Publicity
+            EARNING
             </Text>
           </View>
 
           <View style={styles.itemsView}>
-            <Entypo name="wallet" size={24} style={styles.itemsIcon} />
+          <FontAwesome5
+              name="clinic-medical"
+              size={26}
+              style={styles.itemsIcon}
+            />
             <Text
-              
-              onPress={()=>navigation.navigate('Epargne')}
+            //  onPress={() => {
+            //   navigation.navigate("Epargne");
+            // }}
               style={styles.itemsViewText}
             >
-              Earning
+              PLANS
             </Text>
           </View>
         </View>
       </View>
-
       <Image
         source={BottomImage}
-        style={{ height: 270, resizeMode: "contain" }}
+        style={{ height: 270,resizeMode: 'contain' }}
+        
       />
     </View>
   );

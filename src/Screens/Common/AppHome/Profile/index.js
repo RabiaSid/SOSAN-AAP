@@ -26,20 +26,8 @@ function Profile() {
 
       <View>
         <AppHeader styles={styles.headerContainer}>
-          <View
-            style={{
-              flexDirection: "row",
-              alignItems: "center",
-              paddingVertical: 5,
-            }}
-          >
-            <View
-              style={{
-                width: deviceWidth / 3,
-                flexDirection: "row",
-                justifyContent: "flex-start",
-              }}
-            >
+          <View style={styles.HeaderMainRow}>
+            <View style={styles.HeaderPressable}>
               <Pressable onPress={() => Navigation.goBack("Feed")}>
                 <Ionicons
                   name="chevron-back-sharp"
@@ -48,57 +36,23 @@ function Profile() {
                 />
               </Pressable>
             </View>
-            <View
-              style={{
-                width: deviceWidth / 3,
-                flexDirection: "row",
-                justifyContent: "center",
-              }}
-            >
+            <View style={styles.HeaderText}>
               <Text style={{ fontWeight: "bold" }}>Personal Detail</Text>
             </View>
           </View>
         </AppHeader>
       </View>
       <ScrollView showsVerticalScrollIndicator={false}>
-        <View
-          style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
-        >
+        <View style={styles.ScreenMiddle}>
           <View style={styles.imageStyle}>
             <Image style={styles.image} source={AvatarPerson3} />
           </View>
-          <View
-            style={{
-              flexDirection: "column",
-              width: deviceWidth / 1,
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <View
-              style={{
-                flexDirection: "row",
-                justifyContent: "space-evenly",
-                alignItems: "center",
-                marginVertical: 5,
-              }}
-            >
-              <View
-                style={{
-                  width: deviceWidth / 1.6,
-                  justifyContent: "flex-end",
-                  alignItems: "flex-end",
-                }}
-              >
+          <View style={styles.TopView}>
+            <View style={styles.TopViewMiddle}>
+              <View style={styles.TopViewHeading}>
                 <Text style={{ fontWeight: "bold" }}>John Smith</Text>
               </View>
-              <View
-                style={{
-                  width: deviceWidth / 2.2,
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
-              >
+              <View style={styles.TopViewItem}>
                 <FontAwesome
                   name="pencil-square-o"
                   size={22}
@@ -208,9 +162,9 @@ function Profile() {
                   name="navigate-next"
                   size={28}
                   style={styles.TextSecondary}
-                  onPress={() => {
-                    Navigation.navigate("CancelledAppointment");
-                  }}
+                  // onPress={() => {
+                  //   Navigation.navigate("CancelledAppointment");
+                  // }}
                 />
               </View>
             </View>

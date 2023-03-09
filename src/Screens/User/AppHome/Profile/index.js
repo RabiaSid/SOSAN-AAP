@@ -313,9 +313,9 @@ function Profile() {
                   name="navigate-next"
                   size={28}
                   style={styles.TextSecondary}
-                  onPress={() => {
-                    Navigation.navigate("CancelledAppointment");
-                  }}
+                  // onPress={() => {
+                  //   Navigation.navigate("CancelledAppointment");
+                  // }}
                 />
               </View>
             </View>

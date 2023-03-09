@@ -17,12 +17,48 @@ export const styles = StyleSheet.create({
     marginTop: 35,
     width: deviceWidth / 1,
   },
-  
-
-  // screen: {
-  //   flexDirection: "column",
-  //   justifyContent: "center",
-  // },
+  HeaderMainRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    paddingVertical: 5,
+  },
+  HeaderPressable: {
+    width: deviceWidth / 3,
+    flexDirection: "row",
+    justifyContent: "flex-start",
+  },
+  HeaderText: {
+    width: deviceWidth / 3,
+    flexDirection: "row",
+    justifyContent: "center",
+  },
+  ScreenMiddle: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  TopView: {
+    flexDirection: "column",
+    width: deviceWidth / 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  TopViewMiddle: {
+    flexDirection: "row",
+    justifyContent: "space-evenly",
+    alignItems: "center",
+    marginVertical: 5,
+  },
+  TopViewItem: {
+    width: deviceWidth / 2.2,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  TopViewHeading: {
+    width: deviceWidth / 1.6,
+    justifyContent: "flex-end",
+    alignItems: "flex-end",
+  },
   imageStyle: {
     paddingVertical: 15,
     justifyContent: "center",
@@ -52,7 +88,7 @@ export const styles = StyleSheet.create({
     color: baseColors.secondaryTextColor,
     fontWeight: "bold",
   },
-  TextDanger:{
+  TextDanger: {
     color: baseColors.dangerTextColor,
     fontWeight: "bold",
   },

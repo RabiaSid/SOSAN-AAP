@@ -17,19 +17,10 @@ const Conversation = () => {
             <View>
                 <AppHeader styles={styles.headerContainer}>
                     <View
-                        style={{
-                            flexDirection: "row",
-                            alignItems: "center",
-                            paddingVertical: 5,
-                            // justifyContent:'center'
-                        }}
+                        style={styles.HeaderRow}
                     >
                         <View
-                            style={{
-                                width: deviceWidth / 3,
-                                flexDirection: "row",
-                                justifyContent: "flex-start",
-                            }}
+                            style={styles.HeaderRowitems}
                         >
                             <TouchableOpacity>
                                 <Ionicons
@@ -41,7 +32,6 @@ const Conversation = () => {
                         </View>
                         <View
                             style={{
-                                // width: deviceWidth / 3,
                                 flexDirection: "row",
                                 justifyContent: "center",
                             }}

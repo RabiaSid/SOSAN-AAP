@@ -21,6 +21,16 @@ export const styles = StyleSheet.create({
     borderBottomRightRadius:15,
     paddingVertical:8
 },
+HeaderRow:{
+  flexDirection: "row",
+                            alignItems: "center",
+                            paddingVertical: 5,
+},
+HeaderRowitems:{
+  width: deviceWidth / 3,
+  flexDirection: "row",
+  justifyContent: "flex-start",
+},
   LinearGradient: {
     
     borderColor: baseColors.lightColor,

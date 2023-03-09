@@ -1,14 +1,14 @@
 import React from "react";
 import { View, Text, ScrollView, Dimensions , FlatList } from "react-native";
-import GradientBackground from "../../../../Components/Gradient/LinearBackground/index";
-import AppHeader from "../../../../Components/AppHeader/index";
-import SearchField from "../../../../Components/SearchField/index";
+import GradientBackground from "../../../Components/Gradient/LinearBackground/index";
+import AppHeader from "../../../Components/AppHeader/index";
+import SearchField from "../../../Components/SearchField/index";
 import { Ionicons } from '@expo/vector-icons';
 import { useNavigation } from "@react-navigation/native";
-import { AppointmentCardData } from '../../../../Config/index';
+import { AppointmentCardData } from '../../../Config/index';
 import styles from "./style.js"
-import baseColors from "../../../../Constant/color";
-import AppointmentCard from "../../../../Components/Cards/AppointmentCard/index";
+import baseColors from "../../../Constant/color";
+import AppointmentCard from "../../../Components/Cards/AppointmentCard/index";
 
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
@@ -20,7 +20,7 @@ function Appointments() {
         <AppHeader styles={styles.headerContainer}>
           <GradientBackground styles={styles.LinearGradient}>
 
-            <View style={{ flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center', marginHorizontal: 10,paddingVertical:15 }}>
+            <View style={styles.HearderFirstRow}>
               <View>
               <Ionicons
                   name="chevron-back-sharp"
@@ -28,18 +28,14 @@ function Appointments() {
                   style={{ color: baseColors.lightTextColor }}
                 
               onPress={() => {
-                navigation.goBack("Feed");
+                navigation.goBack("");
               }}
               />
               </View>
               <Text style={styles.HeadingText}>Appointment</Text>
 
-              <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
-                <Text style={{
-                  fontSize: 12,
-                  paddingEnd: 5,
-                  color: baseColors.lightColor
-                }}>Today</Text>
+              <View style={styles.HearderSecondRow}>
+                <Text style={styles.HearderSecondRowText}>Today</Text>
                 <Ionicons name="menu-outline" size={20} color="black" />
               </View>
             </View>
@@ -52,20 +48,13 @@ function Appointments() {
       <ScrollView>
         <View
           style={{
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
+            
           }}
         >
           <View style={styles.screenMiddle}>
      
-          <View style={{ flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-          <View style={{
-            flexDirection: 'column',
-            width: deviceWidth / 1,
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}>
+          <View style={styles.MiddleView}>
+          <View style={styles.MiddleViewList}>
             <FlatList
               data={AppointmentCardData}
               renderItem={({ item }) => <AppointmentCard data={item} />

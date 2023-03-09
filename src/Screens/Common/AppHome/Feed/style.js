@@ -5,18 +5,41 @@ const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
 
 export const styles = StyleSheet.create({
+  ScreenContainer: {
+    flex: 1,
+    backgroundColor: baseColors.lightColor,
+    height: deviceHeight / 1,
+  },
   headerContainer: {
-   
     backgroundColor: baseColors.lightColor,
     height: 170,
     marginTop: 35,
     width: deviceWidth / 1,
-    borderBottomEndRadius:30,
-    borderBottomStartRadius:30,
-
+    borderBottomEndRadius: 30,
+    borderBottomStartRadius: 30,
   },
-  header: {
-
+  headerContainerView: {
+    flexDirection: "row",
+    alignItems: "center",
+    paddingVertical: 15,
+    width: deviceWidth / 1,
+  },
+  HeaderFirstRow:{
+    width: deviceWidth / 1.2,
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    paddingLeft: 35,
+  },
+  HeaderSecondRow:{
+    width: deviceWidth / 3.8,
+              flexDirection: "row",
+              justifyContent: "space-between",
+              alignItems: "center",
+  },
+  itemsMainView:{
+    flexWrap: "wrap",
+    flexDirection: "row",
   },
   SearchField: {
     height: 50,
@@ -26,28 +49,8 @@ export const styles = StyleSheet.create({
     borderRadius: 50,
     padding: 10,
   },
-  LinearGradientContainer: {
-    position: "absolute",
-    flex: 1,
-    width: deviceWidth / 1,
-    height: deviceHeight / 1,
-    
-  },
-  Button: {
-    elevation: 8,
-    backgroundColor: baseColors.primaryColor,
-    borderRadius: 50,
-    paddingVertical: 10,
-    paddingHorizontal: 12,
-    width: 200,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  ButtonText: {
-    color: "#fff",
-    fontWeight: "bold",
-    textTransform: "uppercase",
-  },
+ 
+ 
   items: {
     backgroundColor: baseColors.lightColor,
     borderRadius: 10,

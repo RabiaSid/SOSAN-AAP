@@ -146,7 +146,7 @@ function SignUp() {
                   alignItems: "center",
                 }}
                 onPress={() => {
-                  Navigation.navigate("SignIn");
+                  Navigation.goBack("SignIn");
                 }}
               >
                 <Text
@@ -156,7 +156,7 @@ function SignUp() {
                     textTransform: "uppercase",
                   }}
                 >
-                  Signup
+                  Cancel
                 </Text>
               </Button>
 
@@ -182,7 +182,7 @@ function SignUp() {
                     textTransform: "uppercase",
                   }}
                 >
-                  Signup
+                  Next
                 </Text>
               </Button>
             </View>

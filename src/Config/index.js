@@ -1027,3 +1027,62 @@ export const ChatData = [
       
     },
   ]
+
+  export const ClearedAndPendingData = [
+    {
+      image:AvatarPerson1,
+      title: "Alfonso Vetrovs",
+      year:"23years` Male",
+      goto:'AssuranceReportDetail',
+      goToChat:'Conversation'
+      
+      
+    },
+    {
+      image:AvatarPerson1,
+      title: "Alfonso Vetrovs",
+      year:"23years` Male",
+      goto:'AssuranceReportDetail',
+      goToChat:'Conversation'
+      
+      
+    },
+    {
+      image:AvatarPerson1,
+      title: "Alfonso Vetrovs",
+      year:"23years` Male",
+      goto:'AssuranceReportDetail',
+      goToChat:'Conversation'
+      
+      
+    },
+    {
+      image:AvatarPerson1,
+      title: "Alfonso Vetrovs",
+      year:"23years` Male",
+      goto:'AssuranceReportDetail',
+      goToChat:'Conversation'
+      
+      
+    },
+    {
+      image:AvatarPerson1,
+      title: "Alfonso Vetrovs",
+      year:"23years` Male",
+      goto:'AssuranceReportDetail',
+      goToChat:'Conversation'
+      
+      
+    },
+  ]
+  export const NewRequestsAndObjectionsData = [
+    {
+      image:AvatarPerson1,
+      title: "Alfonso Vetrovs",
+      year:"23years` Male",
+      goto:'IssuranceEditDetail',
+      goToChat:'Conversation'
+      
+      
+    },
+  ]

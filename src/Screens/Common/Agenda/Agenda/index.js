@@ -61,7 +61,6 @@ const Agenda = () => {
           </View>
         </AppHeader>
       </View>
-      {/* <ScrollView> */}
       <View
         style={{
           flexDirection: "column",
@@ -225,12 +224,10 @@ const Agenda = () => {
                   backgroundColor: baseColors.sucessColor,
                   borderRadius: 50,
                   padding: 10,
-                  // paddingHorizontal: 12,
                   width: 60,
                   justifyContent: "center",
                   alignItems: "center",
                   height: 60,
-                  // marginVertical: 20,
                 }}>
                 <MaterialIcons name="add" size={40} color="#fff" onPress={() => {
                   navigation.navigate("WorkingDetailAgenda");

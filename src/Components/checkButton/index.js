@@ -11,6 +11,7 @@ function CheckButton({value}) {
       onPress={() => {
         setChecked(!checked);
       }}
+      
     />
   );
 }

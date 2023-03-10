@@ -5,17 +5,19 @@ import Button from "../../../Components/Buttons";
 import { useNavigation } from "@react-navigation/native";
 import { styles } from "./style";
 import baseColors from "../../../Constant/color";
-import CheckButton from "../../../Components/CheckButton/index";
+// import CheckButton from "../../../Components/CheckButton/index";
 import ModalTester from "../../../Components/Modal/SectionModal";
 import GradientBackground from "../../../Components/Gradient/LinearBackground";
+import { Checkbox } from "react-native-paper";
 
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
 
 function SignUp() {
   const Navigation = useNavigation();
+  const [checked, setChecked] = React.useState(false);
+  const [switchValue, setswitchValue] = React.useState(false);
 
- 
   return (
     <View style={styles.screenContainer}>
       <GradientBackground>
@@ -75,55 +77,66 @@ function SignUp() {
             <View
               style={{
                 flexDirection: "row",
-                justifyContent: 'space-between',
-                width:deviceWidth/1.1,
+                justifyContent: "space-between",
+                width: deviceWidth / 1.1,
                 alignItems: "center",
               }}
             >
               <View
-              style={{
-                flexDirection: "row",
-                justifyContent: 'space-between',
-                width:deviceWidth/2.5,
-                alignItems: "center",
-                paddingVertical: 5,
-                paddingHorizontal: 15,
-              }}
-              >
-              <CheckButton />
-              <Text
-                onPress={() => {
-                  Navigation.navigate("Verification");
+                style={{
+                  flexDirection: "row",
+                  justifyContent: 'space-between',
+                  width: deviceWidth / 2.3,
+                  alignItems: "center",
+                  paddingVertical: 5,
+                  paddingHorizontal: 15,
                 }}
               >
-                Individual
-              </Text>
+                <Checkbox
+                  status={checked ? "unchecked" : "checked" }
+                  onPress={() => {
+                    setChecked(!checked);
+                    setswitchValue(false)
+                  }}
+                />
+                <Text>
+                  Individual
+                </Text>
               </View>
               <View
-              style={{
-                flexDirection: "row",
-                justifyContent: 'space-between',
-                width:deviceWidth/2.3,
-                alignItems: "center",
-                paddingVertical: 5,
-                paddingHorizontal: 10,
-                
-              }}
+                style={{
+                  flexDirection: "row",
+                  justifyContent: 'space-between',
+                  width: deviceWidth / 2.3,
+                  alignItems: "center",
+                  paddingVertical: 5,
+                  paddingHorizontal: 15,
+                }}
               >
-              <CheckButton />
-              <ModalTester />
-
+                <Checkbox
+                status={checked ? "checked" : "unchecked"}
+                  onPress={() => {
+                    setChecked(!checked);
+                    setswitchValue(true)
+                  }}
+                />
+                <Text>
+                 Professional
+                </Text>
               </View>
             </View>
 
             <View
               style={{
                 flexDirection: "row",
-                justifyContent: 'space-evenly',
-                width:deviceWidth/1-50,
+                justifyContent: "space-evenly",
+                alignItems:'center',
+                width: deviceWidth / 1.1-5,
               }}
             >
-              <CheckButton />
+               <Checkbox
+                  status={"checked"}
+                />
               <Text>i agree with the terms and agreements</Text>
             </View>
 
@@ -146,7 +159,7 @@ function SignUp() {
                   alignItems: "center",
                 }}
                 onPress={() => {
-                  Navigation.goBack("SignIn");
+                  Navigation.goBack("");
                 }}
               >
                 <Text
@@ -159,8 +172,37 @@ function SignUp() {
                   Cancel
                 </Text>
               </Button>
-
+              {switchValue !== true ? (
               <Button
+                styles={{
+                  elevation: 8,
+                  backgroundColor: baseColors.primaryColor,
+                  borderRadius: 50,
+                  paddingVertical: 10,
+                  paddingHorizontal: 12,
+                  width: 150,
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+                
+                onPress={() => {
+                  Navigation.navigate("Verification");
+                }}
+              >
+                
+                <Text
+                  style={{
+                    color: baseColors.lightColor,
+                    fontWeight: "bold",
+                    textTransform: "uppercase",
+                  }}
+                >
+                  Next
+                </Text>
+              </Button>
+              ) :(
+
+                <Button
                 styles={{
                   elevation: 8,
                   backgroundColor: baseColors.primaryColor,
@@ -175,16 +217,9 @@ function SignUp() {
                   Navigation.navigate("SignIn");
                 }}
               >
-                <Text
-                  style={{
-                    color: baseColors.lightColor,
-                    fontWeight: "bold",
-                    textTransform: "uppercase",
-                  }}
-                >
-                  Next
-                </Text>
+                <ModalTester />
               </Button>
+              )}
             </View>
           </View>
         </View>

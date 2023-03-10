@@ -8,8 +8,10 @@ import {
   MaterialCommunityIcons,
 } from "@expo/vector-icons";
 import Modal from "react-native-modal";
+import baseColors from "../../../Constant/color";
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
+baseColors
 
 function ModalTester() {
   const Navigation = useNavigation();
@@ -21,7 +23,16 @@ function ModalTester() {
 
   return (
     <View style={{ flex: 1 }}>
-      <Text onPress={toggleModal}> professional</Text>
+      <Text
+        onPress={toggleModal}
+        style={{
+          color: baseColors.lightColor,
+          fontWeight: "bold",
+          textTransform: "uppercase",
+        }}
+      >
+        Next
+      </Text>
 
       <Modal isVisible={isModalVisible} onBackdropPress={toggleModal}>
         <View
@@ -127,7 +138,6 @@ function ModalTester() {
                 </Text>
               </View>
             </View>
-
           </View>
         </View>
       </Modal>

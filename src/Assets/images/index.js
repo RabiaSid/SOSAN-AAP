@@ -30,6 +30,7 @@ import Visa from "./Visa.png"
 import Mtn from "./MTN.jpg"
 import Mastercard from "./Mastercard.png"
 import Paypal from "./Paypal.png"
+import AlertImage from "./AlertImage.png"
 
 
 export {
@@ -65,4 +66,5 @@ export {
     Mtn,
     Mastercard,
     Paypal,
+    AlertImage
 }

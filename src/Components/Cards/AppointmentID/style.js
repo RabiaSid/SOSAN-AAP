@@ -3,7 +3,6 @@ import baseColors from '../../../Constant/color';
 const deviceWidth = Dimensions.get("window").width;
 export const styles = StyleSheet.create({
     Container: {
-        // backgroundColor: '#fff',
         padding: 10,
         paddingVertical: 10,
         marginVertical: 5,

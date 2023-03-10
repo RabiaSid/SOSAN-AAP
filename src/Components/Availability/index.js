@@ -69,7 +69,7 @@ function AvailabilityComponent() {
             <Text
               style={styles.ButtonTextPrimary}
               onPress={() => {
-                Navigation.navigate("PaymentSuccessFull");
+                Navigation.navigate("AppointmentDoctor");
               }}
             >
               Book An Appointment
@@ -97,7 +97,7 @@ function AvailabilityComponent() {
             <Text
               style={styles.ButtonTextPrimary}
               onPress={() => {
-                Navigation.navigate("PaymentSuccessFull");
+                Navigation.navigate("AppointmentDoctor");
               }}
             >
               Book An Appointment

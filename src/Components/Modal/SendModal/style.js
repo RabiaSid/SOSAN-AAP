@@ -115,7 +115,7 @@ export const styles = StyleSheet.create({
     },
     ButtonTextSecondery:{
     
-        color: "#fff",
+        color: baseColors.lightColor,
         fontWeight: "bold",
         textTransform: "uppercase",
       

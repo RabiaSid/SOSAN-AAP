@@ -82,13 +82,19 @@ import CreatePostHospital from "../../Screens/Hospital/Publicity/CreatePost";
 import PersonalDetailDoctor from "../../Screens/Doctor/PersonalDetail";
 import AssociationDetailDonation from "../../Screens/Donation/AssociationDetail";
 import AssociationDetailDoctor from "../../Screens/Doctor/AssociationDetail";
-import RegisteredClientsAssurance from "../../Screens/AssurancesAndInsurance/RegisteredClients";
+import RegisteredClientsAssurance from "../../Screens/AssurancesAndInsurance/Agenda/RegisteredClients";
 import AssuranceAgendaReports from "../../Screens/AssurancesAndInsurance/Agenda/Reports";
 import AssuranceCompanyDetail from "../../Screens/AssurancesAndInsurance/CompanyDetail";
 import AssuranceAddANewPlan from "../../Screens/AssurancesAndInsurance/AddANewPlan"
 import AssurancesAndInsuranceAppHome from "../../Screens/AssurancesAndInsurance/AppHome";
 import AssuranceReportDetail from "../../Screens/AssurancesAndInsurance/Agenda/DetailReport";
 import IssuranceEditDetail from "../../Screens/AssurancesAndInsurance/IssuranceEditDetail";
+import AssuranceTracking from "../../Screens/AssurancesAndInsurance/Tracking/AssuranceTracking";
+import AssuranceAddplanDetail from "../../Screens/AssurancesAndInsurance/Plan/AddplanDetail/index"
+import AssuranceEditPlanDetail from "../../Screens/AssurancesAndInsurance/Plan/EditPlanDetail";
+import TrackingIssuranceEditDetail from "../../Screens/AssurancesAndInsurance/Tracking/TrackingIssuranceEditDetail";
+import AssuranceYourPlans from "../../Screens/AssurancesAndInsurance/Plan/YourPlans";
+import AssuranceTermsAndCondition from "../../Screens/AssurancesAndInsurance/Plan/PlanDetail";
 
 import AssurancesAndInsuranceTabBottomNavigation from "../AssurancesAndInsuranceTabBottomNavigation";
 import PharmacyTabBottomNavigation from "../PharmacyTabBottomNavigation";
@@ -198,6 +204,12 @@ const StackNavigation = () => {
           <MainStack.Screen name="AssurancesAndInsuranceAppHome" component={AssurancesAndInsuranceAppHome} />
           <MainStack.Screen name="AssuranceReportDetail" component={AssuranceReportDetail} />
           <MainStack.Screen name="IssuranceEditDetail" component={IssuranceEditDetail} />
+          <MainStack.Screen name="AssuranceTracking" component={AssuranceTracking} />
+          <MainStack.Screen name="AssuranceAddplanDetail" component={AssuranceAddplanDetail} />
+          <MainStack.Screen name="AssuranceEditPlanDetail" component={AssuranceEditPlanDetail} />
+          <MainStack.Screen name="TrackingIssuranceEditDetail" component={TrackingIssuranceEditDetail} />
+          <MainStack.Screen name="AssuranceYourPlans" component={AssuranceYourPlans} />
+          <MainStack.Screen name="AssuranceTermsAndCondition" component={AssuranceTermsAndCondition} />
 
           <MainStack.Screen name="AssurancesAndInsuranceTabBottomNavigation" component={AssurancesAndInsuranceTabBottomNavigation} />
           <MainStack.Screen name="PharmacyTabBottomNavigation" component={PharmacyTabBottomNavigation} />

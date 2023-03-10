@@ -90,7 +90,7 @@ export default function AvaialblePlan() {
                               }}
                         
                           style={{
-                              color: "#fff",
+                              color: baseColors.lightColor,
                               fontSize: 20
                           }}>Subscribe Now</Text>
                       </DarkGradient>
@@ -115,7 +115,7 @@ export default function AvaialblePlan() {
                               }}
                         
                           style={{
-                              color: "#fff",
+                              color: baseColors.lightColor,
                               fontSize: 20
                           }}>Subscribe Now</Text>
                       </DarkGradient>
@@ -140,7 +140,7 @@ export default function AvaialblePlan() {
                               }}
                         
                           style={{
-                              color: "#fff",
+                              color: baseColors.lightColor,
                               fontSize: 20
                           }}>Subscribe Now</Text>
                       </DarkGradient>

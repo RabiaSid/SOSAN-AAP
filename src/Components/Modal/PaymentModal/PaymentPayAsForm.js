@@ -98,7 +98,7 @@ function PaymentPayAsForm({children}) {
               >
                 <Text
                   style={{
-                    color: "#fff",
+                    color: baseColors.lightColor,
                     fontWeight: "bold",
                     textTransform: "uppercase",
                   }}

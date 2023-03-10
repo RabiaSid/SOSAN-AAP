@@ -119,7 +119,7 @@ export default function MedicalHistory() {
                             navigation.navigate("PaymentDone")
                           }}
                           style={{
-                              color: "#fff",
+                              color: baseColors.lightColor,
                               fontSize: 20
                           }}>Done</Text>
                       </DarkGradient>

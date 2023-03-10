@@ -7,14 +7,14 @@ import {
   FlatList,
   Image,
 } from "react-native";
-import AppHeader from "../../../Components/AppHeader/index";
+import AppHeader from "../../../../Components/AppHeader/index";
 import { styles } from "./style";
-import baseColors from "../../../Constant/color";
+import baseColors from "../../../../Constant/color";
 import { Ionicons ,EvilIcons} from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
-import { AddDrugData } from "../../../Config";
-import { AvatarPerson1 } from "../../../Assets/images";
-import SearchField from "../../../Components/SearchField";
+import { AddDrugData } from "../../../../Config";
+import { AvatarPerson1 } from "../../../../Assets/images";
+import SearchField from "../../../../Components/SearchField";
 
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
@@ -162,7 +162,7 @@ function RegisteredClientsAssurance() {
             </View>
             
             <TouchableOpacity 
-            onPress={()=>{Navigation.navigate('AvailableDrugsDetail') }}
+            onPress={()=>{Navigation.navigate('IssuranceEditDetail') }}
             >
               <FlatList
                 data={AddDrugData}
@@ -192,7 +192,9 @@ function RegisteredClientsAssurance() {
                     >
                     
                    <EvilIcons name="pencil" size={28} color="grey" 
-                   onPress={()=>{Navigation.navigate('SetCampaignPharmacy') }}
+                    onPress={()=> {
+                      Navigation.navigate("TrackingIssuranceEditDetail")
+                    }} 
                    />
                    <Ionicons name="ios-trash-bin-sharp" size={20} color='red'  
                    />

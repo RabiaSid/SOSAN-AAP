@@ -8,7 +8,7 @@ import {
   FlatList,
 } from "react-native";
 import AppHeader from "../../../../Components/AppHeader/index";
-import { ListOfSchedule } from "../../../../Config/index";
+import { ListOfSchedule, ListOfScheduleTwo } from "../../../../Config/index";
 import List from "../../../../Components/List/ListSchedule/index";
 import { styles } from "./style";
 import baseColors from "../../../../Constant/color";
@@ -22,6 +22,7 @@ const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
 
 const Agenda = () => {
+  const [switchValue, setswitchValue] = React.useState(false);
   const navigation = useNavigation();
   return (
     <View style={styles.screenContainer}>
@@ -61,6 +62,7 @@ const Agenda = () => {
           </View>
         </AppHeader>
       </View>
+      {/* <ScrollView> */}
       <View
         style={{
           flexDirection: "column",
@@ -69,9 +71,12 @@ const Agenda = () => {
           paddingHorizontal: 10,
         }}
       >
-        <ScrollView>
+        <ScrollView  showsVerticalScrollIndicator={false}>
           <View style={styles.screenMiddle}>
-            <Calender />
+            <View style={{flexDirection:'row', paddingTop:10,}}>
+            <Text style={{ fontWeight: 'bold', fontSize: 20, }}>August, 2022</Text>
+            <Calender/>
+            </View>
             <View
               style={{
                 flexDirection: "row",
@@ -80,9 +85,7 @@ const Agenda = () => {
               }}
             >
               <TouchableOpacity
-                onPress={() => {
-                  navigation.goBack("Feed");
-                }}
+                  onPress={(value) => setswitchValue(true)} 
                 style={{
                   elevation: 8,
                   backgroundColor: "#ADD8E6",
@@ -109,9 +112,7 @@ const Agenda = () => {
                 </Text>
               </TouchableOpacity>
               <TouchableOpacity
-                onPress={() => {
-                  navigation.goBack("Feed");
-                }}
+                    onPress={(value) => setswitchValue(false)}
                 style={{
                   elevation: 8,
                   backgroundColor: baseColors.secondaryColor,
@@ -203,11 +204,19 @@ const Agenda = () => {
                 borderRadius: 10,
 
               }}>
+                   {switchValue !== true ? (
                 <FlatList
-                  data={ListOfSchedule}
+                  data={ListOfScheduleTwo}
                   renderItem={({ item }) => <List data={item} />
                   }
-                />
+                /> 
+                   ) : (
+                    <FlatList
+                    data={ListOfSchedule}
+                    renderItem={({ item }) => <List data={item} />
+                    }
+                  /> 
+                    )}
               </View>
             </View>
             <View style={{
@@ -224,12 +233,14 @@ const Agenda = () => {
                   backgroundColor: baseColors.sucessColor,
                   borderRadius: 50,
                   padding: 10,
+                  // paddingHorizontal: 12,
                   width: 60,
                   justifyContent: "center",
                   alignItems: "center",
                   height: 60,
+                  // marginVertical: 20,
                 }}>
-                <MaterialIcons name="add" size={40} color="#fff" onPress={() => {
+                <MaterialIcons name="add" size={40} color="white" onPress={() => {
                   navigation.navigate("WorkingDetailAgenda");
                 }} />
               </DarkGradient>

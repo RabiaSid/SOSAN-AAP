@@ -108,7 +108,9 @@ function IssuranceEditDetail() {
                 }}
                 
               >
-                <Mention />
+                <Mention >
+                  <Text style={{fontWeight:'bold',color:baseColors.lightColor}}>Add Objection</Text>
+                </Mention>
               </Button>
 
               <Darkbtn
@@ -124,7 +126,9 @@ function IssuranceEditDetail() {
                 }}
                 
               >
-                <AddedSuccessfully />
+                <AddedSuccessfully>
+                  Accpect
+                </AddedSuccessfully>
               </Darkbtn>
             </View>
         </View>

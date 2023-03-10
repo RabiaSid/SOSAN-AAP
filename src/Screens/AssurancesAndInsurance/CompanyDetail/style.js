@@ -111,7 +111,7 @@ export const styles = StyleSheet.create({
     borderRadius: 15, 
   },
   LoginTextSty:{
-    color: "#fff",
+    color: baseColors.lightColor,
     fontWeight: "bold",
     // textTransform: "uppercase",
     fontSize:18

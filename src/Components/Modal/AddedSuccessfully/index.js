@@ -9,7 +9,7 @@ import DarkGradient from "../../Gradient/DarkGradient";
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
 
-function AddedSuccessfully() {
+function AddedSuccessfully({children}) {
   const Navigation = useNavigation();
   const [isModalVisible, setModalVisible] = useState(false);
 
@@ -21,7 +21,7 @@ function AddedSuccessfully() {
   return (
     <View style={{ flex: 1 }}>
       
-      <Text style={styles.ButtonText} onPress={toggleModal}>Accept</Text>
+      <Text style={styles.ButtonText} onPress={toggleModal}>{children}</Text>
 
       <Modal isVisible={isModalVisible} onBackdropPress={toggleModal}>
         <View
@@ -100,7 +100,7 @@ const styles = StyleSheet.create({
       
      
       ButtonText: {
-        color: "#fff",
+        color: baseColors.lightColor,
         fontWeight: "bold",
         textTransform: "uppercase",
       },

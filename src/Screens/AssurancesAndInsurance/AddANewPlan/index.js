@@ -77,6 +77,9 @@ export default function AssuranceAddANewPlan() {
               paddingEnd: 5,
               color: baseColors.primaryColor,
             }}
+            onPress={() => {
+              navigation.navigate('AssurancesAndInsuranceAppHome');
+            }}
           >
             Skip
           </Text>
@@ -84,6 +87,9 @@ export default function AssuranceAddANewPlan() {
             name="doubleright"
             size={20}
             style={{ color: baseColors.primaryColor }}
+            onPress={() => {
+              navigation.navigate('AssurancesAndInsuranceAppHome');
+            }}
           />
         </View>
         <View
@@ -138,7 +144,7 @@ export default function AssuranceAddANewPlan() {
                   <AntDesign name="pluscircle" size={20} color="gray" />
                   <Text
                     onPress={() => {
-                      navigation.navigate("AvaialblePlan");
+                      navigation.navigate("AssuranceAddplanDetail");
                     }}
                     style={{ fontSize: 16, color: "gray" }}
                   >

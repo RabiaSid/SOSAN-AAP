@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Text, View, Dimensions, Image } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { styles } from "./style.js"
-// import { alertImg } from "../../../Assets/Images/index";
+import { AlertImage } from "../../../Assets/images/index";
 import Modal from "react-native-modal";
 import { Ionicons } from '@expo/vector-icons';
 import baseColors from "../../../Constant/color";
@@ -35,7 +35,7 @@ function AppointmentCancelModal() {
         >
           <View style={styles.modal}>
             <View style={styles.modalView}>
-              <View style={styles.ImgView}><Image source={alertImg} style={styles.ImageStyling}
+              <View style={styles.ImgView}><Image source={AlertImage} style={styles.ImageStyling}
               ></Image></View>
               <Text style={styles.Text}
                 onPress={() => {

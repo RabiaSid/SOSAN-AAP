@@ -151,7 +151,7 @@ function SignUp() {
               >
                 <Text
                   style={{
-                    color: "#fff",
+                    color: baseColors.lightColor,
                     fontWeight: "bold",
                     textTransform: "uppercase",
                   }}
@@ -177,7 +177,7 @@ function SignUp() {
               >
                 <Text
                   style={{
-                    color: "#fff",
+                    color: baseColors.lightColor,
                     fontWeight: "bold",
                     textTransform: "uppercase",
                   }}

@@ -6,11 +6,12 @@ import Modal from "react-native-modal";
 import baseColors from "../../../Constant/color";
 import DarkGradient from "../../Gradient/DarkGradient";
 import InputField from "../../InputField";
+import { Children } from "react";
 
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
 
-function Mention() {
+function Mention({children}) {
   const Navigation = useNavigation();
   const [isModalVisible, setModalVisible] = useState(false);
 
@@ -21,8 +22,8 @@ function Mention() {
   return (
     <View style={{ flex: 1 }}>
       <Text style={styles.ButtonText} onPress={toggleModal}>
-        {" "}
-        Add Objection
+        {children}
+        {/* Add Objection */}
       </Text>
 
       <Modal isVisible={isModalVisible} onBackdropPress={toggleModal}>
@@ -113,7 +114,7 @@ const styles = StyleSheet.create({
   },
 
   ButtonText: {
-    color: "#fff",
+    color: baseColors.lightColor,
     fontWeight: "bold",
     textTransform: "uppercase",
   },

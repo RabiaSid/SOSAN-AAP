@@ -83,7 +83,7 @@ const BookAnAppointment = ({ data }) => {
             <Text
               style={styles.ButtonTextPrimary}
               onPress={() => {
-                Navigation.navigate("PaymentSuccessFull");
+                Navigation.navigate("AppointmentDoctor");
               }}
             >
               Book An Appointment

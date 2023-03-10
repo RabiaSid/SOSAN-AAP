@@ -197,7 +197,7 @@ const styles = StyleSheet.create({
     zIndex: 0,
   },
   container: {
-    // backgroundColor: "#fff",
+    // backgroundColor: baseColors.lightColor,
     // marginVertical: 100,
     // marginHorizontal: 100,
     // borderWidth:2

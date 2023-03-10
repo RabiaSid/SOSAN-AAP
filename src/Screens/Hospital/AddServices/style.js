@@ -60,7 +60,7 @@ export const styles = StyleSheet.create({
         alignItems: "center",
       },
       LoginBtnTextSty: {
-        color: "#fff",
+        color: baseColors.lightColor,
         fontWeight: "bold",
         textTransform: "uppercase",
       }

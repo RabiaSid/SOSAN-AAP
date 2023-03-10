@@ -167,7 +167,7 @@ export default function AssuranceAbout() {
                             navigation.navigate("MedicalHistory")
                           }}
                           style={{
-                              color: "#fff",
+                              color: baseColors.lightColor,
                               fontSize: 20
                           }}>Subscribe Now</Text>
                       </DarkGradient>

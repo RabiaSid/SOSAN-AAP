@@ -88,9 +88,9 @@ function Feed() {
           <View style={styles.itemsViewReverse}>
           <Entypo name="calendar" size={24}  style={styles.itemsIconReverse}  />
             <Text
-            // onPress={() => {
-            //   navigation.navigate("AssuranceTracking");
-            // }}
+            onPress={() => {
+              navigation.navigate("AssuranceTracking");
+            }}
               style={styles.itemsViewTextReverse}
             >
             Tracking
@@ -102,9 +102,9 @@ function Feed() {
               style={styles.itemsIconReverse}
             />
             <Text
-            //  onPress={() => {
-            //   navigation.navigate("Epargne");
-            // }}
+             onPress={() => {
+              navigation.navigate("Epargne");
+            }}
               style={styles.itemsViewTextReverse}
             >
             EARNING
@@ -118,9 +118,9 @@ function Feed() {
               style={styles.itemsIcon}
             />
             <Text
-            //  onPress={() => {
-            //   navigation.navigate("Epargne");
-            // }}
+             onPress={() => {
+              navigation.navigate("AssuranceYourPlans");
+            }}
               style={styles.itemsViewText}
             >
               PLANS

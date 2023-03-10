@@ -57,7 +57,7 @@ export const styles = StyleSheet.create({
         alignItems: "center",
       },
       ButtonText: {
-        color: "#fff",
+        color: baseColors.lightColor,
         fontWeight: "bold",
         textTransform: "uppercase",
       },

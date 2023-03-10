@@ -129,7 +129,7 @@ export const styles = StyleSheet.create({
     alignItems: "center",
   },
   LoginTextSty: {
-    color: "#fff",
+    color: baseColors.lightColor,
     fontWeight: "bold",
     fontSize: 20
   },

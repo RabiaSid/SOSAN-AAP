@@ -31,7 +31,6 @@ function index() {
         fontSize={16}
         buttonColor={baseColors.sucessColor}
         borderColor={baseColors.sucessColor}
-        onPress={(value) => setswitchValue(value)}
         hasPadding
         options={[{ label: "Cleared" }, { label: "Pending" }]}
       />

@@ -38,7 +38,7 @@ export const styles = StyleSheet.create({
     
    
     ButtonText: {
-      color: "#fff",
+      color: baseColors.lightColor,
       fontWeight: "bold",
       textTransform: "uppercase",
     },

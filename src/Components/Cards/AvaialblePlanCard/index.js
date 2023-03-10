@@ -14,7 +14,7 @@ export default function AvaialblePlanCard({children}) {
       
       <View style={{ borderWidth: 2, marginTop: 15, borderRadius: 10 ,  borderColor: baseColors.lightGreyColor , elevation: 6 , backgroundColor: baseColors.LightSecondaryColor}}>
           <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', height: 55, width: deviceWidth / 1 - 20, }}>
-              <ImageBackground resizeMode='cover' source={BannerBlue} style={{ height: 30, width: 120, }} ><Text style={{ color: '#fff', fontSize: 14, paddingHorizontal: 10, paddingVertical: 5 }}>25 years</Text></ImageBackground>
+              <ImageBackground resizeMode='cover' source={BannerBlue} style={{ height: 30, width: 120, }} ><Text style={{ color: baseColors.lightColor, fontSize: 14, paddingHorizontal: 10, paddingVertical: 5 }}>25 years</Text></ImageBackground>
               <TouchableOpacity
                   style={{
                       elevation: 8,
@@ -85,7 +85,7 @@ export default function AvaialblePlanCard({children}) {
                               }}
                         
                           style={{
-                              color: "#fff",
+                              color: baseColors.lightColor,
                               fontSize: 20
                           }}>Subscribe Now</Text>
                       </DarkGradient>

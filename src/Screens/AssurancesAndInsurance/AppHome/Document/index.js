@@ -36,7 +36,7 @@ const Document = () => {
               <TouchableOpacity>
                 <Ionicons
                   onPress={() => {
-                    navigation.goBack("SignIn");
+                    navigation.goBack("");
                   }}
                   name="chevron-back-sharp"
                   size={37}

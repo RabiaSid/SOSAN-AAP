@@ -208,7 +208,7 @@ function CurrentCampaignPharmacy() {
                   height: 60,
                   // marginVertical: 20,
                 }}>
-                <MaterialIcons name="add" size={40} color="#fff"  
+                <MaterialIcons name="add" size={40} color="white"  
                 onPress={()=>{Navigation.navigate('SetCampaignPharmacy') }}
                 />
               </DarkGradient>

@@ -53,7 +53,7 @@ export const styles = StyleSheet.create({
         alignItems: "center",
     },
     LoginTextSty: {
-        color: "#fff",
+        color: baseColors.lightColor,
         fontSize: 20
     },
     appViewContainer:{

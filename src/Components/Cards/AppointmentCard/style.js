@@ -10,7 +10,7 @@ export const styles = StyleSheet.create({
        
     },
     CardStyling: {
-        backgroundColor: '#fff',
+        backgroundColor: baseColors.lightColor,
         padding: 10,
         borderRadius: 15,
         paddingVertical: 10,

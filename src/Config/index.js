@@ -290,20 +290,38 @@ export const ChatData = [
   export const ListOfSchedule = [
     {
       location: "North Karachi",
-      dateDay: "Wednesday 15-2-23",
+      dateDay: "Sunday 15-2-23",
       time: "07:32",
     },
     {
       location: "North Karachi",
-      dateDay: "Wednesday 15-2-23",
+      dateDay: "Sunday 15-2-23",
       time: "07:32",
     },
     {
       location: "North Karachi",
-      dateDay: "Wednesday 15-2-23",
+      dateDay: "Sunday 15-2-23",
       time: "07:32",
     },
   ]
+  export const ListOfScheduleTwo = [
+    {
+    location: "North Karachi",
+      dateDay: "Monday 15-2-23",
+      time: "07:32",
+  },
+  {
+    location: "North Karachi",
+      dateDay: "Monday 15-2-23",
+      time: "07:32",
+  },
+  {
+    location: "North Karachi",
+      dateDay: "Monday 15-2-23",
+      time: "07:32",
+  },
+  
+  ];
   export const EpargneListData = [
    
     {

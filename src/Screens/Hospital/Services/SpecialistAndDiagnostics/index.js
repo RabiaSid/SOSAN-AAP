@@ -106,7 +106,7 @@ function SpecialistAndDiagnosticsHospital() {
                   height: 60,
                   // marginVertical: 20,
                 }}>
-                <MaterialIcons name="add" size={40} color="#fff" onPress={() => {
+                <MaterialIcons name="add" size={40} color="white" onPress={() => {
                   Navigation.navigate("AddSpecializationHospital");
                 }} />
               </DarkGradient>

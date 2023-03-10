@@ -71,7 +71,7 @@ const Verification = () => {
               <Text
                 style={{
                   fontSize: 15,
-                  color: "#fff",
+                  color: baseColors.lightColor,
                   fontWeight: "600",
                   alignSelf: "center",
                   textTransform: "uppercase",
@@ -100,7 +100,7 @@ const Verification = () => {
               <Text
                 style={{
                   fontSize: 15,
-                  color: "#fff",
+                  color: baseColors.lightColor,
                   fontWeight: "600",
                   alignSelf: "center",
                   textTransform: "uppercase",

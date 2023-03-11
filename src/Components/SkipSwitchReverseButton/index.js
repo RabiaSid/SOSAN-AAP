@@ -34,7 +34,7 @@ function index() {
         }}
       >
         <View
-           style={{
+          style={{
             height: 38,
             borderRadius: 47,
             flexDirection: "row",
@@ -45,41 +45,40 @@ function index() {
         >
           <Text
             style={{
-                color: baseColors.darkColor,
-            fontSize: 17,
-            fontWeight: "400",
-              
+              color: baseColors.darkColor,
+              fontSize: 17,
+              fontWeight: "400",
             }}
-            
           >
             Stuff Detail
           </Text>
         </View>
         <View
-        style={{
+          style={{
             borderWidth: 2,
             borderColor: baseColors.sucessColor,
             backgroundColor: baseColors.sucessColor,
-            width: deviceWidth / 2-15,
+            width: deviceWidth / 2 - 15,
             height: 38,
             borderRadius: 50,
             flexDirection: "row",
             alignItems: "center",
             justifyContent: "center",
           }}
-         
         >
           <Text
-          style={{
-            color: baseColors.lightTextColor,
+            style={{
+              color: baseColors.lightTextColor,
               fontSize: 17,
               fontWeight: "400",
-          }}
-          onPress={()=>{Navigation.navigate('AddANewDoctorPharmacy')}}
-          >Doctor Detail</Text>
+            }}
+            onPress={() => {
+              Navigation.navigate("AddANewDoctorPharmacy");
+            }}
+          >
+            Doctor Detail
+          </Text>
         </View>
-      
-      
       </View>
     </View>
   );

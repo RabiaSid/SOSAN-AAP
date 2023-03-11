@@ -52,7 +52,11 @@ function SetCampaignPharmacy() {
                 Navigation.goBack("");
               }}
             >
-              <Ionicons name="chevron-back-sharp" size={30} style={{color:baseColors.lightTextColor }} />
+              <Ionicons
+                name="chevron-back-sharp"
+                size={30}
+                style={{ color: baseColors.lightTextColor }}
+              />
             </TouchableOpacity>
           </View>
           <View
@@ -62,59 +66,66 @@ function SetCampaignPharmacy() {
               justifyContent: "center",
             }}
           >
-            <Text style={{ fontWeight: "bold", fontSize: 18, color:baseColors.lightTextColor }}>Set Champaign</Text>
+            <Text
+              style={{
+                fontWeight: "bold",
+                fontSize: 18,
+                color: baseColors.lightTextColor,
+              }}
+            >
+              Set Champaign
+            </Text>
           </View>
         </View>
       </AppHeader>
-      
-        <ScrollView showsVerticalScrollIndicator={false}>
-          <View>
-            <View style={styles.imageStyle}>
-              <Image style={styles.image} source={DummyPerson} />
-            </View>
-            <Text style={styles.formText}>Institude Name</Text>
-            <InputField
-              placeholder="Your Email"
-              styles={styles.InputField}
-            ></InputField>
 
-            <Text style={styles.formText}>Institude Name</Text>
-            <InputField
-              placeholder="Type Here"
-              multiline={true}
-              numberOfLines={6}
-              styles={styles.InputFieldAbout}
-            ></InputField>
-
-            <Text style={styles.formText}>Institude Name</Text>
-            <InputField
-              placeholder="Your Email"
-              styles={styles.InputField}
-            ></InputField>
-
-            <Text style={styles.formText}>Institude Name</Text>
-            <InputField
-              placeholder="Your Email"
-              styles={styles.InputField}
-            ></InputField>
-
-            <Text style={styles.formText}>Institude Name</Text>
-            <InputField
-              placeholder="Your Email"
-              styles={styles.InputField}
-            ></InputField>
+      <ScrollView showsVerticalScrollIndicator={false}>
+        <View>
+          <View style={styles.imageStyle}>
+            <Image style={styles.image} source={DummyPerson} />
           </View>
+          <Text style={styles.formText}>Institude Name</Text>
+          <InputField
+            placeholder="Your Email"
+            styles={styles.InputField}
+          ></InputField>
 
-          <Button
-            styles={styles.Button}
-            onPress={() => {
-              Navigation.goBack("");
-            }}
-          >
-            <Text style={styles.ButtonText}>Start Campaign</Text>
-          </Button>
-        </ScrollView>
-      
+          <Text style={styles.formText}>Institude Name</Text>
+          <InputField
+            placeholder="Type Here"
+            multiline={true}
+            numberOfLines={6}
+            styles={styles.InputFieldAbout}
+          ></InputField>
+
+          <Text style={styles.formText}>Institude Name</Text>
+          <InputField
+            placeholder="Your Email"
+            styles={styles.InputField}
+          ></InputField>
+
+          <Text style={styles.formText}>Institude Name</Text>
+          <InputField
+            placeholder="Your Email"
+            styles={styles.InputField}
+          ></InputField>
+
+          <Text style={styles.formText}>Institude Name</Text>
+          <InputField
+            placeholder="Your Email"
+            styles={styles.InputField}
+          ></InputField>
+        </View>
+
+        <Button
+          styles={styles.Button}
+          onPress={() => {
+            Navigation.goBack("");
+          }}
+        >
+          <Text style={styles.ButtonText}>Start Campaign</Text>
+        </Button>
+      </ScrollView>
     </View>
   );
 }

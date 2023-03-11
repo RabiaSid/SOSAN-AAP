@@ -15,7 +15,7 @@ import SearchField from "../SearchField/index";
 import Description from "../Description";
 import StaffMember from "../Member";
 import ReviewGallery from "../ReviewGallery";
-import Map from "../Map"
+import Map from "../Map";
 import { useNavigation } from "@react-navigation/native";
 
 const deviceHeight = Dimensions.get("window").height;
@@ -41,9 +41,7 @@ function LayoutGeneral(props) {
               flexDirection: "row",
             }}
           >
-            <TouchableOpacity 
-             onPress={() => Navigation.goBack("")}
-             >
+            <TouchableOpacity onPress={() => Navigation.goBack("")}>
               <Ionicons
                 name="chevron-back-sharp"
                 size={40}
@@ -74,20 +72,18 @@ function LayoutGeneral(props) {
         <ScrollView showsVerticalScrollIndicator={false}>
           {props.top}
           {props.children}
-          <View style={{paddingVertical:10}}>
-            <Description>
-              About
-            </Description>
+          <View style={{ paddingVertical: 10 }}>
+            <Description>About</Description>
           </View>
           {props.center}
-          <View style={{paddingVertical:10}}>
-          <StaffMember />
+          <View style={{ paddingVertical: 10 }}>
+            <StaffMember />
           </View>
-          <View style={{paddingVertical:10}}>
-          <Map />
+          <View style={{ paddingVertical: 10 }}>
+            <Map />
           </View>
           <View>
-          <ReviewGallery />
+            <ReviewGallery />
           </View>
         </ScrollView>
       </View>
@@ -102,7 +98,7 @@ const styles = StyleSheet.create({
     width: deviceWidth / 1,
     flexDirection: "column",
     backgroundColor: baseColors.lightColor,
-    
+
     zIndex: 0,
   },
   headerContainer: {
@@ -126,7 +122,6 @@ const styles = StyleSheet.create({
     width: deviceWidth / 1,
     top: -10,
     paddingBottom: 100,
-    
   },
   textColor: {
     color: baseColors.lightTextColor,

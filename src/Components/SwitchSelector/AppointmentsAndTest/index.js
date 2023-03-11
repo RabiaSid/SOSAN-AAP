@@ -6,16 +6,18 @@ import {
   Image,
   Dimensions,
   FlatList,
-  TouchableOpacity
+  TouchableOpacity,
 } from "react-native";
 import SwitchSelector from "react-native-switch-selector";
 import baseColors from "../../../Constant/color";
 import { useNavigation } from "@react-navigation/native";
+import { PharmacyReservedSelectorData } from "../../../Config";
 import {
-  PharmacyReservedSelectorData,
-} from "../../../Config";
-import { Ionicons, MaterialCommunityIcons,Foundation, FontAwesome5 } from "@expo/vector-icons";
-
+  Ionicons,
+  MaterialCommunityIcons,
+  Foundation,
+  FontAwesome5,
+} from "@expo/vector-icons";
 
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
@@ -45,51 +47,72 @@ function index({ children }) {
       {children}
       <View>
         {switchValue !== true ? (
-         
           <FlatList
             data={PharmacyReservedSelectorData}
             renderItem={({ item }) => (
               <TouchableOpacity
-              onPress={()=>navigation.navigate('AgendaAppointmentDetailPharmacy')}
+                onPress={() =>
+                  navigation.navigate("AgendaAppointmentDetailPharmacy")
+                }
               >
-              <View style={styles.ActivityView}>
-                <Image
-                  source={item?.image}
-                  style={styles.ActivityImage}
-                ></Image>
-                <View style={{ flexDirection: "column" }}>
-                  
-                  <Text>{item?.title}</Text>
-                  <View style={styles.ItemDisc}>
-                  <Foundation name="clipboard-pencil" size={15} style={{color:baseColors.primaryColor, paddingRight:5}} />
-                    <Text>Lower Abdomen</Text>
+                <View style={styles.ActivityView}>
+                  <Image
+                    source={item?.image}
+                    style={styles.ActivityImage}
+                  ></Image>
+                  <View style={{ flexDirection: "column" }}>
+                    <Text>{item?.title}</Text>
+                    <View style={styles.ItemDisc}>
+                      <Foundation
+                        name="clipboard-pencil"
+                        size={15}
+                        style={{
+                          color: baseColors.primaryColor,
+                          paddingRight: 5,
+                        }}
+                      />
+                      <Text>Lower Abdomen</Text>
+                    </View>
+                    <View style={styles.ItemDisc}>
+                      <FontAwesome5
+                        name="calendar-alt"
+                        size={14}
+                        style={{
+                          color: baseColors.primaryColor,
+                          paddingRight: 5,
+                        }}
+                      />
+                      <Text>Wednesday 1 Aug 2022</Text>
+                    </View>
+                    <View style={styles.ItemDisc}>
+                      <Ionicons
+                        name="timer"
+                        size={17}
+                        style={{
+                          color: baseColors.sucessColor,
+                          paddingRight: 5,
+                        }}
+                      />
+                      <Text>12:50 Am </Text>
+                    </View>
                   </View>
-                  <View style={styles.ItemDisc}>
-                  <FontAwesome5 name="calendar-alt" size={14} style={{color:baseColors.primaryColor, paddingRight:5}} />
-                    <Text>Wednesday 1 Aug 2022</Text>
-                  </View>
-                  <View style={styles.ItemDisc}>
-                  <Ionicons name="timer" size={17} style={{color:baseColors.sucessColor, paddingRight:5}} />
-                    <Text>12:50 Am </Text>
+                  <View
+                    style={{
+                      flexDirection: "column",
+                      alignItems: "flex-end",
+                      justifyContent: "space-around",
+                      height: 110,
+                    }}
+                  >
+                    <Text style={styles.itemsViewText}>ultrasound</Text>
+                    <MaterialCommunityIcons
+                      name="chat-plus"
+                      size={45}
+                      style={styles.icon}
+                      onPress={() => navigation.navigate("Conversation")}
+                    />
                   </View>
                 </View>
-                <View
-                  style={{
-                    flexDirection: "column",
-                    alignItems: "flex-end",
-                    justifyContent: "space-around",
-                    height: 110,
-                  }}
-                >
-                  <Text style={styles.itemsViewText}>ultrasound</Text>
-                  <MaterialCommunityIcons
-                    name="chat-plus"
-                    size={45}
-                    style={styles.icon}
-                    onPress={()=>navigation.navigate('Conversation')}
-                  />
-                </View>
-              </View>
               </TouchableOpacity>
             )}
           />
@@ -98,46 +121,68 @@ function index({ children }) {
             data={PharmacyReservedSelectorData}
             renderItem={({ item }) => (
               <TouchableOpacity
-              onPress={()=>navigation.navigate('TestAppointmentDetailPharmacy')}
+                onPress={() =>
+                  navigation.navigate("TestAppointmentDetailPharmacy")
+                }
               >
-              <View style={styles.ActivityView}>
-                <Image
-                  source={item?.image}
-                  style={styles.ActivityImage}
-                ></Image>
-                <View style={{ flexDirection: "column" }}>
-                  
-                  <Text>{item?.title}</Text>
-                  <View style={styles.ItemDisc}>
-                  <Foundation name="clipboard-pencil" size={15} style={{color:baseColors.primaryColor, paddingRight:5}} />
-                    <Text>Lower Abdomen</Text>
+                <View style={styles.ActivityView}>
+                  <Image
+                    source={item?.image}
+                    style={styles.ActivityImage}
+                  ></Image>
+                  <View style={{ flexDirection: "column" }}>
+                    <Text>{item?.title}</Text>
+                    <View style={styles.ItemDisc}>
+                      <Foundation
+                        name="clipboard-pencil"
+                        size={15}
+                        style={{
+                          color: baseColors.primaryColor,
+                          paddingRight: 5,
+                        }}
+                      />
+                      <Text>Lower Abdomen</Text>
+                    </View>
+                    <View style={styles.ItemDisc}>
+                      <FontAwesome5
+                        name="calendar-alt"
+                        size={14}
+                        style={{
+                          color: baseColors.primaryColor,
+                          paddingRight: 5,
+                        }}
+                      />
+                      <Text>Wednesday 1 Aug 2022</Text>
+                    </View>
+                    <View style={styles.ItemDisc}>
+                      <Ionicons
+                        name="timer"
+                        size={17}
+                        style={{
+                          color: baseColors.sucessColor,
+                          paddingRight: 5,
+                        }}
+                      />
+                      <Text>12:50 Am </Text>
+                    </View>
                   </View>
-                  <View style={styles.ItemDisc}>
-                  <FontAwesome5 name="calendar-alt" size={14} style={{color:baseColors.primaryColor, paddingRight:5}} />
-                    <Text>Wednesday 1 Aug 2022</Text>
-                  </View>
-                  <View style={styles.ItemDisc}>
-                  <Ionicons name="timer" size={17} style={{color:baseColors.sucessColor, paddingRight:5}} />
-                    <Text>12:50 Am </Text>
+                  <View
+                    style={{
+                      flexDirection: "column",
+                      alignItems: "flex-end",
+                      justifyContent: "space-around",
+                      height: 110,
+                    }}
+                  >
+                    <Text style={styles.itemsViewText}>ultrasound</Text>
+                    <MaterialCommunityIcons
+                      name="chat-plus"
+                      size={45}
+                      style={styles.icon}
+                      onPress={() => navigation.navigate("Conversation")}
+                    />
                   </View>
                 </View>
-                <View
-                  style={{
-                    flexDirection: "column",
-                    alignItems: "flex-end",
-                    justifyContent: "space-around",
-                    height: 110,
-                  }}
-                >
-                  <Text style={styles.itemsViewText}>ultrasound</Text>
-                  <MaterialCommunityIcons
-                    name="chat-plus"
-                    size={45}
-                    style={styles.icon}
-                    onPress={()=>navigation.navigate('Conversation')}
-                  />
-                </View>
-              </View>
               </TouchableOpacity>
             )}
           />

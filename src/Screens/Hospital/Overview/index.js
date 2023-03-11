@@ -5,9 +5,8 @@ import AppHeader from "../../../Components/AppHeader/index";
 import { styles } from "./style";
 import baseColors from "../../../Constant/color";
 import { useNavigation } from "@react-navigation/native";
-import { Ionicons,FontAwesome } from "@expo/vector-icons";
+import { Ionicons, FontAwesome } from "@expo/vector-icons";
 import OverviewAmountModal from "../../../Components/Modal/OverviewAmountModal";
-
 
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
@@ -21,7 +20,7 @@ function OverViewHospitality() {
           <View
             style={{
               flexDirection: "row",
-              alignItems: "center", 
+              alignItems: "center",
             }}
           >
             <View
@@ -29,28 +28,25 @@ function OverViewHospitality() {
                 width: deviceWidth / 3,
                 flexDirection: "row",
                 justifyContent: "flex-start",
-                alignItems:'center'
+                alignItems: "center",
               }}
             >
-              <TouchableOpacity
-              onPress={() => Navigation.goBack("Epargne")}
-              >
+              <TouchableOpacity onPress={() => Navigation.goBack("Epargne")}>
                 <Ionicons
                   name="chevron-back-sharp"
                   size={30}
-                  style={{ color: baseColors.darkTextColor, }}
+                  style={{ color: baseColors.darkTextColor }}
                 />
-                
               </TouchableOpacity>
             </View>
             <View
               style={{
                 justifyContent: "center",
-                alignItems: 'center',
-                marginTop:10
+                alignItems: "center",
+                marginTop: 10,
               }}
             >
-              <Image source={Logo} style={{ height: 45, width: 140,  }} />
+              <Image source={Logo} style={{ height: 45, width: 140 }} />
             </View>
           </View>
         </AppHeader>
@@ -117,49 +113,34 @@ function OverViewHospitality() {
       <View style={styles.items}>
         <Text style={styles.ListTitle}>Last Activities</Text>
 
-        <View
-          style={styles.ActivityView}
-        >
-          <Image
-            source={AvatarPerson1}
-            style={styles.ActivityImage}
-          ></Image>
+        <View style={styles.ActivityView}>
+          <Image source={AvatarPerson1} style={styles.ActivityImage}></Image>
           <View style={{ flexDirection: "column" }}>
             <Text>Jack</Text>
             <Text>hi EveryOne I'm Jack</Text>
           </View>
           <View style={{ flexDirection: "column" }}>
-          <OverviewAmountModal />
+            <OverviewAmountModal />
           </View>
         </View>
-        <View
-          style={styles.ActivityView}
-        >
-          <Image
-            source={AvatarPerson1}
-            style={styles.ActivityImage}
-          ></Image>
+        <View style={styles.ActivityView}>
+          <Image source={AvatarPerson1} style={styles.ActivityImage}></Image>
           <View style={{ flexDirection: "column" }}>
             <Text>Jack</Text>
             <Text>hi EveryOne I'm Jack</Text>
           </View>
           <View style={{ flexDirection: "column" }}>
-          <OverviewAmountModal />
+            <OverviewAmountModal />
           </View>
         </View>
-        <View
-          style={styles.ActivityView}
-        >
-          <Image
-            source={AvatarPerson1}
-            style={styles.ActivityImage}
-          ></Image>
+        <View style={styles.ActivityView}>
+          <Image source={AvatarPerson1} style={styles.ActivityImage}></Image>
           <View style={{ flexDirection: "column" }}>
             <Text>Jack</Text>
             <Text>hi EveryOne I'm Jack</Text>
           </View>
           <View style={{ flexDirection: "column" }}>
-          <OverviewAmountModal />
+            <OverviewAmountModal />
           </View>
         </View>
       </View>

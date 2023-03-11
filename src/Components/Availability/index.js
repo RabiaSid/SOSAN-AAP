@@ -47,7 +47,7 @@ function AvailabilityComponent() {
 
       <View
         style={{
-          flexDirection: 'column',
+          flexDirection: "column",
           alignItems: "flex-end",
           width: deviceWidth / 1 - 20,
         }}

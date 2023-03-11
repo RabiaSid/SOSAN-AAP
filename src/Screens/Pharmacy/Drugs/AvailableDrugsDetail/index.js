@@ -13,8 +13,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { DummyPerson } from "../../../../Assets/images";
 import { useNavigation } from "@react-navigation/native";
 import baseColors from "../../../../Constant/color";
-import Description from "../../../../Components/Description/index"
-
+import Description from "../../../../Components/Description/index";
 
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
@@ -75,49 +74,53 @@ function AvailableDrugsDetail() {
             Panadol
           </Text>
           <View
-          style={{
-            flexDirection: "row",
-            justifyContent: 'center',
-            alignItems: "center",
-            width: deviceWidth / 1,
-          }}>
-          <View
             style={{
               flexDirection: "row",
-              paddingVertical: 20,
-              justifyContent: 'space-evenly',
+              justifyContent: "center",
               alignItems: "center",
-              width: deviceWidth / 1.5,
+              width: deviceWidth / 1,
             }}
           >
             <View
               style={{
-                flexDirection: "column",
-                paddingVertical: 15,
-                justifyContent: "center",
+                flexDirection: "row",
+                paddingVertical: 20,
+                justifyContent: "space-evenly",
                 alignItems: "center",
+                width: deviceWidth / 1.5,
               }}
             >
-              <Text style={{fontSize:15,fontWeight:'600'}}>Catogery :</Text>
-              <Text style={{fontSize:15,fontWeight:'600'}}>Dosage :</Text>
+              <View
+                style={{
+                  flexDirection: "column",
+                  paddingVertical: 15,
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <Text style={{ fontSize: 15, fontWeight: "600" }}>
+                  Catogery :
+                </Text>
+                <Text style={{ fontSize: 15, fontWeight: "600" }}>
+                  Dosage :
+                </Text>
+              </View>
+              <View
+                style={{
+                  flexDirection: "column",
+                  paddingVertical: 15,
+                  justifyContent: "center",
+                  alignItems: "flex-start",
+                }}
+              >
+                <Text>Tablet</Text>
+                <Text>300mg, 500mg</Text>
+              </View>
             </View>
-            <View
-              style={{
-                flexDirection: "column",
-                paddingVertical: 15,
-                justifyContent: "center",
-                alignItems: 'flex-start',
-              }}
-            >
-              <Text>Tablet</Text>
-              <Text>300mg, 500mg</Text>
-            </View>
-          </View>
           </View>
           <Description>
-          <Text style={{fontSize:19,fontWeight:'600'}}>Usage</Text>
+            <Text style={{ fontSize: 19, fontWeight: "600" }}>Usage</Text>
           </Description>
-          
         </ScrollView>
       </View>
     </View>

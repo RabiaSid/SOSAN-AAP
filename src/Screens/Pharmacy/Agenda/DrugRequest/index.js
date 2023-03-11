@@ -11,9 +11,11 @@ const deviceWidth = Dimensions.get("window").width;
 function AgendaDrugRequest() {
   const Navigation = useNavigation();
   return (
-    <LayoutReservationPharmacy 
-    title="Drugs Reservation"
-    onPress={()=>{Navigation.navigate('AgendaSendBill')}}
+    <LayoutReservationPharmacy
+      title="Drugs Reservation"
+      onPress={() => {
+        Navigation.navigate("AgendaSendBill");
+      }}
     >
       <View style={{ width: deviceWidth / 1.2 }}>
         <SearchField

@@ -9,13 +9,13 @@ import {
 } from "react-native";
 import AppHeader from "../../../../Components/AppHeader";
 import { styles } from "./style";
-import { Ionicons, } from "@expo/vector-icons";
+import { Ionicons } from "@expo/vector-icons";
 import baseColors from "../../../../Constant/color";
 import AvaialbleEditCard from "../../../../Components/Cards/AvaialableEditCard";
 
 const deviceWidth = Dimensions.get("window").width;
 
- function AssuranceTracking() {
+function AssuranceTracking() {
   const navigation = useNavigation();
   return (
     <View style={styles.screenContainer}>
@@ -85,11 +85,31 @@ const deviceWidth = Dimensions.get("window").width;
               }}
             >
               <View>
-                <AvaialbleEditCard onPress={() => { navigation.navigate("RegisteredClientsAssurance") }} />
-                <AvaialbleEditCard onPress={() => { navigation.navigate("RegisteredClientsAssurance") }} />
-                <AvaialbleEditCard onPress={() => { navigation.navigate("RegisteredClientsAssurance") }} />
-                <AvaialbleEditCard onPress={() => { navigation.navigate("RegisteredClientsAssurance") }} />
-                <AvaialbleEditCard onPress={() => { navigation.navigate("RegisteredClientsAssurance") }} />
+                <AvaialbleEditCard
+                  onPress={() => {
+                    navigation.navigate("RegisteredClientsAssurance");
+                  }}
+                />
+                <AvaialbleEditCard
+                  onPress={() => {
+                    navigation.navigate("RegisteredClientsAssurance");
+                  }}
+                />
+                <AvaialbleEditCard
+                  onPress={() => {
+                    navigation.navigate("RegisteredClientsAssurance");
+                  }}
+                />
+                <AvaialbleEditCard
+                  onPress={() => {
+                    navigation.navigate("RegisteredClientsAssurance");
+                  }}
+                />
+                <AvaialbleEditCard
+                  onPress={() => {
+                    navigation.navigate("RegisteredClientsAssurance");
+                  }}
+                />
               </View>
             </View>
           </View>
@@ -99,4 +119,4 @@ const deviceWidth = Dimensions.get("window").width;
   );
 }
 
-export default AssuranceTracking
+export default AssuranceTracking;

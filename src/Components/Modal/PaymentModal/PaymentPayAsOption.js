@@ -11,7 +11,7 @@ import DarkGradient from "../../Gradient/DarkGradient/index";
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
 
-function PaymentPayAsOption({children}) {
+function PaymentPayAsOption({ children }) {
   const Navigation = useNavigation();
   const [isModalVisible, setModalVisible] = useState(false);
 
@@ -21,8 +21,8 @@ function PaymentPayAsOption({children}) {
 
   return (
     <View style={{ flex: 1 }}>
-      <Text  onPress={toggleModal} onBackdropPress={toggleModal}>
-      {children}
+      <Text onPress={toggleModal} onBackdropPress={toggleModal}>
+        {children}
       </Text>
 
       <Modal isVisible={isModalVisible} backdropOpacity={0.1}>
@@ -58,12 +58,15 @@ function PaymentPayAsOption({children}) {
                 </Text>
               </DarkGradient>
               <Button styles={styles.ButtonLight}>
-                <Text style={styles.ButtonTextLight}
-                onPress={() => {
-                  Navigation.goBack("");
-                  toggleModal();
-                }}
-                >Cancel</Text>
+                <Text
+                  style={styles.ButtonTextLight}
+                  onPress={() => {
+                    Navigation.goBack("");
+                    toggleModal();
+                  }}
+                >
+                  Cancel
+                </Text>
               </Button>
             </View>
           </View>
@@ -97,7 +100,7 @@ const styles = StyleSheet.create({
   modal: {
     borderRadius: 10,
     flexDirection: "column",
-    alignItems: 'center',
+    alignItems: "center",
     justifyContent: "flex-end",
     width: deviceWidth / 1,
     height: deviceHeight / 1,
@@ -105,13 +108,13 @@ const styles = StyleSheet.create({
   modalView: {
     flexDirection: "column",
     alignItems: "center",
-    justifyContent: 'space-evenly',
+    justifyContent: "space-evenly",
     backgroundColor: baseColors.lightColor,
     width: deviceWidth / 1 - 10,
     height: deviceHeight / 1.1 - 20,
     marginBottom: 2,
     borderRadius: 30,
-    paddingVertical:20
+    paddingVertical: 20,
   },
 
   modalViewText: {

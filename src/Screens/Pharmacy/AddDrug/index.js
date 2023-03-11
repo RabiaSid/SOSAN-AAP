@@ -10,11 +10,10 @@ import AppHeader from "../../../Components/AppHeader/index";
 import { useNavigation } from "@react-navigation/native";
 import { styles } from "./style";
 import baseColors from "../../../Constant/color";
-import { Ionicons} from "@expo/vector-icons";
+import { Ionicons } from "@expo/vector-icons";
 import SearchField from "../../../Components/SearchField/index";
 import AddDrugList from "../../../Components/List/AddDrugList";
-import Button from "../../../Components/Buttons/index"
-
+import Button from "../../../Components/Buttons/index";
 
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
@@ -39,9 +38,7 @@ function DrugAdd() {
                 justifyContent: "flex-start",
               }}
             >
-              <TouchableOpacity
-              onPress={() => Navigation.goBack("")}
-                >
+              <TouchableOpacity onPress={() => Navigation.goBack("")}>
                 <Ionicons
                   name="chevron-back-sharp"
                   size={30}
@@ -75,8 +72,7 @@ function DrugAdd() {
         }}
       >
         <ScrollView showsVerticalScrollIndicator={false}>
-        <View style={styles.screenMiddle}>
-          
+          <View style={styles.screenMiddle}>
             <View style={styles.items}>
               <Text
                 style={styles.ListTitle}
@@ -94,26 +90,24 @@ function DrugAdd() {
                 justifyContent: "center",
               }}
             >
-              
               <AddDrugList />
-              
             </View>
             <Button
-            styles={styles.Button}
-            // onPress={() => {
-            //   Navigation.navigate("Services");
-            // }}
-          >
-            <Text style={styles.ButtonText}
-             onPress={() => {
-              Navigation.navigate("AvailabilityPharmacy");
-            }}>
-          Search Medicine
-          
-          </Text>
-          </Button>
-          
-        </View>
+              styles={styles.Button}
+              // onPress={() => {
+              //   Navigation.navigate("Services");
+              // }}
+            >
+              <Text
+                style={styles.ButtonText}
+                onPress={() => {
+                  Navigation.navigate("AvailabilityPharmacy");
+                }}
+              >
+                Search Medicine
+              </Text>
+            </Button>
+          </View>
         </ScrollView>
       </View>
       {/* </ScrollView> */}

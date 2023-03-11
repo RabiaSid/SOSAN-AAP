@@ -15,8 +15,7 @@ function HospitalDoctor() {
     <LayoutGeneral
       top={<General title="St Thomas Hospital, uk" />}
       center={<StuffDoctor title="St Thomas Hospital, uk" />}
-    >
-    </LayoutGeneral>
+    ></LayoutGeneral>
   );
 }
 

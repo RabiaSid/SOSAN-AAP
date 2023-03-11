@@ -116,7 +116,7 @@ function AgendaAppointmentHospital() {
                   style={{
                     flexDirection: "row",
                     width: deviceWidth / 1,
-                    justifyContent:'space-evenly',
+                    justifyContent: "space-evenly",
                     alignItems: "center",
                     paddingVertical: 15,
                   }}

@@ -54,9 +54,7 @@ function SelectPlan({ children }) {
                   justifyContent: "flex-start",
                 }}
               >
-                <TouchableOpacity
-                onPress={() => Navigation.goBack("")}>
-                
+                <TouchableOpacity onPress={() => Navigation.goBack("")}>
                   <Ionicons
                     name="chevron-back-sharp"
                     size={30}
@@ -94,9 +92,9 @@ function SelectPlan({ children }) {
               <View style={styles.container}>
                 <View
                   style={{
-                    flexDirection:'column',
-                    justifyContent:'center',
-                    marginTop:30,
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    marginTop: 30,
                     height: deviceHeight / 1.7,
                   }}
                 >

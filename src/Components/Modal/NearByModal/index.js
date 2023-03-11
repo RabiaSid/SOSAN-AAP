@@ -66,10 +66,12 @@ function index() {
               </Text>
               <View style={styles.ModalButtonView}>
                 <DarkGradient styles={styles.ButtonPrimary}>
-                  <Text style={styles.ButtonTextPrimary}>
-                    Add Attachment
-                  </Text>
-                  <Entypo name="attachment" size={18} style={{paddingLeft:5,  color:baseColors.lightTextColor}} />
+                  <Text style={styles.ButtonTextPrimary}>Add Attachment</Text>
+                  <Entypo
+                    name="attachment"
+                    size={18}
+                    style={{ paddingLeft: 5, color: baseColors.lightTextColor }}
+                  />
                 </DarkGradient>
                 <Button styles={styles.ButtonLight}>
                   <Text style={styles.ButtonTextLight}>Add New</Text>
@@ -135,7 +137,7 @@ const styles = StyleSheet.create({
     marginVertical: 10,
     justifyContent: "center",
     alignItems: "center",
-    flexDirection:'row'
+    flexDirection: "row",
   },
   ButtonTextPrimary: {
     color: baseColors.lightTextColor,

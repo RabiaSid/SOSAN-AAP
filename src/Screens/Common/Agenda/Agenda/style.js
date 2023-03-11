@@ -12,36 +12,31 @@ export const styles = StyleSheet.create({
     flexDirection: "column",
     backgroundColor: baseColors.lightColor,
   },
-  headerContainer:{ 
-    backgroundColor:baseColors.sucessColor,
-    height: 60, 
-    marginTop: 35, 
-    width: deviceWidth/1,
-    borderBottomLeftRadius:15,
-    borderBottomRightRadius:15,
-    paddingVertical:8
-},
+  headerContainer: {
+    backgroundColor: baseColors.sucessColor,
+    height: 60,
+    marginTop: 35,
+    width: deviceWidth / 1,
+    borderBottomLeftRadius: 15,
+    borderBottomRightRadius: 15,
+    paddingVertical: 8,
+  },
   LinearGradient: {
-    
     borderColor: baseColors.lightColor,
     height: 170,
     height: deviceHeight / 4.5,
     width: deviceWidth / 1,
-    borderBottomLeftRadius:27,
-    borderBottomRightRadius:27
+    borderBottomLeftRadius: 27,
+    borderBottomRightRadius: 27,
   },
-  
 
   screenMiddle: {
-  
-    width: deviceWidth / 1-10,
+    width: deviceWidth / 1 - 10,
     height: deviceHeight / 1,
-    flexDirection:'column',
-    
-  
+    flexDirection: "column",
   },
-  textColor:{
-    color:baseColors.lightTextColor,
+  textColor: {
+    color: baseColors.lightTextColor,
     fontWeight: "bold",
   },
   textColorSuccess: {
@@ -51,41 +46,41 @@ export const styles = StyleSheet.create({
     color: baseColors.dangerTextColor,
   },
   CardStyling: {
-    backgroundColor: '#fff',
+    backgroundColor: "#fff",
     padding: 10,
     borderRadius: 15,
     paddingVertical: 10,
     marginVertical: 5,
     elevation: 3,
-},
-item: {
-    alignItems: 'flex-start',
+  },
+  item: {
+    alignItems: "flex-start",
     width: 300,
-    flexDirection: 'row',
-    justifyContent: 'space-evenly',
-    paddingVertical:4,
-    borderRadius: 15
-},
-TitleHead: {
-    flexDirection: "column"
-},
-title: {
-    fontWeight: 'bold',
-},
-ItemDisc: {
     flexDirection: "row",
-},
-img: {
+    justifyContent: "space-evenly",
+    paddingVertical: 4,
+    borderRadius: 15,
+  },
+  TitleHead: {
+    flexDirection: "column",
+  },
+  title: {
+    fontWeight: "bold",
+  },
+  ItemDisc: {
+    flexDirection: "row",
+  },
+  img: {
     height: 50,
     width: 50,
     borderRadius: 50,
-},
-ButtonView: {
+  },
+  ButtonView: {
     flexDirection: "row",
-    justifyContent: 'space-evenly',
-    alignItems: 'center'
-},
-ButtonSucess: {
+    justifyContent: "space-evenly",
+    alignItems: "center",
+  },
+  ButtonSucess: {
     elevation: 0,
     backgroundColor: baseColors.sucessColor,
     width: 70,
@@ -95,11 +90,11 @@ ButtonSucess: {
     justifyContent: "center",
     alignItems: "center",
     color: baseColors.lightColor,
-},
-ButtonText: {
+  },
+  ButtonText: {
     color: baseColors.lightTextColor,
-},
-ButtonReject: {
+  },
+  ButtonReject: {
     elevation: 0,
     backgroundColor: baseColors.dangerTextColor,
     width: 70,
@@ -109,16 +104,15 @@ ButtonReject: {
     justifyContent: "center",
     alignItems: "center",
     color: baseColors.lightColor,
-},
+  },
   FirstView: {
     flexDirection: "row",
-              alignItems: "center",
-              paddingVertical: 5,
+    alignItems: "center",
+    paddingVertical: 5,
   },
-SecondView: {
-  width: deviceWidth / 3,
-                flexDirection: "row",
-                justifyContent: "flex-start",
-}
-
+  SecondView: {
+    width: deviceWidth / 3,
+    flexDirection: "row",
+    justifyContent: "flex-start",
+  },
 });

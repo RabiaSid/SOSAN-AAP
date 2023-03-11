@@ -5,15 +5,15 @@ import {
   Image,
   FlatList,
   Dimensions,
-  TouchableOpacity
+  TouchableOpacity,
 } from "react-native";
 import GradientBackground from "../../../../Components/Gradient/DarkGradient/index";
 import AppHeader from "../../../../Components/AppHeader/index";
 import SearchField from "../../../../Components/SearchField/index";
 import { ChatData } from "../../../../Config/index";
 import { styles } from "./style";
-import { AvatarPerson1} from "../../../../Assets/images";
-import { Entypo,Ionicons,FontAwesome } from "@expo/vector-icons";
+import { AvatarPerson1 } from "../../../../Assets/images";
+import { Entypo, Ionicons, FontAwesome } from "@expo/vector-icons";
 import baseColors from "../../../../Constant/color";
 import { useNavigation } from "@react-navigation/native";
 
@@ -27,25 +27,26 @@ function DentistsHospital() {
       <View>
         <AppHeader styles={styles.headerContainer}>
           <GradientBackground styles={styles.LinearGradient}>
-            <View style={{flexDirection:'row',}}> 
-            <View
-              style={{
-                width: deviceWidth / 8,
-                flexDirection: "row",
-                alignItems:'flex-end',
-                height:70
-               
-              }}
-            >
-              <TouchableOpacity>
-                <Ionicons
-                  name="chevron-back-sharp"
-                  size={30}
-                  style={{ color: baseColors.lightTextColor }}
-                  onPress={()=>{navigation.goBack('')}}
-                />
-              </TouchableOpacity>
-            </View>
+            <View style={{ flexDirection: "row" }}>
+              <View
+                style={{
+                  width: deviceWidth / 8,
+                  flexDirection: "row",
+                  alignItems: "flex-end",
+                  height: 70,
+                }}
+              >
+                <TouchableOpacity>
+                  <Ionicons
+                    name="chevron-back-sharp"
+                    size={30}
+                    style={{ color: baseColors.lightTextColor }}
+                    onPress={() => {
+                      navigation.goBack("");
+                    }}
+                  />
+                </TouchableOpacity>
+              </View>
               <Text style={styles.HeadingText}>Dentist</Text>
             </View>
             <View>
@@ -60,7 +61,6 @@ function DentistsHospital() {
           <FlatList
             data={ChatData}
             renderItem={({ item }) => (
-                
               <View
                 style={{
                   flexDirection: "row",
@@ -73,22 +73,52 @@ function DentistsHospital() {
                   source={AvatarPerson1}
                   style={{ height: 50, width: 50, borderRadius: 50 }}
                 ></Image>
-                <View style={{ flexDirection: "column" ,width:deviceWidth/2.5, }}>
+                <View
+                  style={{ flexDirection: "column", width: deviceWidth / 2.5 }}
+                >
                   <Text>Dr Umair Rana</Text>
 
                   <View style={{ flexDirection: "row" }}>
-                  <Entypo name="lock" size={17} style={{color:baseColors.primaryColor}} />
-                  <Text>
-                    3 year
-                  </Text>
+                    <Entypo
+                      name="lock"
+                      size={17}
+                      style={{ color: baseColors.primaryColor }}
+                    />
+                    <Text>3 year</Text>
                   </View>
                 </View>
-                <View style={{ flexDirection: 'row', alignItems:'flex-end', height:40 }}>
-                <FontAwesome name="star" size={15}  style={{ color: baseColors.limeColor }}/>
-                <FontAwesome name="star" size={15}  style={{ color: baseColors.limeColor }}/>
-                <FontAwesome name="star" size={15}  style={{ color: baseColors.limeColor }}/>
-                <FontAwesome name="star" size={15}  style={{ color: baseColors.secondaryTextColor }}/>
-                <FontAwesome name="star" size={15}  style={{ color: baseColors.secondaryTextColor  }}/>
+                <View
+                  style={{
+                    flexDirection: "row",
+                    alignItems: "flex-end",
+                    height: 40,
+                  }}
+                >
+                  <FontAwesome
+                    name="star"
+                    size={15}
+                    style={{ color: baseColors.limeColor }}
+                  />
+                  <FontAwesome
+                    name="star"
+                    size={15}
+                    style={{ color: baseColors.limeColor }}
+                  />
+                  <FontAwesome
+                    name="star"
+                    size={15}
+                    style={{ color: baseColors.limeColor }}
+                  />
+                  <FontAwesome
+                    name="star"
+                    size={15}
+                    style={{ color: baseColors.secondaryTextColor }}
+                  />
+                  <FontAwesome
+                    name="star"
+                    size={15}
+                    style={{ color: baseColors.secondaryTextColor }}
+                  />
                 </View>
               </View>
             )}

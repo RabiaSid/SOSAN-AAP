@@ -52,7 +52,6 @@ function index(props) {
               fontSize: 17,
               fontWeight: "400",
             }}
-            
           >
             Stuff Detail
           </Text>
@@ -68,14 +67,16 @@ function index(props) {
           }}
         >
           <Text
-          style={{
-            color: baseColors.darkColor,
-            fontSize: 17,
-            fontWeight: "400",
-          }}
-          onPress={props.onPress}
-          // onPress={()=>{Navigation.navigate('AddANewDoctorHospital')}}
-          >Doctor Detail</Text>
+            style={{
+              color: baseColors.darkColor,
+              fontSize: 17,
+              fontWeight: "400",
+            }}
+            onPress={props.onPress}
+            // onPress={()=>{Navigation.navigate('AddANewDoctorHospital')}}
+          >
+            Doctor Detail
+          </Text>
         </View>
       </View>
       <View

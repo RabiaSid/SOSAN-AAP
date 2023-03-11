@@ -18,15 +18,15 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: baseColors.sucessColor,
     width: deviceWidth / 1,
-    borderBottomLeftRadius:10,
-    borderBottomRightRadius:10,
+    borderBottomLeftRadius: 10,
+    borderBottomRightRadius: 10,
     height: 50,
   },
 
   imageStyle: {
     paddingVertical: 15,
     flexDirection: "row",
-    justifyContent: 'center',
+    justifyContent: "center",
     alignItems: "center",
   },
   image: {
@@ -36,16 +36,16 @@ export const styles = StyleSheet.create({
   ImageButtonView: {
     flexDirection: "row",
     alignItems: "flex-end",
-    justifyContent:'center',
+    justifyContent: "center",
     height: 130,
   },
   ImageButtonViewText: {
     width: 100,
     height: 35,
-    paddingHorizontal:12,
-    borderRadius:8,
-    backgroundColor:baseColors.primaryColor,
-    elevation:2
+    paddingHorizontal: 12,
+    borderRadius: 8,
+    backgroundColor: baseColors.primaryColor,
+    elevation: 2,
   },
   screen: {
     flexDirection: "column",

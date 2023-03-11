@@ -29,16 +29,16 @@ const defaultStyles = StyleSheet.create({
   input: {
     height: 40,
     margin: 12,
-    paddingHorizontal:0,
-    paddingVertical:0,
-    marginHorizontal:0,
-    marginVertical:20,
+    paddingHorizontal: 0,
+    paddingVertical: 0,
+    marginHorizontal: 0,
+    marginVertical: 20,
     borderColor: baseColors.sucessColor,
     borderWidth: 1,
     borderRadius: 50,
     padding: 10,
     textAlignVertical: "top",
-    elevation:10
+    elevation: 10,
   },
 });
 

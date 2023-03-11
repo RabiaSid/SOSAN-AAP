@@ -41,13 +41,12 @@ const defaultStyles = StyleSheet.create({
     margin: 10,
     width: 100,
     justifyContent: "center",
-    justifyContent:'space-around',
+    justifyContent: "space-around",
     alignItems: "center",
     flexDirection: "column",
     borderWidth: 2,
     padding: 10,
-    borderColor:baseColors.dangerTextColor
-    
+    borderColor: baseColors.dangerTextColor,
   },
   appButtonText: {
     color: baseColors.lightTextColor,

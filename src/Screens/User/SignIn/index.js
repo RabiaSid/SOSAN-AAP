@@ -1,10 +1,11 @@
 import React from "react";
 import Button from "../../../Components/Buttons/index";
 import InputField from "../../../Components/InputField";
-import { Logo, BottomImage } from "../../../Assets/images/index"
+import { Logo, BottomImage } from "../../../Assets/images/index";
 import { styles } from "./style";
 import { View, Text, Image } from "react-native";
 import { useNavigation } from "@react-navigation/native";
+import baseColors from "../../../Constant/color";
 
 const UserSignIn = () => {
   const Navigation = useNavigation();
@@ -23,28 +24,28 @@ const UserSignIn = () => {
             alignItems: "center",
           }}
         >
-          <Image
-            source={Logo}
-            style={{ height: 50 }}
-          />
+          <Image source={Logo} style={{ height: 50 }} />
         </View>
         <Text style={styles.formText}>Enter Your Email</Text>
         <InputField
-          placeholder="Your Email"
+          placeholder="abc123@gmail.com"
           styles={styles.InputField}
-        >abc123@gmail.com</InputField>
+          placeholderTextColor={baseColors.darkColor}
+        />
+
         <Text style={styles.formText}>Enter Your Password</Text>
         <InputField
-          placeholder="Password"
+          placeholder="215456423"
           secureTextEntry={true}
           styles={styles.InputField}
-        >215456423</InputField>
+          placeholderTextColor={baseColors.darkColor}
+        />
         <View style={styles.Loginbutton}>
           <Button
             styles={styles.Button}
-            onPress={()=>Navigation.navigate('UserAppHome')}
+            onPress={() => Navigation.navigate("UserAppHome")}
           >
-            <Text styles={styles.ButtonText}>Login</Text>
+            <Text style={styles.ButtonText}>Login</Text>
           </Button>
         </View>
         <View
@@ -56,18 +57,11 @@ const UserSignIn = () => {
         >
           <Text style={styles.textColorDanger}>Forget Password</Text>
           <Text>create a new account</Text>
-          <Text
-            style={styles.textColorSuccess}
-            onPress={() => {
-              Navigation.navigate("SignUp");
-            }}
-          >
-            Registered Now
-          </Text>
+          <Text style={styles.textColorSuccess}>Registered Now</Text>
         </View>
         <Image
           source={BottomImage}
-          style={{ height: 270,resizeMode: 'contain'}}
+          style={{ height: 270, resizeMode: "contain" }}
         />
       </View>
     </View>

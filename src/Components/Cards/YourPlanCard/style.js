@@ -17,17 +17,17 @@ export const styles = StyleSheet.create({
     height: 55,
     width: deviceWidth / 1 - 20,
   },
-  ImageStyling:{
+  ImageStyling: {
     height: 30,
-     width: 120, 
+    width: 120,
   },
-  textStyling:{
-    color: '#fff', 
-    fontSize: 14, 
+  textStyling: {
+    color: "#fff",
+    fontSize: 14,
     paddingHorizontal: 10,
-     paddingVertical: 5 
+    paddingVertical: 5,
   },
-  TouchButton:{
+  TouchButton: {
     elevation: 8,
     backgroundColor: baseColors.sucessColor,
     borderRadius: 5,
@@ -37,17 +37,17 @@ export const styles = StyleSheet.create({
     height: 30,
     marginVertical: 20,
   },
-  ButtonText:{
+  ButtonText: {
     color: baseColors.lightTextColor,
     flexDirection: "column",
     textAlign: "center",
     fontSize: 14,
   },
-  CardRow:{
-    flexDirection: "row" 
+  CardRow: {
+    flexDirection: "row",
   },
-  TextCardRow:{
-    fontSize: 18, 
-    paddingHorizontal: 15
-  }
+  TextCardRow: {
+    fontSize: 18,
+    paddingHorizontal: 15,
+  },
 });

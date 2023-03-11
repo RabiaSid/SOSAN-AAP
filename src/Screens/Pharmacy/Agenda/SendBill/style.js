@@ -12,38 +12,33 @@ export const styles = StyleSheet.create({
     flexDirection: "column",
     backgroundColor: baseColors.lightColor,
   },
-  headerContainer:{ 
-    backgroundColor:baseColors.sucessColor,
-    height: 60, 
-    marginTop: 35, 
-    width: deviceWidth/1,
-    borderBottomLeftRadius:15,
-    borderBottomRightRadius:15,
-    paddingVertical:8,
-    marginBottom:3,
-},
+  headerContainer: {
+    backgroundColor: baseColors.sucessColor,
+    height: 60,
+    marginTop: 35,
+    width: deviceWidth / 1,
+    borderBottomLeftRadius: 15,
+    borderBottomRightRadius: 15,
+    paddingVertical: 8,
+    marginBottom: 3,
+  },
   LinearGradient: {
-    
     borderColor: baseColors.lightColor,
     height: 170,
     height: deviceHeight / 4.5,
     width: deviceWidth / 1,
-    borderBottomLeftRadius:27,
-    borderBottomRightRadius:27
+    borderBottomLeftRadius: 27,
+    borderBottomRightRadius: 27,
   },
-  
 
   screenMiddle: {
-  
-    width: deviceWidth / 1-10,
+    width: deviceWidth / 1 - 10,
     height: deviceHeight / 1,
-    flexDirection:'column',
-    alignItems:'center',
-    
-  
+    flexDirection: "column",
+    alignItems: "center",
   },
-  textColor:{
-    color:baseColors.lightTextColor,
+  textColor: {
+    color: baseColors.lightTextColor,
     fontWeight: "bold",
   },
   textColorSuccess: {
@@ -52,5 +47,4 @@ export const styles = StyleSheet.create({
   textColorDanger: {
     color: baseColors.dangerTextColor,
   },
-  
 });

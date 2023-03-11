@@ -85,22 +85,22 @@ export const styles = StyleSheet.create({
   },
   paymentView: {
     flexDirection: "row",
-                justifyContent: "space-evenly",
-                alignItems: "center",
-                width: deviceWidth / 1,
-                paddingVertical: 20,
+    justifyContent: "space-evenly",
+    alignItems: "center",
+    width: deviceWidth / 1,
+    paddingVertical: 20,
   },
-  paymentViewItems:{
+  paymentViewItems: {
     flexDirection: "column",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  height: deviceHeight / 1.5,
+    justifyContent: "center",
+    alignItems: "center",
+    height: deviceHeight / 1.5,
   },
-  paymentSecondaryText:{
+  paymentSecondaryText: {
     color: baseColors.secondaryTextColor,
     fontWeight: "bold",
   },
-  paymentSuccessText:{
+  paymentSuccessText: {
     color: baseColors.sucessTextColor,
     fontWeight: "bold",
     textAlign: "center",

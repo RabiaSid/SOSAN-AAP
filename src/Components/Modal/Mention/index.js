@@ -11,7 +11,7 @@ import { Children } from "react";
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
 
-function Mention({children}) {
+function Mention({ children }) {
   const Navigation = useNavigation();
   const [isModalVisible, setModalVisible] = useState(false);
 
@@ -58,11 +58,14 @@ function Mention({children}) {
                   alignItems: "center",
                 }}
               >
-                <Text style={styles.modalViewText}
-                 onPress={() => {
+                <Text
+                  style={styles.modalViewText}
+                  onPress={() => {
                     Navigation.goBack("");
                   }}
-                >Submit</Text>
+                >
+                  Submit
+                </Text>
               </DarkGradient>
             </View>
           </View>

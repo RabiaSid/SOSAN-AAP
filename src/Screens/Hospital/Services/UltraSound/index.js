@@ -11,7 +11,7 @@ import GradientBackground from "../../../../Components/Gradient/DarkGradient/ind
 import AppHeader from "../../../../Components/AppHeader/index";
 import SearchField from "../../../../Components/SearchField/index";
 import { styles } from "./style";
-import { Ionicons, EvilIcons,MaterialIcons } from "@expo/vector-icons";
+import { Ionicons, EvilIcons, MaterialIcons } from "@expo/vector-icons";
 import baseColors from "../../../../Constant/color";
 import { useNavigation } from "@react-navigation/native";
 import { CurrentChampaignDataPharmacy } from "../../../../Config";
@@ -152,11 +152,15 @@ function UltraSoundHospital() {
                         flexDirection: "row",
                         justifyContent: "center",
                         alignItems: "center",
-                        borderRadius:50,
-                        backgroundColor:baseColors.sucessColor
+                        borderRadius: 50,
+                        backgroundColor: baseColors.sucessColor,
                       }}
                     >
-                      <MaterialIcons name="delete-outline" size={18} color="white" />
+                      <MaterialIcons
+                        name="delete-outline"
+                        size={18}
+                        color="white"
+                      />
                     </View>
                   </View>
                 </View>

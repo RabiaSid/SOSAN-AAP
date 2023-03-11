@@ -13,7 +13,7 @@ import { Ionicons, AntDesign } from "@expo/vector-icons";
 import { LayoutMap } from "../../Assets/images/index";
 import BottomSheet from "react-native-simple-bottom-sheet";
 import NearbyModal from "../Modal/NearByModal/index";
-import NearByMenuList from "../List/NearByMenuList/index"
+import NearByMenuList from "../List/NearByMenuList/index";
 import { useNavigation } from "@react-navigation/native";
 
 const deviceHeight = Dimensions.get("window").height;
@@ -40,9 +40,7 @@ const index = (props) => {
                 justifyContent: "flex-start",
               }}
             >
-              <TouchableOpacity
-              onPress={() => Navigation.goBack("")}
-              >
+              <TouchableOpacity onPress={() => Navigation.goBack("")}>
                 <Ionicons
                   name="chevron-back-sharp"
                   size={40}
@@ -76,60 +74,72 @@ const index = (props) => {
               flexDirection: "row",
               justifyContent: "space-around",
               alignItems: "center",
-              paddingVertical:5
+              paddingVertical: 5,
             }}
           >
             <View
               style={{
                 flexDirection: "row",
-                borderColor:baseColors.secondaryColor,
+                borderColor: baseColors.secondaryColor,
                 borderWidth: 0.5,
                 width: 70,
                 justifyContent: "space-around",
-                
               }}
             >
               <NearByMenuList />
-              <AntDesign name="down" size={18} style={{color:baseColors.secondaryTextColor}} />
+              <AntDesign
+                name="down"
+                size={18}
+                style={{ color: baseColors.secondaryTextColor }}
+              />
             </View>
             <View
               style={{
                 flexDirection: "row",
-                borderColor:baseColors.secondaryColor,
+                borderColor: baseColors.secondaryColor,
                 borderWidth: 0.5,
                 width: 70,
                 justifyContent: "space-around",
-                
               }}
             >
               <NearByMenuList />
-              <AntDesign name="down" size={18} style={{color:baseColors.secondaryTextColor}} />
+              <AntDesign
+                name="down"
+                size={18}
+                style={{ color: baseColors.secondaryTextColor }}
+              />
             </View>
             <View
               style={{
                 flexDirection: "row",
-                borderColor:baseColors.secondaryColor,
+                borderColor: baseColors.secondaryColor,
                 borderWidth: 0.5,
                 width: 70,
                 justifyContent: "space-around",
-                
               }}
             >
               <NearByMenuList />
-              <AntDesign name="down" size={18} style={{color:baseColors.secondaryTextColor}} />
+              <AntDesign
+                name="down"
+                size={18}
+                style={{ color: baseColors.secondaryTextColor }}
+              />
             </View>
             <View
               style={{
                 flexDirection: "row",
-                borderColor:baseColors.secondaryColor,
+                borderColor: baseColors.secondaryColor,
                 borderWidth: 0.5,
                 width: 70,
                 justifyContent: "space-around",
-                
               }}
             >
               <NearByMenuList />
-              <AntDesign name="down" size={18} style={{color:baseColors.secondaryTextColor}} />
+              <AntDesign
+                name="down"
+                size={18}
+                style={{ color: baseColors.secondaryTextColor }}
+              />
             </View>
           </View>
           <View
@@ -137,10 +147,12 @@ const index = (props) => {
               flexDirection: "row",
               justifyContent: "center",
               alignItems: "center",
-              paddingVertical:5,
+              paddingVertical: 5,
             }}
           >
-            <Text style={{color: baseColors.secondaryTextColor}}>Your Medicine Available Here</Text>
+            <Text style={{ color: baseColors.secondaryTextColor }}>
+              Your Medicine Available Here
+            </Text>
           </View>
         </AppHeader>
       </View>
@@ -173,7 +185,7 @@ const index = (props) => {
               <BottomSheet
                 isOpen={false}
                 sliderMaxHeight={Dimensions.get("window").height * 1.1 - 20}
-                sliderMinHeight={Dimensions.get("window").height * 0.7-15}
+                sliderMinHeight={Dimensions.get("window").height * 0.7 - 15}
                 wrapperStyle={styles.BottomSheet}
                 lineStyle={styles.BottomSheetLine}
               >
@@ -227,7 +239,7 @@ const styles = StyleSheet.create({
   Title: {
     fontSize: 18,
     fontWeight: "bold",
-    color:baseColors.primaryColor
+    color: baseColors.primaryColor,
   },
   LinearGradient: {
     borderColor: baseColors.lightColor,

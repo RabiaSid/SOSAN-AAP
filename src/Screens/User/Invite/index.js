@@ -11,7 +11,14 @@ import { useNavigation } from "@react-navigation/native";
 import styles from "./style";
 import GradientBackground from "../../../Components/Gradient/LinearBackground";
 import AppHeader from "../../../Components/AppHeader/index";
-import { Ionicons, Entypo, FontAwesome5, Fontisto, EvilIcons,AntDesign } from "@expo/vector-icons";
+import {
+  Ionicons,
+  Entypo,
+  FontAwesome5,
+  Fontisto,
+  EvilIcons,
+  AntDesign,
+} from "@expo/vector-icons";
 import { EmailGif } from "../../../Assets/images";
 import baseColors from "../../../Constant/color";
 baseColors;
@@ -95,41 +102,65 @@ const Invite = () => {
                   </Pressable>
                 </View>
                 <Text style={styles.SocialSecondaryText}>
-                    Share to your Friend By Using These
+                  Share to your Friend By Using These
                 </Text>
 
                 <View style={styles.SocialIconView}>
                   <View style={styles.SocialIconItemsRow}>
-                      <View style={styles.IconViewPrimary}>
-                      <FontAwesome5 name="facebook" size={32} style={{color: baseColors.lightTextColor}} />
-                      </View>
+                    <View style={styles.IconViewPrimary}>
+                      <FontAwesome5
+                        name="facebook"
+                        size={32}
+                        style={{ color: baseColors.lightTextColor }}
+                      />
+                    </View>
                   </View>
                   <View style={styles.SocialIconItemsRow}>
-                      <View style={styles.IconViewSucess}>
-                      <Fontisto name="whatsapp" size={30} style={{color: baseColors.lightTextColor}} />
-                      </View>
+                    <View style={styles.IconViewSucess}>
+                      <Fontisto
+                        name="whatsapp"
+                        size={30}
+                        style={{ color: baseColors.lightTextColor }}
+                      />
+                    </View>
                   </View>
                   <View style={styles.SocialIconItemsRow}>
-                      <View style={styles.IconViewLightPrimary}>
-                      <FontAwesome5 name="twitter" size={30} style={{color: baseColors.lightTextColor}} />
-                      </View>
+                    <View style={styles.IconViewLightPrimary}>
+                      <FontAwesome5
+                        name="twitter"
+                        size={30}
+                        style={{ color: baseColors.lightTextColor }}
+                      />
+                    </View>
                   </View>
                 </View>
                 <View style={styles.SocialIconView}>
                   <View style={styles.SocialIconItemsRow}>
-                      <View style={styles.IconViewLightPrimary}>
-                      <Entypo name="vimeo" size={30} style={{color: baseColors.lightTextColor}}  />
-                      </View>
+                    <View style={styles.IconViewLightPrimary}>
+                      <Entypo
+                        name="vimeo"
+                        size={30}
+                        style={{ color: baseColors.lightTextColor }}
+                      />
+                    </View>
                   </View>
                   <View style={styles.SocialIconItemsRow}>
-                      <View style={styles.IconViewPrimary}>
-                      <FontAwesome5 name="telegram-plane" size={35} style={{color: baseColors.lightTextColor}} />
-                      </View>
+                    <View style={styles.IconViewPrimary}>
+                      <FontAwesome5
+                        name="telegram-plane"
+                        size={35}
+                        style={{ color: baseColors.lightTextColor }}
+                      />
+                    </View>
                   </View>
                   <View style={styles.SocialIconItemsRow}>
-                      <View style={styles.IconViewPrimary}>
-                      <AntDesign name="skype" size={30} style={{color: baseColors.lightTextColor}} />
-                      </View>
+                    <View style={styles.IconViewPrimary}>
+                      <AntDesign
+                        name="skype"
+                        size={30}
+                        style={{ color: baseColors.lightTextColor }}
+                      />
+                    </View>
                   </View>
                 </View>
               </View>
@@ -138,7 +169,6 @@ const Invite = () => {
         </View>
       </GradientBackground>
     </View>
-    
   );
 };
 export default Invite;

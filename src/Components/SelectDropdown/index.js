@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View,  } from "react-native";
+import { View } from "react-native";
 import { SelectList } from "react-native-dropdown-select-list";
 import baseColors from "../../Constant/color";
 
@@ -23,7 +23,7 @@ function index() {
           borderColor: baseColors.sucessColor,
           borderWidth: 1,
           borderRadius: 10,
-          marginHorizontal:11,
+          marginHorizontal: 11,
           padding: 5,
         }}
         dropdownStyles={{
@@ -32,7 +32,6 @@ function index() {
           color: baseColors.sucessTextColor,
           borderColor: baseColors.sucessColor,
           borderWidth: 1,
-          
         }}
       />
     </View>

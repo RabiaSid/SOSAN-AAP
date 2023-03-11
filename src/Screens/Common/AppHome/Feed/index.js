@@ -12,39 +12,26 @@ import {
   MaterialIcons,
 } from "@expo/vector-icons";
 import { styles } from "./style";
+import FlagSelectList from "../../../../Components/List/FlagSelectList";
 
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
 
 function Feed() {
-const navigation = useNavigation();
-
+  const navigation = useNavigation();
 
   return (
-    <View
-      style={styles.ScreenContainer}
-    >
+    <View style={styles.ScreenContainer}>
       <AppHeader styles={styles.headerContainer}>
-        <View
-          style={styles.headerContainerView}
-        >
-          <View
-            style={styles.HeaderFirstRow}
-          >
-            <Image
-              source={Logo}
-              style={{ height: 30, width: 125 }}
-            />
+        <View style={styles.headerContainerView}>
+          <View style={styles.HeaderFirstRow}>
+            <Image source={Logo} style={{ height: 30, width: 125 }} />
           </View>
-          <View
-            style={styles.HeaderSecondRow}
-          >
+          <View style={styles.HeaderSecondRow}>
             <TouchableOpacity
-            onPress={()=>navigation.navigate('UserAppHome')}>
-              <Image
-                source={FlagButtonOne}
-                style={{ height: 20, width: 35 }}
-              />
+              onPress={() => navigation.navigate("UserAppHome")}
+            >
+              <Image source={FlagButtonOne} style={{ height: 20, width: 35 }} />
             </TouchableOpacity>
           </View>
         </View>
@@ -53,9 +40,7 @@ const navigation = useNavigation();
         </View>
       </AppHeader>
       <View style={styles.items}>
-        <View
-          style={styles.itemsMainView}
-        >
+        <View style={styles.itemsMainView}>
           <View style={styles.itemsView}>
             <FontAwesome5
               name="clinic-medical"
@@ -63,7 +48,7 @@ const navigation = useNavigation();
               style={styles.itemsIcon}
             />
             <Text
-              onPress={()=>navigation.navigate('Agenda')}
+              onPress={() => navigation.navigate("Agenda")}
               style={styles.itemsViewText}
             >
               Agenda
@@ -73,7 +58,7 @@ const navigation = useNavigation();
           <View style={styles.itemsViewReverse}>
             <Entypo name="calendar" size={24} style={styles.itemsIconReverse} />
             <Text
-             onPress={()=>navigation.navigate('Appointment')}
+              onPress={() => navigation.navigate("Appointment")}
               style={styles.itemsViewTextReverse}
             >
               Appointment
@@ -87,7 +72,7 @@ const navigation = useNavigation();
               style={styles.itemsIconReverse}
             />
             <Text
-               onPress={()=>navigation.navigate('CreatePost')}
+              onPress={() => navigation.navigate("CreatePost")}
               style={styles.itemsViewTextReverse}
             >
               Publicity
@@ -97,8 +82,7 @@ const navigation = useNavigation();
           <View style={styles.itemsView}>
             <Entypo name="wallet" size={24} style={styles.itemsIcon} />
             <Text
-              
-              onPress={()=>navigation.navigate('Epargne')}
+              onPress={() => navigation.navigate("Epargne")}
               style={styles.itemsViewText}
             >
               Earning

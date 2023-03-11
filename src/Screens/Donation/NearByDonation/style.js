@@ -5,12 +5,9 @@ const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
 
 export const styles = StyleSheet.create({
-  
-SearchField: {
+  SearchField: {
     width: deviceWidth / 1.2,
     height: 37,
     borderRadius: 20,
   },
-  
-  
 });

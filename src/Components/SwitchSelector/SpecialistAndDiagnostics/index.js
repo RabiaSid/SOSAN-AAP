@@ -48,27 +48,40 @@ function index() {
             data={SpecialistDataHospital}
             numColumns={2}
             renderItem={({ item }) => (
-              <TouchableOpacity
-              onPress={()=>navigation.navigate(item?.goto)}
-              >
+              <TouchableOpacity onPress={() => navigation.navigate(item?.goto)}>
                 <View
                   style={{
                     flexDirection: "column",
-                    alignItems:'center',
-                    justifyContent:'center',
+                    alignItems: "center",
+                    justifyContent: "center",
                     width: deviceWidth / 2.5,
                     marginVertical: 10,
-                    marginHorizontal:5,
-                    paddingVertical:10,
-                    borderRadius:20,
-                    backgroundColor:baseColors.LightSecondaryColor,
-                    elevation:4
+                    marginHorizontal: 5,
+                    paddingVertical: 10,
+                    borderRadius: 20,
+                    backgroundColor: baseColors.LightSecondaryColor,
+                    elevation: 4,
                   }}
                 >
-                  <FontAwesome name="circle" size={60} style={{color:baseColors.lightColor}} />
-                  <Text style={{fontSize:15, fontWeight:'700'}}>{item?.title}</Text>
-                  <Text style={{fontSize:12, fontWeight:'600'}}>Registered Text: 
-                  <Text style={{fontSize:12, fontWeight:'700',color:baseColors.dangerTextColor}}>21</Text>
+                  <FontAwesome
+                    name="circle"
+                    size={60}
+                    style={{ color: baseColors.lightColor }}
+                  />
+                  <Text style={{ fontSize: 15, fontWeight: "700" }}>
+                    {item?.title}
+                  </Text>
+                  <Text style={{ fontSize: 12, fontWeight: "600" }}>
+                    Registered Text:
+                    <Text
+                      style={{
+                        fontSize: 12,
+                        fontWeight: "700",
+                        color: baseColors.dangerTextColor,
+                      }}
+                    >
+                      21
+                    </Text>
                   </Text>
                 </View>
               </TouchableOpacity>
@@ -79,27 +92,40 @@ function index() {
             data={DiagnosticsDataHospital}
             numColumns={2}
             renderItem={({ item }) => (
-              <TouchableOpacity
-              onPress={()=>navigation.navigate(item?.goto)}
-              >
-                                <View
+              <TouchableOpacity onPress={() => navigation.navigate(item?.goto)}>
+                <View
                   style={{
                     flexDirection: "column",
-                    alignItems:'center',
-                    justifyContent:'center',
+                    alignItems: "center",
+                    justifyContent: "center",
                     width: deviceWidth / 2.5,
                     marginVertical: 10,
-                    marginHorizontal:5,
-                    paddingVertical:10,
-                    borderRadius:20,
-                    backgroundColor:baseColors.LightSecondaryColor,
-                    elevation:4
+                    marginHorizontal: 5,
+                    paddingVertical: 10,
+                    borderRadius: 20,
+                    backgroundColor: baseColors.LightSecondaryColor,
+                    elevation: 4,
                   }}
                 >
-                  <FontAwesome name="circle" size={60} style={{color:baseColors.lightColor}} />
-                  <Text style={{fontSize:15, fontWeight:'700'}}>{item?.title}</Text>
-                  <Text style={{fontSize:12, fontWeight:'600'}}>Registered Text: 
-                  <Text style={{fontSize:12, fontWeight:'700',color:baseColors.dangerTextColor}}>21</Text>
+                  <FontAwesome
+                    name="circle"
+                    size={60}
+                    style={{ color: baseColors.lightColor }}
+                  />
+                  <Text style={{ fontSize: 15, fontWeight: "700" }}>
+                    {item?.title}
+                  </Text>
+                  <Text style={{ fontSize: 12, fontWeight: "600" }}>
+                    Registered Text:
+                    <Text
+                      style={{
+                        fontSize: 12,
+                        fontWeight: "700",
+                        color: baseColors.dangerTextColor,
+                      }}
+                    >
+                      21
+                    </Text>
                   </Text>
                 </View>
               </TouchableOpacity>

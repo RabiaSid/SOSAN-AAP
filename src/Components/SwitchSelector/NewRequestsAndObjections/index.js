@@ -1,5 +1,5 @@
 import React from "react";
-import { View, StyleSheet, Dimensions,FlatList } from "react-native";
+import { View, StyleSheet, Dimensions, FlatList } from "react-native";
 import SwitchSelector from "react-native-switch-selector";
 import baseColors from "../../../Constant/color";
 import { useNavigation } from "@react-navigation/native";
@@ -27,7 +27,13 @@ function index({ children }) {
         options={[{ label: "New Requests" }, { label: "Objections" }]}
       />
       {children}
-      <View style={{width:deviceWidth/1, flexDirection:'column', alignItems:'center'}}>
+      <View
+        style={{
+          width: deviceWidth / 1,
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
         <FlatList
           data={NewRequestsAndObjectionsData}
           renderItem={({ item }) => <ReportCard data={item} />}
@@ -41,7 +47,7 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-    width: deviceWidth / 1.1 ,
+    width: deviceWidth / 1.1,
     marginTop: 70,
   },
   ActivityView: {

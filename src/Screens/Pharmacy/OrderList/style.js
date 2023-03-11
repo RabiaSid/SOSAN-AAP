@@ -11,8 +11,6 @@ export const styles = StyleSheet.create({
     flex: 1,
     flexDirection: "column",
     backgroundColor: baseColors.lightColor,
-    
-    
   },
   headerContainer: {
     backgroundColor: baseColors.sucessColor,
@@ -22,7 +20,6 @@ export const styles = StyleSheet.create({
     borderBottomLeftRadius: 15,
     borderBottomRightRadius: 15,
     paddingVertical: 8,
-    
   },
   LinearGradient: {
     borderColor: baseColors.lightColor,
@@ -38,56 +35,52 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     width: deviceWidth / 1,
-    
-    
   },
- 
-  ButtonView:{
+
+  ButtonView: {
     flexDirection: "row",
-    justifyContent: 'space-between',
-    alignItems:"center",
-    paddingVertical:10,
-    height:deviceHeight/7.5,
-    
+    justifyContent: "space-between",
+    alignItems: "center",
+    paddingVertical: 10,
+    height: deviceHeight / 7.5,
   },
-  TopButton:{
+  TopButton: {
     elevation: 8,
     backgroundColor: baseColors.sucessColor,
     borderRadius: 50,
     paddingVertical: 10,
-    marginHorizontal:2,
-    width: deviceWidth/2-17,
-    height:40,
+    marginHorizontal: 2,
+    width: deviceWidth / 2 - 17,
+    height: 40,
     justifyContent: "center",
     alignItems: "center",
   },
-  TopButtonText:{
-    color:baseColors.lightTextColor,
+  TopButtonText: {
+    color: baseColors.lightTextColor,
     fontWeight: "bold",
     textTransform: "uppercase",
   },
-  TopTwoButton:{
+  TopTwoButton: {
     elevation: 8,
     backgroundColor: baseColors.lightColor,
-    borderColor:baseColors.sucessColor,
-    borderWidth:2,
+    borderColor: baseColors.sucessColor,
+    borderWidth: 2,
     borderRadius: 50,
     paddingVertical: 10,
     paddingHorizontal: 12,
-    marginHorizontal:2,
-    width: deviceWidth/2-17,
-    height:40,
+    marginHorizontal: 2,
+    width: deviceWidth / 2 - 17,
+    height: 40,
     justifyContent: "center",
     alignItems: "center",
   },
-  TopTwoButtonText:{
+  TopTwoButtonText: {
     color: baseColors.sucessTextColor,
     fontWeight: "bold",
     textTransform: "uppercase",
   },
-  switchView:{
-    height:deviceHeight/1.2,
-    paddingTop:10
-    
-  }
+  switchView: {
+    height: deviceHeight / 1.2,
+    paddingTop: 10,
+  },
 });

@@ -12,40 +12,34 @@ export const styles = StyleSheet.create({
     flexDirection: "column",
     backgroundColor: baseColors.lightColor,
   },
-  headerContainer:{ 
-    backgroundColor:baseColors.sucessColor,
-    height: 70, 
-    marginTop: 25, 
-    width: deviceWidth/1,
-    borderBottomLeftRadius:15,
-    borderBottomRightRadius:15,
-    paddingVertical:10
-},
-LinearGradient: {
-    
+  headerContainer: {
+    backgroundColor: baseColors.sucessColor,
+    height: 70,
+    marginTop: 25,
+    width: deviceWidth / 1,
+    borderBottomLeftRadius: 15,
+    borderBottomRightRadius: 15,
+    paddingVertical: 10,
+  },
+  LinearGradient: {
     borderColor: baseColors.lightColor,
     height: 170,
     height: deviceHeight / 4.5,
     width: deviceWidth / 1,
-    borderBottomLeftRadius:27,
-    borderBottomRightRadius:27
+    borderBottomLeftRadius: 27,
+    borderBottomRightRadius: 27,
   },
-  
 
   screenMiddle: {
-  
     width: deviceWidth / 1,
     height: deviceHeight / 1,
-    flexDirection:'column',
-    alignItems:'center',
-    
-    
-  
+    flexDirection: "column",
+    alignItems: "center",
   },
-  textHeading:{
+  textHeading: {
     color: baseColors.lightColor,
-    height:30,
-    fontSize : 22,
-    fontWeight: '500'
+    height: 30,
+    fontSize: 22,
+    fontWeight: "500",
   },
-})
+});

@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Text,
-  View,
-  Dimensions,
-  FlatList,
-  ScrollView,
-} from "react-native";
+import { Text, View, Dimensions, FlatList, ScrollView } from "react-native";
 import LayoutNearby from "../../../Components/LayoutNearby/index";
 import { PharmacyNearbyData } from "../../../Config/index";
 import SearchField from "../../../Components/SearchField/index";
@@ -17,7 +11,6 @@ const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
 
 function NearbyPharmacy() {
-
   return (
     <LayoutNearby title="Pharmacie">
       {
@@ -48,12 +41,9 @@ function NearbyPharmacy() {
               </Text>
             </View>
 
-           
-
             <FlatList
               data={PharmacyNearbyData}
-              renderItem={({ item }) => <NearByCard data={item} 
-              />}
+              renderItem={({ item }) => <NearByCard data={item} />}
             />
           </View>
         </ScrollView>

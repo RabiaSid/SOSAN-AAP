@@ -17,7 +17,7 @@ import Button from "../../../../Components/Buttons";
 const deviceWidth = Dimensions.get("window").width;
 
 function AssuranceAddplanDetail() {
-    const navigation = useNavigation();
+  const navigation = useNavigation();
   return (
     <View style={styles.screenContainer}>
       <View>
@@ -136,4 +136,4 @@ function AssuranceAddplanDetail() {
   );
 }
 
-export default AssuranceAddplanDetail
+export default AssuranceAddplanDetail;

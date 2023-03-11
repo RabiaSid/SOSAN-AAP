@@ -11,22 +11,18 @@ export const styles = StyleSheet.create({
     flexDirection: "column",
     backgroundColor: baseColors.lightColor,
   },
-  headerContainer:{
-    marginTop: 30, 
-    width: deviceWidth/1,
-    paddingHorizontal:4,
-
-
-},
- 
-  screenMiddle: {
-    width: deviceWidth / 1-10,
-    flexDirection:'column',
-    alignItems: "center",
-    justifyContent:'center',
-    marginTop:10,
-    marginBottom:80,
-    
+  headerContainer: {
+    marginTop: 30,
+    width: deviceWidth / 1,
+    paddingHorizontal: 4,
   },
- 
+
+  screenMiddle: {
+    width: deviceWidth / 1 - 10,
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: 10,
+    marginBottom: 80,
+  },
 });

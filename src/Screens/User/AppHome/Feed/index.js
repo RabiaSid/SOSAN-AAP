@@ -6,7 +6,7 @@ import SearchField from "../../../../Components/SearchField";
 import DarkGradient from "../../../../Components/Gradient/DarkGradient";
 import ReverseDarkGradient from "../../../../Components/Gradient/ReverseDarkGradient";
 import { useNavigation } from "@react-navigation/native";
-import { Logo,  BottomImage, FlagButtonTwo } from "../../../../Assets/images";
+import { Logo, BottomImage, FlagButtonTwo } from "../../../../Assets/images";
 import {
   FontAwesome5,
   Fontisto,
@@ -21,8 +21,7 @@ const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
 
 function Feed() {
-const navigation = useNavigation();
-
+  const navigation = useNavigation();
 
   return (
     <View
@@ -39,7 +38,6 @@ const navigation = useNavigation();
             alignItems: "center",
             paddingVertical: 15,
             width: deviceWidth / 1,
-            
           }}
         >
           <View
@@ -49,13 +47,9 @@ const navigation = useNavigation();
               justifyContent: "center",
               alignItems: "center",
               paddingLeft: 35,
-              
             }}
           >
-            <Image
-              source={Logo}
-              style={{ height: 30, width: 125 }}
-            />
+            <Image source={Logo} style={{ height: 30, width: 125 }} />
           </View>
           <View
             style={{
@@ -63,14 +57,10 @@ const navigation = useNavigation();
               flexDirection: "row",
               justifyContent: "space-between",
               alignItems: "center",
-              
             }}
           >
             <TouchableOpacity>
-              <Image
-                source={FlagButtonTwo}
-                style={{ height: 20, width: 35 }}
-              />
+              <Image source={FlagButtonTwo} style={{ height: 20, width: 35 }} />
             </TouchableOpacity>
           </View>
         </View>
@@ -92,19 +82,21 @@ const navigation = useNavigation();
               style={styles.itemsIcon}
             />
             <Text
-              onPress={()=>navigation.navigate('NearbyHospital')}
+              onPress={() => navigation.navigate("NearbyHospital")}
               style={styles.itemsViewText}
             >
-             HOSPITAL PRIVE / PUBLIC
+              HOSPITAL PRIVE / PUBLIC
             </Text>
           </View>
 
           <View style={styles.itemsViewReverse}>
-          <FontAwesome5 
-          name="capsules" 
-          size={23} style={styles.itemsIconReverse} />
+            <FontAwesome5
+              name="capsules"
+              size={23}
+              style={styles.itemsIconReverse}
+            />
             <Text
-             onPress={()=>navigation.navigate('PharmacyOrderList')}
+              onPress={() => navigation.navigate("PharmacyOrderList")}
               // onPress={Appointments}
               style={styles.itemsViewTextReverse}
             >
@@ -113,9 +105,9 @@ const navigation = useNavigation();
           </View>
 
           <View style={styles.itemsViewReverse}>
-          <Fontisto name="doctor" size={24} style={styles.itemsIconReverse} />
+            <Fontisto name="doctor" size={24} style={styles.itemsIconReverse} />
             <Text
-               onPress={()=>navigation.navigate('NearByDoctor')}
+              onPress={() => navigation.navigate("NearByDoctor")}
               style={styles.itemsViewTextReverse}
             >
               PRISE DE RDV MEDECIN
@@ -123,10 +115,13 @@ const navigation = useNavigation();
           </View>
 
           <View style={styles.itemsView}>
-          <FontAwesome5 name="hand-holding-heart" size={24} style={styles.itemsIcon} />
+            <FontAwesome5
+              name="hand-holding-heart"
+              size={24}
+              style={styles.itemsIcon}
+            />
             <Text
-              
-              onPress={()=>navigation.navigate('NearbyDonation')}
+              onPress={() => navigation.navigate("NearbyDonation")}
               style={styles.itemsViewText}
             >
               DONS ONG/ ASSOCIATIONS
@@ -134,9 +129,9 @@ const navigation = useNavigation();
           </View>
 
           <View style={styles.itemsView}>
-          <Foundation name="dollar" size={36} style={styles.itemsIcon} />
+            <Foundation name="dollar" size={36} style={styles.itemsIcon} />
             <Text
-              onPress={()=>navigation.navigate('Assurances')}
+              onPress={() => navigation.navigate("Assurances")}
               style={styles.itemsViewText}
             >
               ASSURANCES
@@ -144,38 +139,39 @@ const navigation = useNavigation();
           </View>
 
           <View style={styles.itemsViewReverse}>
-          <FontAwesome name="heartbeat" size={25} style={styles.itemsIconReverse}  />
+            <FontAwesome
+              name="heartbeat"
+              size={25}
+              style={styles.itemsIconReverse}
+            />
             <Text
-             onPress={()=>navigation.navigate('Epargne')}
+              onPress={() => navigation.navigate("Epargne")}
               // onPress={Appointments}
               style={styles.itemsViewTextReverse}
             >
               EPARGNE SOSAN
             </Text>
-            
           </View>
         </View>
-        
-            <DarkGradient styles={styles.Button}>
-            <Text>
+
+        <DarkGradient styles={styles.Button}>
+          <Text>
             <PaymentPayAs />
-            </Text>
-            </DarkGradient>
-          
-            <ReverseDarkGradient styles={styles.Button}>
-            <Text>
-              <PaymentPayAsForm style={{color:baseColors.lightTextColor}}>
-                <Text style={{color:baseColors.lightTextColor}}>
-                  Pay
-                </Text>
-              </PaymentPayAsForm>
-            </Text>
-            </ReverseDarkGradient>
+          </Text>
+        </DarkGradient>
+
+        <ReverseDarkGradient styles={styles.Button}>
+          <Text>
+            <PaymentPayAsForm style={{ color: baseColors.lightTextColor }}>
+              <Text style={{ color: baseColors.lightTextColor }}>Pay</Text>
+            </PaymentPayAsForm>
+          </Text>
+        </ReverseDarkGradient>
       </View>
 
       <Image
         source={BottomImage}
-        style={{ height: 155, width:480,resizeMode: "contain" }}
+        style={{ height: 155, width: 480, resizeMode: "contain" }}
       />
     </View>
   );

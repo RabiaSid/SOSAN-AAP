@@ -5,11 +5,11 @@ const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
 
 export const styles = StyleSheet.create({
-  View:{
-    flexDirection:'row',
-    justifyContent:'center',
-    width:deviceWidth/1,
-    paddingVertical:10
+  View: {
+    flexDirection: "row",
+    justifyContent: "center",
+    width: deviceWidth / 1,
+    paddingVertical: 10,
   },
   Button: {
     elevation: 8,
@@ -17,7 +17,7 @@ export const styles = StyleSheet.create({
     borderRadius: 50,
     paddingVertical: 10,
     paddingHorizontal: 12,
-    width: deviceWidth/1.2,
+    width: deviceWidth / 1.2,
     justifyContent: "center",
     alignItems: "center",
   },
@@ -26,5 +26,4 @@ export const styles = StyleSheet.create({
     fontWeight: "bold",
     textTransform: "uppercase",
   },
-  
 });

@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Dimensions, Pressable,FlatList } from "react-native";
+import { View, Text, Dimensions, Pressable, FlatList } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import styles from "./style";
 import GradientBackground from "../../../Components/Gradient/LinearBackground";
@@ -8,7 +8,6 @@ import AppHeader from "../../../Components/AppHeader/index";
 import { Ionicons, FontAwesome5 } from "@expo/vector-icons";
 import baseColors from "../../../Constant/color";
 import Description from "../../../Components/Description";
-
 
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
@@ -82,12 +81,8 @@ const Privacy = () => {
                 ></View>
               </View>
             </View>
-            
-            
-            <Description>
-              Privacy
-            </Description>
-            
+
+            <Description>Privacy</Description>
           </View>
         </View>
       </GradientBackground>

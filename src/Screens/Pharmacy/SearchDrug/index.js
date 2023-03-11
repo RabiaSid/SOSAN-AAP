@@ -18,7 +18,6 @@ function SearchDrug() {
 
   const toggleModal = () => {
     setModalVisible(!isModalVisible);
-    
   };
 
   const Navigation = useNavigation();
@@ -42,9 +41,9 @@ function SearchDrug() {
               }}
             >
               <TouchableOpacity
-              onPress={() => {
-                Navigation.goBack("");
-              }}
+                onPress={() => {
+                  Navigation.goBack("");
+                }}
               >
                 <Ionicons
                   name="chevron-back-sharp"
@@ -63,7 +62,7 @@ function SearchDrug() {
               <Text
                 style={{ fontWeight: "bold", color: baseColors.lightTextColor }}
               >
-                Add Drug 
+                Add Drug
               </Text>
             </View>
           </View>
@@ -80,44 +79,37 @@ function SearchDrug() {
       >
         <View style={styles.screenMiddle}>
           <View style={styles.items}>
-            <Text
-              style={styles.ListTitle}
-            >
-              Drug Name/Formula
-            </Text>
+            <Text style={styles.ListTitle}>Drug Name/Formula</Text>
           </View>
           <View style={styles.ViewRow}>
-            
             <GradientBackground styles={styles.GradientView}>
               <SearchField styles={styles.SearchField} />
-              <Quantity 
-              onPress={toggleModal} 
-              isVisible={isModalVisible}>
-              <View style={styles.ListView}>
-                <Image source={AvatarPerson3} style={styles.ListImage} />
-                <Text style={styles.ListText}>Panadol</Text>
-                <Text style={styles.ListText}>Tablet</Text>
-                <Text style={styles.ListText}>500 mg</Text>
-              </View>
-              <View style={styles.ListView}>
-                <Image source={AvatarPerson3} style={styles.ListImage} />
-                <Text style={styles.ListText}>Panadol</Text>
-                <Text style={styles.ListText}>Tablet</Text>
-                <Text style={styles.ListText}>500 mg</Text>
-              </View>
-              <View style={styles.ListView}>
-                <Image source={AvatarPerson3} style={styles.ListImage} />
-                <Text style={styles.ListText}>Panadol</Text>
-                <Text style={styles.ListText}>Tablet</Text>
-                <Text style={styles.ListText}>500 mg</Text>
-              </View>
-              <View style={styles.LastListView}>
-                <Image source={AvatarPerson3} style={styles.ListImage} />
-                <Text style={styles.ListText}>Panadol</Text>
-                <Text style={styles.ListText}>Tablet</Text>
-                <Text style={styles.ListText}>500 mg</Text>
-              </View>
-            </Quantity>
+              <Quantity onPress={toggleModal} isVisible={isModalVisible}>
+                <View style={styles.ListView}>
+                  <Image source={AvatarPerson3} style={styles.ListImage} />
+                  <Text style={styles.ListText}>Panadol</Text>
+                  <Text style={styles.ListText}>Tablet</Text>
+                  <Text style={styles.ListText}>500 mg</Text>
+                </View>
+                <View style={styles.ListView}>
+                  <Image source={AvatarPerson3} style={styles.ListImage} />
+                  <Text style={styles.ListText}>Panadol</Text>
+                  <Text style={styles.ListText}>Tablet</Text>
+                  <Text style={styles.ListText}>500 mg</Text>
+                </View>
+                <View style={styles.ListView}>
+                  <Image source={AvatarPerson3} style={styles.ListImage} />
+                  <Text style={styles.ListText}>Panadol</Text>
+                  <Text style={styles.ListText}>Tablet</Text>
+                  <Text style={styles.ListText}>500 mg</Text>
+                </View>
+                <View style={styles.LastListView}>
+                  <Image source={AvatarPerson3} style={styles.ListImage} />
+                  <Text style={styles.ListText}>Panadol</Text>
+                  <Text style={styles.ListText}>Tablet</Text>
+                  <Text style={styles.ListText}>500 mg</Text>
+                </View>
+              </Quantity>
             </GradientBackground>
             {/* <Quantity show={show} /> */}
           </View>

@@ -1,9 +1,9 @@
 import React from "react";
 import { View, Text } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import CheckButton from '../../../Components/CheckButton';
+import CheckButton from "../../../Components/CheckButton";
 import Button from "../../../Components/Buttons";
-import {styles} from "./style"
+import { styles } from "./style";
 
 const AddServicesPharmacy = () => {
   const navigation = useNavigation();
@@ -28,16 +28,16 @@ const AddServicesPharmacy = () => {
         </View>
       </View>
       <View style={styles.BottomBtn}>
-        <Button
-          styles={styles.LoginBtn}
-        >
-          <Text style={styles.LoginBtnTextSty}
-           onPress={() => {
-            navigation.navigate("StuffDetailPharmacy");
-          }}
-          >Continue</Text>
+        <Button styles={styles.LoginBtn}>
+          <Text
+            style={styles.LoginBtnTextSty}
+            onPress={() => {
+              navigation.navigate("StuffDetailPharmacy");
+            }}
+          >
+            Continue
+          </Text>
         </Button>
-        
       </View>
     </View>
   );

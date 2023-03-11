@@ -23,7 +23,6 @@ export const styles = StyleSheet.create({
     marginBottom: 3,
   },
 
-
   screenMiddle: {
     width: deviceWidth / 1,
     height: deviceHeight / 1.1,
@@ -55,9 +54,8 @@ export const styles = StyleSheet.create({
     height: deviceHeight / 6,
     paddingBottom: 20,
     marginVertical: 10,
-   
   },
-  
+
   paymentView: {
     flexDirection: "row",
     justifyContent: "space-evenly",
@@ -72,57 +70,56 @@ export const styles = StyleSheet.create({
     height: deviceHeight / 1.5,
   },
   item: {
-    alignItems: 'center',
+    alignItems: "center",
     width: 300,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'flex-start',
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "flex-start",
     borderRadius: 15,
-    paddingVertical:4,
-   marginHorizontal: 10,
-   width:deviceWidth/1.1,
-},
-imgView:{
-    flexDirection: 'column'
-},
-imageSty:{
+    paddingVertical: 4,
+    marginHorizontal: 10,
+    width: deviceWidth / 1.1,
+  },
+  imgView: {
+    flexDirection: "column",
+  },
+  imageSty: {
     height: 80,
-    width:80,
-    borderRadius: 50
-},
-listItem:{
-    flexDirection: 'column',
-    width:deviceWidth/2,
-},
-email:{
-  fontSize: 14,
-  color: "gray",
-},
-title:{
-fontWeight: 'bold',
-fontSize: 20,
-paddingVertical:2
-},
+    width: 80,
+    borderRadius: 50,
+  },
+  listItem: {
+    flexDirection: "column",
+    width: deviceWidth / 2,
+  },
+  email: {
+    fontSize: 14,
+    color: "gray",
+  },
+  title: {
+    fontWeight: "bold",
+    fontSize: 20,
+    paddingVertical: 2,
+  },
 
-icon:{
- paddingRight:10,
- paddingTop:5,
- color:baseColors.secondaryTextColor
-},
-id:{
-    color: 'gray'
-},
-idView:{
-    flexDirection: 'row',
-    justifyContent:'space-between',
-    width:deviceWidth/2.5,
-    paddingVertical:2
-},
-idViewTwo:{
-  flexDirection: 'row',
-  justifyContent:'flex-start',
-  width:deviceWidth/2.5,
-  paddingVertical:2
-}
-  
+  icon: {
+    paddingRight: 10,
+    paddingTop: 5,
+    color: baseColors.secondaryTextColor,
+  },
+  id: {
+    color: "gray",
+  },
+  idView: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    width: deviceWidth / 2.5,
+    paddingVertical: 2,
+  },
+  idViewTwo: {
+    flexDirection: "row",
+    justifyContent: "flex-start",
+    width: deviceWidth / 2.5,
+    paddingVertical: 2,
+  },
 });

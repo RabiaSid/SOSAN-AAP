@@ -34,9 +34,11 @@ function StuffDetailPharmacy() {
       {/* <ScrollView> */}
 
       <View style={styles.screenMiddle}>
-        <View style={{ paddingVertical: 10, width:deviceWidth/1-40}}>
-          <SkipSwitchButton 
-          onPress={()=>{Navigation.navigate('AddANewDoctorPharmacy')}}
+        <View style={{ paddingVertical: 10, width: deviceWidth / 1 - 40 }}>
+          <SkipSwitchButton
+            onPress={() => {
+              Navigation.navigate("AddANewDoctorPharmacy");
+            }}
           />
         </View>
         <View
@@ -46,7 +48,7 @@ function StuffDetailPharmacy() {
             alignItems: "center",
             borderRadius: 15,
             height: 100,
-            width:deviceWidth/1-40,
+            width: deviceWidth / 1 - 40,
             backgroundColor: baseColors.lightColor,
             elevation: 4,
           }}

@@ -88,8 +88,8 @@ function AgendaSendBill(props) {
           {props.children}
           <View
             style={{
-              flexDirection:'column',
-              alignItems:'center',
+              flexDirection: "column",
+              alignItems: "center",
               width: deviceWidth / 1,
               borderTopRightRadius: 30,
               borderTopLeftRadius: 30,
@@ -99,13 +99,12 @@ function AgendaSendBill(props) {
             <View
               style={{
                 height: 55,
-                width: deviceWidth / 1-20,
+                width: deviceWidth / 1 - 20,
                 borderTopRightRadius: 25,
                 borderTopLeftRadius: 25,
                 backgroundColor: baseColors.primaryColor,
                 flexDirection: "row",
-                justifyContent:'center'
-                
+                justifyContent: "center",
               }}
             >
               <View
@@ -169,22 +168,20 @@ function AgendaSendBill(props) {
                       backgroundColor: colors[index % colors.length],
                     }}
                   >
-                    <Checkbox
-                     
-                    />
+                    <Checkbox />
                     <Text>{item?.title}</Text>
                     <Text>{item?.formula}</Text>
                     <Text>{item?.Quantity}</Text>
-                    <View style={{
-                      borderWidth:1,
-                      borderColor:baseColors.sucessColor,
-                      width:42,
-                      height:25,
-                      borderRadius:8,
-                      backgroundColor:baseColors.lightColor
-                    }}>
-
-                    </View>
+                    <View
+                      style={{
+                        borderWidth: 1,
+                        borderColor: baseColors.sucessColor,
+                        width: 42,
+                        height: 25,
+                        borderRadius: 8,
+                        backgroundColor: baseColors.lightColor,
+                      }}
+                    ></View>
                   </View>
                 )}
               />

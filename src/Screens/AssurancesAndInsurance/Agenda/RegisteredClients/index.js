@@ -10,7 +10,7 @@ import {
 import AppHeader from "../../../../Components/AppHeader/index";
 import { styles } from "./style";
 import baseColors from "../../../../Constant/color";
-import { Ionicons ,EvilIcons} from "@expo/vector-icons";
+import { Ionicons, EvilIcons } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
 import { AddDrugData } from "../../../../Config";
 import { AvatarPerson1 } from "../../../../Assets/images";
@@ -32,7 +32,6 @@ function RegisteredClientsAssurance() {
               flexDirection: "row",
               alignItems: "center",
               paddingTop: 20,
-              
             }}
           >
             <View
@@ -84,40 +83,37 @@ function RegisteredClientsAssurance() {
         }}
       >
         <View style={styles.screenMiddle}>
-          
           <View
             style={{
-              flexDirection:'column',
-              justifyContent:'flex-start',
-              alignItems:'center',
-              width: deviceWidth / 1-10,
-              height:deviceHeight/1.2,
-              
+              flexDirection: "column",
+              justifyContent: "flex-start",
+              alignItems: "center",
+              width: deviceWidth / 1 - 10,
+              height: deviceHeight / 1.2,
             }}
           >
             <SearchField
-          style={{
-            height: 50,
-            borderColor: baseColors.lightColor,
-            borderWidth: 1,
-            borderRadius: 50,
-          }}
-        />
+              style={{
+                height: 50,
+                borderColor: baseColors.lightColor,
+                borderWidth: 1,
+                borderRadius: 50,
+              }}
+            />
             <View
               style={{
                 height: 55,
-                width: deviceWidth / 1-15,
+                width: deviceWidth / 1 - 15,
                 borderTopRightRadius: 25,
                 borderTopLeftRadius: 25,
                 backgroundColor: baseColors.primaryColor,
                 flexDirection: "row",
-                justifyContent:'center'
-                
+                justifyContent: "center",
               }}
             >
               <View
                 style={{
-                  width: deviceWidth / 1-10,
+                  width: deviceWidth / 1 - 10,
                   flexDirection: "row",
                   justifyContent: "space-around",
                   alignItems: "center",
@@ -160,9 +156,11 @@ function RegisteredClientsAssurance() {
                 </Text>
               </View>
             </View>
-            
-            <TouchableOpacity 
-            onPress={()=>{Navigation.navigate('IssuranceEditDetail') }}
+
+            <TouchableOpacity
+              onPress={() => {
+                Navigation.navigate("IssuranceEditDetail");
+              }}
             >
               <FlatList
                 data={AddDrugData}
@@ -179,34 +177,39 @@ function RegisteredClientsAssurance() {
                       backgroundColor: colors[index % colors.length],
                     }}
                   >
-                    <Image source={AvatarPerson1} style={{height:35, width:35, borderRadius:50}}/>
+                    <Image
+                      source={AvatarPerson1}
+                      style={{ height: 35, width: 35, borderRadius: 50 }}
+                    />
                     <Text>{item?.title}</Text>
                     <Text>12-08-2022</Text>
                     <Text>12-08-2022</Text>
                     <View
-                    style={{
-                      flexDirection: "row",
-                      justifyContent: "space-around",
-                      alignItems: "center",
-                    }}
+                      style={{
+                        flexDirection: "row",
+                        justifyContent: "space-around",
+                        alignItems: "center",
+                      }}
                     >
-                    
-                   <EvilIcons name="pencil" size={28} color="grey" 
-                    onPress={()=> {
-                      Navigation.navigate("TrackingIssuranceEditDetail")
-                    }} 
-                   />
-                   <Ionicons name="ios-trash-bin-sharp" size={20} color='red'  
-                   />
-                   </View>
+                      <EvilIcons
+                        name="pencil"
+                        size={28}
+                        color="grey"
+                        onPress={() => {
+                          Navigation.navigate("TrackingIssuranceEditDetail");
+                        }}
+                      />
+                      <Ionicons
+                        name="ios-trash-bin-sharp"
+                        size={20}
+                        color="red"
+                      />
+                    </View>
                   </View>
                 )}
               />
             </TouchableOpacity>
           </View>
-          
-          
-          
         </View>
       </View>
       {/* </ScrollView> */}

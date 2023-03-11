@@ -4,7 +4,7 @@ import AppHeader from "../../../Components/AppHeader/index";
 import { styles } from "./style";
 import baseColors from "../../../Constant/color";
 import { AntDesign, MaterialIcons } from "@expo/vector-icons";
-import SkipSwitchReverseButton from "../../../Components/SkipSwitchReverseButton"
+import SkipSwitchReverseButton from "../../../Components/SkipSwitchReverseButton";
 import Button from "../../../Components/Buttons";
 import { useNavigation } from "@react-navigation/native";
 
@@ -33,8 +33,8 @@ function DoctorDetailPharmacy() {
       {/* <ScrollView> */}
 
       <View style={styles.screenMiddle}>
-        <View style={{ paddingVertical: 10, width:deviceWidth/1-40}}>
-         <SkipSwitchReverseButton />
+        <View style={{ paddingVertical: 10, width: deviceWidth / 1 - 40 }}>
+          <SkipSwitchReverseButton />
         </View>
         <View
           style={{
@@ -43,7 +43,7 @@ function DoctorDetailPharmacy() {
             alignItems: "center",
             borderRadius: 15,
             height: 100,
-            width:deviceWidth/1-40,
+            width: deviceWidth / 1 - 40,
             backgroundColor: baseColors.lightColor,
             elevation: 4,
           }}

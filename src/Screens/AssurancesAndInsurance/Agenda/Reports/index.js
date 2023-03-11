@@ -6,7 +6,7 @@ import {
   Dimensions,
   Text,
   ScrollView,
-  Image
+  Image,
 } from "react-native";
 import AppHeader from "../../../../Components/AppHeader";
 import { styles } from "./styles";
@@ -15,13 +15,12 @@ import baseColors from "../../../../Constant/color";
 import Calender from "../../../../Components/Calender";
 import SearchField from "../../../../Components/SearchField";
 import { AvatarPerson3 } from "../../../../Assets/images";
-import ClearedAndPending from "../../../../Components/SwitchSelector/ClearedAndPending"
+import ClearedAndPending from "../../../../Components/SwitchSelector/ClearedAndPending";
 
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
 
 function AssuranceAgendaReports() {
-
   const navigation = useNavigation();
 
   return (
@@ -86,50 +85,47 @@ function AssuranceAgendaReports() {
               style={{
                 flexDirection: "row",
                 width: deviceWidth / 1,
-                justifyContent: 'space-between',
-                paddingHorizontal:10,
+                justifyContent: "space-between",
+                paddingHorizontal: 10,
                 alignItems: "center",
                 paddingVertical: 5,
-                borderBottomWidth:0.5,
-                borderColor:baseColors.secondaryTextColor,
-                paddingVertical:10
+                borderBottomWidth: 0.5,
+                borderColor: baseColors.secondaryTextColor,
+                paddingVertical: 10,
               }}
             >
-
-                <View
-                style={{
-                    flexDirection: 'column',
-                    justifyContent: 'center',
-                    alignItems: 'flex-start',
-                  }}
-                  >
-                    <Text
-                  style={{
-                    fontSize: 17,
-                    fontWeight: "bold",
-                    paddingHorizontal: 5,
-
-                  }}
-                >
-                  SOSAN ID: 15151815
-                </Text>
               <View
                 style={{
-                  flexDirection: "row",
-                  
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignItems: "flex-start",
                 }}
               >
                 <Text
                   style={{
-                    fontSize: 18,
+                    fontSize: 17,
                     fontWeight: "bold",
                     paddingHorizontal: 5,
                   }}
                 >
-                  August, 2022
+                  SOSAN ID: 15151815
                 </Text>
-                <Calender />
-              </View>
+                <View
+                  style={{
+                    flexDirection: "row",
+                  }}
+                >
+                  <Text
+                    style={{
+                      fontSize: 18,
+                      fontWeight: "bold",
+                      paddingHorizontal: 5,
+                    }}
+                  >
+                    August, 2022
+                  </Text>
+                  <Calender />
+                </View>
               </View>
               <Image
                 source={AvatarPerson3}
@@ -137,52 +133,49 @@ function AssuranceAgendaReports() {
               />
             </View>
             <View
-                  style={{
-                    flexDirection: "row",
-                    width: deviceWidth / 1-20,
-                    justifyContent:'flex-start',
-                    alignItems: "center",
-                    paddingVertical: 5,
-                  }}
-                >
-                  <Text
-                  style={{
-                    fontSize: 18,
-                    fontWeight: '600',
-                    paddingHorizontal: 5,
-
-                  }}
-                >
-                  List Of Client
-                </Text>
-                </View>
+              style={{
+                flexDirection: "row",
+                width: deviceWidth / 1 - 20,
+                justifyContent: "flex-start",
+                alignItems: "center",
+                paddingVertical: 5,
+              }}
+            >
+              <Text
+                style={{
+                  fontSize: 18,
+                  fontWeight: "600",
+                  paddingHorizontal: 5,
+                }}
+              >
+                List Of Client
+              </Text>
+            </View>
             <View
-                  style={{
-                    flexDirection: "row",
-                    width: deviceWidth / 1,
-                    justifyContent:'space-evenly',
-                    alignItems: "center",
-                    paddingVertical: 15,
-                  }}
-                >
-                  <SearchField
-                    styles={{
-                      width: deviceWidth / 1.2,
-                      borderRadius: 50,
-                      height: 40,
-                    }}
-                  />
-                </View>
-            <View style={{ height: deviceHeight / 1, }}>
-                
+              style={{
+                flexDirection: "row",
+                width: deviceWidth / 1,
+                justifyContent: "space-evenly",
+                alignItems: "center",
+                paddingVertical: 15,
+              }}
+            >
+              <SearchField
+                styles={{
+                  width: deviceWidth / 1.2,
+                  borderRadius: 50,
+                  height: 40,
+                }}
+              />
+            </View>
+            <View style={{ height: deviceHeight / 1 }}>
               <ClearedAndPending />
             </View>
           </ScrollView>
         </View>
-       </View>
+      </View>
     </View>
   );
 }
 
 export default AssuranceAgendaReports;
-

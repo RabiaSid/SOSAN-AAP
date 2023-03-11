@@ -11,8 +11,6 @@ export const styles = StyleSheet.create({
     flex: 1,
     flexDirection: "column",
     backgroundColor: baseColors.lightColor,
-    
-    
   },
   headerContainer: {
     backgroundColor: baseColors.sucessColor,
@@ -22,7 +20,6 @@ export const styles = StyleSheet.create({
     borderBottomLeftRadius: 15,
     borderBottomRightRadius: 15,
     paddingVertical: 8,
-    
   },
 
   screenMiddle: {
@@ -30,11 +27,7 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     width: deviceWidth / 1,
-    height:deviceHeight/1.2,
-    paddingTop:40
-    
-    
+    height: deviceHeight / 1.2,
+    paddingTop: 40,
   },
- 
-  
 });

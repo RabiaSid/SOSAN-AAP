@@ -11,25 +11,15 @@ const Document = () => {
   return (
     <View style={styles.ScreenContainer}>
       <AppHeader styles={styles.headerContainer}>
-        <View
-          style={styles.HeaderRow}
-        >
-          <Text
-            style={styles.HeaderRowText}
-          >
-            Appoinment Request
-          </Text>
+        <View style={styles.HeaderRow}>
+          <Text style={styles.HeaderRowText}>Appoinment Request</Text>
         </View>
       </AppHeader>
-      <View
-        style={styles.ScreenMiddle}
-      >
+      <View style={styles.ScreenMiddle}>
         <Text>Today</Text>
         <Ionicons name="filter-outline" size={24} color="black" />
       </View>
-      <View
-        style={styles.ScreenMiddleView}
-      >
+      <View style={styles.ScreenMiddleView}>
         <View style={styles.Container}>
           <FlatList
             data={RequestCardData}
@@ -58,7 +48,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-  HeaderRow:{
+  HeaderRow: {
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
@@ -68,23 +58,23 @@ const styles = StyleSheet.create({
     borderBottomStartRadius: 7,
     width: deviceWidth / 1,
   },
-  HeaderRowText:{
+  HeaderRowText: {
     fontWeight: "bold",
     color: baseColors.lightTextColor,
     fontSize: 17,
   },
-  ScreenMiddle:{
+  ScreenMiddle: {
     flexDirection: "row",
-    justifyContent: 'flex-end',
+    justifyContent: "flex-end",
     alignItems: "center",
     width: deviceWidth / 1,
     paddingRight: 20,
   },
-  ScreenMiddleView:{
+  ScreenMiddleView: {
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-  }
+  },
 });
 
 export default Document;

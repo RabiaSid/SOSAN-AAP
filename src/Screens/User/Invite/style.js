@@ -80,37 +80,37 @@ const styles = StyleSheet.create({
   SocialIconView: {
     flexDirection: "row",
     width: deviceWidth / 1 - 50,
-    marginTop:15
+    marginTop: 15,
   },
   SocialIconItemsRow: {
     width: deviceWidth / 3.5,
     height: 70,
-    justifyContent:'center',
-    alignItems:'center'
+    justifyContent: "center",
+    alignItems: "center",
   },
-  IconViewPrimary:{
-    height:60,
-    width:55,
-    justifyContent:'center',
-    alignItems:'center',
-    backgroundColor:baseColors.primaryColor,
-    borderRadius:12
+  IconViewPrimary: {
+    height: 60,
+    width: 55,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: baseColors.primaryColor,
+    borderRadius: 12,
   },
-  IconViewSucess:{
-    height:60,
-    width:55,
-    justifyContent:'center',
-    alignItems:'center',
-    backgroundColor:baseColors.sucessColor,
-    borderRadius:12
+  IconViewSucess: {
+    height: 60,
+    width: 55,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: baseColors.sucessColor,
+    borderRadius: 12,
   },
-  IconViewLightPrimary:{
-    height:60,
-    width:55,
-    justifyContent:'center',
-    alignItems:'center',
-    backgroundColor:baseColors.gradientprimaryColor,
-    borderRadius:12
-  }
+  IconViewLightPrimary: {
+    height: 60,
+    width: 55,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: baseColors.gradientprimaryColor,
+    borderRadius: 12,
+  },
 });
 export default styles;

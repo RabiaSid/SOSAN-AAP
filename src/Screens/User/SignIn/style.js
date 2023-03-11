@@ -46,7 +46,7 @@ export const styles = StyleSheet.create({
     borderRadius: 50,
     padding: 10,
   },
-  
+
   Button: {
     elevation: 8,
     backgroundColor: baseColors.primaryColor,

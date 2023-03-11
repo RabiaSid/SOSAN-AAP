@@ -5,7 +5,7 @@ import Button from "../../Buttons/index";
 import { Ionicons } from "@expo/vector-icons";
 import { Entypo } from "@expo/vector-icons";
 import { FontAwesome5 } from "@expo/vector-icons";
-import {styles} from "./style.js"
+import { styles } from "./style.js";
 import baseColors from "../../../Constant/color";
 
 const CancelledAppointmentCard = () => {
@@ -23,7 +23,10 @@ const CancelledAppointmentCard = () => {
                   <Entypo
                     name="location"
                     size={14}
-                    style={{ color: baseColors.dangerTextColor , paddingRight:6 }}
+                    style={{
+                      color: baseColors.dangerTextColor,
+                      paddingRight: 6,
+                    }}
                   />
                   <Text style={styles.discp}>{item?.location}</Text>
                 </View>
@@ -31,7 +34,7 @@ const CancelledAppointmentCard = () => {
                   <FontAwesome5
                     name="calendar-week"
                     size={14}
-                    style={{ color: baseColors.primaryColor , paddingRight:6  }}
+                    style={{ color: baseColors.primaryColor, paddingRight: 6 }}
                   />
                   <Text style={styles.discp}>{item?.dateDay}</Text>
                 </View>
@@ -39,7 +42,7 @@ const CancelledAppointmentCard = () => {
                   <Ionicons
                     name="time"
                     size={14}
-                    style={{ color: baseColors.sucessColor , paddingRight:6 }}
+                    style={{ color: baseColors.sucessColor, paddingRight: 6 }}
                   />
                   <Text style={styles.discp}>{item?.time}</Text>
                 </View>

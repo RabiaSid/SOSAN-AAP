@@ -3,8 +3,8 @@ import { View, Text, Dimensions, Pressable } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import styles from "./style";
 import GradientBackground from "../../../Components/Gradient/LinearBackground";
-import AppHeader from "../../../Components/AppHeader/index"
-import Description  from "../../../Components/Description/index"
+import AppHeader from "../../../Components/AppHeader/index";
+import Description from "../../../Components/Description/index";
 import { Ionicons } from "@expo/vector-icons";
 import baseColors from "../../../Constant/color";
 
@@ -80,9 +80,7 @@ function TermsAndConditions() {
                 ></View>
               </View>
             </View>
-            <Description>
-              Term And Conditions
-            </Description>
+            <Description>Term And Conditions</Description>
           </View>
         </View>
       </GradientBackground>
@@ -90,4 +88,4 @@ function TermsAndConditions() {
   );
 }
 
-export default TermsAndConditions
+export default TermsAndConditions;

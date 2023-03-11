@@ -4,7 +4,7 @@ import AppHeader from "../../../Components/AppHeader/index";
 import { styles } from "./style";
 import baseColors from "../../../Constant/color";
 import { AntDesign, MaterialIcons } from "@expo/vector-icons";
-import SkipSwitchButton from "../../../Components/SkipSwitchButton/index"
+import SkipSwitchButton from "../../../Components/SkipSwitchButton/index";
 // import SkipSwitchSelector from "../../../Components/SwitchSelector/SkipSwitchSelector/index";
 import Button from "../../../Components/Buttons";
 import { useNavigation } from "@react-navigation/native";
@@ -36,8 +36,10 @@ function StuffDetailHospital() {
 
       <View style={styles.screenMiddle}>
         <View style={{ paddingVertical: 10 }}>
-          <SkipSwitchButton 
-          onPress={()=>{Navigation.navigate('AddANewDoctorHospital')}}
+          <SkipSwitchButton
+            onPress={() => {
+              Navigation.navigate("AddANewDoctorHospital");
+            }}
           />
         </View>
         <View
@@ -47,7 +49,7 @@ function StuffDetailHospital() {
             alignItems: "center",
             borderRadius: 15,
             height: 100,
-            width:deviceWidth/1-40,
+            width: deviceWidth / 1 - 40,
             backgroundColor: baseColors.lightColor,
             elevation: 4,
           }}

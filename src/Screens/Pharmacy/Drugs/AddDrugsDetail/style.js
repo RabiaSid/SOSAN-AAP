@@ -35,16 +35,16 @@ export const styles = StyleSheet.create({
   ImageButtonView: {
     flexDirection: "row",
     alignItems: "flex-end",
-    justifyContent:'center',
+    justifyContent: "center",
     height: 130,
   },
   ImageButtonViewText: {
     width: 100,
     height: 35,
-    paddingHorizontal:12,
-    borderRadius:8,
-    backgroundColor:baseColors.primaryColor,
-    elevation:2
+    paddingHorizontal: 12,
+    borderRadius: 8,
+    backgroundColor: baseColors.primaryColor,
+    elevation: 2,
   },
   screen: {
     flexDirection: "column",

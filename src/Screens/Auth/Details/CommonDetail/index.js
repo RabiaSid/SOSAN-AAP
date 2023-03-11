@@ -2,7 +2,7 @@ import React from "react";
 import { ScrollView } from "react-native";
 import { View, Text, Image, Dimensions } from "react-native";
 import Button from "../../../../Components/Buttons";
-import {styles} from "./style"
+import { styles } from "./style";
 import InputField from "../../../../Components/InputField";
 import baseColors from "../../../../Constant/color";
 import Schedule from "../../../../Components/Schedule";
@@ -14,10 +14,13 @@ import Map from "../../../../Components/Map";
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
 
-function CommonDetail({children}) {
+function CommonDetail({ children }) {
   const Navigation = useNavigation();
   return (
-    <ScrollView style={styles.screenContainer} showsVerticalScrollIndicator={false}>
+    <ScrollView
+      style={styles.screenContainer}
+      showsVerticalScrollIndicator={false}
+    >
       <View style={styles.screen}>
         <Text style={styles.Text}>Detail</Text>
         <Text style={styles.formText}>Institude Name</Text>
@@ -79,9 +82,7 @@ function CommonDetail({children}) {
             //   Navigation.navigate("Services");
             // }}
           >
-            <Text>
-
-            </Text>
+            <Text></Text>
             {children}
             {/* <Text style={styles.ButtonText}>Login</Text> */}
           </Button>

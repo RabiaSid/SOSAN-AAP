@@ -10,30 +10,24 @@ export const styles = StyleSheet.create({
     width: deviceWidth / 1,
     flex: 1,
     flexDirection: "column",
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
     backgroundColor: baseColors.lightColor,
   },
   headerContainer: {
     backgroundColor: baseColors.sucessColor,
-    // height: 60, 
+    // height: 60,
     marginTop: 28,
     width: deviceWidth / 1,
     borderBottomLeftRadius: 15,
     borderBottomRightRadius: 15,
-    paddingVertical: 8
+    paddingVertical: 8,
   },
 
-
-
   screenMiddle: {
-
     width: deviceWidth / 1 - 15,
     // height: deviceHeight / 1,
-    flexDirection: 'column',
-
-
-
+    flexDirection: "column",
   },
   textColor: {
     color: baseColors.lightTextColor,
@@ -46,7 +40,7 @@ export const styles = StyleSheet.create({
     color: baseColors.dangerTextColor,
   },
   CardStyling: {
-    backgroundColor: '#fff',
+    backgroundColor: "#fff",
     padding: 10,
     borderRadius: 15,
     paddingVertical: 10,
@@ -54,18 +48,18 @@ export const styles = StyleSheet.create({
     elevation: 3,
   },
   item: {
-    alignItems: 'flex-start',
+    alignItems: "flex-start",
     width: 300,
-    flexDirection: 'row',
-    justifyContent: 'space-evenly',
+    flexDirection: "row",
+    justifyContent: "space-evenly",
     paddingVertical: 4,
-    borderRadius: 15
+    borderRadius: 15,
   },
   TitleHead: {
-    flexDirection: "column"
+    flexDirection: "column",
   },
   title: {
-    fontWeight: 'bold',
+    fontWeight: "bold",
   },
   ItemDisc: {
     flexDirection: "row",
@@ -77,8 +71,8 @@ export const styles = StyleSheet.create({
   },
   ButtonView: {
     flexDirection: "row",
-    justifyContent: 'space-evenly',
-    alignItems: 'center'
+    justifyContent: "space-evenly",
+    alignItems: "center",
   },
   ButtonSucess: {
     elevation: 0,
@@ -115,7 +109,7 @@ export const styles = StyleSheet.create({
     color: baseColors.primaryColor,
     marginHorizontal: 10,
     //  top: 5,
-    fontWeight: 'bold'
+    fontWeight: "bold",
   },
   LoginBtn: {
     elevation: 8,
@@ -131,6 +125,6 @@ export const styles = StyleSheet.create({
   LoginTextSty: {
     color: baseColors.lightColor,
     fontWeight: "bold",
-    fontSize: 20
+    fontSize: 20,
   },
 });

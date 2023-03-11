@@ -1,5 +1,5 @@
 import React from "react";
-import { View,Text, Image, TouchableOpacity } from "react-native";
+import { View, Text, Image, TouchableOpacity } from "react-native";
 import { styles } from "./style.js";
 import { AvatarPerson2, FlagButtonOne } from "../../../Assets/images/index";
 import baseColors from "../../../Constant/color";
@@ -11,7 +11,6 @@ const BookAnAppointment = ({ data }) => {
   const Navigation = useNavigation();
   return (
     <TouchableOpacity
-    
       onPress={() => {
         Navigation.navigate(data?.goTo);
       }}

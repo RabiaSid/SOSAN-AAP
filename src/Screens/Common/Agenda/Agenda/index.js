@@ -15,8 +15,8 @@ import baseColors from "../../../../Constant/color";
 import { Ionicons } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
 import Calender from "../../../../Components/Calender";
-import { MaterialIcons } from '@expo/vector-icons';
-import DarkGradient from '../../../../Components/Gradient/DarkGradient'
+import { MaterialIcons } from "@expo/vector-icons";
+import DarkGradient from "../../../../Components/Gradient/DarkGradient";
 
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
@@ -28,12 +28,8 @@ const Agenda = () => {
     <View style={styles.screenContainer}>
       <View>
         <AppHeader styles={styles.headerContainer}>
-          <View
-            style={styles.FirstView}
-          >
-            <View
-              style={styles.SecondView}
-            >
+          <View style={styles.FirstView}>
+            <View style={styles.SecondView}>
               <TouchableOpacity
                 onPress={() => {
                   navigation.goBack("Feed");
@@ -54,7 +50,11 @@ const Agenda = () => {
               }}
             >
               <Text
-                style={{ fontWeight: "bold", color: baseColors.lightTextColor, fontSize: 20 }}
+                style={{
+                  fontWeight: "bold",
+                  color: baseColors.lightTextColor,
+                  fontSize: 20,
+                }}
               >
                 Consultation
               </Text>
@@ -71,11 +71,13 @@ const Agenda = () => {
           paddingHorizontal: 10,
         }}
       >
-        <ScrollView  showsVerticalScrollIndicator={false}>
+        <ScrollView showsVerticalScrollIndicator={false}>
           <View style={styles.screenMiddle}>
-            <View style={{flexDirection:'row', paddingTop:10,}}>
-            <Text style={{ fontWeight: 'bold', fontSize: 20, }}>August, 2022</Text>
-            <Calender/>
+            <View style={{ flexDirection: "row", paddingTop: 10 }}>
+              <Text style={{ fontWeight: "bold", fontSize: 20 }}>
+                August, 2022
+              </Text>
+              <Calender />
             </View>
             <View
               style={{
@@ -85,7 +87,7 @@ const Agenda = () => {
               }}
             >
               <TouchableOpacity
-                  onPress={(value) => setswitchValue(true)} 
+                onPress={(value) => setswitchValue(true)}
                 style={{
                   elevation: 8,
                   backgroundColor: "#ADD8E6",
@@ -112,7 +114,7 @@ const Agenda = () => {
                 </Text>
               </TouchableOpacity>
               <TouchableOpacity
-                    onPress={(value) => setswitchValue(false)}
+                onPress={(value) => setswitchValue(false)}
                 style={{
                   elevation: 8,
                   backgroundColor: baseColors.secondaryColor,
@@ -190,43 +192,49 @@ const Agenda = () => {
                   Wed 13
                 </Text>
               </TouchableOpacity>
-
             </View>
-            <View style={{ flexDirection: 'row', }}>
-              <Text style={{ fontWeight: 'bold', fontSize: 20, }}>List of Schedule</Text>
+            <View style={{ flexDirection: "row" }}>
+              <Text style={{ fontWeight: "bold", fontSize: 20 }}>
+                List of Schedule
+              </Text>
             </View>
-            <View style={{ flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-              <View style={{
-                flexDirection: 'column',
-                width: deviceWidth / 1,
-                justifyContent: 'center',
-                alignItems: 'center',
-                borderRadius: 10,
-
-              }}>
-                   {switchValue !== true ? (
-                <FlatList
-                  data={ListOfScheduleTwo}
-                  renderItem={({ item }) => <List data={item} />
-                  }
-                /> 
-                   ) : (
-                    <FlatList
+            <View
+              style={{
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <View
+                style={{
+                  flexDirection: "column",
+                  width: deviceWidth / 1,
+                  justifyContent: "center",
+                  alignItems: "center",
+                  borderRadius: 10,
+                }}
+              >
+                {switchValue !== true ? (
+                  <FlatList
+                    data={ListOfScheduleTwo}
+                    renderItem={({ item }) => <List data={item} />}
+                  />
+                ) : (
+                  <FlatList
                     data={ListOfSchedule}
-                    renderItem={({ item }) => <List data={item} />
-                    }
-                  /> 
-                    )}
+                    renderItem={({ item }) => <List data={item} />}
+                  />
+                )}
               </View>
             </View>
-            <View style={{
-              flexDirection: 'row',
-              alignItems: 'flex-end',
-              justifyContent: 'flex-end',
-              width: deviceWidth / 1 - 30,
-
-            }}>
-
+            <View
+              style={{
+                flexDirection: "row",
+                alignItems: "flex-end",
+                justifyContent: "flex-end",
+                width: deviceWidth / 1 - 30,
+              }}
+            >
               <DarkGradient
                 styles={{
                   elevation: 8,
@@ -239,13 +247,18 @@ const Agenda = () => {
                   alignItems: "center",
                   height: 60,
                   // marginVertical: 20,
-                }}>
-                <MaterialIcons name="add" size={40} color="white" onPress={() => {
-                  navigation.navigate("WorkingDetailAgenda");
-                }} />
+                }}
+              >
+                <MaterialIcons
+                  name="add"
+                  size={40}
+                  color="white"
+                  onPress={() => {
+                    navigation.navigate("WorkingDetailAgenda");
+                  }}
+                />
               </DarkGradient>
             </View>
-
           </View>
         </ScrollView>
       </View>

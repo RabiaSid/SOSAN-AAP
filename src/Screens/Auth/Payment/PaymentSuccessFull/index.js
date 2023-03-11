@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  View,
-  Text,
-  TouchableOpacity,
-  Dimensions,
-  Image,
-} from "react-native";
+import { View, Text, TouchableOpacity, Dimensions, Image } from "react-native";
 import AppHeader from "../../../../Components/AppHeader/index";
 import { styles } from "./style";
 import baseColors from "../../../../Constant/color";
@@ -13,7 +7,6 @@ import { Ionicons, AntDesign } from "@expo/vector-icons";
 import { SuccessImage } from "../../../../Assets/images";
 import DarkGradient from "../../../../Components/Gradient/DarkGradient";
 import { useNavigation } from "@react-navigation/native";
-
 
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
@@ -38,9 +31,7 @@ function PaymentSuccessFull() {
                 justifyContent: "flex-start",
               }}
             >
-              <TouchableOpacity 
-              onPress={() => Navigation.navigate("Feed")}
-              >
+              <TouchableOpacity onPress={() => Navigation.navigate("Feed")}>
                 <Ionicons
                   name="chevron-back-sharp"
                   size={37}
@@ -88,51 +79,28 @@ function PaymentSuccessFull() {
       >
         <View style={styles.screenMiddle}>
           <View style={styles.borderView}>
-            
             <Text style={styles.borderTextView}>Your Medication</Text>
-            <View
-              style={styles.borderItemsView}
-            >
-              <View style={{
-                paddingTop: 10,
-              }}>
-                <Text
-                  style={styles.borderDarkText}
-                >
-                  Medicine Name
-                </Text>
-                <Text
-                  style={styles.borderDangerText}
-                >
-                  Total
-                </Text>
+            <View style={styles.borderItemsView}>
+              <View
+                style={{
+                  paddingTop: 10,
+                }}
+              >
+                <Text style={styles.borderDarkText}>Medicine Name</Text>
+                <Text style={styles.borderDangerText}>Total</Text>
               </View>
               <View>
-                <Text
-                  style={styles.borderDarkText}
-                >
-                  $ 7.25
-                </Text>
-                <Text
-                  style={styles.borderDangerText}
-                >
-                  $ 61.25
-                </Text>
+                <Text style={styles.borderDarkText}>$ 7.25</Text>
+                <Text style={styles.borderDangerText}>$ 61.25</Text>
               </View>
             </View>
           </View>
 
           <View>
-            <View
-              style={styles.paymentView}
-            >
-              <View
-                style={styles.paymentViewItems}
-              >
+            <View style={styles.paymentView}>
+              <View style={styles.paymentViewItems}>
                 <View style={{ height: deviceHeight / 5 }}>
-                  <Text
-                    style={styles.paymentSecondaryText}
-                  >
+                  <Text style={styles.paymentSecondaryText}>
                     Payment Has Been Done
                   </Text>
                 </View>
@@ -147,20 +115,20 @@ function PaymentSuccessFull() {
                     height: deviceHeight / 6,
                     paddingTop: 50,
                     width: deviceWidth / 3,
-                    
                   }}
                 >
-                  <Text
-                    style={styles.paymentSuccessText}
-                  >
+                  <Text style={styles.paymentSuccessText}>
                     Payment SuccessFul
                   </Text>
                 </View>
                 <View style={{ height: deviceHeight / 7 }}>
-                  <DarkGradient styles={styles.Button}
-                  >
-                    <Text style={styles.ButtonText}
-                    onPress={() => Navigation.navigate("UserAppHome")}>Login</Text>
+                  <DarkGradient styles={styles.Button}>
+                    <Text
+                      style={styles.ButtonText}
+                      onPress={() => Navigation.navigate("UserAppHome")}
+                    >
+                      Login
+                    </Text>
                   </DarkGradient>
                 </View>
               </View>

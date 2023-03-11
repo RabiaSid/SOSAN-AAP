@@ -9,9 +9,9 @@ import {
 } from "@expo/vector-icons";
 import Modal from "react-native-modal";
 import baseColors from "../../../Constant/color";
+
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
-baseColors
 
 function ModalTester() {
   const Navigation = useNavigation();

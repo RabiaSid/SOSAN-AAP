@@ -17,7 +17,6 @@ export const styles = StyleSheet.create({
     marginTop: 35,
     width: deviceWidth / 1,
   },
-  
 
   // screen: {
   //   flexDirection: "column",
@@ -39,51 +38,51 @@ export const styles = StyleSheet.create({
     borderRadius: 50,
     paddingVertical: 10,
     paddingHorizontal: 12,
-    marginVertical:5,
+    marginVertical: 5,
     width: 300,
     justifyContent: "center",
     alignItems: "center",
-    height:37,
+    height: 37,
   },
-  ButtonView:{
+  ButtonView: {
     flexDirection: "row",
-    justifyContent: 'space-between',
-    alignItems:"center",
-    marginVertical:5,
-    paddingTop:10
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginVertical: 5,
+    paddingTop: 10,
   },
-  TopButton:{
+  TopButton: {
     elevation: 8,
     backgroundColor: baseColors.sucessColor,
     borderRadius: 50,
     paddingVertical: 10,
     paddingHorizontal: 12,
-    marginHorizontal:2,
-    width: deviceWidth/2-33,
-    height:40,
+    marginHorizontal: 2,
+    width: deviceWidth / 2 - 33,
+    height: 40,
     justifyContent: "center",
     alignItems: "center",
   },
-  TopButtonText:{
-    color:baseColors.lightTextColor,
+  TopButtonText: {
+    color: baseColors.lightTextColor,
     fontWeight: "bold",
     textTransform: "uppercase",
   },
-  TopTwoButton:{
+  TopTwoButton: {
     elevation: 8,
     backgroundColor: baseColors.lightColor,
-    borderColor:baseColors.sucessColor,
-    borderWidth:2,
+    borderColor: baseColors.sucessColor,
+    borderWidth: 2,
     borderRadius: 50,
     paddingVertical: 10,
     paddingHorizontal: 12,
-    marginHorizontal:2,
-    width: deviceWidth/2-33,
-    height:40,
+    marginHorizontal: 2,
+    width: deviceWidth / 2 - 33,
+    height: 40,
     justifyContent: "center",
     alignItems: "center",
   },
-  TopTwoButtonText:{
+  TopTwoButtonText: {
     color: baseColors.sucessTextColor,
     fontWeight: "bold",
     textTransform: "uppercase",
@@ -99,25 +98,25 @@ export const styles = StyleSheet.create({
     borderRadius: 50,
     paddingVertical: 10,
     paddingHorizontal: 12,
-    marginVertical:5,
+    marginVertical: 5,
     width: 300,
     justifyContent: "center",
     alignItems: "center",
-    height:37,
-    color:baseColors.lightTextColor
+    height: 37,
+    color: baseColors.lightTextColor,
   },
   ButtonSuccessText: {
     color: baseColors.lightTextColor,
     fontWeight: "bold",
     textTransform: "uppercase",
-    borderWidth:2
+    borderWidth: 2,
   },
 
   TextSecondary: {
     color: baseColors.secondaryTextColor,
     fontWeight: "bold",
   },
-  TextDanger:{
+  TextDanger: {
     color: baseColors.dangerTextColor,
     fontWeight: "bold",
   },
@@ -134,21 +133,21 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-  ListBottomGape:{
+  ListBottomGape: {
     borderBottomWidth: 0.3,
     borderBottomColor: baseColors.secondaryTextColor,
     width: deviceWidth / 1.2,
     justifyContent: "center",
     alignItems: "center",
-    marginTop:40
+    marginTop: 40,
   },
-  ListBottomGapeBottom:{
+  ListBottomGapeBottom: {
     borderBottomWidth: 0.3,
     borderBottomColor: baseColors.secondaryTextColor,
     width: deviceWidth / 1.2,
     justifyContent: "center",
     alignItems: "center",
-    marginBottom:40
+    marginBottom: 40,
   },
   Listitems: {
     flexDirection: "row",

@@ -24,20 +24,20 @@ export const styles = StyleSheet.create({
     paddingVertical: 15,
     width: deviceWidth / 1,
   },
-  HeaderFirstRow:{
+  HeaderFirstRow: {
     width: deviceWidth / 1.2,
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
     paddingLeft: 35,
   },
-  HeaderSecondRow:{
+  HeaderSecondRow: {
     width: deviceWidth / 3.8,
-              flexDirection: "row",
-              justifyContent: "space-between",
-              alignItems: "center",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
   },
-  itemsMainView:{
+  itemsMainView: {
     flexWrap: "wrap",
     flexDirection: "row",
   },
@@ -49,8 +49,7 @@ export const styles = StyleSheet.create({
     borderRadius: 50,
     padding: 10,
   },
- 
- 
+
   items: {
     backgroundColor: baseColors.lightColor,
     borderRadius: 10,

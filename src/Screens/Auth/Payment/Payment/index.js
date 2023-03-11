@@ -21,7 +21,6 @@ const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
 
 function Payment() {
- 
   const [shouldShow, setShouldShow] = useState(false);
 
   const Navigation = useNavigation();
@@ -223,7 +222,7 @@ function Payment() {
               ) : null}
             </View>
             <View style={styles.View}>
-            <PaymentOption />
+              <PaymentOption />
             </View>
             <View style={styles.View}>
               <Text style={styles.TextLeft}>Payment Option</Text>

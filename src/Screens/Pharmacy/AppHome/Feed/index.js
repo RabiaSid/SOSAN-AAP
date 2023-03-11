@@ -17,8 +17,7 @@ const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
 
 function Feed() {
-const navigation = useNavigation();
-
+  const navigation = useNavigation();
 
   return (
     <View
@@ -46,10 +45,7 @@ const navigation = useNavigation();
               paddingLeft: 35,
             }}
           >
-            <Image
-              source={Logo}
-              style={{ height: 30, width: 125 }}
-            />
+            <Image source={Logo} style={{ height: 30, width: 125 }} />
           </View>
           <View
             style={{
@@ -60,11 +56,9 @@ const navigation = useNavigation();
             }}
           >
             <TouchableOpacity
-            onPress={()=>navigation.navigate('UserAppHome')}>
-              <Image
-                source={FlagButtonOne}
-                style={{ height: 20, width: 35 }}
-              />
+              onPress={() => navigation.navigate("UserAppHome")}
+            >
+              <Image source={FlagButtonOne} style={{ height: 20, width: 35 }} />
             </TouchableOpacity>
           </View>
         </View>
@@ -86,7 +80,7 @@ const navigation = useNavigation();
               style={styles.itemsIcon}
             />
             <Text
-              onPress={()=>navigation.navigate('AgendaDrugRequest')}
+              onPress={() => navigation.navigate("AgendaDrugRequest")}
               style={styles.itemsViewText}
             >
               Agenda
@@ -96,7 +90,7 @@ const navigation = useNavigation();
           <View style={styles.itemsViewReverse}>
             <Entypo name="calendar" size={24} style={styles.itemsIconReverse} />
             <Text
-             onPress={()=>navigation.navigate('AvailableDrugsPharmacy')}
+              onPress={() => navigation.navigate("AvailableDrugsPharmacy")}
               style={styles.itemsViewTextReverse}
             >
               Drugs
@@ -110,7 +104,7 @@ const navigation = useNavigation();
               style={styles.itemsIconReverse}
             />
             <Text
-               onPress={()=>navigation.navigate('CurrentCampaignPharmacy')}
+              onPress={() => navigation.navigate("CurrentCampaignPharmacy")}
               style={styles.itemsViewTextReverse}
             >
               Publicity
@@ -120,8 +114,7 @@ const navigation = useNavigation();
           <View style={styles.itemsView}>
             <Entypo name="wallet" size={24} style={styles.itemsIcon} />
             <Text
-              
-              onPress={()=>navigation.navigate('Epargne')}
+              onPress={() => navigation.navigate("Epargne")}
               style={styles.itemsViewText}
             >
               Earning
@@ -139,6 +132,3 @@ const navigation = useNavigation();
 }
 
 export default Feed;
-
-
-

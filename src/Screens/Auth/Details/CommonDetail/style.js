@@ -28,7 +28,7 @@ export const styles = StyleSheet.create({
   formText: {
     paddingLeft: 20,
   },
- 
+
   TextPrimary: {
     fontWeight: "bold",
     textTransform: "uppercase",

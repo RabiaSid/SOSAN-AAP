@@ -26,11 +26,11 @@ export const styles = StyleSheet.create({
   },
   Headeritems: {
     flexDirection: "row",
-    alignItems:'center'
+    alignItems: "center",
   },
   HeaderText: {
-    fontSize:17,
-    color:baseColors.primaryTextColor
+    fontSize: 17,
+    color: baseColors.primaryTextColor,
   },
 
   screenMiddle: {
@@ -55,5 +55,4 @@ export const styles = StyleSheet.create({
     fontWeight: "bold",
     textTransform: "uppercase",
   },
-  
 });

@@ -17,7 +17,6 @@ export const styles = StyleSheet.create({
     marginTop: 35,
     width: deviceWidth / 1,
   },
-  
 
   // screen: {
   //   flexDirection: "column",
@@ -52,16 +51,15 @@ export const styles = StyleSheet.create({
     color: baseColors.secondaryTextColor,
     fontWeight: "bold",
   },
-  TextDanger:{
+  TextDanger: {
     color: baseColors.dangerTextColor,
     fontWeight: "bold",
   },
   Listmain: {
     flexDirection: "column",
     alignItems: "center",
-    width: deviceWidth / 1 ,
+    width: deviceWidth / 1,
     paddingVertical: 10,
-    
   },
   ListBottom: {
     borderBottomWidth: 0.3,

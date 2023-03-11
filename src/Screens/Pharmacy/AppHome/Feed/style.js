@@ -6,19 +6,14 @@ const deviceWidth = Dimensions.get("window").width;
 
 export const styles = StyleSheet.create({
   headerContainer: {
-   
     backgroundColor: baseColors.lightColor,
     height: 170,
     marginTop: 35,
     width: deviceWidth / 1,
-    borderBottomEndRadius:30,
-    borderBottomStartRadius:30,
-    
-
+    borderBottomEndRadius: 30,
+    borderBottomStartRadius: 30,
   },
-  header: {
-
-  },
+  header: {},
   SearchField: {
     height: 50,
     margin: 12,
@@ -32,7 +27,6 @@ export const styles = StyleSheet.create({
     flex: 1,
     width: deviceWidth / 1,
     height: deviceHeight / 1,
-    
   },
   Button: {
     elevation: 8,

@@ -1,5 +1,12 @@
 import React from "react";
-import { Text, View, Image, Dimensions, StyleSheet, TouchableOpacity } from "react-native";
+import {
+  Text,
+  View,
+  Image,
+  Dimensions,
+  StyleSheet,
+  TouchableOpacity,
+} from "react-native";
 import baseColors from "../../../Constant/color";
 import Button from "../../Buttons/index";
 import DarkGradient from "../../Gradient/DarkGradient";
@@ -12,32 +19,35 @@ function index({ data }) {
   const Navigation = useNavigation();
 
   return (
-   <TouchableOpacity 
-    onPress={()=>{Navigation.navigate(data?.goTo)}}>
-    <View style={styles.StuffCardItem}>
-      <View style={styles.StuffView}>
-        <DarkGradient styles={styles.StuffImageView}>
-          <Image source={data?.image} style={styles.StuffImage} />
-        </DarkGradient>
+    <TouchableOpacity
+      onPress={() => {
+        Navigation.navigate(data?.goTo);
+      }}
+    >
+      <View style={styles.StuffCardItem}>
+        <View style={styles.StuffView}>
+          <DarkGradient styles={styles.StuffImageView}>
+            <Image source={data?.image} style={styles.StuffImage} />
+          </DarkGradient>
+        </View>
+        <View style={styles.StuffViewText}>
+          <Text style={styles.StaffCardHeading}>{data?.title}</Text>
+          <Text style={styles.StaffCardText}>{data?.designation}</Text>
+          <Text style={styles.StaffCardText}>{data?.quafication}</Text>
+        </View>
+        <Button styles={styles.Button}>
+          <Text style={styles.ButtonText}>Book An Appointment</Text>
+        </Button>
       </View>
-      <View style={styles.StuffViewText}>
-        <Text style={styles.StaffCardHeading}>{data?.title}</Text>
-        <Text style={styles.StaffCardText}>{data?.designation}</Text>
-        <Text style={styles.StaffCardText}>{data?.quafication}</Text>
-      </View>
-      <Button styles={styles.Button}>
-        <Text style={styles.ButtonText}>Book An Appointment</Text>
-      </Button>
-    </View>
     </TouchableOpacity>
   );
 }
 const styles = StyleSheet.create({
   StuffCardItem: {
     flexDirection: "column",
-    alignItems:'center',
+    alignItems: "center",
     marginVertical: 10,
-    marginHorizontal:2,
+    marginHorizontal: 2,
     paddingVertical: 5,
     width: deviceWidth / 3.2,
     backgroundColor: baseColors.lightColor,
@@ -61,7 +71,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   StuffViewText: {
-    
     paddingVertical: 5,
   },
   StaffCardHeading: {
@@ -76,17 +85,17 @@ const styles = StyleSheet.create({
     elevation: 8,
     backgroundColor: baseColors.purpleColor,
     borderRadius: 2,
-   //  paddingVertical: 5,
-   //  paddingHorizontal: 12,
+    //  paddingVertical: 5,
+    //  paddingHorizontal: 12,
     width: deviceWidth / 3.5,
-    height:15,
+    height: 15,
     justifyContent: "center",
     alignItems: "center",
   },
   ButtonText: {
     color: baseColors.lightColor,
     fontWeight: "bold",
-    fontSize:9
+    fontSize: 9,
   },
 });
 

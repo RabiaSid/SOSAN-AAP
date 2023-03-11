@@ -1,12 +1,12 @@
-import React from 'react'
-import {Text, View, StyleSheet,ScrollView, Dimensions} from 'react-native'
-import baseColors from '../../../Constant/color'
-import InputField from '../../../Components/InputField/index'
-import MapMarkHere from '../../../Components/MapMarkHere/index'
-import Map from '../../../Components/Map/index'
-import Button from '../../../Components/Buttons/index'
+import React from "react";
+import { Text, View, StyleSheet, ScrollView, Dimensions } from "react-native";
+import baseColors from "../../../Constant/color";
+import InputField from "../../../Components/InputField/index";
+import MapMarkHere from "../../../Components/MapMarkHere/index";
+import Map from "../../../Components/Map/index";
+import Button from "../../../Components/Buttons/index";
 
-import { useNavigation } from '@react-navigation/native'
+import { useNavigation } from "@react-navigation/native";
 
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
@@ -15,30 +15,38 @@ function WorkingDetailHospital() {
   const Navigation = useNavigation();
   return (
     <ScrollView style={styles.screenContainer}>
-    <View style={styles.screenTop}>
+      <View style={styles.screenTop}>
         <Text style={styles.Text}>Working Details</Text>
         <Text style={styles.formText}>Institution Name</Text>
-        <InputField placeholder="Institution Name" styles={styles.InputStyling} />
+        <InputField
+          placeholder="Institution Name"
+          styles={styles.InputStyling}
+        />
         <Text style={styles.formText}>Institution Address </Text>
-        <InputField placeholder="Heart International Hospital Islamabad" styles={styles.InputStyling} />
+        <InputField
+          placeholder="Heart International Hospital Islamabad"
+          styles={styles.InputStyling}
+        />
         <MapMarkHere />
         <Map />
         <Text style={styles.formText}>Institution Phone</Text>
         <InputField placeholder="0215229035" styles={styles.InputStyling} />
         <Text style={styles.formText}>Institution Email</Text>
-        <InputField placeholder="Institution Email(if any) " styles={styles.InputStyling} />
+        <InputField
+          placeholder="Institution Email(if any) "
+          styles={styles.InputStyling}
+        />
         <Button
-            styles={styles.Button}
-            onPress={() => {
-              Navigation.navigate("DoctorDetailHospital");
-            }}
-          >
-            <Text styles={styles.ButtonText}>Login</Text>
-          </Button>
-    </View>
+          styles={styles.Button}
+          onPress={() => {
+            Navigation.navigate("DoctorDetailHospital");
+          }}
+        >
+          <Text styles={styles.ButtonText}>Login</Text>
+        </Button>
+      </View>
     </ScrollView>
-    
-  )
+  );
 }
 
 const styles = StyleSheet.create({
@@ -55,7 +63,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     textAlign: "center",
     paddingVertical: 20,
-    fontSize:20
+    fontSize: 20,
   },
   screenTop: {
     flexDirection: "column",
@@ -80,7 +88,7 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     paddingHorizontal: 12,
     marginTop: 30,
-    marginVertical:10,
+    marginVertical: 10,
     width: deviceWidth / 1 - 50,
     justifyContent: "center",
     alignItems: "center",
@@ -90,6 +98,6 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     textTransform: "uppercase",
   },
-})
+});
 
-export default WorkingDetailHospital
+export default WorkingDetailHospital;

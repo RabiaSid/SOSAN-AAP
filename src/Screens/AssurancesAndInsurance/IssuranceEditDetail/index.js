@@ -4,9 +4,9 @@ import { View, Text, Dimensions } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { styles } from "./style";
 import InputField from "../../../Components/InputField";
-import Darkbtn from "../../../Components/Gradient/DarkGradient"
+import Darkbtn from "../../../Components/Gradient/DarkGradient";
 import { RadioButton } from "react-native-paper";
-import Button from"../../../Components/Buttons"
+import Button from "../../../Components/Buttons";
 import baseColors from "../../../Constant/color";
 import AddedSuccessfully from "../../../Components/Modal/AddedSuccessfully";
 import Mention from "../../../Components/Modal/Mention";
@@ -21,9 +21,15 @@ function IssuranceEditDetail() {
         <Text style={styles.Text}>Edit Details</Text>
         <Text style={styles.LightText}>Inssurance Details</Text>
         <Text style={styles.formText}>Name</Text>
-        <InputField placeholder="Institution Name" styles={styles.InputStyling} />
+        <InputField
+          placeholder="Institution Name"
+          styles={styles.InputStyling}
+        />
         <Text style={styles.formText}>Email</Text>
-        <InputField placeholder="Heart International Hospital Islamabad" styles={styles.InputStyling} />
+        <InputField
+          placeholder="Heart International Hospital Islamabad"
+          styles={styles.InputStyling}
+        />
         <Text style={styles.formText}>Inssurance Plan</Text>
         <InputField placeholder="Type Here" styles={styles.InputStyling} />
         <Text style={styles.formText}>Inssurance code</Text>
@@ -50,30 +56,54 @@ function IssuranceEditDetail() {
           value={value}
         >
           <Text style={styles.formText}>Diet</Text>
-          <View style={{ flexDirection: 'row', width: deviceWidth / 1.3, justifyContent: 'space-around' }}>
-            <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-              <RadioButton value="first" /><Text>Vegitarion</Text>
+          <View
+            style={{
+              flexDirection: "row",
+              width: deviceWidth / 1.3,
+              justifyContent: "space-around",
+            }}
+          >
+            <View style={{ flexDirection: "row", alignItems: "center" }}>
+              <RadioButton value="first" />
+              <Text>Vegitarion</Text>
             </View>
-            <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-              <RadioButton value="second" /><Text>Non Vegitarion</Text>
+            <View style={{ flexDirection: "row", alignItems: "center" }}>
+              <RadioButton value="second" />
+              <Text>Non Vegitarion</Text>
             </View>
           </View>
           <Text style={styles.formText}>Habit</Text>
-          <View style={{ flexDirection: 'row', width: deviceWidth / 1.3, justifyContent: 'space-around' }}>
-            <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-              <RadioButton value="first" /><Text>Smoker</Text>
+          <View
+            style={{
+              flexDirection: "row",
+              width: deviceWidth / 1.3,
+              justifyContent: "space-around",
+            }}
+          >
+            <View style={{ flexDirection: "row", alignItems: "center" }}>
+              <RadioButton value="first" />
+              <Text>Smoker</Text>
             </View>
-            <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-              <RadioButton value="second" /><Text>Non Smoker</Text>
+            <View style={{ flexDirection: "row", alignItems: "center" }}>
+              <RadioButton value="second" />
+              <Text>Non Smoker</Text>
             </View>
           </View>
           <Text style={styles.formText}>Drug Reaction</Text>
-          <View style={{ flexDirection: 'row', width: deviceWidth / 1.6, justifyContent: 'space-around' }}>
-            <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-              <RadioButton value="first" /><Text>Yes</Text>
+          <View
+            style={{
+              flexDirection: "row",
+              width: deviceWidth / 1.6,
+              justifyContent: "space-around",
+            }}
+          >
+            <View style={{ flexDirection: "row", alignItems: "center" }}>
+              <RadioButton value="first" />
+              <Text>Yes</Text>
             </View>
-            <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-              <RadioButton value="second" /><Text>No</Text>
+            <View style={{ flexDirection: "row", alignItems: "center" }}>
+              <RadioButton value="second" />
+              <Text>No</Text>
             </View>
           </View>
         </RadioButton.Group>
@@ -86,51 +116,51 @@ function IssuranceEditDetail() {
         <InputField placeholder="Type Here" styles={styles.InputStyling} />
         <Text style={styles.formText}>Skin Demages</Text>
         <InputField placeholder="Type Here" styles={styles.InputStyling} />
-        <View style={{ justifyContent: 'center', alignItems: 'center' }}>
-        <View
-              style={{
-                flexDirection: "row",
-                justifyContent: "space-evenly",
-                paddingVertical: 20,
-                width:deviceWidth/1,
+        <View style={{ justifyContent: "center", alignItems: "center" }}>
+          <View
+            style={{
+              flexDirection: "row",
+              justifyContent: "space-evenly",
+              paddingVertical: 20,
+              width: deviceWidth / 1,
+            }}
+          >
+            <Button
+              styles={{
+                elevation: 8,
+                backgroundColor: baseColors.secondaryColor,
+                borderRadius: 50,
+                paddingVertical: 10,
+                paddingHorizontal: 12,
+                width: 150,
+                justifyContent: "center",
+                alignItems: "center",
               }}
             >
-              <Button
-                styles={{
-                  elevation: 8,
-                  backgroundColor: baseColors.secondaryColor,
-                  borderRadius: 50,
-                  paddingVertical: 10,
-                  paddingHorizontal: 12,
-                  width: 150,
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
-                
-              >
-                <Mention >
-                  <Text style={{fontWeight:'bold',color:baseColors.lightColor}}>Add Objection</Text>
-                </Mention>
-              </Button>
+              <Mention>
+                <Text
+                  style={{ fontWeight: "bold", color: baseColors.lightColor }}
+                >
+                  Add Objection
+                </Text>
+              </Mention>
+            </Button>
 
-              <Darkbtn
-                styles={{
-                  elevation: 8,
-                  backgroundColor: baseColors.primaryColor,
-                  borderRadius: 50,
-                  paddingVertical: 10,
-                  paddingHorizontal: 12,
-                  width: 150,
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
-                
-              >
-                <AddedSuccessfully>
-                  Accpect
-                </AddedSuccessfully>
-              </Darkbtn>
-            </View>
+            <Darkbtn
+              styles={{
+                elevation: 8,
+                backgroundColor: baseColors.primaryColor,
+                borderRadius: 50,
+                paddingVertical: 10,
+                paddingHorizontal: 12,
+                width: 150,
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <AddedSuccessfully>Accpect</AddedSuccessfully>
+            </Darkbtn>
+          </View>
         </View>
       </View>
     </ScrollView>

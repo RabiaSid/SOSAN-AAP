@@ -25,7 +25,7 @@ import { EpargneListData } from "../../../Config";
 import GiftModal from "../../../Components/Modal/GiftModal/index";
 import { useNavigation } from "@react-navigation/native";
 import SendModal from "../../../Components/Modal/SendModal/index";
-import PaymentPayAsOption from "../../../Components/Modal/PaymentModal/PaymentPayAsOption"
+import PaymentPayAsOption from "../../../Components/Modal/PaymentModal/PaymentPayAsOption";
 
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
@@ -49,9 +49,7 @@ function Epargne() {
               justifyContent: "flex-start",
             }}
           >
-            <TouchableOpacity
-            onPress={() => Navigation.goBack("Feed")}
-            >
+            <TouchableOpacity onPress={() => Navigation.goBack("Feed")}>
               <Ionicons
                 name="chevron-back-sharp"
                 size={37}
@@ -89,7 +87,6 @@ function Epargne() {
       </AppHeader>
 
       <View style={styles.screenMiddle}>
-
         <View style={styles.TitleRow}>
           <View style={styles.TitleRowImage}>
             <Image source={AvatarPerson1} style={styles.Image}></Image>
@@ -128,7 +125,7 @@ function Epargne() {
               />
             </Button>
             <PaymentPayAsOption>
-            <Text style={styles.TextButton}>Deposit</Text>
+              <Text style={styles.TextButton}>Deposit</Text>
             </PaymentPayAsOption>
           </View>
           <View styles={styles.ButtonView}>
@@ -143,11 +140,13 @@ function Epargne() {
               />
             </Button>
             <Text
-            onPress={() => {
-              Navigation.navigate("Earning");
-            }}
-            style={styles.TextButton}
-            >Stat</Text>
+              onPress={() => {
+                Navigation.navigate("Earning");
+              }}
+              style={styles.TextButton}
+            >
+              Stat
+            </Text>
           </View>
           <View styles={styles.ButtonView}>
             <Button styles={styles.ButtonIcons}>
@@ -161,29 +160,19 @@ function Epargne() {
           </View>
         </View>
 
-        <View
-          style={styles.PromoRow}
-        >
-          <View
-            style={styles.promoView}
-          >
-            <View
-              style={styles.promoItems}
-            >
+        <View style={styles.PromoRow}>
+          <View style={styles.promoView}>
+            <View style={styles.promoItems}>
               <MaterialIcons
                 name="settings"
                 size={22}
                 style={styles.textColorPrimary}
               />
             </View>
-            <View
-              style={styles.promoItems}
-            >
+            <View style={styles.promoItems}>
               <Text style={styles.textColorPrimary}>Check Promo Code</Text>
             </View>
-            <View
-              style={styles.promoItems}
-            >
+            <View style={styles.promoItems}>
               <AntDesign
                 name="right"
                 size={22}
@@ -193,23 +182,17 @@ function Epargne() {
           </View>
         </View>
 
-        <View
-          style={styles.ListTitleRow}
-        >
-          <View
-            style={styles.ListMainView}
-          >
+        <View style={styles.ListTitleRow}>
+          <View style={styles.ListMainView}>
             <Text style={styles.ListTitle}>Balance History</Text>
           </View>
           <View style={styles.Listmain}>
-          <FlatList
-            data={EpargneListData}
-            renderItem={({ item }) => <EpargneList data={item} />}
-          />
+            <FlatList
+              data={EpargneListData}
+              renderItem={({ item }) => <EpargneList data={item} />}
+            />
+          </View>
         </View>
-        </View>
-
-        
       </View>
     </View>
   );

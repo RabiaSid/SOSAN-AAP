@@ -78,7 +78,7 @@ export default function AssuranceAddANewPlan() {
               color: baseColors.primaryColor,
             }}
             onPress={() => {
-              navigation.navigate('AssurancesAndInsuranceAppHome');
+              navigation.navigate("AssurancesAndInsuranceAppHome");
             }}
           >
             Skip
@@ -88,7 +88,7 @@ export default function AssuranceAddANewPlan() {
             size={20}
             style={{ color: baseColors.primaryColor }}
             onPress={() => {
-              navigation.navigate('AssurancesAndInsuranceAppHome');
+              navigation.navigate("AssurancesAndInsuranceAppHome");
             }}
           />
         </View>
@@ -160,7 +160,7 @@ export default function AssuranceAddANewPlan() {
           <Button
             styles={styles.LoginBtn}
             onPress={() => {
-              navigation.navigate('AssurancesAndInsuranceAppHome');
+              navigation.navigate("AssurancesAndInsuranceAppHome");
             }}
           >
             <Text style={styles.LoginBtnTextSty}>Continue</Text>

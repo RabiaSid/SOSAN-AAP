@@ -16,7 +16,7 @@ import SwitchButton from "../../../../Components/Schedule/Switch";
 import baseColors from "../../../../Constant/color";
 import { styles } from "./style";
 import SwitchSelector from "../../.././../Components/SwitchSelector/UserProfile/index";
-import  PaymentPayAs from "../../../../Components/Modal/PaymentModal/PaymentPayAs";
+import PaymentPayAs from "../../../../Components/Modal/PaymentModal/PaymentPayAs";
 
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
@@ -24,11 +24,8 @@ const deviceWidth = Dimensions.get("window").width;
 function Profile() {
   const Navigation = useNavigation();
 
-
   return (
     <View style={styles.screenContainer}>
-
-
       <View>
         <AppHeader styles={styles.headerContainer}>
           <View
@@ -158,17 +155,18 @@ function Profile() {
                 Navigation.navigate("AppHome");
               }}
             >
-              <Text style={styles.ButtonText}
-              onPress={() => {
-                Navigation.navigate("Epargne");
-              }}>Transaction Detail</Text>
+              <Text
+                style={styles.ButtonText}
+                onPress={() => {
+                  Navigation.navigate("Epargne");
+                }}
+              >
+                Transaction Detail
+              </Text>
             </Button>
-            <Button
-              styles={styles.ButtonSuccess}
-            >
-               <PaymentPayAs  />
+            <Button styles={styles.ButtonSuccess}>
+              <PaymentPayAs />
             </Button>
-           
 
             <Button
               styles={styles.ButtonSuccess}

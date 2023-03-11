@@ -35,7 +35,7 @@ export const styles = StyleSheet.create({
     height: deviceHeight / 1,
     flexDirection: "column",
     alignItems: "center",
-    marginBottom:350
+    marginBottom: 350,
   },
   textHeading: {
     color: baseColors.lightColor,
@@ -75,6 +75,6 @@ export const styles = StyleSheet.create({
     color: "gray",
     fontSize: 12,
     paddingLeft: 5,
-    alignItems:'center'
+    alignItems: "center",
   },
 });

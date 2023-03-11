@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Dimensions,StyleSheet } from "react-native";
+import { View, Dimensions, StyleSheet } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import _ from "lodash";
 import baseColors from "../../../Constant/color";
@@ -7,8 +7,7 @@ import baseColors from "../../../Constant/color";
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
 
-function DarkGradient({ children, styles: customStyles, }) {
-
+function DarkGradient({ children, styles: customStyles }) {
   let styles = defaultStyles.appButtonContainer;
   if (!_.isEmpty(customStyles)) {
     styles = { styles, ...customStyles };
@@ -17,7 +16,11 @@ function DarkGradient({ children, styles: customStyles, }) {
   return (
     <View>
       <LinearGradient
-        colors={[baseColors.sucessColor, baseColors.primaryColor, baseColors.primaryColor]}
+        colors={[
+          baseColors.sucessColor,
+          baseColors.primaryColor,
+          baseColors.primaryColor,
+        ]}
         start={{
           x: 0,
           y: 0.5,
@@ -26,8 +29,7 @@ function DarkGradient({ children, styles: customStyles, }) {
           x: 1,
           y: 0.5,
         }}
-        locations={[0.1, 0.9,0.9]}
-        
+        locations={[0.1, 0.9, 0.9]}
         style={styles}
       >
         {children}
@@ -41,16 +43,16 @@ const defaultStyles = StyleSheet.create({
     flex: 1,
     width: deviceWidth / 1,
     height: deviceHeight / 1,
-    borderBottomLeftRadius:30,
-    borderBottomRightRadius:30,
-    borderTopLeftRadius:30,
-    borderTopRightRadius:30,
-    borderBottomEndRadius:30,
-    borderBottomStartRadius:30,
-    borderTopEndRadius:30,
-    borderTopStartRadius:30,
-    borderRadius:50,
-    padding:1
+    borderBottomLeftRadius: 30,
+    borderBottomRightRadius: 30,
+    borderTopLeftRadius: 30,
+    borderTopRightRadius: 30,
+    borderBottomEndRadius: 30,
+    borderBottomStartRadius: 30,
+    borderTopEndRadius: 30,
+    borderTopStartRadius: 30,
+    borderRadius: 50,
+    padding: 1,
   },
 });
 

@@ -4,15 +4,12 @@ import {
   Text,
   TouchableOpacity,
   Dimensions,
-  FlatList
+  FlatList,
 } from "react-native";
 import AppHeader from "../../../Components/AppHeader/index";
 import { styles } from "./style";
 import baseColors from "../../../Constant/color";
-import {
-  Ionicons,
-  AntDesign,
-} from "@expo/vector-icons";
+import { Ionicons, AntDesign } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
 import AvailabilityCard from "../../../Components/Cards/AvailabilityCard/index";
 import { AvailabilityPharmacyData } from "../../../Config";
@@ -30,7 +27,6 @@ function AvailabilityPharmacy() {
             flexDirection: "row",
             alignItems: "center",
             paddingVertical: 5,
-            
           }}
         >
           <View
@@ -38,17 +34,13 @@ function AvailabilityPharmacy() {
               width: deviceWidth / 4,
               flexDirection: "row",
               justifyContent: "flex-start",
-              
             }}
           >
-            <TouchableOpacity
-            onPress={() => Navigation.goBack("")}
-            >
+            <TouchableOpacity onPress={() => Navigation.goBack("")}>
               <Ionicons
                 name="chevron-back-sharp"
                 size={37}
                 style={{ color: baseColors.lightTextColor }}
-               
               />
             </TouchableOpacity>
           </View>
@@ -57,13 +49,12 @@ function AvailabilityPharmacy() {
               width: deviceWidth / 2,
               flexDirection: "row",
               justifyContent: "center",
-              
             }}
           >
             <Text
               style={{ fontWeight: "bold", color: baseColors.lightTextColor }}
             >
-              Availability 
+              Availability
             </Text>
           </View>
           <View
@@ -71,7 +62,6 @@ function AvailabilityPharmacy() {
               width: deviceWidth / 5,
               flexDirection: "row",
               justifyContent: "flex-end",
-              
             }}
           >
             <AntDesign
@@ -84,14 +74,13 @@ function AvailabilityPharmacy() {
       </AppHeader>
 
       <View style={styles.screenMiddle}>
-      <View>
-      <FlatList
-        data={AvailabilityPharmacyData}
-        renderItem={({ item }) => <AvailabilityCard data={item} />}
-      />
+        <View>
+          <FlatList
+            data={AvailabilityPharmacyData}
+            renderItem={({ item }) => <AvailabilityCard data={item} />}
+          />
+        </View>
       </View>
-      </View>
-
     </View>
   );
 }

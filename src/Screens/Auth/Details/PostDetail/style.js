@@ -11,59 +11,54 @@ export const styles = StyleSheet.create({
     flex: 1,
     flexDirection: "column",
     backgroundColor: baseColors.lightColor,
-   
   },
-  headerContainer:{ 
-    backgroundColor:baseColors.sucessColor,
-    height: 60, 
-    marginTop: 35, 
-    width: deviceWidth/1,
-    borderBottomLeftRadius:15,
-    borderBottomRightRadius:15,
-    paddingVertical:8,
- 
-},
+  headerContainer: {
+    backgroundColor: baseColors.sucessColor,
+    height: 60,
+    marginTop: 35,
+    width: deviceWidth / 1,
+    borderBottomLeftRadius: 15,
+    borderBottomRightRadius: 15,
+    paddingVertical: 8,
+  },
 
   screenMiddle: {
     width: deviceWidth / 1,
     height: deviceHeight / 1.1,
-    flexDirection:'column',
+    flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    
-  
   },
   ListBottom: {
     flexDirection: "row",
     width: deviceWidth / 1.2,
-    paddingTop:40,
-    paddingBottom:10
+    paddingTop: 40,
+    paddingBottom: 10,
   },
   Listitems: {
-    flexDirection: 'column',
+    flexDirection: "column",
     width: deviceWidth / 1.2,
-    
   },
-  textHeading:{
-    color:baseColors.darkColor,
-    height:30,
-    fontSize : 20,
-    fontWeight: 'bold'
+  textHeading: {
+    color: baseColors.darkColor,
+    height: 30,
+    fontSize: 20,
+    fontWeight: "bold",
   },
-  textHeadingPrimary:{
-    color:baseColors.primaryColor,
-    fontSize : 20,
-    fontWeight: 'bold',
+  textHeadingPrimary: {
+    color: baseColors.primaryColor,
+    fontSize: 20,
+    fontWeight: "bold",
   },
-  text:{
-    color:baseColors.darkColor,
-    height:30,
-    fontSize : 14,
+  text: {
+    color: baseColors.darkColor,
+    height: 30,
+    fontSize: 14,
   },
-  ActivityImage:{
-    height: 50, 
-    width: 50, 
-    borderRadius: 50 
+  ActivityImage: {
+    height: 50,
+    width: 50,
+    borderRadius: 50,
   },
   formText: {
     paddingLeft: 20,
@@ -91,7 +86,7 @@ export const styles = StyleSheet.create({
     paddingVertical: 10,
     paddingHorizontal: 12,
     marginTop: 30,
-    marginVertical:10,
+    marginVertical: 10,
     width: deviceWidth / 1 - 50,
     justifyContent: "center",
     alignItems: "center",
@@ -101,8 +96,8 @@ export const styles = StyleSheet.create({
     fontWeight: "bold",
     textTransform: "uppercase",
   },
-  textColor:{
-    color:baseColors.lightTextColor,
+  textColor: {
+    color: baseColors.lightTextColor,
     fontWeight: "bold",
   },
   textColorSuccess: {
@@ -111,5 +106,4 @@ export const styles = StyleSheet.create({
   textColorDanger: {
     color: baseColors.dangerTextColor,
   },
-  
 });

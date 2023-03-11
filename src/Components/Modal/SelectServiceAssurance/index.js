@@ -58,7 +58,7 @@ function SelectServiceAssurance() {
                           fontSize: 18,
                           textAlign: "center",
                           color: baseColors.primaryColor,
-                          fontWeight:'400',
+                          fontWeight: "400",
                         }}
                       >
                         Pay Claim

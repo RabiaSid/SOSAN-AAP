@@ -99,14 +99,12 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
 
-  
   locationView: {
     flexDirection: "row",
     // width:deviceWidth / 1,
     justifyContent: "center",
     alignItems: "center",
   },
-  
 });
 
 export default MapMarkHere;

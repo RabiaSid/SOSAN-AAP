@@ -34,7 +34,7 @@ function index() {
         hasPadding
         options={[{ label: "Cleared" }, { label: "Pending" }]}
       />
-      <View style={{width:deviceWidth/1-20}}>
+      <View style={{ width: deviceWidth / 1 - 20 }}>
         <FlatList
           data={ClearedAndPendingData}
           renderItem={({ item }) => <ReportCard data={item} />}

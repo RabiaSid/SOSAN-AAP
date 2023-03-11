@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../../../Components/Buttons/index";
 import InputField from "../../../Components/InputField";
-import { Logo, BottomImage } from "../../../Assets/images/index"
+import { Logo, BottomImage } from "../../../Assets/images/index";
 import { styles } from "./style";
 import { View, Text, Image } from "react-native";
 import { useNavigation } from "@react-navigation/native";
@@ -23,10 +23,7 @@ const SignIn = () => {
             alignItems: "center",
           }}
         >
-          <Image
-            source={Logo}
-            style={{ height: 50 }}
-          />
+          <Image source={Logo} style={{ height: 50 }} />
         </View>
         <Text style={styles.formText}>Enter Your Email</Text>
         <InputField
@@ -56,11 +53,14 @@ const SignIn = () => {
             paddingTop: 20,
           }}
         >
-          <Text style={styles.textColorDanger}
-           onPress={() => {
-            Navigation.navigate("AssuranceAgendaReports");
-          }}
-          >Forget Password</Text>
+          <Text
+            style={styles.textColorDanger}
+            onPress={() => {
+              Navigation.navigate("AssuranceAgendaReports");
+            }}
+          >
+            Forget Password
+          </Text>
           <Text>create a new account</Text>
           <Text
             style={styles.textColorSuccess}
@@ -73,7 +73,7 @@ const SignIn = () => {
         </View>
         <Image
           source={BottomImage}
-          style={{ height: 270,resizeMode: 'contain'}}
+          style={{ height: 270, resizeMode: "contain" }}
         />
       </View>
     </View>

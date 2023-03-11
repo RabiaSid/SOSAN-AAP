@@ -17,7 +17,7 @@ export const styles = StyleSheet.create({
     fontWeight: "bold",
     textAlign: "center",
     paddingVertical: 10,
-    fontSize:20
+    fontSize: 20,
   },
   screenTop: {
     flexDirection: "column",
@@ -33,20 +33,18 @@ export const styles = StyleSheet.create({
     height: 100,
     width: 60,
   },
-  lightTextView:{
-    flexDirection:'row', 
-    justifyContent:'space-around', 
-    alignItems:'center', 
-     width:deviceWidth / 1 - 80 ,
-     marginVertical: 2,
-     
+  lightTextView: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    alignItems: "center",
+    width: deviceWidth / 1 - 80,
+    marginVertical: 2,
   },
   lightText: {
     paddingLeft: 20,
     color: baseColors.secondaryTextColor,
-    textAlign:'center',
-    fontWeight:'bold'
-   
+    textAlign: "center",
+    fontWeight: "bold",
   },
   Mapping: {
     flexDirection: "column",
@@ -84,7 +82,7 @@ export const styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 50,
     padding: 10,
-    width: 150
+    width: 150,
   },
   WebAbout: {
     margin: 12,
@@ -105,33 +103,32 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-  ImgSty:{
+  ImgSty: {
     height: 200,
     width: 300,
-    borderRadius: 15, 
+    borderRadius: 15,
   },
-  LoginTextSty:{
+  LoginTextSty: {
     color: baseColors.lightColor,
     fontWeight: "bold",
     // textTransform: "uppercase",
-    fontSize:20
+    fontSize: 20,
   },
-  locationView:{
-    flexDirection:'row',
+  locationView: {
+    flexDirection: "row",
     // width:deviceWidth / 1,
-    justifyContent:'center',
-    alignItems:'center'
+    justifyContent: "center",
+    alignItems: "center",
   },
-  institutionView:{
-    flexDirection:'row',
+  institutionView: {
+    flexDirection: "row",
     flex: 1,
-    width:deviceWidth / 1,
+    width: deviceWidth / 1,
     marginHorizontal: 15,
-    marginVertical: 5
+    marginVertical: 5,
   },
-  institutionText:{
+  institutionText: {
     fontSize: 16,
-    fontWeight:'bold',
-
-  }
+    fontWeight: "bold",
+  },
 });

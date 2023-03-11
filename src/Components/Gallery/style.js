@@ -6,17 +6,15 @@ const deviceWidth = Dimensions.get("window").width;
 
 export const styles = StyleSheet.create({
   MainConatiner: {
-    
     borderColor: baseColors.lightColor,
     flexDirection: "column",
     width: deviceWidth / 1 - 40,
-    paddingVertical:10,
-   
+    paddingVertical: 10,
   },
   formText: {
     paddingLeft: 10,
   },
-  TopImage:{
+  TopImage: {
     justifyContent: "center",
     alignItems: "center",
   },
@@ -26,18 +24,17 @@ export const styles = StyleSheet.create({
     marginVertical: 5,
   },
   columnImages: {
-    height: 150, 
-    width:300, 
-    borderRadius: 10, 
-    resizeMode: "cover" 
+    height: 150,
+    width: 300,
+    borderRadius: 10,
+    resizeMode: "cover",
   },
   RowImages: {
     flexDirection: "row",
-    alignItems:"center",
-    justifyContent:"space-evenly",
-    marginVertical: 10
+    alignItems: "center",
+    justifyContent: "space-evenly",
+    marginVertical: 10,
   },
-  
 
   ImgSty: {
     borderRadius: 5,

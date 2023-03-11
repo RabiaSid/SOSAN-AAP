@@ -1,27 +1,25 @@
-import { StyleSheet,Dimensions } from "react-native";
+import { StyleSheet, Dimensions } from "react-native";
 import baseColors from "../../../../Constant/color";
 
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
 
 export const styles = StyleSheet.create({
-  headerContainer:{
-    backgroundColor: baseColors.lightColor, 
-    height: 150, 
-    marginTop: 35, 
-    width: deviceWidth/1
-},
-header:{
-    
-},
-    SearchField: {
-        height: 50,
-        margin: 12,
-        borderColor: baseColors.lightColor,
-        borderWidth: 1,
-        borderRadius: 50,
-        padding: 10,
-      },
+  headerContainer: {
+    backgroundColor: baseColors.lightColor,
+    height: 150,
+    marginTop: 35,
+    width: deviceWidth / 1,
+  },
+  header: {},
+  SearchField: {
+    height: 50,
+    margin: 12,
+    borderColor: baseColors.lightColor,
+    borderWidth: 1,
+    borderRadius: 50,
+    padding: 10,
+  },
   Button: {
     elevation: 8,
     backgroundColor: baseColors.primaryColor,
@@ -38,64 +36,62 @@ header:{
     textTransform: "uppercase",
   },
   items: {
-    backgroundColor:baseColors.lightColor,
-    borderRadius:10,
-    width: deviceWidth/1 ,
-    padding:20,
-    flexDirection:'column',
+    backgroundColor: baseColors.lightColor,
+    borderRadius: 10,
+    width: deviceWidth / 1,
+    padding: 20,
+    flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
   },
-  itemsView:{
-    flexDirection:'row',
+  itemsView: {
+    flexDirection: "row",
     elevation: 7,
-    width: (deviceWidth/2 ) - 30,
+    width: deviceWidth / 2 - 30,
     backgroundColor: baseColors.lightColor,
-    borderColor:baseColors.sucessColor,
+    borderColor: baseColors.sucessColor,
     borderWidth: 1,
     borderRadius: 20,
-    alignItems:'center',
-    justifyContent:'center',
-    paddingHorizontal:20,
-    marginHorizontal:2,
-    paddingVertical:12,
-    marginHorizontal:5,
-    marginVertical:15,
+    alignItems: "center",
+    justifyContent: "center",
+    paddingHorizontal: 20,
+    marginHorizontal: 2,
+    paddingVertical: 12,
+    marginHorizontal: 5,
+    marginVertical: 15,
     height: 80,
   },
-  itemsViewReverse:{
-    flexDirection:'row',
+  itemsViewReverse: {
+    flexDirection: "row",
     elevation: 7,
-    width: (deviceWidth/2 ) - 30,
+    width: deviceWidth / 2 - 30,
     backgroundColor: baseColors.lightColor,
-    borderColor:baseColors.primaryColor,
+    borderColor: baseColors.primaryColor,
     borderWidth: 1,
     borderRadius: 20,
-    alignItems:'center',
-    justifyContent:'center',
-    paddingHorizontal:20,
-    paddingVertical:12,
-    marginHorizontal:2,
-    marginVertical:15
+    alignItems: "center",
+    justifyContent: "center",
+    paddingHorizontal: 20,
+    paddingVertical: 12,
+    marginHorizontal: 2,
+    marginVertical: 15,
   },
-  itemsViewText:{
+  itemsViewText: {
     color: baseColors.primaryColor,
     fontWeight: "bold",
     textTransform: "uppercase",
-    padding:5
-
+    padding: 5,
   },
-  itemsViewTextReverse:{
+  itemsViewTextReverse: {
     color: baseColors.sucessColor,
     fontWeight: "bold",
     textTransform: "uppercase",
-    padding:5
-
+    padding: 5,
   },
-  itemsIcon:{
+  itemsIcon: {
     color: baseColors.primaryColor,
   },
-  itemsIconReverse:{
+  itemsIconReverse: {
     color: baseColors.sucessColor,
   },
 });

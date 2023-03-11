@@ -7,12 +7,12 @@ import {
   Dimensions,
   FlatList,
 } from "react-native";
-import DarkGradient from "../../../../Components/Gradient/DarkGradient/index"
+import DarkGradient from "../../../../Components/Gradient/DarkGradient/index";
 import Button from "../../../../Components/Buttons/index";
 import AppHeader from "../../../../Components/AppHeader/index";
 import { styles } from "./style";
 import baseColors from "../../../../Constant/color";
-import { Ionicons, Entypo,MaterialIcons } from "@expo/vector-icons";
+import { Ionicons, Entypo, MaterialIcons } from "@expo/vector-icons";
 import { AvatarPerson1 } from "../../../../Assets/images";
 import { CreatePostData } from "../../../../Config";
 import { useNavigation } from "@react-navigation/native";
@@ -40,8 +40,7 @@ function CreatePost() {
                 justifyContent: "flex-start",
               }}
             >
-              <TouchableOpacity
-              onPress={() => Navigation.goBack("Feed")}>
+              <TouchableOpacity onPress={() => Navigation.goBack("Feed")}>
                 <Ionicons
                   name="chevron-back-sharp"
                   size={30}
@@ -93,8 +92,6 @@ function CreatePost() {
               flexDirection: "column",
               justifyContent: "center",
               alignItems: "center",
-              
-              
             }}
           >
             <FlatList
@@ -106,19 +103,18 @@ function CreatePost() {
                     paddingVertical: 5,
                     marginVertical: 5,
                     paddingHorizontal: 10,
-                    borderRadius:15,
-                    backgroundColor:baseColors.lightColor,
-                    elevation:4
-                    
+                    borderRadius: 15,
+                    backgroundColor: baseColors.lightColor,
+                    elevation: 4,
                   }}
                 >
                   <View>
                     <Text style={styles.textHeadingPrimary}>{item?.title}</Text>
                   </View>
-                  <View style={{paddingBottom:10, }}>
+                  <View style={{ paddingBottom: 10 }}>
                     <Text>{item?.description}</Text>
                   </View>
-                  <View style={{ flexDirection: "row", paddingLeft:10 }}>
+                  <View style={{ flexDirection: "row", paddingLeft: 10 }}>
                     <Ionicons
                       name="time"
                       size={14}
@@ -126,7 +122,7 @@ function CreatePost() {
                     />
                     <Text>{item?.time}</Text>
                   </View>
-                  <View style={{ flexDirection: "row", paddingLeft:10 }}>
+                  <View style={{ flexDirection: "row", paddingLeft: 10 }}>
                     <Entypo
                       name="location"
                       size={14}
@@ -142,32 +138,39 @@ function CreatePost() {
             />
           </View>
 
-<View style={{
-              flexDirection: 'row',
-              alignItems: 'flex-end',
-              justifyContent: 'flex-end',
+          <View
+            style={{
+              flexDirection: "row",
+              alignItems: "flex-end",
+              justifyContent: "flex-end",
               width: deviceWidth / 1 - 40,
-              height:deviceHeight/3,
-            }}>
-
-              <DarkGradient
-                styles={{
-                  elevation: 8,
-                  backgroundColor: baseColors.sucessColor,
-                  borderRadius: 50,
-                  padding: 10,
-                  // paddingHorizontal: 12,
-                  width: 60,
-                  justifyContent: "center",
-                  alignItems: "center",
-                  height: 60,
-                  // marginVertical: 20,
-                }}>
-                <MaterialIcons name="add" size={40} color="white"  onPress={() => {
+              height: deviceHeight / 3,
+            }}
+          >
+            <DarkGradient
+              styles={{
+                elevation: 8,
+                backgroundColor: baseColors.sucessColor,
+                borderRadius: 50,
+                padding: 10,
+                // paddingHorizontal: 12,
+                width: 60,
+                justifyContent: "center",
+                alignItems: "center",
+                height: 60,
+                // marginVertical: 20,
+              }}
+            >
+              <MaterialIcons
+                name="add"
+                size={40}
+                color="white"
+                onPress={() => {
                   Navigation.navigate("PostDetail");
-                }}/>
-              </DarkGradient>
-            </View>
+                }}
+              />
+            </DarkGradient>
+          </View>
         </View>
       </View>
       {/* </ScrollView> */}

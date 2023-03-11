@@ -64,7 +64,12 @@ function Profile() {
       </View>
       <ScrollView showsVerticalScrollIndicator={false}>
         <View
-          style={{ flex: 1, justifyContent: "center", alignItems: "center",width: deviceWidth / 1, }}
+          style={{
+            flex: 1,
+            justifyContent: "center",
+            alignItems: "center",
+            width: deviceWidth / 1,
+          }}
         >
           <View style={styles.imageStyle}>
             <Image style={styles.image} source={AvatarPerson3} />
@@ -124,7 +129,13 @@ function Profile() {
                 <Text style={styles.TextSecondary}>25ln555</Text>
               </View>
             </View>
-            <Text style={{fontSize:13, fontWeight:'400', color:baseColors.primaryTextColor}}>
+            <Text
+              style={{
+                fontSize: 13,
+                fontWeight: "400",
+                color: baseColors.primaryTextColor,
+              }}
+            >
               http://www.chu-toulouse.fr
             </Text>
           </View>
@@ -166,7 +177,6 @@ function Profile() {
                   name="navigate-next"
                   size={28}
                   style={styles.TextSecondary}
-                  
                 />
               </View>
             </View>
@@ -189,7 +199,6 @@ function Profile() {
                   name="navigate-next"
                   size={28}
                   style={styles.TextSecondary}
-                  
                 />
               </View>
             </View>
@@ -201,18 +210,20 @@ function Profile() {
                   name="navigate-next"
                   size={28}
                   style={styles.TextSecondary}
-                  
                 />
               </View>
             </View>
 
             <View style={styles.ListBottom}>
               <View style={styles.Listitems}>
-                <Text style={styles.TextSecondary}
-                onPress={() => {
-                  Navigation.goBack("");
-                }}
-                >Log Out</Text>
+                <Text
+                  style={styles.TextSecondary}
+                  onPress={() => {
+                    Navigation.goBack("");
+                  }}
+                >
+                  Log Out
+                </Text>
                 <MaterialIcons
                   name="navigate-next"
                   size={28}

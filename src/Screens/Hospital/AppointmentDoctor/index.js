@@ -7,7 +7,7 @@ import {
   Ionicons,
   AntDesign,
   MaterialCommunityIcons,
-  MaterialIcons
+  MaterialIcons,
 } from "@expo/vector-icons";
 import DarkGradient from "../../../Components/Gradient/DarkGradient";
 import { useNavigation } from "@react-navigation/native";
@@ -98,18 +98,32 @@ function AppointmentDoctor() {
                   <Text style={styles.title}>Kianna Levin</Text>
                   <Text style={styles.email}>General Practitioner</Text>
                   <View style={styles.idView}>
-                    <View style={{flexDirection:'row'}}>
-                  <MaterialIcons name="lock-outline" size={18}  style={{color: baseColors.primaryColor}} />
-                    <Text style={styles.id}>3 year</Text>
+                    <View style={{ flexDirection: "row" }}>
+                      <MaterialIcons
+                        name="lock-outline"
+                        size={18}
+                        style={{ color: baseColors.primaryColor }}
+                      />
+                      <Text style={styles.id}>3 year</Text>
                     </View>
-                    <View style={{flexDirection:'row'}}>
-                  <MaterialIcons name="lock-outline" size={18} color="black" style={{color: baseColors.sucessColor}} />
-                    <Text style={styles.id}>92%</Text>
+                    <View style={{ flexDirection: "row" }}>
+                      <MaterialIcons
+                        name="lock-outline"
+                        size={18}
+                        color="black"
+                        style={{ color: baseColors.sucessColor }}
+                      />
+                      <Text style={styles.id}>92%</Text>
                     </View>
                   </View>
                 </View>
                 <View>
-                <AntDesign name="heart" size={24} color="black" style={styles.icon}/>
+                  <AntDesign
+                    name="heart"
+                    size={24}
+                    color="black"
+                    style={styles.icon}
+                  />
                 </View>
               </View>
             ) : (
@@ -121,12 +135,21 @@ function AppointmentDoctor() {
                   <Text style={styles.title}>Kianna Levin</Text>
                   <Text style={styles.email}>General Practitioner</Text>
                   <View style={styles.idViewTwo}>
-                  <MaterialIcons name="lock-outline" size={18}  style={{color: baseColors.primaryColor}} />
+                    <MaterialIcons
+                      name="lock-outline"
+                      size={18}
+                      style={{ color: baseColors.primaryColor }}
+                    />
                     <Text style={styles.id}>3 year</Text>
                   </View>
                 </View>
                 <View>
-                <AntDesign name="heart" size={24} color="black" style={styles.icon}/>
+                  <AntDesign
+                    name="heart"
+                    size={24}
+                    color="black"
+                    style={styles.icon}
+                  />
                 </View>
               </View>
             )}
@@ -252,7 +275,9 @@ function AppointmentDoctor() {
                   <DarkGradient styles={styles.Button}>
                     <Text
                       style={styles.ButtonText}
-                      onPress={() => Navigation.navigate("SelectDateAppointment")}
+                      onPress={() =>
+                        Navigation.navigate("SelectDateAppointment")
+                      }
                     >
                       Next
                     </Text>

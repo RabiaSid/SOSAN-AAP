@@ -34,7 +34,8 @@
     "react-native-simple-bottom-sheet": "^1.0.4",
     "react-native-steps-modal": "^1.0.1",
     "react-native-switch-selector": "^2.3.0",
-    "react-native-web": "~0.18.9"
+    "react-native-web": "~0.18.9",
+    "react-select": "^5.7.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"

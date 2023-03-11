@@ -12,7 +12,7 @@ const RequestCard = ({ data }) => {
         {data?.image ? <Image source={data?.image} style={styles.img} /> : null}
 
         <View style={styles.TitleHead}>
-        {data?.title ? <Text style={styles.title}>{data?.title}</Text> : null}
+          {data?.title ? <Text style={styles.title}>{data?.title}</Text> : null}
           <View style={styles.ItemDisc}>
             <Entypo
               name="location"

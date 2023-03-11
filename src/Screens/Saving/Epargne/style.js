@@ -33,13 +33,12 @@ export const styles = StyleSheet.create({
   screenMiddle: {
     flexDirection: "column",
     paddingHorizontal: 10,
-    paddingVertical:20
+    paddingVertical: 20,
   },
   TitleRow: {
     flexDirection: "row",
     paddingHorizontal: 5,
     paddingVertical: 10,
-
   },
   TitleRowImage: {
     width: deviceWidth / 4.1,
@@ -74,17 +73,16 @@ export const styles = StyleSheet.create({
     width: deviceWidth / 1 - 20,
     alignItems: "center",
     justifyContent: "space-evenly",
-    paddingVertical:10
+    paddingVertical: 10,
     // paddingTop: 5,
   },
   ButtonView: {
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-    
   },
-  TextButton:{
-    textAlign:'center'
+  TextButton: {
+    textAlign: "center",
   },
   ButtonIcons: {
     height: 50,
@@ -106,7 +104,7 @@ export const styles = StyleSheet.create({
     width: deviceWidth / 1 - 50,
     height: 40,
     alignItems: "center",
-    justifyContent: 'space-around',
+    justifyContent: "space-around",
     borderColor: baseColors.primaryLightColor,
     borderWidth: 1,
     backgroundColor: baseColors.primaryLightColor,
@@ -117,28 +115,25 @@ export const styles = StyleSheet.create({
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-    paddingVertical:5,
-    
+    paddingVertical: 5,
   },
-  ListTitleRow:{
-    paddingVertical:5
+  ListTitleRow: {
+    paddingVertical: 5,
   },
-  ListMainView:{
+  ListMainView: {
     paddingLeft: 20,
     paddingVertical: 5,
     // height:deviceHeight/5
   },
-  ListTitle:{
-    color:baseColors.darkTextColor,
-    fontWeight:'bold'
+  ListTitle: {
+    color: baseColors.darkTextColor,
+    fontWeight: "bold",
   },
   Listmain: {
     flexDirection: "column",
     alignItems: "center",
     width: deviceWidth / 1 - 30,
     paddingVertical: 10,
-    
-    
   },
   textColor: {
     color: baseColors.lightTextColor,
@@ -163,5 +158,4 @@ export const styles = StyleSheet.create({
     color: baseColors.secondaryTextColor,
     fontWeight: "bold",
   },
- 
 });

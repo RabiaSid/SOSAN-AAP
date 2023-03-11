@@ -1,7 +1,7 @@
 import React from "react";
 import { Checkbox } from "react-native-paper";
 
-function CheckButton({value}) {
+function CheckButton({ value }) {
   const [checked, setChecked] = React.useState(false);
 
   return (
@@ -11,7 +11,6 @@ function CheckButton({value}) {
       onPress={() => {
         setChecked(!checked);
       }}
-      
     />
   );
 }

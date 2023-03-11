@@ -181,7 +181,9 @@ function SelectDateAppointment() {
             {shouldShow ? (
               <View style={styles.HiddenShowView}>
                 <View style={styles.HiddenShowitems}>
-                  <Text style={{fontSize:15, fontWeight:'600'}}>Select Date</Text>
+                  <Text style={{ fontSize: 15, fontWeight: "600" }}>
+                    Select Date
+                  </Text>
                 </View>
                 <View style={styles.CalenderField}>
                   <Text style={{ color: baseColors.secondaryTextColor }}>
@@ -253,7 +255,9 @@ function SelectDateAppointment() {
             {AnotherShow ? (
               <View style={styles.HiddenShowView}>
                 <View style={styles.HiddenShowitems}>
-                  <Text style={{fontSize:15, fontWeight:'600'}}>Select Date</Text>
+                  <Text style={{ fontSize: 15, fontWeight: "600" }}>
+                    Select Date
+                  </Text>
                 </View>
                 <View style={styles.CalenderField}>
                   <Text style={{ color: baseColors.secondaryTextColor }}>
@@ -453,7 +457,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "flex-start",
-    paddingVertical:5,
+    paddingVertical: 5,
     width: deviceWidth / 1 - 60,
   },
 });

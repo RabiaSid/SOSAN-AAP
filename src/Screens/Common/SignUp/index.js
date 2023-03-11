@@ -85,7 +85,7 @@ function SignUp() {
               <View
                 style={{
                   flexDirection: "row",
-                  justifyContent: 'space-between',
+                  justifyContent: "space-between",
                   width: deviceWidth / 2.3,
                   alignItems: "center",
                   paddingVertical: 5,
@@ -93,20 +93,18 @@ function SignUp() {
                 }}
               >
                 <Checkbox
-                  status={checked ? "unchecked" : "checked" }
+                  status={checked ? "unchecked" : "checked"}
                   onPress={() => {
                     setChecked(!checked);
-                    setswitchValue(false)
+                    setswitchValue(false);
                   }}
                 />
-                <Text>
-                  Individual
-                </Text>
+                <Text>Individual</Text>
               </View>
               <View
                 style={{
                   flexDirection: "row",
-                  justifyContent: 'space-between',
+                  justifyContent: "space-between",
                   width: deviceWidth / 2.3,
                   alignItems: "center",
                   paddingVertical: 5,
@@ -114,15 +112,13 @@ function SignUp() {
                 }}
               >
                 <Checkbox
-                status={checked ? "checked" : "unchecked"}
+                  status={checked ? "checked" : "unchecked"}
                   onPress={() => {
                     setChecked(!checked);
-                    setswitchValue(true)
+                    setswitchValue(true);
                   }}
                 />
-                <Text>
-                 Professional
-                </Text>
+                <Text>Professional</Text>
               </View>
             </View>
 
@@ -130,13 +126,11 @@ function SignUp() {
               style={{
                 flexDirection: "row",
                 justifyContent: "space-evenly",
-                alignItems:'center',
-                width: deviceWidth / 1.1-5,
+                alignItems: "center",
+                width: deviceWidth / 1.1 - 5,
               }}
             >
-               <Checkbox
-                  status={"checked"}
-                />
+              <Checkbox status={"checked"} />
               <Text>i agree with the terms and agreements</Text>
             </View>
 
@@ -173,52 +167,49 @@ function SignUp() {
                 </Text>
               </Button>
               {switchValue !== true ? (
-              <Button
-                styles={{
-                  elevation: 8,
-                  backgroundColor: baseColors.primaryColor,
-                  borderRadius: 50,
-                  paddingVertical: 10,
-                  paddingHorizontal: 12,
-                  width: 150,
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
-                
-                onPress={() => {
-                  Navigation.navigate("Verification");
-                }}
-              >
-                
-                <Text
-                  style={{
-                    color: baseColors.lightColor,
-                    fontWeight: "bold",
-                    textTransform: "uppercase",
+                <Button
+                  styles={{
+                    elevation: 8,
+                    backgroundColor: baseColors.primaryColor,
+                    borderRadius: 50,
+                    paddingVertical: 10,
+                    paddingHorizontal: 12,
+                    width: 150,
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                  onPress={() => {
+                    Navigation.navigate("Verification");
                   }}
                 >
-                  Next
-                </Text>
-              </Button>
-              ) :(
-
+                  <Text
+                    style={{
+                      color: baseColors.lightColor,
+                      fontWeight: "bold",
+                      textTransform: "uppercase",
+                    }}
+                  >
+                    Next
+                  </Text>
+                </Button>
+              ) : (
                 <Button
-                styles={{
-                  elevation: 8,
-                  backgroundColor: baseColors.primaryColor,
-                  borderRadius: 50,
-                  paddingVertical: 10,
-                  paddingHorizontal: 12,
-                  width: 150,
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
-                onPress={() => {
-                  Navigation.navigate("SignIn");
-                }}
-              >
-                <ModalTester />
-              </Button>
+                  styles={{
+                    elevation: 8,
+                    backgroundColor: baseColors.primaryColor,
+                    borderRadius: 50,
+                    paddingVertical: 10,
+                    paddingHorizontal: 12,
+                    width: 150,
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                  onPress={() => {
+                    Navigation.navigate("SignIn");
+                  }}
+                >
+                  <ModalTester />
+                </Button>
               )}
             </View>
           </View>

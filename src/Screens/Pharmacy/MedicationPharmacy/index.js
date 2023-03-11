@@ -12,7 +12,7 @@ const deviceWidth = Dimensions.get("window").width;
 function MedicationPharmacy() {
   return (
     <LayoutGeneral top={<General title="St Thomas Hospital, uk" />}>
-        <Medication />
+      <Medication />
       {/* <Prescription /> */}
     </LayoutGeneral>
   );

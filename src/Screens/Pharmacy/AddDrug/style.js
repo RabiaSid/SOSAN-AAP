@@ -71,7 +71,7 @@ export const styles = StyleSheet.create({
     fontWeight: "bold",
     textTransform: "uppercase",
   },
-  
+
   textColor: {
     color: baseColors.lightTextColor,
     fontWeight: "bold",

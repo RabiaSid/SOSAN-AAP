@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, ScrollView ,Image, FlatList} from "react-native";
+import { View, Text, ScrollView, Image, FlatList } from "react-native";
 import GradientBackground from "../../../../Components/Gradient/DarkGradient/index";
 import AppHeader from "../../../../Components/AppHeader/index";
 import SearchField from "../../../../Components/SearchField/index";
@@ -23,11 +23,9 @@ function Chat() {
         </AppHeader>
       </View>
       {/* <ScrollView> */}
-      <View
-        style={styles.middle}
-      >
+      <View style={styles.middle}>
         <View style={styles.screenMiddle}>
-        <FlatList
+          <FlatList
             data={ChatData}
             renderItem={({ item }) => <ChatList data={item} />}
           />

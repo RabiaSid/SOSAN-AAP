@@ -6,7 +6,7 @@ import SearchField from "../../../../Components/SearchField";
 import DarkGradient from "../../../../Components/Gradient/DarkGradient";
 import ReverseDarkGradient from "../../../../Components/Gradient/ReverseDarkGradient";
 import { useNavigation } from "@react-navigation/native";
-import { Logo,  BottomImage, FlagButtonOne } from "../../../../Assets/images";
+import { Logo, BottomImage, FlagButtonOne } from "../../../../Assets/images";
 import {
   FontAwesome5,
   Fontisto,
@@ -21,8 +21,7 @@ const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
 
 function Feed() {
-const navigation = useNavigation();
-
+  const navigation = useNavigation();
 
   return (
     <View
@@ -39,7 +38,6 @@ const navigation = useNavigation();
             alignItems: "center",
             paddingVertical: 15,
             width: deviceWidth / 1,
-            
           }}
         >
           <View
@@ -49,13 +47,9 @@ const navigation = useNavigation();
               justifyContent: "center",
               alignItems: "center",
               paddingLeft: 35,
-              
             }}
           >
-            <Image
-              source={Logo}
-              style={{ height: 30, width: 125 }}
-            />
+            <Image source={Logo} style={{ height: 30, width: 125 }} />
           </View>
           <View
             style={{
@@ -63,15 +57,12 @@ const navigation = useNavigation();
               flexDirection: "row",
               justifyContent: "space-between",
               alignItems: "center",
-              
             }}
           >
             <TouchableOpacity
-            onPress={()=>navigation.navigate('UserAppHome')}>
-              <Image
-                source={FlagButtonOne}
-                style={{ height: 20, width: 35 }}
-              />
+              onPress={() => navigation.navigate("UserAppHome")}
+            >
+              <Image source={FlagButtonOne} style={{ height: 20, width: 35 }} />
             </TouchableOpacity>
           </View>
         </View>
@@ -93,21 +84,23 @@ const navigation = useNavigation();
               style={styles.itemsIcon}
             />
             <Text
-              onPress={()=>navigation.navigate('AgendaAppointmentHospital')}
+              onPress={() => navigation.navigate("AgendaAppointmentHospital")}
               style={styles.itemsViewText}
             >
-             Agenda
+              Agenda
             </Text>
           </View>
 
           <View style={styles.itemsViewReverse}>
-          <FontAwesome5 
-          name="capsules" 
-          size={23} style={styles.itemsIconReverse} />
+            <FontAwesome5
+              name="capsules"
+              size={23}
+              style={styles.itemsIconReverse}
+            />
             <Text
-           onPress={() => {
-            navigation.navigate("OverViewHospitality");
-          }}
+              onPress={() => {
+                navigation.navigate("OverViewHospitality");
+              }}
               style={styles.itemsViewTextReverse}
             >
               Overview
@@ -115,9 +108,9 @@ const navigation = useNavigation();
           </View>
 
           <View style={styles.itemsViewReverse}>
-          <Fontisto name="doctor" size={24} style={styles.itemsIconReverse} />
+            <Fontisto name="doctor" size={24} style={styles.itemsIconReverse} />
             <Text
-               onPress={()=>navigation.navigate('CreatePostHospital')}
+              onPress={() => navigation.navigate("CreatePostHospital")}
               style={styles.itemsViewTextReverse}
             >
               Publicity
@@ -125,31 +118,31 @@ const navigation = useNavigation();
           </View>
 
           <View style={styles.itemsView}>
-          <FontAwesome name="heartbeat" size={25} style={styles.itemsIcon}  />
+            <FontAwesome name="heartbeat" size={25} style={styles.itemsIcon} />
             <Text
-             onPress={()=>navigation.navigate('Epargne')}
-            style={styles.itemsViewText}
+              onPress={() => navigation.navigate("Epargne")}
+              style={styles.itemsViewText}
             >
               Earning
             </Text>
-            
           </View>
 
           <View style={styles.itemsView}>
-          <FontAwesome name="heartbeat" size={25} style={styles.itemsIconReverse}  />
+            <FontAwesome
+              name="heartbeat"
+              size={25}
+              style={styles.itemsIconReverse}
+            />
             <Text
-             onPress={()=>navigation.navigate('SpecialistAndDiagnosticsHospital')}
+              onPress={() =>
+                navigation.navigate("SpecialistAndDiagnosticsHospital")
+              }
               style={styles.itemsViewText}
             >
-            Services
+              Services
             </Text>
-            
           </View>
         </View>
-        
-            
-          
-            
       </View>
 
       <Image

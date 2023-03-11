@@ -38,7 +38,6 @@ const ChangePassword = () => {
                     borderBottomColor: baseColors.lightGreyColor,
                     width: 90,
                     paddingVertical: 3,
-                   
                   }}
                 ></View>
               </View>
@@ -75,12 +74,9 @@ const ChangePassword = () => {
                 styles={styles.InputField}
               ></InputField>
               <View style={styles.Loginbutton}>
-              <Button
-      styles={styles.Button}
-      >
-      <SucessAlert />
-      </Button>
-                
+                <Button styles={styles.Button}>
+                  <SucessAlert />
+                </Button>
               </View>
             </View>
           </View>

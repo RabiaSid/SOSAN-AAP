@@ -10,7 +10,8 @@ function index({
   styles: customStyles,
   multiline,
   numberOfLines,
-  Children
+  Children,
+  placeholderTextColor
 }) {
   const [number, onChangeNumber] = React.useState("");
 
@@ -30,7 +31,10 @@ function index({
         keyboardType={keyboardType}
         secureTextEntry={secureTextEntry}
         numberOfLines={numberOfLines}
-      >{Children}</TextInput>
+        placeholderTextColor={placeholderTextColor}
+      >
+        {Children}
+      </TextInput>
     </SafeAreaView>
   );
 }

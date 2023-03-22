@@ -7,7 +7,7 @@ import TimePicker from "./TImePicker";
 function Schedule() {
   return (
     <View style={styles.screenContainer}>
-      <Text>Schedule</Text>
+      <Text style={styles.scheduleText}>Schedule</Text>
 
       <View style={styles.scheduleMain}>
         <View style={styles.schedulecolumn}>

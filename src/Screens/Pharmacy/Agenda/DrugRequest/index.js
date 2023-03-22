@@ -2,7 +2,7 @@ import React from "react";
 import { View, Dimensions } from "react-native";
 import SearchField from "../../../../Components/SearchField/index";
 import baseColors from "../../../../Constant/color";
-import LayoutReservationPharmacy from "../../../../Components/LayoutReservationPharmacy/index";
+import LayoutReservationPharmacy from "../../../../Layout/LayoutReservationPharmacy/index";
 import { useNavigation } from "@react-navigation/native";
 
 const deviceHeight = Dimensions.get("window").height;

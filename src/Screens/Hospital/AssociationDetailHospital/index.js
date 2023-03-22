@@ -1,13 +1,13 @@
 import React from "react";
 import { Text, View, style } from "react-native";
 import baseColors from "../../../Constant/color";
-import CommonDetail from "../../Auth/Details/CommonDetail/index";
+import LayoutCommonDetail from "../../../Layout/LayoutCommonDetail";
 import { useNavigation } from "@react-navigation/native";
 
 function AssociationDetailHospital() {
   const Navigation = useNavigation();
   return (
-    <CommonDetail>
+    <LayoutCommonDetail>
       <Text
         style={{
           color: baseColors.lightTextColor,
@@ -20,7 +20,7 @@ function AssociationDetailHospital() {
       >
         Continue
       </Text>
-    </CommonDetail>
+    </LayoutCommonDetail>
   );
 }
 

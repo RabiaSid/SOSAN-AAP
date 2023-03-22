@@ -7,13 +7,13 @@ import {
   StyleSheet,
   ImageBackground,
 } from "react-native";
-import AppHeader from "../AppHeader/index";
+import AppHeader from "../../Components/AppHeader/index";
 import baseColors from "../../Constant/color";
 import { Ionicons, AntDesign } from "@expo/vector-icons";
 import { LayoutMap } from "../../Assets/images/index";
 import BottomSheet from "react-native-simple-bottom-sheet";
-import NearbyModal from "../Modal/NearByModal/index";
-import NearByMenuList from "../List/NearByMenuList/index";
+import NearbyModal from "../../Components/Modal/NearByModal/index";
+import NearByMenuList from "../../Components/List/NearByMenuList/index";
 import { useNavigation } from "@react-navigation/native";
 
 const deviceHeight = Dimensions.get("window").height;

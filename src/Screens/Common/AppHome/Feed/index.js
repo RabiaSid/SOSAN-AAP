@@ -4,7 +4,7 @@ import AppHeader from "../../../../Components/AppHeader";
 import baseColors from "../../../../Constant/color";
 import SearchField from "../../../../Components/SearchField";
 import { useNavigation } from "@react-navigation/native";
-import { Logo, FlagButtonOne, BottomImage } from "../../../../Assets/images";
+import { Logo, FlagButtonOne, FullBottomImageTwo } from "../../../../Assets/images";
 import {
   FontAwesome5,
   Fontisto,
@@ -92,8 +92,8 @@ function Feed() {
       </View>
 
       <Image
-        source={BottomImage}
-        style={{ height: 270, resizeMode: "contain" }}
+        source={FullBottomImageTwo}
+        style={{ height: 250, resizeMode: "contain", width:380 }}
       />
     </View>
   );

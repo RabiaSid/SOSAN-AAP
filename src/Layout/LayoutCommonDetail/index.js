@@ -1,20 +1,20 @@
 import React from "react";
 import { ScrollView } from "react-native";
 import { View, Text, Image, Dimensions } from "react-native";
-import Button from "../../../../Components/Buttons";
+import Button from "../../Components/Buttons";
 import { styles } from "./style";
-import InputField from "../../../../Components/InputField";
-import baseColors from "../../../../Constant/color";
-import Schedule from "../../../../Components/Schedule";
-import Gallery from "../../../../Components/Gallery";
-import { MapImage } from "../../../../Assets/images";
+import InputField from "../../Components/InputField";
+import baseColors from "../../Constant/color";
+import Schedule from "../../Components/Schedule";
+import Gallery from "../../Components/Gallery";
+import { MapImage } from "../../Assets/images";
 import { useNavigation } from "@react-navigation/native";
-import Map from "../../../../Components/Map";
+import Map from "../../Components/Map";
 
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
 
-function CommonDetail({ children }) {
+function LayoutCommonDetail({ children }) {
   const Navigation = useNavigation();
   return (
     <ScrollView
@@ -92,4 +92,4 @@ function CommonDetail({ children }) {
   );
 }
 
-export default CommonDetail;
+export default LayoutCommonDetail;

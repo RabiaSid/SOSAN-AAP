@@ -22,7 +22,6 @@ function Profile() {
   const Navigation = useNavigation();
   return (
     <View style={styles.screenContainer}>
-      {/* <View style={styles.screen}> */}
 
       <View>
         <AppHeader styles={styles.headerContainer}>
@@ -115,7 +114,11 @@ function Profile() {
 
             <View style={styles.ListBottom}>
               <View style={styles.Listitems}>
-                <Text style={styles.TextSecondary}>Change Password</Text>
+                <Text style={styles.TextSecondary}
+                onPress={() => {
+                  Navigation.navigate("ChangePassword");
+                }}
+                >Change Password</Text>
                 <MaterialIcons
                   name="navigate-next"
                   size={28}
@@ -129,7 +132,11 @@ function Profile() {
 
             <View style={styles.ListBottom}>
               <View style={styles.Listitems}>
-                <Text style={styles.TextSecondary}>Help Center</Text>
+                <Text style={styles.TextSecondary}
+                onPress={() => {
+                  Navigation.navigate("HelpCenter");
+                }}
+                >Help Center</Text>
                 <MaterialIcons
                   name="navigate-next"
                   size={28}
@@ -143,7 +150,11 @@ function Profile() {
 
             <View style={styles.ListBottom}>
               <View style={styles.Listitems}>
-                <Text style={styles.TextSecondary}>Terms and Conditions</Text>
+                <Text style={styles.TextSecondary}
+                onPress={() => {
+                  Navigation.navigate("TermsAndConditions");
+                }}
+                >Terms and Conditions</Text>
                 <MaterialIcons
                   name="navigate-next"
                   size={28}
@@ -171,7 +182,11 @@ function Profile() {
 
             <View style={styles.ListBottom}>
               <View style={styles.Listitems}>
-                <Text style={styles.TextSecondary}>Log Out</Text>
+                <Text style={styles.TextSecondary}
+                onPress={() => {
+                  Navigation.navigate("SignIn");
+                }}
+                >Log Out</Text>
                 <MaterialIcons
                   name="navigate-next"
                   size={28}

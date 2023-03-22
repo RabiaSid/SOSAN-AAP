@@ -6,9 +6,8 @@ const deviceWidth = Dimensions.get("window").width;
 
 export const styles = StyleSheet.create({
   MainConatiner: {
-    borderColor: baseColors.lightColor,
     flexDirection: "column",
-    width: deviceWidth / 1 - 40,
+    width: deviceWidth / 1 - 30,
     paddingVertical: 10,
   },
   formText: {

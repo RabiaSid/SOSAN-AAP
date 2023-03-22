@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
     width: deviceWidth / 1,
     flex: 1,
     flexDirection: "column",
-    padding: 20,
+    paddingver: 20,
     backgroundColor: baseColors.lightColor,
   },
   Text: {

@@ -1,6 +1,6 @@
 import React from "react";
 import { Text, View, Dimensions, FlatList, ScrollView } from "react-native";
-import LayoutNearby from "../../../Components/LayoutNearby/index";
+import LayoutNearby from "../../../Layout/LayoutNearby/index";
 import { DonationNearbyData } from "../../../Config/index";
 import SearchField from "../../../Components/SearchField/index";
 import NearByCard from "../../../Components/Cards/NearByCard/index";

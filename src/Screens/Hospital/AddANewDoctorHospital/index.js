@@ -1,27 +1,19 @@
 import React from "react";
-import { Text, View, style } from "react-native";
-import baseColors from "../../../Constant/color";
-import CommonDetail from "../../Auth/Details/CommonDetail";
+import LayoutPersonalDetail from "../../../Layout/LayoutPersonalDetail";
 import { useNavigation } from "@react-navigation/native";
 
 function AddANewDoctorHospital() {
   const Navigation = useNavigation();
   return (
-    <CommonDetail>
-      <Text
-        style={{
-          color: baseColors.lightTextColor,
-          fontWeight: "bold",
-          fontSize: 20,
-        }}
-        onPress={() => {
-          Navigation.navigate("WorkingDetailHospital");
-        }}
-      >
-        Continue
-      </Text>
-    </CommonDetail>
+    <LayoutPersonalDetail 
+    title="Add A New Detail"
+    onPress={() => {
+      Navigation.navigate("WorkingDetailHospital");
+    }}
+    />
   );
 }
 
 export default AddANewDoctorHospital;
+
+

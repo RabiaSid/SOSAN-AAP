@@ -15,6 +15,7 @@ export const styles = StyleSheet.create({
   modal: {
     backgroundColor: baseColors.lightColor,
     borderRadius: 10,
+    width:deviceWidth/1-15
   },
   modalView: {
     flexDirection: "row",

@@ -11,7 +11,8 @@ function index({
   multiline,
   numberOfLines,
   Children,
-  placeholderTextColor
+  placeholderTextColor,
+  maxLength
 }) {
   const [number, onChangeNumber] = React.useState("");
 
@@ -32,6 +33,7 @@ function index({
         secureTextEntry={secureTextEntry}
         numberOfLines={numberOfLines}
         placeholderTextColor={placeholderTextColor}
+        maxLength={maxLength}
       >
         {Children}
       </TextInput>
@@ -47,6 +49,9 @@ const defaultStyles = StyleSheet.create({
     borderRadius: 50,
     padding: 10,
     textAlignVertical: "top",
+    paddingHorizontal: 10,
+    marginHorizontal:2,
+    marginVertical:5,
   },
 });
 

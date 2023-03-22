@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Dimensions } from "react-native";
+import { View, Text, Dimensions, TouchableOpacity } from "react-native";
 import InputField from "../../../Components/InputField";
 import Button from "../../../Components/Buttons";
 import { useNavigation } from "@react-navigation/native";
@@ -9,6 +9,7 @@ import baseColors from "../../../Constant/color";
 import ModalTester from "../../../Components/Modal/SectionModal";
 import GradientBackground from "../../../Components/Gradient/LinearBackground";
 import { Checkbox } from "react-native-paper";
+import { AntDesign } from "@expo/vector-icons";
 
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
@@ -17,61 +18,41 @@ function SignUp() {
   const Navigation = useNavigation();
   const [checked, setChecked] = React.useState(false);
   const [switchValue, setswitchValue] = React.useState(false);
+  const [Agreechecked, setAgreeChecked] = React.useState(false);
+
+  const [estado, setEstado] = React.useState(false);
+
+  const agregarFavoritos = () => {
+    setEstado(!estado);
+  };
 
   return (
     <View style={styles.screenContainer}>
-      <GradientBackground>
+      <GradientBackground >
         <View style={styles.screenBackground}>
+          <Text style={styles.headingTop}>SOSAN</Text>
           <View style={styles.screenMiddle}>
             <Text style={styles.Text}>create a new account</Text>
             <Text style={styles.formText}>Enter Email</Text>
             <InputField
               placeholder="abc@gmail.com"
-              styles={{
-                height: 40,
-                margin: 12,
-                borderColor: baseColors.sucessColor,
-                borderWidth: 1,
-                borderRadius: 50,
-                padding: 10,
-              }}
+              styles={styles.InputField}
             ></InputField>
             <Text style={styles.formText}>Enter Username</Text>
             <InputField
               placeholder="Your Username"
-              styles={{
-                height: 40,
-                margin: 12,
-                borderColor: baseColors.sucessColor,
-                borderWidth: 1,
-                borderRadius: 50,
-                padding: 10,
-              }}
+              styles={styles.InputField}
             ></InputField>
             <Text style={styles.formText}>Enter PhoneNumber</Text>
             <InputField
               placeholder="0092331524568"
-              styles={{
-                height: 40,
-                margin: 12,
-                borderColor: baseColors.sucessColor,
-                borderWidth: 1,
-                borderRadius: 50,
-                padding: 10,
-              }}
+              styles={styles.InputField}
             ></InputField>
             <Text style={styles.formText}>Enter Password</Text>
             <InputField
               placeholder="*************"
               secureTextEntry={true}
-              styles={{
-                height: 40,
-                margin: 12,
-                borderColor: baseColors.sucessColor,
-                borderWidth: 1,
-                borderRadius: 50,
-                padding: 10,
-              }}
+              styles={styles.InputField}
             ></InputField>
             <Text style={styles.Textleft}> What are You? </Text>
             <View
@@ -92,13 +73,18 @@ function SignUp() {
                   paddingHorizontal: 15,
                 }}
               >
-                <Checkbox
-                  status={checked ? "unchecked" : "checked"}
-                  onPress={() => {
-                    setChecked(!checked);
-                    setswitchValue(false);
-                  }}
-                />
+                <TouchableOpacity onPress={checked}>
+                  <AntDesign
+                    name="checkcircle"
+                    size={20}
+                    color={checked  ?baseColors.secondaryTextColor : baseColors.sucessTextColor }
+                    onPress={() => {
+                      setChecked(!checked);
+                      setswitchValue(false);
+                    }}
+                  />
+                </TouchableOpacity>
+
                 <Text>Individual</Text>
               </View>
               <View
@@ -111,13 +97,17 @@ function SignUp() {
                   paddingHorizontal: 15,
                 }}
               >
-                <Checkbox
-                  status={checked ? "checked" : "unchecked"}
-                  onPress={() => {
-                    setChecked(!checked);
-                    setswitchValue(true);
-                  }}
-                />
+                <TouchableOpacity onPress={checked}>
+                  <AntDesign
+                    name="checkcircle"
+                    size={20}
+                    color={checked  ? baseColors.sucessTextColor  : baseColors.secondaryTextColor }
+                    onPress={() => {
+                      setChecked(!checked);
+                      setswitchValue(true);
+                    }}
+                  />
+                </TouchableOpacity>
                 <Text>Professional</Text>
               </View>
             </View>
@@ -130,7 +120,14 @@ function SignUp() {
                 width: deviceWidth / 1.1 - 5,
               }}
             >
-              <Checkbox status={"checked"} />
+              <Checkbox
+                status={Agreechecked ? "checked" : "unchecked"}
+                onPress={() => {
+                  setAgreeChecked(!Agreechecked);
+                }}
+                color={baseColors.sucessTextColor}
+              />
+
               <Text>i agree with the terms and agreements</Text>
             </View>
 
@@ -148,7 +145,7 @@ function SignUp() {
                   borderRadius: 50,
                   paddingVertical: 10,
                   paddingHorizontal: 12,
-                  width: 150,
+                  width: 130,
                   justifyContent: "center",
                   alignItems: "center",
                 }}
@@ -174,7 +171,7 @@ function SignUp() {
                     borderRadius: 50,
                     paddingVertical: 10,
                     paddingHorizontal: 12,
-                    width: 150,
+                    width: 130,
                     justifyContent: "center",
                     alignItems: "center",
                   }}
@@ -200,12 +197,9 @@ function SignUp() {
                     borderRadius: 50,
                     paddingVertical: 10,
                     paddingHorizontal: 12,
-                    width: 150,
+                    width: 130,
                     justifyContent: "center",
                     alignItems: "center",
-                  }}
-                  onPress={() => {
-                    Navigation.navigate("SignIn");
                   }}
                 >
                   <ModalTester />

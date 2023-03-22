@@ -6,10 +6,10 @@ const deviceWidth = Dimensions.get("window").width;
 
 export const styles = StyleSheet.create({
   screenContainer: {
-    width: deviceWidth / 1,
-    flex: 1,
+    width: deviceWidth / 1-30,
     flexDirection: "column",
-    padding: 10,
+    alignItems:'center',
+    paddingVertical: 10,
     justifyContent: "center",
     backgroundColor: baseColors.lightColor,
   },
@@ -19,9 +19,12 @@ export const styles = StyleSheet.create({
     textAlign: "center",
     paddingVertical: 10,
   },
+  scheduleText:{
+    width: deviceWidth / 1-50,
+    paddingVertical:10
+  },
   scheduleMain: {
     width: deviceWidth / 1 - 60,
-    // flex:1,
     flexDirection: "row",
     alignItems: "flex-start",
     justifyContent: "center",

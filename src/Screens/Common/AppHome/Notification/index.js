@@ -13,11 +13,14 @@ import { styles } from "./style";
 import baseColors from "../../../../Constant/color";
 import { Ionicons } from "@expo/vector-icons";
 import NotificationListCard from "../../../../Components/List/NotificationListCard/index";
+import { useNavigation } from "@react-navigation/native";
 
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
 
 function Notification() {
+  const Navigation = useNavigation();
+  
   return (
     <View style={styles.screenContainer}>
       <View>
@@ -29,6 +32,9 @@ function Notification() {
                   name="chevron-back-sharp"
                   size={30}
                   style={{ color: baseColors.lightTextColor }}
+                  onPress={() => {
+                    Navigation.goBack("");
+                  }}
                 />
               </TouchableOpacity>
             </View>

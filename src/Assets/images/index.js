@@ -32,6 +32,8 @@ import Mtn from "./MTN.jpg";
 import Mastercard from "./Mastercard.png";
 import Paypal from "./Paypal.png";
 import AlertImage from "./AlertImage.png";
+import FullBottomImage from "./FullBottomImage.png"
+import FullBottomImageTwo from "./FullBottomImageTwo.png"
 
 export {
   Logo,
@@ -68,4 +70,6 @@ export {
   Mastercard,
   Paypal,
   AlertImage,
+  FullBottomImage,
+  FullBottomImageTwo
 };

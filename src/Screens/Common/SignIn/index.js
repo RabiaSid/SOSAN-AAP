@@ -1,19 +1,29 @@
 import React from "react";
 import Button from "../../../Components/Buttons/index";
 import InputField from "../../../Components/InputField";
-import { Logo, BottomImage } from "../../../Assets/images/index";
+import { Logo, FullBottomImage } from "../../../Assets/images/index";
 import { styles } from "./style";
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, Dimensions } from "react-native";
 import { useNavigation } from "@react-navigation/native";
+import baseColors from "../../../Constant/color";
+
+
+const deviceHeight = Dimensions.get("window").height;
+const deviceWidth = Dimensions.get("window").width;
 
 const SignIn = () => {
   const Navigation = useNavigation();
   return (
     <View style={styles.screenContainer}>
       <View style={styles.screenTop}>
-        <Text>
-          <Text style={styles.textColorSuccess}>English</Text> | French
+        <Text style={styles.textColorSuccess} >
+        English
         </Text>
+        <View style={{borderLeftWidth:1, marginLeft:5, paddingLeft:5, borderLeftColor:baseColors.secondaryTextColor}}>
+        <Text style={{color: baseColors.secondaryTextColor}}>
+             French
+        </Text>
+        </View>
       </View>
 
       <View style={styles.screenMiddle}>
@@ -25,6 +35,7 @@ const SignIn = () => {
         >
           <Image source={Logo} style={{ height: 50 }} />
         </View>
+        <Text style={{width:deviceWidth/1.1, textAlign:'center', color:baseColors.sucessTextColor, fontWeight:'600', fontSize:16, paddingVertical:5 }}>Log In</Text>
         <Text style={styles.formText}>Enter Your Email</Text>
         <InputField
           placeholder="Your Email"
@@ -50,14 +61,11 @@ const SignIn = () => {
           style={{
             justifyContent: "center",
             alignItems: "center",
-            paddingTop: 20,
+            paddingTop: 10,
           }}
         >
           <Text
             style={styles.textColorDanger}
-            onPress={() => {
-              Navigation.navigate("AssuranceAgendaReports");
-            }}
           >
             Forget Password
           </Text>
@@ -72,8 +80,8 @@ const SignIn = () => {
           </Text>
         </View>
         <Image
-          source={BottomImage}
-          style={{ height: 270, resizeMode: "contain" }}
+          source={FullBottomImage}
+          style={{ height: 250, resizeMode: "contain", width:370 }}
         />
       </View>
     </View>

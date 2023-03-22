@@ -8,7 +8,7 @@ import {
   Image,
 } from "react-native";
 
-import LayoutReservationPharmacy from "../../../../Components/LayoutReservationPharmacy/index";
+import LayoutReservationPharmacy from "../../../../Layout/LayoutReservationPharmacy/index";
 import { useNavigation } from "@react-navigation/native";
 
 function Documents() {

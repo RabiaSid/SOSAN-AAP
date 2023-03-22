@@ -10,9 +10,10 @@ export const styles = StyleSheet.create({
     width: deviceWidth / 1,
     flex: 1,
     flexDirection: "column",
-    padding: 20,
-
+    paddingVertical: 20,
     backgroundColor: baseColors.lightColor,
+
+    
   },
   headerContainer: {
     flexDirection: "row",
@@ -36,7 +37,7 @@ export const styles = StyleSheet.create({
   screenMiddle: {
     flexDirection: "column",
     justifyContent: "center",
-    paddingVertical: 20,
+    padding: 20,
     width: deviceWidth / 1,
   },
   Button: {

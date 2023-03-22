@@ -8,14 +8,14 @@ import {
   Dimensions,
   ScrollView,
 } from "react-native";
-import AppHeader from "../AppHeader/index";
+import AppHeader from "../../Components/AppHeader/index";
 import baseColors from "../../Constant/color";
 import { Ionicons } from "@expo/vector-icons";
-import SearchField from "../SearchField/index";
-import Description from "../Description";
-import StaffMember from "../Member";
-import ReviewGallery from "../ReviewGallery";
-import Map from "../Map";
+import SearchField from "../../Components/SearchField/index";
+import Description from "../../Components/Description";
+import StaffMember from "../../Components/Member";
+import ReviewGallery from "../../Components/ReviewGallery";
+import Map from "../../Components/Map";
 import { useNavigation } from "@react-navigation/native";
 
 const deviceHeight = Dimensions.get("window").height;

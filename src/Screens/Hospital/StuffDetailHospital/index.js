@@ -35,7 +35,7 @@ function StuffDetailHospital() {
       {/* <ScrollView> */}
 
       <View style={styles.screenMiddle}>
-        <View style={{ paddingVertical: 10 }}>
+        <View style={{ paddingVertica: 10 }}>
           <SkipSwitchButton
             onPress={() => {
               Navigation.navigate("AddANewDoctorHospital");

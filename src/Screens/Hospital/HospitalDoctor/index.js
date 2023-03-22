@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Dimensions } from "react-native";
 import { styles } from "./style";
-import LayoutGeneral from "../../../Components/LayoutGeneral";
+import LayoutGeneral from "../../../Layout/LayoutGeneral";
 import { General } from "../../../Components/General/index";
 import StuffDoctor from "../../../Components/Doctor";
 import Medication from "../../../Components/Medication";

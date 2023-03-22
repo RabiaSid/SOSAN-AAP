@@ -10,7 +10,8 @@ export const styles = StyleSheet.create({
     width: deviceWidth / 1,
     flex: 1,
     flexDirection: "column",
-    padding: 20,
+    paddingVertical: 20,
+    paddingHorizontal:10,
     backgroundColor: baseColors.lightColor,
   },
   Text: {

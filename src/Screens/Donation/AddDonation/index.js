@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, Dimensions } from "react-native";
 import { styles } from "./style";
-import LayoutGeneral from "../../../Components/LayoutGeneral";
+import LayoutGeneral from "../../../Layout/LayoutGeneral";
 import { General } from "../../../Components/General/index";
 import DarkGradient from "../../../Components/Gradient/DarkGradient";
 import PaymentPayAsOption from "../../../Components/Modal/PaymentModal/PaymentPayAsOption";

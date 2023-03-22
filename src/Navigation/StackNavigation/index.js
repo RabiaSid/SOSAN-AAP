@@ -96,6 +96,7 @@ import TrackingIssuranceEditDetail from "../../Screens/AssurancesAndInsurance/Tr
 import AssuranceYourPlans from "../../Screens/AssurancesAndInsurance/Plan/YourPlans";
 import AssuranceTermsAndCondition from "../../Screens/AssurancesAndInsurance/Plan/PlanDetail";
 
+
 import AssurancesAndInsuranceTabBottomNavigation from "../AssurancesAndInsuranceTabBottomNavigation";
 import PharmacyTabBottomNavigation from "../PharmacyTabBottomNavigation";
 import HospitalityTabBottomNavigation from "../HospitalityTabBottomNavigation";
@@ -103,8 +104,10 @@ import TabBottomNavigation from "../TabBottomNavigation/index";
 import UserTabBottomNavigation from "../UserTabBottomNavigation";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
+
 const MainStack = createNativeStackNavigator();
 const StackNavigation = () => {
+
   return (
     <MainStack.Navigator
       initialRouteName="SignIn"
@@ -386,11 +389,11 @@ const StackNavigation = () => {
         component={PharmacyTabBottomNavigation}
       />
       <MainStack.Screen
-        name="HospitalityTabBottomNavigation"
-        component={HospitalityTabBottomNavigation}
+        name="HospitalityTabBottomNavigation" component={HospitalityTabBottomNavigation} />
+      <MainStack.Screen name="Tabs" component={TabBottomNavigation} 
       />
-      <MainStack.Screen name="Tabs" component={TabBottomNavigation} />
       <MainStack.Screen name="UserTabs" component={UserTabBottomNavigation} />
+      
     </MainStack.Navigator>
   );
 };
